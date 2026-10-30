@@ -1,14 +1,14 @@
-# 01. Design Fundamentals, Fatigue and Fasteners
+# 🛠️ 01. Design Fundamentals, Fatigue and Fasteners
 
 **Exam relevance:** APPSC AEE: P | SSC JE: C | RRB JE: S | Category: AEE+/ALL | Yield: HY
 
 ---
 
-## Part A: Detailed Theory (read this first)
+## 📘 Part A: Detailed Theory (read this first)
 
 This part explains how a machine element is designed, why parts fail under repeated loading, and how bolts, welds, rivets, keys and couplings are sized. Part B (from section 1 onwards) is the compact reference.
 
-### A1. What machine design is
+### 🔹 A1. What machine design is
 
 **Machine design** is the creation of parts and assemblies that perform a required function safely, economically and reliably. The usual steps are: identify the need, write the specification, propose a concept, analyse forces and stresses, select the material, fix the dimensions, check against failure, draw, make a prototype and test.
 
@@ -30,7 +30,9 @@ For ductile materials the failure stress is the yield strength $\sigma_y$ (for s
 
 **Stress concentration.** Any abrupt change of section (hole, notch, keyway, fillet, thread root) disturbs the smooth flow of stress lines, causing a local rise of stress above the nominal value $\sigma_{nom}$. The **theoretical stress concentration factor** $K_t = \sigma_{max}/\sigma_{nom}$ depends only on geometry. For a circular hole in a wide plate in tension, $K_t = 3$. Under static load, a ductile material yields locally and redistributes the stress, so $K_t$ can be ignored. For brittle materials and under fatigue, it must be used. Remedies: generous fillet radii, relief grooves, gradual change of section, drilling a small hole at the end of a crack.
 
-### A2. Fatigue: why parts fail below the static strength
+### 🔹 A2. Fatigue: why parts fail below the static strength
+![Diagram: Goodman diagram](../assets/04-machine-design/goodman-diagram.png)
+![Diagram: Sn curve endurance limit](../assets/04-machine-design/sn-curve-endurance-limit.png)
 
 When a part is loaded repeatedly, even if the stress is well below the yield point, a microscopic crack can start at a surface defect or stress raiser. Each cycle grows the crack a little, until the remaining section is too small and the part breaks suddenly, **without any warning or visible yielding**. The fracture face shows a smooth region (beach marks, crack growth) and a rough region (final brittle fracture).
 
@@ -62,7 +64,8 @@ A point inside the failure line is safe. The FOS is the ratio of the distance to
 
 **Improving fatigue strength:** better surface finish, shot peening or cold rolling (puts compressive residual stress on the surface), carburising or nitriding, avoiding sharp corners, adequate fillet radii, avoiding corrosion.
 
-### A3. Threaded fasteners
+### 🔹 A3. Threaded fasteners
+![Diagram: Bolt stress and thread](../assets/04-machine-design/bolt-stress-and-thread.png)
 
 A **bolt, screw or stud** with a **nut** clamps parts together. The thread acts like an inclined plane wrapped around a cylinder.
 
@@ -86,7 +89,8 @@ A **bolt, screw or stud** with a **nut** clamps parts together. The thread acts 
 
 **Power screws** (lead screw, jack, press) convert rotary motion into linear. Treat as a block on an inclined plane of lead angle $\alpha$ with friction angle $\phi = \tan^{-1}\mu$: torque to raise $T = W r_m\tan(\alpha + \phi)$, to lower $T = W r_m \tan(\phi - \alpha)$. **Efficiency** $\eta = \dfrac{\tan\alpha}{\tan(\alpha+\phi)}$, maximum at $\alpha = 45^\circ - \phi/2$. **Self-locking** if $\phi > \alpha$ (the load does not run down on its own), and then $\eta < 50\%$. This is desirable for a jack, undesirable for a screw that needs to be efficient.
 
-### A4. Welded joints
+### 🔹 A4. Welded joints
+![Diagram: Welded joints types](../assets/04-machine-design/welded-joints-types.png)
 
 Welding joins parts permanently using heat and filler. It is lighter, cheaper and more leak-tight than riveting.
 
@@ -95,7 +99,8 @@ Welding joins parts permanently using heat and filler. It is lighter, cheaper an
 - **Eccentric loads** produce a twist. Treat the weld as a line, compute the direct shear $P/A$ and the torsional shear $T r/J$, add vectorially at the critical point.
 - **Defects and stresses:** residual stress from uneven cooling, distortion, porosity, undercut, incomplete fusion. Stress relief by annealing, peening or preheating.
 
-### A5. Riveted joints
+### 🔹 A5. Riveted joints
+![Diagram: Riveted joint failures](../assets/04-machine-design/riveted-joint-failures.png)
 
 A rivet is a short cylindrical bar with a head; it is heated, inserted through holes and the other end is hammered to make a second head. Rivets are used in boilers, ships, bridges, and aircraft (now often replaced by welds or bolts).
 
@@ -114,7 +119,7 @@ A rivet is a short cylindrical bar with a head; it is heated, inserted through h
 
 **Design.** The diameter is by Unwin's formula $d = 6\sqrt{t}$ (mm). **Caulking** (driving the plate edge down against the plate with a blunt chisel) and **fullering** (the same with a tool whose thickness equals the plate thickness) make the joint leak-proof, as needed for boilers and tanks. Boiler joints must be strong and tight; structural joints need only be strong.
 
-### A6. Keys and couplings
+### 🔹 A6. Keys and couplings
 
 **Keys** connect a hub (gear, pulley) to a shaft so the torque is transmitted without slipping.
 
@@ -131,7 +136,7 @@ Equating the two torques gives $b\,\tau = \dfrac{t}{2}\,\sigma_c$. For a **squar
 - **Flexible couplings** accommodate misalignment and absorb shock: bushed-pin type, Oldham's (for parallel offset), universal (Hooke's) joint (for intersecting shafts), gear coupling, rubber (Love-Joy).
 - **Clutches** are couplings that can be engaged and disengaged (see Theory of Machines).
 
-### A7. Exam relevance
+### 🔹 A7. Exam relevance
 
 - FOS, preferred numbers, stress concentration, S-N curve, endurance limit (all exams).
 - Soderberg, Goodman, Gerber definitions and relative position (APPSC AEE).
@@ -140,10 +145,10 @@ Equating the two torques gives $b\,\tau = \dfrac{t}{2}\,\sigma_c$. For a **squar
 
 ---
 
-## Part B: Quick-reference notes, formulas, numericals and PYQs
+## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
-## 1. Design basics
+## 🧭 1. Design basics
 
 - **Design process:** need, specification, concept, analysis, material selection, detailing, testing.
 - **Factor of safety:**
@@ -160,7 +165,7 @@ $$K_t = \frac{\sigma_{max}}{\sigma_{nominal}}$$
 - **Fits (Indian Standard IS 919):** clearance, transition, interference. Hole basis system keeps the hole size fixed (H), varying the shaft. Examples: H7/g6 (running fit), H7/p6 (interference/press fit).
 - **Tolerance** is the permissible variation in a dimension. **Allowance** is the intentional difference between mating parts.
 
-## 2. Fatigue
+## 🧭 2. Fatigue
 
 - **Fatigue** is failure under repeated or fluctuating stress at stresses below the static strength.
 - **Endurance limit** $\sigma_e$: the maximum completely reversed stress that can be withstood for infinite life. Steel shows a clear endurance limit (about $0.5\,\sigma_u$ for polished specimens); aluminium and many non-ferrous metals do not.
@@ -173,7 +178,7 @@ $$\sigma_e' = k_a\,k_b\,k_c\,k_d\,\sigma_e$$
 - **Fatigue stress concentration factor:** $K_f = 1 + q(K_t - 1)$, where $q$ is the notch sensitivity ($0 \le q \le 1$).
 - **Fluctuating stress:** mean stress $\sigma_m = \dfrac{\sigma_{max} + \sigma_{min}}{2}$ and amplitude $\sigma_a = \dfrac{\sigma_{max} - \sigma_{min}}{2}$.
 
-### Mean stress failure criteria (design in terms of $\sigma_m$, $\sigma_a$)
+### 🔹 Mean stress failure criteria (design in terms of $\sigma_m$, $\sigma_a$)
 
 | Criterion | Equation | Nature |
 |---|---|---|
@@ -188,7 +193,7 @@ $$\sum \frac{n_i}{N_i} = 1$$
 
 - **Improving fatigue life:** polishing, shot peening, nitriding and carburising, avoiding sharp corners, generous fillet radii.
 
-## 3. Threaded fasteners
+## 🧭 3. Threaded fasteners
 
 - **Thread terms:** pitch, lead (for single start, lead $=$ pitch), major diameter, minor (core) diameter, thread angle ($60^\circ$ for metric ISO).
 - **Types:** V-thread (fastening), square thread (power transmission, low friction), acme (power transmission, lead screws), buttress (one-directional high load), knuckle.
@@ -204,7 +209,7 @@ $$T = 0.2\,P_i\,d$$
 - **Bolts with eccentric loads** and **bolts in shear:** shear stress $\tau = \dfrac{P}{n\,A}$ per bolt. Bolts in a bracket carry primary (direct) shear plus secondary shear from the moment, proportional to distance from the centroid of the bolt group.
 - **Locking devices:** lock nut, castle nut with split pin, spring washer, Wiley or toothed lock washer.
 
-### Power screws
+### 🔹 Power screws
 
 For a square thread (mean radius $r$, lead angle $\alpha$, friction angle $\phi$):
 
@@ -213,7 +218,7 @@ $$T_{raise} = W\,r\tan(\alpha + \phi), \qquad T_{lower} = W\,r\tan(\phi - \alpha
 - Self-locking if $\phi \ge \alpha$, and then $\eta \le 50\%$.
 - For an acme or trapezoidal thread with half-angle $\beta$, replace $\mu$ by $\dfrac{\mu}{\cos\beta}$.
 
-## 4. Welded joints
+## 🧭 4. Welded joints
 
 - **Types:** butt (groove) and fillet (lap, T) welds.
 - **Butt weld:** $\sigma_t = \dfrac{P}{t\,l}$ where $t$ is throat (plate thickness) and $l$ is weld length.
@@ -225,7 +230,7 @@ $$\tau = \frac{P}{0.707\,s\,l}$$
 - **Eccentric weld** (torsion): primary shear $\dfrac{P}{A}$ plus secondary shear $\dfrac{T\,r}{J}$; resultant by vector addition.
 - **Residual stresses** arise from non-uniform cooling. Stress relief by annealing.
 
-## 5. Riveted joints
+## 🧭 5. Riveted joints
 
 - **Types:** lap and butt (single or double cover); single, double, triple riveted.
 - **Failure modes:** (1) tearing of plate between rivet holes, (2) shearing of rivets, (3) crushing of rivets or plate, (4) tearing at the edge, (5) shear of plate at the edge.
@@ -239,7 +244,7 @@ $$\eta = \frac{\min(P_t, P_s, P_c)}{p\,t\,\sigma_t}$$
 - **Rivet diameter** by Unwin's formula: $d = 6\sqrt{t}$ mm ($t$ in mm). **Caulking** and **fullering** make the joint leak-proof.
 - A double-shear rivet carries about $1.875$ times the load of a single-shear rivet (for design), not exactly $2$.
 
-## 6. Keys and couplings
+## 🧭 6. Keys and couplings
 
 - **Keys:** sunk (rectangular, square, gib-head, Woodruff), saddle, round. Standard key: width $b = \dfrac{d}{4}$, thickness $t = \dfrac{d}{6}$ (for shaft diameter $d$).
 - **Key failure** (shaft diameter $d$, key width $b$, thickness $t$, length $l$, torque $T$):
@@ -250,25 +255,25 @@ $$\tau = \frac{2T}{d\,b\,l}, \qquad \sigma_c = \frac{4T}{d\,t\,l}$$
 - **Keyway** reduces shaft strength; strength factor $e = 1 - 0.2\dfrac{w}{d} - 1.1\dfrac{h}{d}$.
 - **Couplings:** rigid (muff, split muff, flange) and flexible (bushed-pin, Oldham, universal/Hooke).
 
-## 7. Worked numericals
+## 🧭 7. Worked numericals
 
 1. **Bolt.** Axial load $P = 20$ kN, allowable stress $100$ MPa: $A_c = \dfrac{20000}{100} = 200$ mm$^2$, so $d_c = \sqrt{\dfrac{4\times200}{\pi}} = 15.96$ mm.
 2. **Soderberg.** $\sigma_y = 300$, $\sigma_e = 200$, $\sigma_m = 100$, $\sigma_a = 50$ MPa: $\dfrac{100}{300} + \dfrac{50}{200} = 0.583$, so $\text{FOS} = \dfrac{1}{0.583} = 1.71$.
 3. **Rivet joint.** $p = 50$, $d = 20$, $t = 10$ mm, $\sigma_t = 80$ MPa: $P_t = 30\times10\times80 = 24$ kN.
 
-## 8. Common mistakes
+## 🧭 8. Common mistakes
 
 - Using nominal diameter instead of core diameter for bolt tensile stress.
 - Ignoring $K_f$ in fatigue and applying $K_t$ to ductile static loading.
 - Taking the Goodman line as the conservative one (Soderberg is more conservative).
 
-## 9. Interconnections
+## 🧭 9. Interconnections
 
 - Fatigue links to SOM (stress states) and Material Science (S-N behaviour).
 - Screws link to Engineering Mechanics (friction, inclined plane).
 - Welds, rivets, keys link to Manufacturing Processes.
 
-## 10. PYQs
+## 🧭 10. PYQs
 
 | # | Question | Answer | Exam / Year | Verify |
 |---|---|---|---|---|
@@ -283,7 +288,7 @@ $$\tau = \frac{2T}{d\,b\,l}, \qquad \sigma_c = \frac{4T}{d\,t\,l}$$
 | 9 | Standard width of a sunk key | $\dfrac{d}{4}$ | SSC JE 2016 | [ ] |
 | 10 | Unwin's formula for rivet diameter | $d = 6\sqrt{t}$ | RRB JE 2019 | [ ] |
 
-## 11. Revision checklist
+## 🧭 11. Revision checklist
 
 - [ ] Soderberg, Goodman, Gerber lines
 - [ ] $K_t$, $K_f$, $q$ relation

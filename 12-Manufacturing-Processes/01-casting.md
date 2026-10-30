@@ -1,14 +1,14 @@
-# 01. Casting and Foundry
+# 🏭 01. Casting and Foundry
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: VHY
 
 ---
 
-## Part A: Detailed Theory (read this first)
+## 📘 Part A: Detailed Theory (read this first)
 
 Casting is the oldest shaping process: molten metal is poured into a cavity, solidifies and takes the shape of the cavity. Everything in a foundry follows from three physical facts. Metal shrinks as it cools, so extra metal must be supplied. Metal solidifies from the mould wall inward, so the order of freezing can be controlled. Hot metal carries gases and slag, so the mould must let gas escape and the gating must avoid turbulence. Pattern allowances, risers, gating design, sand properties and defects are all consequences of these three facts.
 
-### A1. Where casting fits among manufacturing processes
+### 🔹 A1. Where casting fits among manufacturing processes
 
 | Group | Examples |
 |---|---|
@@ -21,7 +21,7 @@ Casting is the oldest shaping process: molten metal is poured into a cavity, sol
 
 **Advantages of casting.** Complex shapes (internal cavities through cores), very large or very small parts, almost any metal, low tooling cost for a single piece, and near-net-shape production. **Limitations.** Poorer surface finish and dimensional accuracy than machining, porosity and shrinkage defects, and lower strength than a forged part of the same material because of the coarse as-cast grain structure.
 
-### A2. The steps of sand casting
+### 🔹 A2. The steps of sand casting
 
 - Make a pattern (a replica of the part with allowances).
 - Prepare moulding sand and make the mould in two halves, cope (top) and drag (bottom), around the pattern.
@@ -29,7 +29,8 @@ Casting is the oldest shaping process: molten metal is poured into a cavity, sol
 - Melt the metal and pour it through the gating system.
 - Allow solidification and cooling, break the mould (shake-out), cut off gates and risers (fettling), clean and inspect.
 
-### A3. Patterns and allowances
+### 🔹 A3. Patterns and allowances
+![Diagram: Casting pattern allowances](../assets/12-manufacturing/casting-pattern-allowances.png)
 
 A pattern is not the exact shape of the final part. It is modified by allowances to account for what happens during casting and machining.
 
@@ -47,7 +48,7 @@ A pattern is not the exact shape of the final part. It is modified by allowances
 
 **Colour code.** Red for surfaces to be machined, black for unmachined surfaces, yellow for core prints.
 
-### A4. Moulding sand and cores
+### 🔹 A4. Moulding sand and cores
 
 **Constituents of green sand.** Silica sand (the base, with high refractoriness), a binder such as bentonite or kaolinite clay, 2 to 8 percent moisture to activate the clay, and additives such as coal dust (sea coal), dextrin and wood flour.
 
@@ -68,7 +69,7 @@ A pattern is not the exact shape of the final part. It is modified by allowances
 
 **Tests.** Permeability number, clay content, AFS grain fineness number and moisture content.
 
-### A5. Solidification and Chvorinov's rule
+### 🔹 A5. Solidification and Chvorinov's rule
 
 **Physical picture.** Heat flows from the metal through the mould wall. A solid skin forms first and thickens inward. The time to freeze depends on how much heat must be removed (proportional to volume) and how fast it can leave (proportional to surface area). Chvorinov's rule states:
 
@@ -84,7 +85,8 @@ where $V$ is casting volume, $A$ is the surface area through which heat leaves, 
 
 **Shrinkage in three stages.** Liquid shrinkage (cooling to the freezing point) and solidification shrinkage (phase change) must be fed by the riser. Solid shrinkage (cooling from freezing to room temperature) is compensated by the pattern shrinkage allowance.
 
-### A6. Gating system
+### 🔹 A6. Gating system
+![Diagram: Sand mould parts gating](../assets/12-manufacturing/sand-mould-parts-gating.png)
 
 **Parts.** Pouring basin, sprue (vertical channel), runner (horizontal), ingates (entry to the cavity) and risers.
 
@@ -101,7 +103,7 @@ where $V$ is casting volume, $A$ is the surface area through which heat leaves, 
 
 **Filling time.** $t = V/(A_g\,C\sqrt{2gh})$, where $V$ is the casting volume and $A_g$ the gate area.
 
-### A7. Risers and directional solidification
+### 🔹 A7. Risers and directional solidification
 
 A riser is a reservoir of molten metal attached to the casting. It supplies liquid metal to compensate for shrinkage during freezing, so that any shrinkage cavity forms in the riser and not in the casting.
 
@@ -116,7 +118,7 @@ A riser is a reservoir of molten metal attached to the casting. It supplies liqu
 
 **Chills and padding.** Chills are metal inserts that extract heat faster from thick regions (internal and external types). Padding adds a taper to thick sections so the thickness grows toward the riser. Both help directional solidification, so freezing progresses from the far end toward the riser.
 
-### A8. Casting processes
+### 🔹 A8. Casting processes
 
 | Process | Principle and features |
 |---|---|
@@ -133,7 +135,7 @@ A riser is a reservoir of molten metal attached to the casting. It supplies liqu
 
 **Die casting chambers.** In a hot chamber machine the injection mechanism is submerged in the molten metal, so it suits low-melting alloys (Zn, Sn, Pb). In a cold chamber machine the metal is ladled into a separate chamber, which suits Al, Mg and Cu alloys that would attack or overheat the injection system.
 
-### A9. Melting furnaces
+### 🔹 A9. Melting furnaces
 
 - **Cupola:** grey cast iron, fuel is coke, flux is limestone; continuous melting. Zones from the bottom: well, combustion (oxidising), reduction, melting, preheating and stack.
 - **Electric arc furnace:** steel.
@@ -141,7 +143,7 @@ A riser is a reservoir of molten metal attached to the casting. It supplies liqu
 - **Crucible furnace:** non-ferrous metals.
 - **Converters (Bessemer, LD/BOF)** and open hearth for steelmaking.
 
-### A10. Casting defects
+### 🔹 A10. Casting defects
 
 | Defect | Cause |
 |---|---|
@@ -157,7 +159,7 @@ A riser is a reservoir of molten metal attached to the casting. It supplies liqu
 
 **Inspection.** Visual, dye penetrant, magnetic particle (ferromagnetic surface cracks), radiography and ultrasonic (internal defects).
 
-### A11. What examiners test from this chapter
+### 🔹 A11. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -173,10 +175,10 @@ A riser is a reservoir of molten metal attached to the casting. It supplies liqu
 
 ---
 
-## Part B: Quick-reference notes, formulas, numericals and PYQs
+## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
-## 1. Foundations
+## 🧭 1. Foundations
 
 - **Manufacturing processes** change raw material into a finished product. **Classification:**
 
@@ -191,7 +193,7 @@ A riser is a reservoir of molten metal attached to the casting. It supplies liqu
 
 - **Casting:** pouring molten metal into a mould cavity of the desired shape and allowing it to solidify. Suitable for complex shapes, large parts, and a wide range of metals. Limitations are poorer surface finish and dimensional accuracy, and defects like porosity.
 
-## 2. Patterns
+## 🧭 2. Patterns
 
 - A **pattern** is a replica of the part used to make the mould cavity. Allowances:
 
@@ -207,7 +209,7 @@ A riser is a reservoir of molten metal attached to the casting. It supplies liqu
 - **Pattern types:** single piece, split, loose-piece, match plate, gated, sweep, skeleton, cope-and-drag.
 - **Colour code:** red on surfaces to be machined, black for unmachined surfaces, yellow for core prints, and so on.
 
-## 3. Moulding sand and cores
+## 🧭 3. Moulding sand and cores
 
 - **Moulding sand constituents:** silica sand (base), clay binder (bentonite, kaolinite), moisture ($2\%$ to $8\%$), and additives (coal dust, sea coal, dextrin, wood flour).
 - **Properties:** **permeability** (escape of gases), **refractoriness** (resist high temperature), **cohesiveness** (strength of binding), **flowability**, **collapsibility**, **adhesiveness**, and **green strength**. 
@@ -217,7 +219,7 @@ A riser is a reservoir of molten metal attached to the casting. It supplies liqu
 - **Mould making:** hand, machine (jolt, squeeze, sand slinger).
 - **Tests:** permeability number, clay content, grain fineness number (AFS number), moisture content.
 
-## 4. Gating system and risers
+## 🧭 4. Gating system and risers
 
 - **Gating system parts:** pouring basin, sprue, runner, gates (ingates), and riser. 
 - **Functions:** fill the cavity at a proper rate with minimum turbulence, avoid slag and air entrapment, and control the temperature gradient.
@@ -235,7 +237,7 @@ $$t_s = B\left(\frac{V}{A}\right)^2$$
 - **Types of risers:** top, side, open, blind. **Chills** (internal and external) promote directional solidification. **Padding** (taper) also encourages it.
 - **Shrinkage stages:** liquid shrinkage, solidification shrinkage, solid shrinkage; the first two are compensated by risers, the last by the pattern allowance.
 
-## 5. Casting processes
+## 🧭 5. Casting processes
 
 | Process | Features |
 |---|---|
@@ -254,7 +256,7 @@ $$t_s = B\left(\frac{V}{A}\right)^2$$
 - **Cupola** zones from the bottom: well, combustion (oxidising), reduction, melting, preheating, and stack.
 - **Fettling and cleaning:** removal of gates and risers, sand, and fins; shot blasting.
 
-## 6. Casting defects
+## 🧭 6. Casting defects
 
 | Defect | Cause |
 |---|---|
@@ -271,27 +273,27 @@ $$t_s = B\left(\frac{V}{A}\right)^2$$
 
 - **Inspection:** visual, dye penetrant, magnetic particle, radiography, ultrasonic.
 
-## 7. Worked numericals
+## 🧭 7. Worked numericals
 
 1. **Chvorinov.** A cube of side $0.1$ m: $\dfrac{V}{A} = \dfrac{a}{6} = 0.0167$ m. Sphere diameter $0.1$ m: $\dfrac{V}{A} = \dfrac{d}{6} = 0.0167$ m. Same solidification time; for a cylinder with $D = H$, $\dfrac{V}{A} = \dfrac{D}{6}$.
 2. **Riser time.** Casting $\dfrac{V}{A} = 0.5$ cm; the riser should have $t_{riser} = 1.25\,t_c$, so $\dfrac{V}{A}$ of the riser $= \sqrt{1.25}\times0.5 = 0.56$ cm.
 3. **Pouring.** Head $0.3$ m, the velocity at the gate: $\sqrt{2\times9.81\times0.3} = 2.43$ m/s.
 4. **Shrinkage allowance.** A casting of $500$ mm in cast iron at $1\%$: pattern length $= 505$ mm.
 
-## 8. Common mistakes
+## 🧭 8. Common mistakes
 
 - Making the riser solidify before the casting (it would not feed).
 - Confusing draft with shrinkage allowance.
 - Believing that die casting is for ferrous metals; it is for low-melting alloys.
 - Inverting Chvorinov's ratio: the solidification time grows with $\dfrac{V}{A}$ (not $\dfrac{A}{V}$), and it is squared.
 
-## 9. Interconnections
+## 🧭 9. Interconnections
 
 - **Material science:** solidification, grain structure, phase diagrams.
 - **Fluid mechanics:** Bernoulli's equation in gating design.
 - **Heat transfer:** transient conduction in the mould.
 
-## 10. PYQs
+## 🧭 10. PYQs
 
 | # | Question | Answer | Exam / Year | Verify |
 |---|---|---|---|---|
@@ -310,7 +312,7 @@ $$t_s = B\left(\frac{V}{A}\right)^2$$
 | 13 | Shell moulding sand binder | Thermosetting resin | SSC JE 2021 | [ ] |
 | 14 | Centrifugal casting is used for | Pipes and cylindrical parts | APPSC AEE 2016 | [ ] |
 
-## 11. Revision checklist
+## 🧭 11. Revision checklist
 
 - [ ] Pattern allowances and materials
 - [ ] Sand properties, cores, chaplets

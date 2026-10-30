@@ -1,14 +1,14 @@
-# 01. Crystal Structure, Phase Diagrams and Heat Treatment
+# 🧪 01. Crystal Structure, Phase Diagrams and Heat Treatment
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: VHY
 
 ---
 
-## Part A: Detailed Theory (read this first)
+## 📘 Part A: Detailed Theory (read this first)
 
 Material science explains why metals behave as they do by looking at how atoms are arranged and how that arrangement can be changed. The chain of ideas is: bonding decides the type of material; the arrangement of atoms in a crystal decides how it deforms; defects (especially dislocations) make real metals far weaker than ideal crystals and give us ways to strengthen them; phase diagrams tell us which structures are stable at which composition and temperature; and heat treatment uses temperature and cooling rate to steer a steel into a chosen structure. Every property in the next chapter (strength, hardness, toughness) is a result of the structures described here.
 
-### A1. Atomic bonding and its effect on properties
+### 🔹 A1. Atomic bonding and its effect on properties
 
 | Bond | How it forms | Typical properties | Example |
 |---|---|---|---|
@@ -19,7 +19,7 @@ Material science explains why metals behave as they do by looking at how atoms a
 
 Metals deform without fracture because the electron cloud lets atoms slide past each other without breaking directional bonds. Ceramics are brittle because ionic and covalent bonds are directional and break rather than slide.
 
-### A2. Crystal structures
+### 🔹 A2. Crystal structures
 
 **Terms.** A crystal has atoms arranged in a regular repeating three-dimensional pattern. The unit cell is the smallest repeating unit. There are 7 crystal systems and 14 Bravais lattices.
 
@@ -53,7 +53,7 @@ For FCC: $4\times\frac{4}{3}\pi r^3 / (2\sqrt{2}r)^3 = 0.74$. For BCC the body d
 
 **Amorphous, polycrystalline and single crystals.** Amorphous materials (glass) lack long-range order. Polycrystalline materials consist of many grains separated by grain boundaries. Single crystals are anisotropic (properties depend on direction).
 
-### A3. Crystal imperfections
+### 🔹 A3. Crystal imperfections
 
 | Class | Defects |
 |---|---|
@@ -66,7 +66,7 @@ For FCC: $4\times\frac{4}{3}\pi r^3 / (2\sqrt{2}r)^3 = 0.74$. For BCC the body d
 
 **Slip and Schmid's law.** The critical resolved shear stress is $\tau_{CRSS} = \sigma\cos\phi\cos\lambda$, where $\phi$ is the angle between the load axis and the plane normal and $\lambda$ the angle between the load axis and the slip direction.
 
-### A4. Strengthening mechanisms
+### 🔹 A4. Strengthening mechanisms
 
 All methods strengthen a metal by making dislocation motion harder.
 
@@ -81,7 +81,7 @@ All methods strengthen a metal by making dislocation motion harder.
 
 **Diffusion.** Atomic transport through the solid. Fick's first law: $J = -D\,dC/dx$. Second law: $\partial C/\partial t = D\,\partial^2 C/\partial x^2$. The diffusivity rises exponentially with temperature, $D = D_0e^{-Q/RT}$. Interstitial diffusion (small atoms such as carbon) is much faster than vacancy diffusion of substitutional atoms. It underlies carburising, nitriding, doping and sintering.
 
-### A5. Solidification and phase diagrams
+### 🔹 A5. Solidification and phase diagrams
 
 **Solidification.** Nucleation (homogeneous in the pure melt, heterogeneous on impurities or mould walls) followed by growth, usually dendritic. Fast cooling gives many nuclei and a fine grain; slow cooling gives a coarse grain. Inoculants are added to refine the grain.
 
@@ -111,7 +111,7 @@ The fraction of a phase is the length of the tie-line segment on the opposite si
 | Peritectoid | $\alpha + \beta \rightarrow \gamma$ |
 | Monotectic | $L_1 \rightarrow L_2 + \alpha$ |
 
-### A6. The iron-carbon (Fe-Fe$_3$C) diagram
+### 🔹 A6. The iron-carbon (Fe-Fe$_3$C) diagram
 
 | Feature | Value |
 |---|---|
@@ -152,7 +152,7 @@ The fraction of a phase is the length of the tie-line segment on the opposite si
 
 **Lever rule on steel.** For 0.4 percent C steel just below $727^\circ$C, the proeutectoid ferrite fraction is $(0.77 - 0.4)/(0.77 - 0.02) = 49.3$ percent and pearlite is 50.7 percent. At room temperature the cementite fraction is $(0.4 - 0.02)/(6.67 - 0.02) = 5.7$ percent.
 
-### A7. TTT and CCT diagrams
+### 🔹 A7. TTT and CCT diagrams
 
 **TTT (isothermal transformation) diagram.** It shows how fast austenite transforms at a constant temperature below $A_1$. The curve is C-shaped, with a nose at about $550^\circ$C, where the transformation is fastest.
 
@@ -168,7 +168,7 @@ The fraction of a phase is the length of the tie-line segment on the opposite si
 
 **Isothermal treatments.** Austempering: quench to just above $M_s$ and hold to form bainite, giving toughness and little distortion. Martempering: quench to just above $M_s$, hold to equalise temperature, then cool through the martensite range slowly, which reduces distortion and cracking.
 
-### A8. Heat treatment of steel
+### 🔹 A8. Heat treatment of steel
 
 **Annealing.** Heat, hold and cool slowly in the furnace to soften the steel, relieve stress, refine grain and improve machinability.
 
@@ -198,7 +198,7 @@ The fraction of a phase is the length of the tie-line segment on the opposite si
 
 **Age (precipitation) hardening.** For Al-Cu alloys such as duralumin: solution treatment, quenching and then ageing (natural or artificial). Fine precipitates (GP zones) form and block dislocations; over-ageing coarsens them and strength falls. **Cryogenic treatment** converts retained austenite to martensite.
 
-### A9. What examiners test from this chapter
+### 🔹 A9. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -218,15 +218,15 @@ The fraction of a phase is the length of the tie-line segment on the opposite si
 
 ---
 
-## Part B: Quick-reference notes, formulas, numericals and PYQs
+## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
-## 1. Atomic structure and bonding
+## 🧭 1. Atomic structure and bonding
 
 - **Primary bonds:** **ionic** (electron transfer, e.g. NaCl; brittle, poor conductor), **covalent** (shared electrons; diamond; very hard), **metallic** (electron cloud; ductile, conductive). **Secondary bonds:** van der Waals, hydrogen bond (weak).
 - Metals have high electrical and thermal conductivity, lustre and ductility owing to free electrons.
 
-## 2. Crystal structures
+## 🧭 2. Crystal structures
 
 - **Crystal:** an ordered, repeating three-dimensional arrangement of atoms. **Unit cell** is the smallest repeating unit. **Lattice parameters:** edge lengths and angles. There are **7 crystal systems** and **14 Bravais lattices**.
 
@@ -248,7 +248,7 @@ The fraction of a phase is the length of the tie-line segment on the opposite si
 - **Bragg's law (X-ray diffraction):** $n\lambda = 2\,d\,\sin\theta$.
 - **Amorphous** materials (glass) have no long-range order; **polycrystalline** materials have many grains separated by grain boundaries. **Single crystals** are anisotropic.
 
-## 3. Crystal imperfections
+## 🧭 3. Crystal imperfections
 
 | Class | Defects |
 |---|---|
@@ -262,7 +262,7 @@ The fraction of a phase is the length of the tie-line segment on the opposite si
 - **Annealing stages after cold work:** recovery (stress relief), recrystallisation (new strain-free grains at about $0.4\,T_m$), grain growth.
 - **Diffusion:** atomic transport. **Fick's first law:** $J = -D\dfrac{dC}{dx}$; **second law:** $\dfrac{\partial C}{\partial t} = D\dfrac{\partial^2 C}{\partial x^2}$. $D = D_0\,e^{-Q/RT}$ rises exponentially with temperature. Mechanisms: vacancy (substitutional) and interstitial (faster). Applications: carburising, nitriding, doping.
 
-## 4. Solidification and phase diagrams
+## 🧭 4. Solidification and phase diagrams
 
 - **Solidification:** nucleation (homogeneous, heterogeneous) and growth. A fast cooling rate gives a fine grain; slow cooling gives coarse grains. **Inoculants** (grain refiners) promote nucleation. **Dendritic** growth is typical.
 - **Phase:** a physically distinct, homogeneous portion of a system. **Component:** a chemically distinct species.
@@ -286,7 +286,7 @@ $$W_\alpha = \frac{C_L - C_0}{C_L - C_\alpha},\qquad W_L = \frac{C_0 - C_\alpha}
 | **Peritectoid** | $\alpha + \beta \rightarrow \gamma$ |
 | **Monotectic** | $L_1 \rightarrow L_2 + \alpha$ |
 
-## 5. Iron-carbon (Fe-Fe$_3$C) diagram
+## 🧭 5. Iron-carbon (Fe-Fe$_3$C) diagram
 
 | Feature | Value |
 |---|---|
@@ -326,7 +326,7 @@ $$W_\alpha = \frac{C_L - C_0}{C_L - C_\alpha},\qquad W_L = \frac{C_0 - C_\alpha}
 - **Critical temperatures:** $A_1$ (the eutectoid line, $727^\circ$C), $A_3$ (the upper boundary for ferrite to austenite transformation in hypoeutectoid steel), $A_{cm}$ (the boundary for cementite precipitation in hypereutectoid steel); $A_c$ on heating and $A_r$ on cooling (thermal hysteresis).
 - **Lever rule for steel:** at room temperature, a steel with $0.4\%$ C is made of ferrite ($0.02\%$ C) and cementite ($6.67\%$ C): the fraction of cementite $= \dfrac{0.4 - 0.02}{6.67 - 0.02} = 5.7\%$. The fraction of proeutectoid ferrite at just above $727^\circ$C for $0.4\%$ C: $\dfrac{0.77 - 0.4}{0.77 - 0.02} = 49.3\%$ and pearlite $= 50.7\%$.
 
-## 6. TTT and CCT diagrams
+## 🧭 6. TTT and CCT diagrams
 
 - **TTT (Time-Temperature-Transformation) or IT (isothermal transformation) diagram:** describes the progress of the austenite transformation at constant temperatures. The curve has a "C" or "S" shape with a **nose** at about $550^\circ$C.
   - Above the nose: **pearlite** (coarse at high temperatures, fine below).
@@ -337,7 +337,7 @@ $$W_\alpha = \frac{C_L - C_0}{C_L - C_\alpha},\qquad W_L = \frac{C_0 - C_\alpha}
 - **Martensite** hardness depends on the carbon content only; the strength comes from the lattice distortion by trapped carbon.
 - **Isothermal treatments:** **austempering** (quench to above $M_s$, hold to form bainite; gives toughness and low distortion), **martempering (marquenching)** (quench to just above $M_s$, hold to equalise the temperature, then cool; martensite forms with less distortion and fewer cracks).
 
-## 7. Heat treatment of steel
+## 🧭 7. Heat treatment of steel
 
 - **Annealing:** heating to a suitable temperature, holding, and then slow cooling (in the furnace) to soften, relieve stress, refine grain, and improve machinability. 
   - **Full annealing:** $30^\circ$ to $50^\circ$C above $A_3$ (hypoeutectoid) or $A_1$ (hypereutectoid), then furnace cool; yields coarse pearlite.
@@ -363,7 +363,7 @@ $$W_\alpha = \frac{C_L - C_0}{C_L - C_\alpha},\qquad W_L = \frac{C_0 - C_\alpha}
 - **Age (precipitation) hardening** (Al-Cu, duralumin): **solution treatment**, **quenching**, then **ageing** (natural or artificial) to precipitate fine particles (GP zones) which block dislocations; **over-ageing** decreases strength.
 - **Cryogenic treatment**: sub-zero cooling converts retained austenite to martensite.
 
-## 8. Worked numericals
+## 🧭 8. Worked numericals
 
 1. **FCC.** Copper, $r = 0.128$ nm: $a = 2\sqrt{2}\,r = 0.362$ nm. Density $= \dfrac{4\times63.5}{(0.362\times10^{-9})^3\times6.023\times10^{26}} = 8890$ kg/m$^3$.
 2. **APF of BCC.** $\dfrac{2\times\frac43\pi r^3}{(4r/\sqrt3)^3} = 0.68$.
@@ -372,7 +372,7 @@ $$W_\alpha = \frac{C_L - C_0}{C_L - C_\alpha},\qquad W_L = \frac{C_0 - C_\alpha}
 5. **Miller indices.** A plane intercepts the axes at $a$, $2a$, $\infty$: reciprocals $1, \tfrac12, 0$, cleared of fractions: $(210)$.
 6. **Carbon in cementite:** $\dfrac{12}{3\times55.85 + 12} = 6.67\%$.
 
-## 9. Common mistakes
+## 🧭 9. Common mistakes
 
 - Saying that tempering is done before quenching.
 - Heating hypereutectoid steel above $A_{cm}$ for hardening; the correct temperature is above $A_1$ (so that undissolved cementite remains, giving a harder structure).
@@ -380,13 +380,13 @@ $$W_\alpha = \frac{C_L - C_0}{C_L - C_\alpha},\qquad W_L = \frac{C_0 - C_\alpha}
 - Assuming that austenite is ferromagnetic; it is non-magnetic.
 - Quoting the eutectoid point loosely. The exact values are $0.77\%$ C at $727^\circ$C; many textbooks round the carbon to $0.8\%$, so check which value an option uses.
 
-## 10. Interconnections
+## 🧭 10. Interconnections
 
 - **Manufacturing:** casting, welding (HAZ) and forging rely on these phase transformations.
 - **Machine design:** the choice of material and heat treatment for gears, shafts, springs.
 - **Thermodynamics:** the phase rule and lever rule.
 
-## 11. PYQs
+## 🧭 11. PYQs
 
 | # | Question | Answer | Exam / Year | Verify |
 |---|---|---|---|---|
@@ -408,7 +408,7 @@ $$W_\alpha = \frac{C_L - C_0}{C_L - C_\alpha},\qquad W_L = \frac{C_0 - C_\alpha}
 | 16 | Ledeburite is | Eutectic mixture of austenite and cementite | SSC JE 2022 | [ ] |
 | 17 | Ferrite is | Interstitial solid solution of C in BCC iron | RRB JE 2013 | [ ] |
 
-## 12. Revision checklist
+## 🧭 12. Revision checklist
 
 - [ ] Crystal structures: APF, atoms per cell, coordination number
 - [ ] Defects, slip, strengthening mechanisms

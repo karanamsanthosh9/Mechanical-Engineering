@@ -1,20 +1,20 @@
-# 01. Basic Concepts, Zeroth Law and First Law
+# 🌡️ 01. Basic Concepts, Zeroth Law and First Law
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: VHY
 
 ---
 
-## Part A: Detailed Theory (read this first)
+## 📘 Part A: Detailed Theory (read this first)
 
 Thermodynamics is the science of energy and its conversion. It does not tell you how fast something happens (that is heat transfer and fluid mechanics); it tells you what is possible, in which direction, and how much. This part builds the subject from the ground up: what we are looking at (system), how we describe it (properties, state), how energy crosses its boundary (heat and work), and the first law that keeps the energy account.
 
-### A1. The thermodynamic viewpoint
+### 🔹 A1. The thermodynamic viewpoint
 
 - **Macroscopic view.** We describe a gas by pressure, temperature and volume, which we can measure, not by the motion of $10^{23}$ molecules. This is **classical thermodynamics**. It needs no model of matter, so its laws are extremely general.
 - **Microscopic view.** **Statistical thermodynamics** derives the same properties from molecular behaviour (for example, temperature is a measure of mean molecular kinetic energy). Used only to explain why, for example, $\gamma$ depends on the number of atoms in a molecule.
 - **Continuum assumption.** We treat matter as continuous, so a property such as density has a value at a point. This fails only at extremely low pressures (rarefied gas) where the mean free path becomes comparable to the size of the device.
 
-### A2. System, surroundings and control volume
+### 🔹 A2. System, surroundings and control volume
 
 - A **system** is a fixed quantity of matter (closed system or **control mass**), or a fixed region of space (open system or **control volume**), selected for study. The choice is ours, and a good choice makes the problem easy.
 - **Closed system:** nothing crosses the boundary except energy. A gas in a piston-cylinder with the valves shut is the classic example. The boundary may move (boundary work).
@@ -22,7 +22,7 @@ Thermodynamics is the science of energy and its conversion. It does not tell you
 - **Isolated system:** neither mass nor energy crosses. The universe is the ultimate isolated system, which is why the second law is stated for "system plus surroundings".
 - **Rule to remember:** use the closed-system equation $Q = \Delta U + W$ for a batch process (piston-cylinder, rigid tank), and the steady-flow equation for anything with a continuous inlet and outlet.
 
-### A3. Properties, state and the state postulate
+### 🔹 A3. Properties, state and the state postulate
 
 - A **property** is any measurable characteristic of the system that has a single value when the system is in a given state. Pressure, temperature, volume, internal energy, enthalpy and entropy are properties. Heat and work are not; they are **energy in transit** and exist only during a process.
 - Mathematical test: a property has an **exact differential**, so $\oint dX = 0$ over a cycle. Heat and work have inexact differentials, written $\delta Q$ and $\delta W$, and $\oint \delta Q \ne 0$ in general (it equals the net work).
@@ -30,7 +30,7 @@ Thermodynamics is the science of energy and its conversion. It does not tell you
 - **State postulate.** The number of independent intensive properties needed to fix the state of a simple compressible substance is two. Hence a point on a $P$-$v$ diagram fixes everything; for a two-phase mixture, $P$ and $T$ are not independent and you need a third quantity (quality $x$).
 - **State** is a snapshot; **process** is the path between two states; **cycle** returns to the starting state.
 
-### A4. Equilibrium, quasi-static and reversible processes
+### 🔹 A4. Equilibrium, quasi-static and reversible processes
 
 - **Equilibrium** means no tendency for spontaneous change. It has four parts: thermal (no temperature differences), mechanical (no unbalanced forces), chemical (no reactions or diffusion) and phase (no phase change tendency). Properties are defined only in equilibrium states.
 - A real process, such as rapid compression, passes through non-equilibrium states, so it cannot be drawn on a property diagram. We draw a dashed line to show that the end states are known but the path is not.
@@ -38,7 +38,7 @@ Thermodynamics is the science of energy and its conversion. It does not tell you
 - **Reversible process.** One that can be reversed so that both system and surroundings return exactly to their initial states with no trace. A reversible process is quasi-static **and** free from dissipation. Sources of **irreversibility**: friction, unrestrained (free) expansion, heat transfer across a finite temperature difference, mixing of different substances, electric resistance, inelastic deformation, chemical reactions.
 - **Why it matters.** The reversible process gives the **maximum work output** (or minimum work input) between given end states. All real devices are compared with their reversible limit to define efficiency.
 
-### A5. Temperature and the zeroth law
+### 🔹 A5. Temperature and the zeroth law
 
 - Two bodies in contact eventually reach the same temperature. The **zeroth law** (equilibrium with a third body implies equilibrium with each other) is what lets a thermometer work: the thermometer is the "third body".
 - To build a temperature scale, choose a **thermometric property** that changes with temperature and a fixed reference. The **ideal-gas (Kelvin) scale** uses a constant-volume gas thermometer extrapolated to zero pressure. The reference is the **triple point of water**, $273.16$ K.
@@ -54,14 +54,14 @@ Thermodynamics is the science of energy and its conversion. It does not tell you
 | Thermocouple | EMF (Seebeck effect) | Wide range, fast response |
 | Optical pyrometer | Radiation intensity | No contact, high temperatures |
 
-### A6. Pressure
+### 🔹 A6. Pressure
 
 - Pressure is the normal force per unit area, $P = F/A$, in pascal ($1\ \text{Pa} = 1\ \text{N/m}^2$). $1\ \text{bar} = 10^5$ Pa.
 - **Absolute pressure** is measured from perfect vacuum. A gauge reads relative to the atmosphere, so
   $P_{abs} = P_{atm} + P_{gauge}$, and in a vacuum, $P_{abs} = P_{atm} - P_{vac}$. **Only absolute pressure is used in gas laws and thermodynamic tables.**
 - A **manometer** balances pressure by a liquid column: $P = \rho g h$. A **Bourdon gauge** uses a flattened curved tube that straightens with pressure. A **barometer** measures atmospheric pressure.
 
-### A7. Work: what it really is
+### 🔹 A7. Work: what it really is
 
 - In mechanics, work is force times displacement. In thermodynamics, **work is any interaction between system and surroundings that is not caused by a temperature difference**, and which could in principle be used to raise a weight.
 - **Boundary work.** If a gas pushes a piston of area $A$ through $dx$ against pressure $P$, then $\delta W = P\,A\,dx = P\,dV$. For a finite quasi-static process, $W = \int_1^2 P\,dV$, which is the area under the curve on the $P$-$V$ diagram. Since the area depends on the path, **work is a path function**.
@@ -72,20 +72,20 @@ $$W = \int_1^2 C V^{-n}\,dV = \frac{P_1 V_1 - P_2 V_2}{n - 1} \qquad (n \ne 1)$$
 - **Free expansion.** Gas rushes into vacuum with no resistance. There is no force opposing, so $W = 0$. The process is irreversible and not quasi-static, so $\int P\,dV$ is **not** applicable.
 - **Sign convention.** Work done **by** the system is positive; heat **to** the system is positive. Some textbooks use the opposite for work; check which one is used when you read a question.
 
-### A8. Heat
+### 🔹 A8. Heat
 
 - **Heat** is energy transferred across a boundary because of a temperature difference. Once inside the system it is stored as internal energy, not as "heat". A body does not contain heat.
 - **Modes:** conduction, convection, radiation (see Heat Transfer).
 - **Adiabatic process:** no heat transfer ($Q = 0$) because the system is insulated or the process is too fast for heat to flow. **Isothermal** does not mean adiabatic; heat flows in to keep the temperature constant.
 - **Specific heat** $c = \dfrac{1}{m}\dfrac{\delta Q}{dT}$ depends on the process: $c_v$ at constant volume and $c_p$ at constant pressure. For solids and liquids $c_p \approx c_v$.
 
-### A9. Internal energy and enthalpy
+### 🔹 A9. Internal energy and enthalpy
 
 - **Internal energy $U$** is the sum of all microscopic energies: translational, rotational and vibrational motion of the molecules plus intermolecular potential energy. It is a property. We never measure its absolute value; only changes matter.
 - **Enthalpy** $H = U + PV$ is defined for convenience. It arises naturally when a fluid flows, because pushing a fluid element of volume $v$ into a control volume at pressure $P$ costs flow work $Pv$. Hence for flow processes, the energy carried by the fluid is $u + Pv = h$.
 - For a **constant-pressure** closed process, $Q = \Delta U + P\Delta V = \Delta H$. This is why heat of reaction and boiling are given as enthalpy changes.
 
-### A10. Ideal gas: the model and its limits
+### 🔹 A10. Ideal gas: the model and its limits
 
 - **Assumptions.** Molecules have negligible volume, and there are no intermolecular forces except at collision. This is true at low pressure and high temperature.
 - **Equation of state.** Combining Boyle ($PV$ constant at constant $T$), Charles ($V/T$ constant at constant $P$) and Gay-Lussac ($P/T$ constant at constant $V$) gives $Pv = RT$, or $PV = mRT$. With the universal gas constant, $PV = n R_u T$ where $n$ is the number of kmol. $R = R_u/M$.
@@ -95,7 +95,7 @@ $$W = \int_1^2 C V^{-n}\,dV = \frac{P_1 V_1 - P_2 V_2}{n - 1} \qquad (n \ne 1)$$
 - **Real gas behaviour.** Near the saturation line or at high pressure, deviation is large. The **compressibility factor** $Z = Pv/(RT)$ measures the deviation. The **van der Waals equation** adds $b$ for the finite molecular volume and $a/v^2$ for the intermolecular attraction. The **reduced properties** $P_R = P/P_c$ and $T_R = T/T_c$ allow a generalised compressibility chart for all gases.
 - **Mixtures.** Dalton: $P = \sum P_i$ where $P_i = y_i P$. Amagat: $V = \sum V_i$. Mixture gas constant $R_m = \sum m_i R_i / m$, and mixture molar mass $M_m = \sum y_i M_i$.
 
-### A11. First law of thermodynamics: derivation logic
+### 🔹 A11. First law of thermodynamics: derivation logic
 
 - **Joule's experiment.** Stirring water adiabatically with a paddle wheel and measuring the temperature rise showed that a definite amount of work always gives the same rise. This proves that **adiabatic work depends only on end states**, which means there is a property whose change equals the adiabatic work. That property is **internal energy**.
 - **Cycle statement.** In a cycle, $\oint \delta Q = \oint \delta W$. Net heat equals net work.
@@ -115,7 +115,8 @@ $$W = \int_1^2 C V^{-n}\,dV = \frac{P_1 V_1 - P_2 V_2}{n - 1} \qquad (n \ne 1)$$
 - **Derivation of the adiabatic law.** Start with $\delta Q = 0 = c_v\,dT + P\,dv$ and $P = RT/v$. Divide by $T$: $c_v\dfrac{dT}{T} + R\dfrac{dv}{v} = 0$. Integrate: $c_v \ln T + R \ln v = $ const., so $T v^{R/c_v} = T v^{\gamma - 1} = $ const. Combining with $Pv = RT$ gives $Pv^\gamma = $ const.
 - **Why an adiabatic curve is steeper than an isothermal curve on a $P$-$v$ diagram.** For an isothermal, $dP/dv = -P/v$. For an adiabatic, $dP/dv = -\gamma P/v$. Since $\gamma > 1$, the adiabatic is steeper. Therefore, an adiabatic expansion gives less work than an isothermal one between the same volumes, and an adiabatic compression needs more work.
 
-### A12. Steady-flow energy equation (SFEE): derivation logic
+### 🔹 A12. Steady-flow energy equation (SFEE): derivation logic
+![Diagram: Steady flow devices](../assets/05-thermodynamics/steady-flow-devices.png)
 
 - **Control volume, steady state.** Mass flow rate in equals out; properties at each point do not change with time; energy in the control volume is constant.
 - Energy entering with the fluid, per unit mass: $u_1 + \dfrac{V_1^2}{2} + g z_1$. To push the fluid in against the inlet pressure requires flow work $P_1 v_1$. Add to that $q$ (heat in) and subtract $w$ (shaft work out) to get the energy leaving:
@@ -125,13 +126,13 @@ $$q + \left(u_1 + P_1 v_1 + \frac{V_1^2}{2} + g z_1\right) = w + \left(u_2 + P_2
 - **Steady-flow work in a reversible process:** $w = -\int v\,dP$ (neglecting KE and PE changes). Compare with closed-system work $\int P\,dV$. For an adiabatic reversible gas process, steady-flow work is $\gamma$ times the closed-system work.
 - **Unsteady flow (charging and discharging).** Filling a tank is analysed with a control volume with changing mass. The usual result for a rigid insulated tank filled from a supply line at $h_i$ is $u_2 = h_i$ if the tank is initially empty, so the final temperature is higher than the line temperature by a factor of $\gamma$ for an ideal gas ($T_2 = \gamma T_i$).
 
-### A13. Throttling and the Joule-Thomson effect
+### 🔹 A13. Throttling and the Joule-Thomson effect
 
 - **Throttling** is the flow of a fluid through a restriction (valve, orifice, porous plug) with a pressure drop, no work and negligible heat. Applying the SFEE gives $h_1 = h_2$.
 - It is highly **irreversible**: the pressure drop is a loss of availability. For an ideal gas, $T$ does not change because $h = h(T)$. For a real gas, temperature may fall (liquefaction, refrigeration expansion valve), rise, or remain unchanged depending on whether the state is below or above the **inversion curve**.
 - **Throttling calorimeter** estimates the dryness fraction of wet steam by throttling it to a superheated state, where two properties ($P$ and $T$) fix $h$.
 
-### A14. What examiners test from this chapter
+### 🔹 A14. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -143,10 +144,10 @@ $$q + \left(u_1 + P_1 v_1 + \frac{V_1^2}{2} + g z_1\right) = w + \left(u_2 + P_2
 
 ---
 
-## Part B: Quick-reference notes, formulas, numericals and PYQs
+## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
-## 1. Fundamental concepts
+## 🧭 1. Fundamental concepts
 
 - **Thermodynamics** studies energy transformations and the relations among properties of matter. **Classical (macroscopic)** thermodynamics ignores molecular structure; **statistical (microscopic)** thermodynamics uses it.
 - **System:** the matter or region chosen for study. **Surroundings:** everything outside. **Boundary:** the real or imaginary surface between them.
@@ -165,7 +166,7 @@ $$q + \left(u_1 + P_1 v_1 + \frac{V_1^2}{2} + g z_1\right) = w + \left(u_2 + P_2
 - **State postulate:** the state of a simple compressible system is fixed by two independent intensive properties.
 - **Cycle:** a process series returning the system to its initial state; the net change of every property over a cycle is zero.
 
-## 2. Zeroth law and temperature
+## 🧭 2. Zeroth law and temperature
 
 - **Zeroth law:** if two bodies are each in thermal equilibrium with a third, they are in thermal equilibrium with each other. It is the basis of temperature measurement.
 - **Temperature scales:**
@@ -176,7 +177,7 @@ $$T(\text{K}) = t(^\circ\text{C}) + 273.15, \qquad t(^\circ\text{F}) = \tfrac{9}
 - **Thermometers:** constant-volume gas thermometer (pressure is the property), mercury-in-glass (length), resistance thermometer (resistance), thermocouple (EMF, Seebeck effect), pyrometer (radiation).
 - **Pressure:** $P_{abs} = P_{atm} + P_{gauge}$ and $P_{abs} = P_{atm} - P_{vac}$. $1\ \text{atm} = 101.325$ kPa $= 1.01325$ bar $= 760$ mm Hg.
 
-## 3. Work and heat
+## 🧭 3. Work and heat
 
 - **Work** is energy transferred across a boundary by a force acting through a distance (or any non-thermal driving force). **Heat** is energy transferred because of a temperature difference.
 - **Sign convention:** heat added to a system is $+$; work done by the system is $+$.
@@ -197,7 +198,7 @@ $$W = \int_1^2 P\,dV$$
 - **Other work modes:** shaft work $T\omega$, electrical work $VI$, spring work $\tfrac{1}{2}k(x_2^2 - x_1^2)$, stretching a film $\sigma\,dA$.
 - **Free expansion** (into vacuum) does no work and is irreversible.
 
-## 4. Ideal gas
+## 🧭 4. Ideal gas
 
 $$PV = mRT, \qquad R = \frac{R_u}{M}, \qquad R_u = 8.314\ \text{kJ/(kmol}\cdot\text{K)}$$
 
@@ -216,7 +217,7 @@ $$\left(P + \frac{a}{v^2}\right)(v - b) = R_u T$$
   The compressibility factor $Z = \dfrac{Pv}{RT}$ equals $1$ for an ideal gas. At the critical point: $Z_c = \dfrac{3}{8} = 0.375$ for van der Waals gas.
 - **Law of corresponding states:** all fluids have approximately the same $Z$ at the same reduced pressure and temperature.
 
-## 5. First law of thermodynamics
+## 🧭 5. First law of thermodynamics
 
 - **Closed system, cycle:**
 
@@ -229,7 +230,7 @@ $$Q = \Delta U + W$$
 - **Enthalpy:** $H = U + PV$. At constant pressure, $Q = \Delta H$. At constant volume, $Q = \Delta U$.
 - The first law defines **internal energy** as a property. It also shows that **perpetual motion machine of the first kind (PMM1)**, a machine that produces work without energy input, is impossible.
 
-### Ideal gas process relations
+### 🔹 Ideal gas process relations
 
 | Process | Relation | $\Delta U$ | Heat $Q$ |
 |---|---|---|---|
@@ -245,7 +246,7 @@ $$\frac{T_2}{T_1} = \left(\frac{P_2}{P_1}\right)^{\frac{\gamma-1}{\gamma}} = \le
 
 - Specific heat for a polytropic process: $C_n = C_v\,\dfrac{\gamma - n}{1 - n}$.
 
-## 6. Steady-flow energy equation (SFEE)
+## 🧭 6. Steady-flow energy equation (SFEE)
 
 For an open system in steady state (one inlet, one outlet):
 
@@ -266,7 +267,7 @@ $$\dot{Q} - \dot{W} = \dot{m}\left[(h_2 - h_1) + \frac{V_2^2 - V_1^2}{2} + g\,(z
 
 - **Joule-Thomson coefficient:** $\mu_{JT} = \left(\dfrac{\partial T}{\partial P}\right)_h$. Zero for an ideal gas. Positive means cooling on throttling; the inversion temperature separates heating and cooling.
 
-## 7. Worked numericals
+## 🧭 7. Worked numericals
 
 1. **Isothermal expansion.** $1$ kg of air at $300$ K expands from $1$ MPa to $0.5$ MPa:
 
@@ -278,17 +279,17 @@ $$T_2 = 300\times8^{0.4} = 689\ \text{K}$$
 
 3. **Nozzle.** $h_1 - h_2 = 100$ kJ/kg, negligible inlet velocity: $V_2 = \sqrt{2\times100\times10^3} = 447$ m/s.
 
-## 8. Common mistakes
+## 🧭 8. Common mistakes
 
 - Using $Q = \Delta U$ for constant-pressure heating (it is $\Delta H$).
 - Using the boundary-work formula for free expansion.
 - Applying $PV^\gamma = $ const. to an irreversible adiabatic process.
 
-## 9. Interconnections
+## 🧭 9. Interconnections
 
 - The first law feeds every cycle and device analysis. Enthalpy is central to steam tables, turbines, boilers and refrigeration.
 
-## 10. PYQs
+## 🧭 10. PYQs
 
 | # | Question | Answer | Exam / Year | Verify |
 |---|---|---|---|---|
@@ -303,7 +304,7 @@ $$T_2 = 300\times8^{0.4} = 689\ \text{K}$$
 | 9 | Polytropic work | $\dfrac{P_1V_1 - P_2V_2}{n-1}$ | SSC JE 2020 | [ ] |
 | 10 | Joule-Thomson coefficient of an ideal gas | Zero | APPSC AEE 2012 | [ ] |
 
-## 11. Revision checklist
+## 🧭 11. Revision checklist
 
 - [ ] System types and property classification
 - [ ] Work formulas for each process

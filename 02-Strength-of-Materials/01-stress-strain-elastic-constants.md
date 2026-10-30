@@ -1,14 +1,14 @@
-# 01. Stress, Strain and Elastic Constants
+# 📐 01. Stress, Strain and Elastic Constants
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: VHY
 
 ---
 
-## Part A: Detailed Theory (read this first)
+## 📘 Part A: Detailed Theory (read this first)
 
 This part builds the ideas of stress, strain and elastic behaviour from zero. Part B (from section 1 onwards) is the compact reference with formulas, numericals and PYQs.
 
-### A1. Why Strength of Materials exists
+### 🔹 A1. Why Strength of Materials exists
 
 Statics assumes bodies are rigid. Real bodies deform under load, and may break. Strength of materials answers three design questions for a member (bar, beam, shaft, column):
 
@@ -18,7 +18,7 @@ Statics assumes bodies are rigid. Real bodies deform under load, and may break. 
 
 A good design satisfies all three at minimum weight and cost.
 
-### A2. Load, stress and strain from first principles
+### 🔹 A2. Load, stress and strain from first principles
 
 **Types of loads.** Axial (tensile or compressive, along the axis), shear (transverse, tends to slide layers), bending (tends to curve the member), torsion (twisting), and combined loads. By nature: **static** (slow, steady), **sudden** (applied at full value at once), **impact** (a moving mass strikes), **fatigue** (repeated or reversing).
 
@@ -38,7 +38,7 @@ $$e = \frac{\delta L}{L} \;\;(\text{no unit, or mm/mm})$$
 - **Volumetric strain** $e_v = \delta V/V$. For a bar in simple tension it is $e_v = e(1 - 2\nu)$, where $e$ is the axial strain.
 - **Lateral strain** accompanies axial strain: pulling a bar makes it thinner. **Poisson's ratio** $\nu = \dfrac{\text{lateral strain}}{\text{axial strain}}$ (magnitudes). It is between $0$ and $0.5$ for ordinary materials.
 
-### A3. Hooke's law and what "elastic" means
+### 🔹 A3. Hooke's law and what "elastic" means
 
 If a load is removed and the body returns completely to its original shape, the behaviour is **elastic**. If a permanent set remains, the body has gone **plastic**. For most engineering metals, in the elastic range stress is proportional to strain:
 
@@ -48,7 +48,8 @@ $E$ (Young's modulus) measures stiffness along the axis; $G$ (modulus of rigidit
 
 Hooke's law assumes: the material is **homogeneous** (same everywhere), **isotropic** (same in all directions), continuous, and the loads are within the proportional limit. **St. Venant's principle:** stress distribution a short distance from the point of load application is independent of how the load is applied, so we can use $P/A$ away from the ends.
 
-### A4. Reading the stress-strain curve of mild steel
+### 🔹 A4. Reading the stress-strain curve of mild steel
+![Diagram: Stress strain ductile vs brittle](../assets/02-strength-of-materials/stress-strain-ductile-vs-brittle.png)
 
 Pull a standard specimen in a testing machine. Plot stress (load over original area) against strain.
 
@@ -73,7 +74,7 @@ Pull a standard specimen in a testing machine. Plot stress (load over original a
 
 **Working stress and factor of safety.** Actual loads, material properties and analysis are uncertain, so we design for a stress below the failure stress: $\sigma_{working} = \sigma_{yield\ (ductile)} / FOS$ or $\sigma_{ultimate\ (brittle)} / FOS$.
 
-### A5. Axial deformation, step by step
+### 🔹 A5. Axial deformation, step by step
 
 For a bar of constant section under axial load $P$: stress $P/A$, strain $\sigma/E$, elongation
 
@@ -93,7 +94,7 @@ The quantity $AE$ is the **axial rigidity**. Interpretation: $\dfrac{AE}{L}$ is 
 
 **Statically indeterminate problems.** Statics alone cannot find the forces, so write a second equation from geometry: total elongation equals a given value (for example, zero between two rigid walls). Method: (1) equilibrium equation, (2) compatibility equation, (3) force-deformation relation $\delta = PL/AE$, (4) solve.
 
-### A6. Thermal stress
+### 🔹 A6. Thermal stress
 
 If a bar is free to expand, a temperature rise $\Delta T$ causes strain $\alpha\Delta T$ and **no stress**. If the expansion is prevented, a stress appears even without any load:
 
@@ -101,7 +102,7 @@ $$\sigma = E\alpha\Delta T \;\;(\text{compressive on heating})$$
 
 The stress is independent of length and cross-section. If the supports yield by $\delta$, the thermal strain left to be resisted is $\alpha\Delta T - \delta/L$. For a composite bar, the metal with the larger $\alpha$ is in compression when heated (it wants to expand more than its partner allows).
 
-### A7. Sudden and impact loads
+### 🔹 A7. Sudden and impact loads
 
 - **Gradual load $P$:** work done $= \tfrac{1}{2}P\delta$, stress $= P/A$.
 - **Sudden load** (applied full at once, not dropped): work $= P\delta$, so energy balance gives stress $= 2P/A$. A suddenly applied load produces **double** the stress.
@@ -111,7 +112,7 @@ $$W(h + \delta) = \tfrac{1}{2}\sigma A \delta \;\Rightarrow\; \sigma = \frac{W}{
 
 For $h = 0$ it reduces to $2W/A$ (the sudden-load result). For large $h$, $\sigma \approx \sqrt{2WhE/(AL)}$.
 
-### A8. Elastic constants and why four are related
+### 🔹 A8. Elastic constants and why four are related
 
 Isotropic materials have four elastic constants: $E$, $G$, $K$ (bulk modulus) and $\nu$. Only **two are independent**; the others follow.
 
@@ -125,7 +126,8 @@ $$E = 2G(1 + \nu) = 3K(1 - 2\nu), \qquad E = \frac{9KG}{3K + G}$$
 
 **Derivation of $E = 2G(1+\nu)$ (logic).** In pure shear, the state of stress is equivalent to tension $\tau$ on one diagonal and compression $\tau$ on the perpendicular. The strain along the tension diagonal is $\dfrac{\tau}{E}(1 + \nu)$, and this equals half the shear strain $\gamma/2 = \tau/(2G)$. So $\dfrac{\tau(1+\nu)}{E} = \dfrac{\tau}{2G}$, giving $E = 2G(1+\nu)$.
 
-### A9. Complex stress: from a point of view
+### 🔹 A9. Complex stress: from a point of view
+![Diagram: Mohr circle biaxial](../assets/02-strength-of-materials/mohr-circle-biaxial.png)
 
 At a point in a loaded body the stress on a plane depends on the plane's orientation. A **plane** inclined at angle $\theta$ to a reference cross-section carries both normal and shear stress.
 
@@ -138,7 +140,7 @@ $$\sigma_{1,2} = \frac{\sigma_x + \sigma_y}{2} \pm \sqrt{\left(\frac{\sigma_x - 
 - **Mohr's circle** is a graph of these equations. Centre at $\left(\dfrac{\sigma_x + \sigma_y}{2}, 0\right)$, radius equal to $\tau_{max}$. Points on the circle represent stresses on planes; angles on the circle are **twice** the physical angles. Principal stresses are where the circle cuts the $\sigma$ axis.
 - **Why double angle?** The stress expressions contain $\cos 2\theta$ and $\sin 2\theta$.
 
-### A10. Exam relevance map
+### 🔹 A10. Exam relevance map
 
 | Idea | Typical question style |
 |---|---|
@@ -151,10 +153,10 @@ $$\sigma_{1,2} = \frac{\sigma_x + \sigma_y}{2} \pm \sqrt{\left(\frac{\sigma_x - 
 
 ---
 
-## Part B: Quick-reference notes, formulas, numericals and PYQs
+## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
-## 1. Foundations
+## 🧭 1. Foundations
 
 - **Stress** is the internal resisting force per unit area. Normal stress $\sigma = \dfrac{P}{A}$; shear stress $\tau = \dfrac{V}{A}$. Unit: Pa $= $ N/m$^2$ (1 MPa $=$ 1 N/mm$^2$).
 - **Strain** is deformation per unit original dimension (dimensionless). Linear strain $e = \dfrac{\delta L}{L}$; shear strain is the angular distortion (radians); volumetric strain $e_v = \dfrac{\delta V}{V}$.
@@ -165,7 +167,7 @@ $$\sigma = E\,e$$
 - **Assumptions:** homogeneous, isotropic, continuous material; linear elastic; small deformations; St. Venant's principle (local effects of load application vanish far from the ends).
 - **True stress** $= \dfrac{P}{A_{inst}}$; **true strain** $= \ln\dfrac{L}{L_0} = \ln(1 + e_{eng})$. Engineering stress uses the original area.
 
-## 2. Stress-strain curve (mild steel)
+## 🧭 2. Stress-strain curve (mild steel)
 
 Points in order: proportional limit, elastic limit, upper yield point, lower yield point, strain hardening, ultimate tensile strength (UTS), necking, fracture.
 
@@ -182,7 +184,7 @@ Points in order: proportional limit, elastic limit, upper yield point, lower yie
 - Typical values: $E_{steel} \approx 200$ GPa; $E_{Al} \approx 70$ GPa; $E_{Cu} \approx 110$ to $120$ GPa; $E_{CI} \approx 100$ GPa. Poisson's ratio: steel $\approx 0.3$, cork $\approx 0$, rubber $\approx 0.5$.
 - **Factor of safety** $= \dfrac{\text{ultimate (or yield) stress}}{\text{working stress}}$. **Margin of safety** $= \text{FOS} - 1$.
 
-## 3. Axial loading
+## 🧭 3. Axial loading
 
 - Elongation:
 
@@ -201,7 +203,7 @@ $$U = \frac{\sigma^2}{2E}V = \frac{P^2 L}{2AE}$$
 
 $$\sigma = \sigma_{st}\left[1 + \sqrt{1 + \frac{2h}{\delta_{st}}}\right]$$
 
-## 4. Elastic constants
+## 🧭 4. Elastic constants
 
 | Constant | Definition |
 |---|---|
@@ -210,7 +212,7 @@ $$\sigma = \sigma_{st}\left[1 + \sqrt{1 + \frac{2h}{\delta_{st}}}\right]$$
 | $K$ (bulk modulus) | $\dfrac{p}{\delta V / V}$ |
 | $\nu$ (Poisson's ratio) | $\dfrac{\text{lateral strain}}{\text{longitudinal strain}}$ (magnitude) |
 
-### Relations (very high yield)
+### 🔹 Relations (very high yield)
 
 $$E = 2G(1+\nu), \qquad E = 3K(1-2\nu)$$
 
@@ -221,7 +223,7 @@ $$E = \frac{9KG}{3K+G}, \qquad \nu = \frac{3K-2G}{2(3K+G)}$$
 - Biaxial stress: $e_x = \dfrac{\sigma_x - \nu\sigma_y}{E}$.
 - Cylinder: $e_v = 2e_c + e_l$; sphere: $e_v = 3e$.
 
-## 5. Thermal stress
+## 🧭 5. Thermal stress
 
 - Free expansion: $\delta L = \alpha L\,\Delta T$.
 - Fully restrained bar:
@@ -232,7 +234,7 @@ $$\sigma = E\alpha\,\Delta T \quad \text{(compressive on heating)}$$
 - **Composite bars, thermal:** net force zero ($P_1 + P_2 = 0$) plus strain compatibility.
 - Typical $\alpha$: steel $12\times10^{-6}$ /K; aluminium $23\times10^{-6}$ /K; copper $17\times10^{-6}$ /K.
 
-## 6. Principal stresses and Mohr's circle
+## 🧭 6. Principal stresses and Mohr's circle
 
 For a plane stress state $(\sigma_x, \sigma_y, \tau_{xy})$ on a plane at angle $\theta$:
 
@@ -251,7 +253,7 @@ $$\tau_{max} = \sqrt{\left(\frac{\sigma_x-\sigma_y}{2}\right)^2 + \tau_{xy}^2} =
 - Under a direct stress $\sigma$ on one plane only, $\tau_{max} = \dfrac{\sigma}{2}$ at $45^\circ$.
 - A $45^\circ$ strain-gauge rosette $(\varepsilon_a, \varepsilon_b, \varepsilon_c)$ gives principal strains through Mohr's circle for strain.
 
-## 7. Worked numericals
+## 🧭 7. Worked numericals
 
 1. **Steel rod.** $P = 50$ kN, $A = 400$ mm$^2$, $L = 2$ m, $E = 200$ GPa:
 
@@ -264,20 +266,20 @@ $$\sigma = 200000 \times 12\times10^{-6} \times 50 = 120\ \text{MPa}$$
 3. **Elastic constants.** $E = 200$ GPa, $\nu = 0.3$: $G = \dfrac{200}{2.6} = 76.9$ GPa and $K = \dfrac{200}{3(0.4)} = 166.7$ GPa.
 4. **Principal stresses.** $\sigma_x = 80$, $\sigma_y = 20$, $\tau_{xy} = 40$ MPa: centre $= 50$, radius $= \sqrt{30^2 + 40^2} = 50$. So $\sigma_1 = 100$ MPa, $\sigma_2 = 0$, $\tau_{max} = 50$ MPa.
 
-## 8. Common mistakes
+## 🧭 8. Common mistakes
 
 - Using engineering and true stress interchangeably in the plastic range.
 - Forgetting that sudden loading gives twice the stress, not twice the load.
 - Writing $E = 3K(1-\nu)$ (wrong); the correct form is $E = 3K(1-2\nu)$.
 - Writing the Mohr angle as $\theta$ instead of $2\theta$.
 
-## 9. Interconnections
+## 🧭 9. Interconnections
 
 - Elastic constants link to torsion ($G$), bending ($E$) and pressure vessels ($\nu$).
 - Strain energy leads to Castigliano's theorem (deflections) and the distortion energy failure theory.
 - Thermal stress applies to boiler tubes, rails and composite bars.
 
-## 10. PYQs
+## 🧭 10. PYQs
 
 | # | Question | Answer | Exam / Year | Verify |
 |---|---|---|---|---|
@@ -294,7 +296,7 @@ $$\sigma = 200000 \times 12\times10^{-6} \times 50 = 120\ \text{MPa}$$
 | 11 | Bulk modulus in terms of $E$ and $\nu$ | $\dfrac{E}{3(1-2\nu)}$ | SSC JE 2018 | [ ] |
 | 12 | Mohr's circle for a hydrostatic state is | A point | APPSC AEE 2012 | [ ] |
 
-## 11. Revision checklist
+## 🧭 11. Revision checklist
 
 - [ ] Stress-strain curve with all points
 - [ ] $E$, $G$, $K$, $\nu$ relations (all four)

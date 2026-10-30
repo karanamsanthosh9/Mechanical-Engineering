@@ -1,21 +1,21 @@
-# 01. Fluid Properties, Fluid Statics and Kinematics
+# 💧 01. Fluid Properties, Fluid Statics and Kinematics
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: VHY
 
 ---
 
-## Part A: Detailed Theory (read this first)
+## 📘 Part A: Detailed Theory (read this first)
 
 Fluid mechanics describes how liquids and gases behave at rest (statics), in motion without regard to forces (kinematics), and under forces (dynamics, next chapter). This first chapter builds the vocabulary and the two most useful tools: the hydrostatic pressure law and the continuity equation.
 
-### A1. What a fluid is
+### 🔹 A1. What a fluid is
 
 - A **solid** resists a shear force by deforming a fixed amount; a **fluid** deforms continuously for as long as any shear force acts, however small. This one property is the definition. Consequently a fluid at rest can sustain **no shear stress**, only normal pressure.
 - **Liquids** have a definite volume, are almost incompressible and form a free surface. **Gases** expand to fill any container and are highly compressible. Both are treated as fluids; vapours are gases near their condensation point.
 - **Continuum hypothesis.** A fluid is made of molecules, but we treat it as continuous so that density, velocity and pressure are smooth functions of position. This holds when the mean free path is far smaller than the smallest dimension of the flow (Knudsen number $\ll 1$). It fails for very rarefied gases at high altitude.
 - **Ideal fluid** is an idealisation: no viscosity and incompressible. **Real fluids** have viscosity, which gives shear stresses, boundary layers and energy loss.
 
-### A2. Fluid properties: meaning and behaviour
+### 🔹 A2. Fluid properties: meaning and behaviour
 
 - **Density, specific weight, specific gravity.** $\rho$ is mass per unit volume; $w = \rho g$ is weight per unit volume; specific gravity is the ratio to the density of water (a pure number). Water: $1000$ kg/m$^3$; mercury: $13{,}600$; air: $1.2$. Density of a liquid changes only slightly with temperature and pressure; that of a gas changes a lot (ideal gas $\rho = p/RT$).
 - **Viscosity: the origin.** Consider a fluid between a fixed plate and a plate moving at $U$. The fluid sticks to each surface (**no-slip condition**), so a velocity gradient $du/dy$ develops. Fast layers drag slow layers, producing a shear stress. Newton's law of viscosity states that the stress is proportional to the velocity gradient:
@@ -28,14 +28,16 @@ $$\tau = \mu\frac{du}{dy}$$
 - **Compressibility.** The bulk modulus $K = -V\,dp/dV$ measures resistance to volume change. It is large for liquids ($2.2$ GPa for water) and small for gases (for isothermal gas $K = p$, for isentropic $K = \gamma p$). Wave speed $c = \sqrt{K/\rho}$; in an ideal gas, $c = \sqrt{\gamma RT}$. Flow may be treated as incompressible when the Mach number is below about $0.3$.
 - **Vapour pressure and cavitation.** A liquid boils when its pressure falls to its vapour pressure (which rises with temperature). In a flowing liquid, if the local pressure drops (at a high-velocity throat, pump inlet, propeller tip) to the vapour pressure, bubbles form and are carried into higher-pressure regions, where they collapse violently, causing noise, vibration and pitting of the surface (**cavitation**).
 
-### A3. Pressure and fluid statics
+### 🔹 A3. Pressure and fluid statics
+![Diagram: Manometers](../assets/10-fluid-mechanics/manometers.png)
 
 - **Pascal's law.** In a fluid at rest, pressure at a point is the same in every direction. (Proof: take a small wedge element; with no shear stress, force balance in each direction shows $p_x = p_y = p_n$.) Also, a pressure applied to a confined fluid is transmitted undiminished. This is the working principle of the hydraulic press, jack and brake: a small force on a small piston gives a large force on a large piston, in the ratio of areas.
 - **Hydrostatic equation.** Consider a vertical column of fluid; the weight of the column is balanced by the pressure difference between top and bottom, so $dp/dz = -\rho g$. For constant density $p = p_0 + \rho g h$. **Pressure increases linearly with depth, and depends only on depth, density and $g$, not on the shape of the container** (hydrostatic paradox). Surfaces of equal pressure (isobars) are horizontal.
 - **Pressure measures.** Absolute pressure is measured from zero (vacuum). Gauge pressure is relative to the atmosphere. Atmospheric pressure is about $101.3$ kPa, equal to $10.33$ m of water or $760$ mm of mercury.
 - **Manometers.** A manometer applies the hydrostatic equation to a liquid column: moving down in a fluid increases pressure by $\rho g h$; moving up decreases it. Procedure: start at a known pressure, add terms going down, subtract going up, and equate at the end. A high-density liquid (mercury) is used for large pressures; a light liquid or an inclined tube is used for small ones. A **differential manometer** gives the pressure difference between two points. Mechanical gauges (Bourdon) are used for higher pressures.
 
-### A4. Hydrostatic force on a submerged plane surface
+### 🔹 A4. Hydrostatic force on a submerged plane surface
+![Diagram: Hydrostatic force centre of pressure](../assets/10-fluid-mechanics/hydrostatic-force-centre-of-pressure.png)
 
 - Pressure acts normally on a submerged surface and grows with depth, so it is not uniform. The total force is the integral of pressure over the area. For a plane surface, integration shows that
 $$F = \rho g\bar h A$$
@@ -46,7 +48,8 @@ $$h_{cp} = \bar h + \frac{I_G\sin^2\theta}{A\bar h}$$
 - **Standard results:** a vertical rectangular gate with its top edge at the free surface has the centre of pressure at two-thirds of its depth from the surface. A vertical rectangle of width $b$ and depth $d$: $F = \tfrac{1}{2}\rho g b d^2$.
 - **Curved surfaces.** Resolve into horizontal and vertical components. The horizontal component $F_H$ equals the force on the vertical projection of the surface (and acts through its centre of pressure). The vertical component $F_V$ equals the weight of the liquid vertically above the surface up to the free surface (real, or imaginary if the liquid is below the surface), acting through the centroid of that volume. The resultant is $\sqrt{F_H^2 + F_V^2}$, inclined at $\tan^{-1}(F_V/F_H)$. This applies to dams, tainter gates and tanks.
 
-### A5. Buoyancy and stability
+### 🔹 A5. Buoyancy and stability
+![Diagram: Buoyancy and metacentre](../assets/10-fluid-mechanics/buoyancy-and-metacentre.png)
 
 - **Archimedes' principle.** A body immersed in a fluid experiences an upward force equal to the weight of the fluid displaced, acting at the **centre of buoyancy $B$**, the centroid of the displaced volume. Origin: the pressure on the underside of the body exceeds that on the top, because the pressure increases with depth.
 - **Floating.** A body floats if its average density is less than the fluid's. A fraction $\rho_{body}/\rho_{fluid}$ of its volume is submerged. A ship floats because its hollow shape displaces a large volume.
@@ -56,13 +59,13 @@ $$BM = \frac{I}{V_{sub}},\qquad GM = BM - BG$$
   The **metacentric height $GM$** is the measure of stability. A large $GM$ gives a stiff ship (short roll period, uncomfortable); a small positive $GM$ gives a tender ship (long period). $I$ is the second moment of the waterline area about the axis of tilt (the smallest value governs, usually about the longitudinal axis for rolling). Roll period $T = 2\pi\sqrt{k^2/(gGM)}$.
 - **Experimental determination:** the metacentric height is found by shifting a known weight across the deck and measuring the angle of heel, $GM = \dfrac{w x}{W\tan\theta}$.
 
-### A6. Fluids in relative equilibrium
+### 🔹 A6. Fluids in relative equilibrium
 
 - When a container accelerates or rotates uniformly, the fluid moves as a rigid body. There is no relative motion and no shear, so the hydrostatic approach applies with an effective gravity (gravity plus inertial acceleration).
 - **Linear acceleration.** The free surface tilts to be perpendicular to the effective gravity: $\tan\theta = \dfrac{a_x}{g + a_z}$. Pressure still increases in the direction of effective gravity.
 - **Rotation about a vertical axis** at angular speed $\omega$: the free surface is a paraboloid, $z = \omega^2r^2/(2g)$ above the lowest point. The rise at the wall equals $\omega^2R^2/(2g)$, and the volume of a paraboloid is half that of the circumscribing cylinder. The pressure at a radius $r$ and depth $z$ below the surface still follows $p = \rho g z$ measured from the paraboloid surface. Applications: centrifugal casting, centrifuges.
 
-### A7. Kinematics: describing the motion
+### 🔹 A7. Kinematics: describing the motion
 
 - **Two descriptions.** The *Lagrangian* approach follows individual particles (as in particle mechanics). The *Eulerian* approach watches fixed points in space and records velocity there as a function of position and time; it is the standard in fluid mechanics.
 - **Classification of flows:**
@@ -82,7 +85,7 @@ $$BM = \frac{I}{V_{sub}},\qquad GM = BM - BG$$
   - Lines of constant $\phi$ (equipotentials) and of constant $\psi$ (streamlines) intersect at right angles, forming a **flow net**.
 - **Elementary flows:** uniform stream, source and sink (radial flow), free vortex (circulating, irrotational, $V_\theta \propto 1/r$), forced vortex (rigid-body rotation, rotational, $V_\theta = \omega r$), and the doublet. Superposing them gives flow around bodies (uniform stream plus doublet gives flow past a cylinder).
 
-### A8. What examiners test from this chapter
+### 🔹 A8. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -95,10 +98,10 @@ $$BM = \frac{I}{V_{sub}},\qquad GM = BM - BG$$
 
 ---
 
-## Part B: Quick-reference notes, formulas, numericals and PYQs
+## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
-## 1. Fluid and its properties
+## 🧭 1. Fluid and its properties
 
 - A **fluid** continuously deforms under a shear stress, however small. Liquids are nearly incompressible and have a free surface; gases are compressible and fill their container.
 - **Continuum hypothesis:** fluid is treated as continuous matter, valid when the mean free path is much smaller than the characteristic length (Knudsen number $\ll 1$).
@@ -117,7 +120,7 @@ $$BM = \frac{I}{V_{sub}},\qquad GM = BM - BG$$
 
 - Units: $1$ poise $= 0.1$ Pa s; $1$ stokes $= 10^{-4}$ m$^2$/s.
 
-### Newton's law of viscosity
+### 🔹 Newton's law of viscosity
 
 $$\tau = \mu\,\frac{du}{dy}$$
 
@@ -125,7 +128,7 @@ $$\tau = \mu\,\frac{du}{dy}$$
 - **Effect of temperature:** the viscosity of **liquids decreases** with temperature (cohesion falls); that of **gases increases** (molecular momentum exchange rises).
 - **Torque on a rotating shaft in a journal bearing (small clearance $t$):** $T = \tau\,A\,\dfrac{D}{2}$ with $\tau = \mu\dfrac{\pi D N}{60\,t}$.
 
-### Surface tension, capillarity, compressibility
+### 🔹 Surface tension, capillarity, compressibility
 
 - **Pressure inside a droplet:** $\Delta p = \dfrac{4\sigma}{d}$; **soap bubble** (two surfaces): $\Delta p = \dfrac{8\sigma}{d}$; **liquid jet:** $\Delta p = \dfrac{2\sigma}{d}$.
 - **Capillary rise** in a tube of diameter $d$: 
@@ -136,7 +139,7 @@ $$h = \frac{4\,\sigma\cos\theta}{\rho\,g\,d}$$
 - **Compressibility** $\beta = \dfrac{1}{K}$. Speed of sound $c = \sqrt{\dfrac{K}{\rho}}$; for an ideal gas, $c = \sqrt{\gamma R T}$.
 - **Cavitation:** when local pressure falls to the vapour pressure, vapour bubbles form and later collapse, causing noise, vibration and pitting.
 
-## 2. Fluid statics
+## 🧭 2. Fluid statics
 
 - **Pascal's law:** pressure at a point in a static fluid is the same in all directions. This is the basis of the hydraulic press and jack.
 - **Hydrostatic law:** pressure varies only with depth:
@@ -147,7 +150,7 @@ $$\frac{dp}{dz} = -\rho g,\qquad p = p_0 + \rho g h$$
 - **Manometers:** piezometer (simple, for liquids and moderate pressures), U-tube, differential (for pressure difference), inverted U-tube, micro-manometer, inclined tube (higher sensitivity). **Mechanical gauges:** Bourdon gauge, diaphragm gauge, dead-weight tester.
 - **Differential U-tube manometer:** $p_A - p_B = g\,h\,(\rho_m - \rho_f)$ for the same fluid on both sides; take care with the elevations of the arms.
 
-### Hydrostatic force on submerged surfaces
+### 🔹 Hydrostatic force on submerged surfaces
 
 For a plane surface of area $A$ with centroid at a vertical depth $\bar{h}$:
 
@@ -168,7 +171,7 @@ where $I_G$ is the second moment of area about the horizontal axis through the c
 - For a vertical rectangular gate, with the top edge at the free surface and depth $d$, $F = \dfrac12\rho g b d^2$ acting at $\dfrac{2}{3}d$ from the surface.
 - **Curved surface:** the horizontal component equals the force on the vertical projection; the vertical component equals the weight of the liquid above the surface (real or imaginary). The resultant is $\sqrt{F_H^2 + F_V^2}$.
 
-### Buoyancy and stability
+### 🔹 Buoyancy and stability
 
 - **Archimedes' principle:** the buoyant force equals the weight of the displaced fluid, acting at the **centre of buoyancy $B$** (centroid of displaced volume). 
 - A body floats if its weight equals the buoyant force; it floats with $\dfrac{V_{sub}}{V} = \dfrac{\rho_{body}}{\rho_{fluid}}$.
@@ -182,12 +185,12 @@ where $I$ is the second moment of the waterline area about the longitudinal axis
   - A submerged body is stable if $G$ lies **below** $B$; neutral if they coincide.
 - **Time period of rolling** of a ship: $T = 2\pi\sqrt{\dfrac{k^2}{g\,GM}}$.
 
-### Fluids in relative equilibrium
+### 🔹 Fluids in relative equilibrium
 
 - **Linear acceleration:** the free surface is inclined at $\tan\theta = \dfrac{a_x}{g + a_z}$.
 - **Rotation about a vertical axis at $\omega$:** the free surface is a paraboloid, with height $z = \dfrac{\omega^2 r^2}{2g}$ above the vertex. Pressure varies as $p = p_0 + \rho g\left(\dfrac{\omega^2r^2}{2g} - z\right)$.
 
-## 3. Fluid kinematics
+## 🧭 3. Fluid kinematics
 
 - **Lagrangian** description follows a particle; **Eulerian** description observes a fixed point in space.
 - **Types of flow:**
@@ -215,7 +218,7 @@ In differential form for incompressible 3D flow: $\dfrac{\partial u}{\partial x}
 - **Circulation** $\Gamma = \oint \vec{V}\cdot d\vec{s}$.
 - **Simple flows:** uniform flow, source/sink, free vortex ($V_\theta \propto \dfrac1r$, irrotational), forced vortex ($V_\theta = \omega r$, rotational), doublet.
 
-## 4. Worked numericals
+## 🧭 4. Worked numericals
 
 1. **Hydrostatic pressure.** Depth $10$ m in water: $p = 1000\times 9.81\times 10 = 98.1$ kPa gauge.
 2. **Force on a gate.** Vertical rectangular gate $2$ m wide, $3$ m deep, top at the free surface: $F = \tfrac12(1000)(9.81)(2)(9) = 88.3$ kN, at $2$ m from the surface.
@@ -223,7 +226,7 @@ In differential form for incompressible 3D flow: $\dfrac{\partial u}{\partial x}
 4. **Capillary rise.** Water ($\sigma = 0.0736$ N/m) in a $2$ mm tube: $h = \dfrac{4(0.0736)}{1000\times 9.81\times 0.002} = 15$ mm.
 5. **Viscous force.** Plate area $0.5$ m$^2$ moving at $0.5$ m/s on oil film $2$ mm thick, $\mu = 0.1$ Pa s: $F = 0.1\times\dfrac{0.5}{0.002}\times0.5 = 12.5$ N.
 
-## 5. Common mistakes
+## 🧭 5. Common mistakes
 
 - Treating gauge pressure as absolute pressure.
 - Forgetting that the centre of pressure is always below the centroid for a plane surface (except horizontal surfaces).
@@ -231,13 +234,13 @@ In differential form for incompressible 3D flow: $\dfrac{\partial u}{\partial x}
 - Confusing a streamline with a pathline in unsteady flow.
 - Saying that the viscosity of a gas decreases with temperature.
 
-## 6. Interconnections
+## 🧭 6. Interconnections
 
 - **Fluid dynamics:** the Bernoulli equation uses the continuity equation.
 - **Engineering mechanics:** centroid and second moment of area are used for the hydrostatic force.
 - **Hydraulic machines:** Pascal's law is the basis of hydraulic jacks and presses.
 
-## 7. PYQs
+## 🧭 7. PYQs
 
 | # | Question | Answer | Exam / Year | Verify |
 |---|---|---|---|---|
@@ -257,7 +260,7 @@ In differential form for incompressible 3D flow: $\dfrac{\partial u}{\partial x}
 | 14 | Free surface in a rotating container | Paraboloid | APPSC AEE 2016 | [ ] |
 | 15 | Ideal fluid | Non-viscous and incompressible | RRB JE 2017 | [ ] |
 
-## 8. Revision checklist
+## 🧭 8. Revision checklist
 
 - [ ] Properties, units and viscosity temperature effects
 - [ ] Hydrostatic force and centre of pressure; buoyancy and metacentre

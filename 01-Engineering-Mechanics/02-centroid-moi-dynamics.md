@@ -1,14 +1,15 @@
-# 02. Centroid, Moment of Inertia and Dynamics
+# ⚖️ 02. Centroid, Moment of Inertia and Dynamics
 
 **Exam relevance:** APPSC AEE: P | SSC JE: C | RRB JE: S | Category: AEE+/ALL | Yield: HY
 
 ---
 
-## Part A: Detailed Theory (read this first)
+## 📘 Part A: Detailed Theory (read this first)
 
 This part explains the ideas behind centroids, moment of inertia and dynamics from scratch. Part B (from section 1 onwards) is the compact reference with tables, numericals and PYQs.
 
-### A1. Centroid and centre of gravity: what they really are
+### 🔹 A1. Centroid and centre of gravity: what they really are
+![Diagram: Centroid standard shapes](../assets/01-engineering-mechanics/centroid-standard-shapes.png)
 
 Every body is made of tiny pieces, each with a weight pulling down. The **centre of gravity (CG)** is the single point where the total weight can be assumed to act: if you support the body at that point, it balances. It is found by the **moment principle**: the moment of the total weight about any axis equals the sum of the moments of the pieces.
 
@@ -36,7 +37,8 @@ $$\bar{x} = \frac{\int x\,dW}{\int dW}$$
 
 These give the centroid of a semicircle quickly. Revolving a semicircle of radius $r$ about its diameter gives a sphere, volume $\dfrac{4}{3}\pi r^3 = \dfrac{\pi r^2}{2} \times 2\pi\bar{y}$, so $\bar{y} = \dfrac{4r}{3\pi}$.
 
-### A2. Moment of inertia of an area: the idea
+### 🔹 A2. Moment of inertia of an area: the idea
+![Diagram: Parallel axis moi](../assets/01-engineering-mechanics/parallel-axis-moi.png)
 
 When a beam bends or a shaft twists, material far from the central axis carries more stress, and the resistance depends on **how the area is distributed about the axis**, not just on its size. That distribution measure is the **second moment of area**, called moment of inertia (MOI) of area:
 
@@ -64,7 +66,7 @@ Always the **centroidal** value is the smallest. Use it to move from the centroi
 
 **Composite sections.** Compute $\bar{y}$ for the whole section first, then for each part find $I_G + A d^2$ where $d$ is the distance from the part's own centroid to the **whole section's** centroid. Add parts; subtract holes.
 
-### A3. Mass moment of inertia
+### 🔹 A3. Mass moment of inertia
 
 For rotating bodies, resistance to angular acceleration depends on how the **mass** is distributed about the axis:
 
@@ -83,7 +85,8 @@ It plays the role mass plays in straight-line motion. Compare:
 - Parallel-axis theorem for mass: $I = I_G + m d^2$.
 - Do not mix the area MOI ($\text{m}^4$, for bending and torsion) with mass MOI ($\text{kg}\cdot\text{m}^2$, for rotation dynamics).
 
-### A4. Kinematics: describing motion
+### 🔹 A4. Kinematics: describing motion
+![Diagram: Projectile motion](../assets/01-engineering-mechanics/projectile-motion.png)
 
 **Definitions.** Displacement is the change of position (vector); distance is the path length (scalar). Velocity $v = \dfrac{ds}{dt}$, acceleration $a = \dfrac{dv}{dt} = v\dfrac{dv}{ds}$. These two derivative forms give the constant-acceleration equations by integration:
 
@@ -111,7 +114,7 @@ $$v = u + at, \qquad s = ut + \tfrac{1}{2}at^2, \qquad v^2 = u^2 + 2as$$
 
 **Plane motion of a rigid body.** Any plane motion is translation plus rotation. For two points A and B on the same body, $v_B = v_A + v_{B/A}$ where $v_{B/A} = \omega \times AB$ is perpendicular to AB. The **instantaneous centre** is the point that has zero velocity at that instant, so the body is momentarily rotating about it. It lies on the perpendicular to the velocity at each point (for a rolling wheel it is the contact point).
 
-### A5. Kinetics: motion and its causes
+### 🔹 A5. Kinetics: motion and its causes
 
 **Newton's laws.**
 
@@ -151,11 +154,12 @@ $$v = u + at, \qquad s = ut + \tfrac{1}{2}at^2, \qquad v^2 = u^2 + 2as$$
 
 **Angular momentum.** $H = I\omega$. If no external torque acts, $H$ is conserved: a skater pulling in her arms reduces $I$ and spins faster.
 
-### A6. Simple harmonic motion (preview)
+### 🔹 A6. Simple harmonic motion (preview)
+![Diagram: Shm displacement](../assets/01-engineering-mechanics/shm-displacement.png)
 
 If the restoring force is proportional to displacement ($F = -kx$), the motion is SHM with $\omega_n = \sqrt{k/m}$ and period $T = 2\pi\sqrt{m/k}$. A simple pendulum has $T = 2\pi\sqrt{L/g}$. The full treatment is in the Vibrations chapter of Theory of Machines.
 
-### A7. What examiners test from this chapter
+### 🔹 A7. What examiners test from this chapter
 
 - Centroid of composite sections and standard shapes; Pappus theorem (SSC JE, APPSC AEE).
 - Parallel-axis theorem and MOI of standard sections; the same values are the base of bending and torsion (all exams).
@@ -164,10 +168,10 @@ If the restoring force is proportional to displacement ($F = -kx$), the motion i
 
 ---
 
-## Part B: Quick-reference notes, formulas, numericals and PYQs
+## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
-## 1. Centroid and centre of gravity
+## 🧭 1. Centroid and centre of gravity
 
 - **Centroid** is the geometric centre of an area; **centre of gravity (CG)** is the point where the weight acts. They coincide for homogeneous bodies in a uniform field.
 - Composite areas:
@@ -188,7 +192,7 @@ $$\bar{x} = \frac{\sum A_i x_i}{\sum A_i}$$
 | Hollow hemisphere (shell) | $r/2$ from the flat face |
 | Area under parabola $y = kx^2$ up to $x = a$ | $3a/4$ along $x$, $3h/10$ along $y$ |
 
-## 2. Moment of inertia (area MOI)
+## 🧭 2. Moment of inertia (area MOI)
 
 - $I = \int y^2\,dA$. Units: mm$^4$, m$^4$. **Radius of gyration:** $k = \sqrt{I/A}$.
 - **Parallel axis theorem:** $I = I_G + A d^2$.
@@ -222,7 +226,7 @@ $$\bar{x} = \frac{\sum A_i x_i}{\sum A_i}$$
 
 $$\tan 2\theta = \frac{2I_{xy}}{I_y - I_x}$$
 
-## 3. Kinematics
+## 🧭 3. Kinematics
 
 - **Constant acceleration:**
 
@@ -238,7 +242,7 @@ $$T = \frac{2u\sin\alpha}{g}, \qquad R = \frac{u^2\sin 2\alpha}{g}, \qquad H = \
 - **Rotation with constant $\alpha$:** $\omega = \omega_0 + \alpha t$, $\theta = \omega_0 t + \tfrac{1}{2}\alpha t^2$.
 - **Instantaneous centre:** a point of the rigid body with zero velocity at that instant; the velocity of any point $= \omega \times$ its distance from the IC.
 
-## 4. Kinetics
+## 🧭 4. Kinetics
 
 - **Newton's 2nd law:** $F = ma$; rotational: $T = I\alpha$.
 - **D'Alembert's principle:** $F - ma = 0$ (inertia force $-ma$ converts dynamics into statics).
@@ -270,7 +274,7 @@ $$a = \frac{(m_1 - m_2)g}{m_1 + m_2}, \qquad T = \frac{2m_1 m_2 g}{m_1 + m_2}$$
 
 - **Centrifugal force:** $m\omega^2 r$ (pseudo force in the rotating frame).
 
-## 5. Worked numericals
+## 🧭 5. Worked numericals
 
 1. **Projectile.** $u = 20$ m/s at $30^\circ$:
 
@@ -282,18 +286,18 @@ $$I = \frac{100 \times 200^3}{3} = 2.67\times10^{8}\ \text{mm}^4$$
 
 3. **Rolling cylinder** on a $30^\circ$ incline: $a = \tfrac{2}{3}(9.81)(0.5) = 3.27$ m/s$^2$.
 
-## 6. Common mistakes
+## 🧭 6. Common mistakes
 
 - Using $\dfrac{bd^3}{12}$ about the base (it is $\dfrac{bd^3}{3}$).
 - Applying the perpendicular axis theorem to a 3D solid (valid only for laminae).
 - Forgetting the $\tfrac{1}{2}$ in rotational KE.
 
-## 7. Interconnections
+## 🧭 7. Interconnections
 
 - MOI feeds bending (SOM), torsion ($J$), flywheel and vibrations (TOM).
 - Impact and energy methods appear again in strain energy under sudden load (SOM).
 
-## 8. PYQs
+## 🧭 8. PYQs
 
 | # | Question | Answer | Exam / Year | Verify |
 |---|---|---|---|---|
@@ -308,7 +312,7 @@ $$I = \frac{100 \times 200^3}{3} = 2.67\times10^{8}\ \text{mm}^4$$
 | 9 | Radius of gyration | $\sqrt{I/A}$ | APPSC AEE 2012 | [ ] |
 | 10 | Centroid of a right circular cone from the base | $h/4$ | SSC JE 2020 | [ ] |
 
-## 9. Revision checklist
+## 🧭 9. Revision checklist
 
 - [ ] Centroid table by heart
 - [ ] MOI table and both axis theorems

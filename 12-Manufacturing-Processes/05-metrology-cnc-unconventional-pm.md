@@ -1,14 +1,14 @@
-# 05. Metrology, CNC, Unconventional Machining, Powder Metallurgy and Fixtures
+# 🏭 05. Metrology, CNC, Unconventional Machining, Powder Metallurgy and Fixtures
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: HY
 
 ---
 
-## Part A: Detailed Theory (read this first)
+## 📘 Part A: Detailed Theory (read this first)
 
 This chapter groups four themes that are all about control and precision in manufacturing. Metrology and limits-fits answer how we measure a dimension and how much variation a part may have and still assemble correctly. CNC and automation answer how a machine follows a programme with no operator guidance. Unconventional machining answers how to cut materials that conventional tools cannot touch, using electrical, chemical or mechanical energy instead of a cutting edge. Powder metallurgy and jigs and fixtures complete the picture with a net-shape process and the tooling that makes repeatable production possible.
 
-### A1. Fundamentals of measurement
+### 🔹 A1. Fundamentals of measurement
 
 **Metrology** is the science of measurement. A measurement is useful only when we know how good it is.
 
@@ -23,7 +23,7 @@ This chapter groups four themes that are all about control and precision in manu
 
 **Slip (gauge) blocks.** Hardened steel, carbide or ceramic blocks with flat, parallel faces that can be wrung together by molecular attraction. Grades 00, 0, I and II (calibration, inspection, workshop). To build a size with the fewest blocks, eliminate the last decimal place first.
 
-### A2. Linear and angular measuring instruments
+### 🔹 A2. Linear and angular measuring instruments
 
 | Instrument | Typical least count |
 |---|---|
@@ -49,7 +49,8 @@ $$LC_{vernier} = 1\,MSD - 1\,VSD = \frac{\text{smallest main scale division}}{\t
 
 **Surface finish.** The arithmetic mean roughness $R_a$ is the most common parameter; others are $R_z$ and $R_{max}$. Measured with a stylus profilometer such as Talysurf. Typical $R_a$: turning 1.6 to 6.3 $\mu$m, grinding 0.2 to 1.6 $\mu$m, lapping 0.025 to 0.4 $\mu$m. Surface texture consists of roughness, waviness and lay.
 
-### A3. Limits, fits and tolerances
+### 🔹 A3. Limits, fits and tolerances
+![Diagram: Limits fits tolerance](../assets/12-manufacturing/limits-fits-tolerance.png)
 
 **Definitions.**
 
@@ -89,7 +90,8 @@ $$LC_{vernier} = 1\,MSD - 1\,VSD = \frac{\text{smallest main scale division}}{\t
 
 **Threads and gears.** Screw thread major, minor and pitch diameters; the three-wire method gives the effective diameter. Gear tooth vernier (chordal thickness), base tangent method and rolling gear tester measure gears.
 
-### A4. NC, CNC and DNC
+### 🔹 A4. NC, CNC and DNC
+![Diagram: Cnc axes and edm](../assets/12-manufacturing/cnc-axes-and-edm.png)
 
 - **NC:** control by coded instructions, originally on punched tape.
 - **CNC:** a computer in the machine control unit stores and edits programs.
@@ -107,7 +109,7 @@ $$LC_{vernier} = 1\,MSD - 1\,VSD = \frac{\text{smallest main scale division}}{\t
 
 **Merits and demerits.** Accuracy, repeatability, flexibility, shorter setup time and the ability to make complex shapes, against high cost, skilled programming and maintenance.
 
-### A5. Part programming
+### 🔹 A5. Part programming
 
 | Code | Function |
 |---|---|
@@ -133,13 +135,13 @@ $$LC_{vernier} = 1\,MSD - 1\,VSD = \frac{\text{smallest main scale division}}{\t
 
 **Format.** A block contains words with address letters: N (sequence number), G, X Y Z, F (feed), S (speed), T (tool) and M. A modal code stays active until changed; a non-modal code acts only in its block.
 
-### A6. Robotics and automation
+### 🔹 A6. Robotics and automation
 
 A robot is a programmable multifunction manipulator. Its degrees of freedom decide its mobility. Common configurations: Cartesian, cylindrical, spherical (polar), SCARA and articulated.
 
 **Related ideas.** Flexible manufacturing system (FMS), computer integrated manufacturing (CIM), CAD/CAM, automated guided vehicles (AGV). **Additive manufacturing** builds parts layer by layer: FDM, SLA, SLS and DMLS. **Group technology** and cellular manufacturing group similar parts; **transfer lines** suit mass production.
 
-### A7. Unconventional machining processes
+### 🔹 A7. Unconventional machining processes
 
 These are used for hard or brittle materials, complex shapes and micro-features, where a cutting edge is impractical.
 
@@ -167,7 +169,7 @@ where $E = A/z$ is the chemical equivalent (atomic mass over valency) and $F = 9
 
 **Process choice.** Hard conductive materials: EDM or ECM. Hard non-conductive materials: USM or laser. Thin soft sheets: water jet.
 
-### A8. Powder metallurgy
+### 🔹 A8. Powder metallurgy
 
 **Process.** Metal powders are blended, compacted in a die (typically 100 to 900 MPa) and sintered below the melting point (about 0.7 to 0.9 $T_m$) in a controlled atmosphere, where particles bond by atomic diffusion.
 
@@ -179,7 +181,7 @@ where $E = A/z$ is the chemical equivalent (atomic mass over valency) and $F = 9
 
 **Powder properties.** Particle size and shape, flow rate, apparent density and compressibility.
 
-### A9. Jigs and fixtures
+### 🔹 A9. Jigs and fixtures
 
 - **Jig:** holds the work and guides the tool (drill bushes). Used in drilling, reaming and tapping.
 - **Fixture:** holds and positions the work but does not guide the tool; the tool is set relative to the work with set blocks or feeler gauges. Used in milling, turning, grinding and welding.
@@ -190,7 +192,7 @@ where $E = A/z$ is the chemical equivalent (atomic mass over valency) and $F = 9
 
 **Benefits.** Interchangeability, accuracy, higher productivity and lower skill requirements.
 
-### A10. What examiners test from this chapter
+### 🔹 A10. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -209,12 +211,12 @@ where $E = A/z$ is the chemical equivalent (atomic mass over valency) and $F = 9
 
 ---
 
-## Part B: Quick-reference notes, formulas, numericals and PYQs
+## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
-## SECTION I: METROLOGY AND LIMITS, FITS
+## 🧭 SECTION I: METROLOGY AND LIMITS, FITS
 
-## 1. Measurement basics
+## 🧭 1. Measurement basics
 
 - **Metrology** is the science of measurement. 
 - **Accuracy:** closeness to the true value. **Precision:** repeatability of readings. **Least count:** the smallest value that an instrument can read. **Sensitivity**, **range**, **readability**, **resolution**, **hysteresis**, **calibration**, **traceability**.
@@ -222,7 +224,7 @@ where $E = A/z$ is the chemical equivalent (atomic mass over valency) and $F = 9
 - **Standards of length:** the metre is defined from the speed of light; line standards (scale) and end standards (gauge blocks, slip gauges).
 - **Slip (gauge) blocks:** end standards, wrung together; grades 00, 0, I, II (calibration, inspection, workshop). Made of hardened steel, carbide, or ceramic; flatness within microns. Building a size from the minimum number of blocks starts with the last decimal place.
 
-## 2. Linear measuring instruments
+## 🧭 2. Linear measuring instruments
 
 | Instrument | Least count |
 |---|---|
@@ -241,7 +243,7 @@ where $E = A/z$ is the chemical equivalent (atomic mass over valency) and $F = 9
 - **Tool makers' microscope**, **profile projector**, **coordinate measuring machine (CMM)**, **laser interferometer**.
 - **Surface finish:** roughness parameter $R_a$ (arithmetic mean deviation), $R_z$, $R_{max}$. **Profilometer** (stylus), **Talysurf**. Typical $R_a$: turning $1.6$ to $6.3\ \mu$m, grinding $0.2$ to $1.6\ \mu$m, lapping $0.025$ to $0.4\ \mu$m. Lay, waviness and roughness are components of a surface texture.
 
-## 3. Limits, fits and tolerances
+## 🧭 3. Limits, fits and tolerances
 
 - **Basic size** (nominal), **actual size**, **limits of size** (maximum and minimum), **tolerance** = upper limit $-$ lower limit, **deviation** (upper and lower) from the basic size, **fundamental deviation** (the one nearest the zero line).
 - **Hole basis system:** the hole is the constant member (lower deviation zero, letter H); the shaft varies to give the fit. **Shaft basis system:** the shaft is constant (upper deviation zero, letter h). The hole basis system is preferred because holes are made with standard-size tools (reamers, drills) while shafts are easily turned to different sizes.
@@ -261,9 +263,9 @@ where $E = A/z$ is the chemical equivalent (atomic mass over valency) and $F = 9
 - **Geometric tolerances (GD&T):** form (straightness, flatness, circularity, cylindricity), orientation (parallelism, perpendicularity, angularity), location (position, concentricity, symmetry), run-out.
 - **Screw thread measurement:** major, minor and pitch diameters; **three-wire method** for the effective (pitch) diameter; profile projector; screw thread micrometer. **Gear measurement:** gear tooth vernier (chordal thickness), base tangent method, rolling gear tester.
 
-## SECTION II: CNC AND AUTOMATION
+## 🧭 SECTION II: CNC AND AUTOMATION
 
-## 4. NC / CNC / DNC
+## 🧭 4. NC / CNC / DNC
 
 - **Numerical Control (NC):** machine control by coded instructions (punched tape). **CNC:** a computer on the machine does the control (editable programs). **DNC:** a central computer supplies programs to many machines. 
 - **Axes:** X, Y, Z (linear), A, B, C (rotary about X, Y, Z). The Z axis is along the spindle axis.
@@ -274,7 +276,7 @@ where $E = A/z$ is the chemical equivalent (atomic mass over valency) and $F = 9
 - **Adaptive control** adjusts the parameters in real time.
 - **Advantages:** accuracy, repeatability, flexibility, lower setup time, complex shapes. **Disadvantages:** high cost, skilled programming, maintenance.
 
-## 5. Part programming (G and M codes)
+## 🧭 5. Part programming (G and M codes)
 
 | Code | Function |
 |---|---|
@@ -300,15 +302,15 @@ where $E = A/z$ is the chemical equivalent (atomic mass over valency) and $F = 9
 
 - **Word address format:** N (sequence number), G, X Y Z, F (feed), S (speed), T (tool), M. G-codes are **modal** (remain active until changed) or non-modal (one block only).
 
-## 6. Robotics and automation
+## 🧭 6. Robotics and automation
 
 - **Robot:** a programmable multifunction manipulator. **Degrees of freedom (DOF).** **Configurations:** Cartesian, cylindrical, spherical (polar), SCARA, articulated.
 - **Flexible Manufacturing System (FMS)**, **CIM**, **CAD/CAM**, **AGV**, **additive manufacturing (3D printing)**: FDM, SLA, SLS, DMLS.
 - **Group technology** and **cellular manufacturing** use similarity of parts to improve efficiency. **Transfer lines** (Detroit-type automation) for mass production.
 
-## SECTION III: UNCONVENTIONAL MACHINING
+## 🧭 SECTION III: UNCONVENTIONAL MACHINING
 
-## 7. Non-traditional processes
+## 🧭 7. Non-traditional processes
 
 Used for hard/tough materials, complex shapes and micro-features, where the conventional tool is impractical.
 
@@ -329,9 +331,9 @@ Used for hard/tough materials, complex shapes and micro-features, where the conv
 - **USM:** material is removed by brittle fracture under the impact of abrasive grains. MRR rises with vibration amplitude, frequency and grit size, and falls as the workpiece hardness and toughness increase.
 - **Choice:** hard ferrous alloys and conductive: EDM/ECM; non-conductive hard: USM/LBM; thin soft: water jet.
 
-## SECTION IV: POWDER METALLURGY AND TOOLING
+## 🧭 SECTION IV: POWDER METALLURGY AND TOOLING
 
-## 8. Powder metallurgy (PM)
+## 🧭 8. Powder metallurgy (PM)
 
 - Metal powders are blended, **compacted** in a die (at $100$ to $900$ MPa), and **sintered** (heated below the melting point, about $0.7$ to $0.9\,T_m$, in a controlled atmosphere) to bond the particles.
 - **Steps:** powder production (atomisation, reduction, electrolysis, carbonyl, milling), blending, compacting, sintering, and finishing (sizing, coining, infiltration, impregnation).
@@ -339,14 +341,14 @@ Used for hard/tough materials, complex shapes and micro-features, where the conv
 - **Advantages:** near-net shape, little waste, controlled porosity, materials that cannot be cast. **Limitations:** high die and powder cost, size limits, lower density (strength) and difficulty in complex shapes.
 - **Powder properties:** particle size and shape, flow rate, apparent density, compressibility.
 
-## 9. Jigs and fixtures
+## 🧭 9. Jigs and fixtures
 
 - **Jig:** a work-holding and tool-guiding device (drill bushes guide the tool); used in drilling, reaming, tapping. **Fixture:** a work-holding device that positions and clamps the work, and sets the tool relative to the work with set blocks or feeler gauges (no tool guiding); used in milling, turning, grinding, welding.
 - **Principles of location:** the **3-2-1 principle** (six degrees of freedom of a rigid body are restrained using three points on the primary plane, two on the secondary and one on the tertiary plane). 
 - **Locating elements:** pins, V-blocks, buttons. **Clamping elements:** strap, screw, cam, toggle, hydraulic, pneumatic; they should not distort the work. **Features:** easy loading and unloading, chip clearance, error-proofing, low cost.
 - **Benefits:** interchangeability, accuracy, higher productivity, lower skill needs.
 
-## 10. Worked numericals
+## 🧭 10. Worked numericals
 
 1. **Vernier.** $49$ main scale divisions of $1$ mm = $50$ vernier divisions: $\text{LC} = 1 - \dfrac{49}{50} = 0.02$ mm.
 2. **Micrometer.** Pitch $0.5$ mm with $50$ divisions: LC $= 0.01$ mm. Reading: main scale $12.5$ mm + $23\times0.01$ = $12.73$ mm.
@@ -355,7 +357,7 @@ Used for hard/tough materials, complex shapes and micro-features, where the conv
 5. **ECM.** Iron ($A = 56$, $z = 2$, $\rho = 7860$ kg/m$^3$), $I = 1000$ A: mass rate $= \dfrac{56\times1000}{2\times96500}\ \text{g/s} = 0.29$ g/s; volume rate $= \dfrac{0.29}{7.86} = 0.037$ cm$^3$/s.
 6. **EDM energy.** $C = 10\ \mu$F, $V = 100$ V: $E = 0.5\times10\times10^{-6}\times10^4 = 0.05$ J per spark.
 
-## 11. Common mistakes
+## 🧭 11. Common mistakes
 
 - Reversing the roles of the go and no-go gauges.
 - Giving the hole in a hole-basis system a zero upper deviation; it is the lower deviation of the hole that is zero (letter H). In a shaft-basis system (letter h) it is the upper deviation of the shaft that is zero.
@@ -363,13 +365,13 @@ Used for hard/tough materials, complex shapes and micro-features, where the conv
 - Saying that USM is good for ductile materials.
 - Confusing the jig (guides the tool) with the fixture (positions and holds only).
 
-## 12. Interconnections
+## 🧭 12. Interconnections
 
 - **Machine design:** fits and tolerances on shafts and bearings.
 - **Manufacturing:** every machining operation is controlled by these standards.
 - **Industrial engineering:** quality control, inspection.
 
-## 13. PYQs
+## 🧭 13. PYQs
 
 | # | Question | Answer | Exam / Year | Verify |
 |---|---|---|---|---|
@@ -390,7 +392,7 @@ Used for hard/tough materials, complex shapes and micro-features, where the conv
 | 15 | The 3-2-1 principle relates to | Location of work in jigs and fixtures | RRB JE 2017 | [ ] |
 | 16 | Optical flat is used to check | Flatness | SSC JE 2022 | [ ] |
 
-## 14. Revision checklist
+## 🧭 14. Revision checklist
 
 - [ ] Instruments and least counts
 - [ ] Limits, fits, tolerances, gauges (Taylor's principle)

@@ -26,7 +26,7 @@ module.exports = [
          s += L.text(o[0] - 24, (o[1] + F[1]) / 2, 'F_{y} = F sin \\theta', { anchor: 'end', c: 'blue', bold: true });
          s += L.text(F[0] + 12, F[1] - 6, 'F', { c: 'red', bold: true, size: 16 });
          s += L.angle(o[0], o[1], 70, 0, 35, '\\theta');
-         s += L.note(500, 90, ['Magnitude: F = \\sqrt(F_{x}^{2} + F_{y}^{2})', 'Direction: tan \\theta = F_{y} / F_{x}', 'Resultant of many forces:', 'R_{x} = \\Sigma F_{x} , R_{y} = \\Sigma F_{y}'], { w: 250, size: 12 });
+         s += L.note(480, 80, ['Components: F_{x}=F cos \\theta; F_{y}=F sin \\theta', 'Resultant: R_{x}=\\Sigma F_{x}; R_{y}=\\Sigma F_{y}', 'Magnitude: R=\\sqrt(R_{x}^{2}+R_{y}^{2})', 'Direction: tan \\alpha=R_{y}/R_{x}'], { w: 270, size: 11 });
          return s;
       }
    },

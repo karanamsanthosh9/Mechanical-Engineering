@@ -1,14 +1,14 @@
-# 03. Bending, Shear Stress in Beams and Deflection
+# 📐 03. Bending, Shear Stress in Beams and Deflection
 
 **Exam relevance:** APPSC AEE: C/P | SSC JE: C | RRB JE: C/S | Category: ALL (deflection: AEE+) | Yield: VHY (bending), HY (deflection)
 
 ---
 
-## Part A: Detailed Theory (read this first)
+## 📘 Part A: Detailed Theory (read this first)
 
 This part explains how a beam carries load: the bending stress, the shear stress, and the deflection. Part B (from section 1 onwards) is the compact reference.
 
-### A1. How a beam bends: the physical picture
+### 🔹 A1. How a beam bends: the physical picture
 
 Take a rubber eraser and bend it between your fingers. The top surface shortens (compression) and the bottom surface stretches (tension) in a sagging beam. Somewhere between is a layer whose length does not change. That layer is the **neutral surface**; its intersection with a cross-section is the **neutral axis (NA)**.
 
@@ -23,7 +23,8 @@ Take a rubber eraser and bend it between your fingers. The top surface shortens 
 
 **Pure bending** means constant bending moment and zero shear force. Real beams have shear too, but the bending formula is still used with good accuracy for long beams.
 
-### A2. Derivation of the flexure formula
+### 🔹 A2. Derivation of the flexure formula
+![Diagram: Bending stress distribution](../assets/02-strength-of-materials/bending-stress-distribution.png)
 
 Consider a layer at distance $y$ from the NA of a beam bent to radius $R$. Its original length is the same as the NA length $= R\theta$. After bending its length is $(R + y)\theta$. Strain:
 
@@ -54,7 +55,8 @@ $$\boxed{\frac{M}{I} = \frac{\sigma}{y} = \frac{E}{R}}$$
 
 **Composite (flitched) beams.** Two materials bonded together bend together with the same curvature. Convert one into an equivalent section of the other using the **modular ratio** $m = E_1/E_2$ (stiffer material becomes wider). Then find $I$ of the equivalent section, and stresses: $\sigma_1 = \dfrac{M y}{I_{eq}}$ for the base material and $m$ times that for the other. Reinforced concrete beams use the same idea.
 
-### A3. Shear stress in beams: where it comes from
+### 🔹 A3. Shear stress in beams: where it comes from
+![Diagram: Beam shear stress distribution](../assets/02-strength-of-materials/beam-shear-stress-distribution.png)
 
 When the bending moment varies along the beam, the longitudinal fibres on either side of a horizontal cut have different bending stress. The difference must be resisted by shear along the cut. So shear stress exists on **horizontal** planes as well as vertical planes (complementary shear). The result:
 
@@ -71,7 +73,8 @@ where $V$ is the shear force at the section, $A\bar{y}$ is the first moment abou
 - For an **I-section**, the web carries most of the shear (about $90\%$ to $95\%$) and flanges carry most of the bending. The shear stress jumps at the web-flange junction because the width $b$ changes suddenly.
 - **Shear centre:** the point on the cross-section through which the load must act so the beam bends without twisting. For symmetrical sections it is the centroid. For a channel it lies outside the web.
 
-### A4. Slope and deflection: why they matter
+### 🔹 A4. Slope and deflection: why they matter
+![Diagram: Beam deflection standard cases](../assets/02-strength-of-materials/beam-deflection-standard-cases.png)
 
 A beam may not fail by stress but still be unusable if it sags too much (floors crack, machine shafts misalign, gears mesh badly). Design codes limit deflection to a fraction of span, such as $L/325$ or $L/360$.
 
@@ -96,7 +99,7 @@ Constants of integration come from **boundary conditions**: at a fixed end, slop
 
 **Why do standard results look the way they do?** For a cantilever with end load, $M = -W(L - x)$. Integrating twice gives $y_{max} = \dfrac{WL^3}{3EI}$. Deflection grows as $L^3$ for point loads and $L^4$ for distributed loads, so shortening or stiffening a beam is very effective.
 
-### A5. Fixed and propped beams
+### 🔹 A5. Fixed and propped beams
 
 A fixed beam has more reactions than equations. Compatibility: slope at each fixed end is zero. The result is that:
 
@@ -106,7 +109,7 @@ A fixed beam has more reactions than equations. Compatibility: slope at each fix
 
 **Propped cantilever** with UDL: the prop reaction is $\dfrac{3wL}{8}$, fixed-end moment $\dfrac{wL^2}{8}$.
 
-### A6. Strength vs stiffness in beam design
+### 🔹 A6. Strength vs stiffness in beam design
 
 | Quantity | Governed by |
 |---|---|
@@ -116,7 +119,7 @@ A fixed beam has more reactions than equations. Compatibility: slope at each fix
 
 For long, slender beams deflection often governs; for short, deep beams shear may govern.
 
-### A7. Exam relevance
+### 🔹 A7. Exam relevance
 
 - Flexure formula, section modulus of rectangle, circle (all three exams).
 - Ratio $\tau_{max}/\tau_{avg}$ for rectangle and circle (very frequent).
@@ -125,15 +128,15 @@ For long, slender beams deflection often governs; for short, deep beams shear ma
 
 ---
 
-## Part B: Quick-reference notes, formulas, numericals and PYQs
+## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
-## 1. Simple (flexural) bending
+## 🧭 1. Simple (flexural) bending
 
 - **Assumptions:** homogeneous, isotropic material obeying Hooke's law; same $E$ in tension and compression; plane sections remain plane; radius of curvature much larger than beam depth; initially straight beam; loading in a plane of symmetry; pure bending.
 - **Neutral axis (NA):** the layer with zero bending stress. It passes through the centroid of the section.
 
-### Flexure formula
+### 🔹 Flexure formula
 
 $$\frac{M}{I} = \frac{\sigma}{y} = \frac{E}{R}$$
 
@@ -153,7 +156,7 @@ $$\sigma = \frac{My}{I}, \qquad Z = \frac{I}{y_{max}}, \qquad \sigma_{max} = \fr
 - **Strongest rectangular beam from a circular log of diameter $D$:** $b = \dfrac{D}{\sqrt{3}}$, $d = \sqrt{\dfrac{2}{3}}\,D$, so $\dfrac{d}{b} = \sqrt{2}$. **Stiffest beam:** $b = \dfrac{D}{2}$, $d = \dfrac{\sqrt{3}}{2}D$.
 - For equal area, section modulus ranks: I-section $>$ rectangle $>$ circle.
 
-## 2. Shear stress in beams
+## 🧭 2. Shear stress in beams
 
 $$\tau = \frac{V\,A\bar{y}}{I\,b}$$
 
@@ -173,15 +176,15 @@ Here $\tau_{avg} = \dfrac{V}{A}$.
 - In an I-section the flanges carry most of the bending moment and the web carries about 90 to 95% of the shear force.
 - **Shear centre:** the point through which the load must act to bend the beam without twisting (for a channel it lies outside the web).
 
-## 3. Deflection of beams
+## 🧭 3. Deflection of beams
 
-### Governing equations
+### 🔹 Governing equations
 
 $$EI\frac{d^2y}{dx^2} = M(x)$$
 
 $$EI\frac{dy}{dx} = \int M\,dx + C_1 \ \text{(slope)}, \qquad EI\,y = \iint M\,dx\,dx + C_1 x + C_2 \ \text{(deflection)}$$
 
-### Methods
+### 🔹 Methods
 
 | Method | Best for |
 |---|---|
@@ -192,7 +195,7 @@ $$EI\frac{dy}{dx} = \int M\,dx + C_1 \ \text{(slope)}, \qquad EI\,y = \iint M\,d
 | Castigliano's theorem | Energy method: $\delta = \dfrac{\partial U}{\partial P}$, $\theta = \dfrac{\partial U}{\partial M}$ |
 | Superposition | Combined loads |
 
-### Standard results (memorise)
+### 🔹 Standard results (memorise)
 
 | Beam and load | Maximum slope | Maximum deflection |
 |---|---|---|
@@ -210,7 +213,7 @@ $$EI\frac{dy}{dx} = \int M\,dx + C_1 \ \text{(slope)}, \qquad EI\,y = \iint M\,d
 - **Strain energy in bending:** $U = \displaystyle\int \frac{M^2}{2EI}\,dx$.
 - **Mohr's first theorem:** change in slope between two points $=$ area of the $\dfrac{M}{EI}$ diagram between them. **Second theorem:** deflection of B relative to the tangent at A $=$ moment of the $\dfrac{M}{EI}$ area about B.
 
-## 4. Worked numericals
+## 🧭 4. Worked numericals
 
 1. **Rectangular beam** $100 \times 200$ mm, $M = 20$ kN-m:
 
@@ -221,17 +224,17 @@ $$Z = \frac{100 \times 200^2}{6} = 6.67\times10^{5}\ \text{mm}^3, \qquad \sigma 
 
 $$\delta = \frac{WL^3}{3EI} = \frac{2000 \times 2000^3}{3 \times 200000 \times 8\times10^{6}} = 3.33\ \text{mm}$$
 
-## 5. Common mistakes
+## 🧭 5. Common mistakes
 
 - Measuring $y$ from the bottom instead of from the NA.
 - Using total beam depth for $Z$ of a hollow section.
 - Mixing mm and m (keep N and mm, or kN and m).
 
-## 6. Interconnections
+## 🧭 6. Interconnections
 
 - BM from chapter 02; MOI from Engineering Mechanics; column buckling uses $EI$; shaft and spring design in Machine Design.
 
-## 7. PYQs
+## 🧭 7. PYQs
 
 | # | Question | Answer | Exam / Year | Verify |
 |---|---|---|---|---|
@@ -248,7 +251,7 @@ $$\delta = \frac{WL^3}{3EI} = \frac{2000 \times 2000^3}{3 \times 200000 \times 8
 | 11 | Shear stress distribution in a rectangular beam | Parabolic | SSC JE 2020 | [ ] |
 | 12 | A beam of uniform strength has | Constant bending stress | RRB JE 2014 | [ ] |
 
-## 8. Revision checklist
+## 🧭 8. Revision checklist
 
 - [ ] Flexure formula and assumptions
 - [ ] $Z$ table and shear ratios

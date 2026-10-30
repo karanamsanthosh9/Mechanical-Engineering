@@ -32,7 +32,7 @@ module.exports = [
          Vpts: [[0, 0.5], [1, -0.5]],
          Mpts: sfd.sample((f) => 0.5 * f * (1 - f)),
          ann: [['V', 0.02, 0.5, '+ wL/2', 0, -8], ['V', 0.98, -0.5, '- wL/2', 0, 20, 'end'], ['M', 0.5, 0.125, 'M_{max} = wL^{2}/8', 0, -12, 'middle']],
-         formulas: ['V = wL/2 - wx (straight line, slope = -w)   ;   M = wLx/2 - wx^{2}/2 (parabola)', 'Point of contraflexure: none. M_{max} where V = 0, i.e. at x = L/2']
+         formulas: ['V = wL/2 - wx (straight line, slope = -w)   ;   M = wLx/2 - wx^{2}/2 (parabola)', 'Point of contraflexure: none. M_{max} where V = 0, i.e. at x = L/2', 'Positive sagging moment is plotted above zero; negative (hogging) moment is below.']
       })
    },
    {

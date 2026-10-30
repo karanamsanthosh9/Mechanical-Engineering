@@ -1,14 +1,14 @@
-# 03. Dimensional Analysis, Similitude and Compressible Flow
+# 💧 03. Dimensional Analysis, Similitude and Compressible Flow
 
 **Exam relevance:** APPSC AEE: C | SSC JE: B | RRB JE: B | Category: ALL | Yield: HY
 
 ---
 
-## Part A: Detailed Theory (read this first)
+## 📘 Part A: Detailed Theory (read this first)
 
 This chapter answers two practical questions. First, how can we test a small model and trust the result for a full-size machine (dimensional analysis and similitude)? Second, what changes when the fluid is compressible, so that density varies with speed (compressible flow)? Both rest on one idea: physical laws do not depend on the unit system, so they can be written in terms of dimensionless groups. Compressibility enters through a single group, the Mach number.
 
-### A1. Dimensions and dimensional homogeneity
+### 🔹 A1. Dimensions and dimensional homogeneity
 
 **Physical picture.** Any physical quantity is a number times a unit, and the unit is built from a small set of fundamental dimensions: mass $[M]$, length $[L]$, time $[T]$ and, when heat is involved, temperature $[\Theta]$. Force is a derived dimension in the MLT system, $[F] = MLT^{-2}$ (from $F = ma$).
 
@@ -34,7 +34,7 @@ This chapter answers two practical questions. First, how can we test a small mod
 
 Angles, strains, specific gravity and Reynolds number are dimensionless.
 
-### A2. Rayleigh's method and Buckingham's pi theorem
+### 🔹 A2. Rayleigh's method and Buckingham's pi theorem
 
 **Rayleigh's method.** Assume the dependent variable is a product of the independent variables raised to unknown powers, $y = K\,x_1^a x_2^b x_3^c$. Equate the powers of $M$, $L$ and $T$ on both sides. This gives as many equations as fundamental dimensions. It works well when there are three or four variables; with more, there are more unknowns than equations and the powers cannot be fixed.
 
@@ -51,7 +51,8 @@ $$f(\pi_1, \pi_2, \ldots, \pi_{n-m}) = 0$$
 
 **Limit.** The method gives the form of the relation, not the numerical constant. The constant must come from experiment.
 
-### A3. Dimensionless numbers: force ratios
+### 🔹 A3. Dimensionless numbers: force ratios
+![Diagram: Dimensional analysis numbers](../assets/10-fluid-mechanics/dimensional-analysis-numbers.png)
 
 Each dimensionless number is a ratio of two forces acting on a fluid element. Knowing which two forces gives the number's meaning and its use.
 
@@ -70,7 +71,7 @@ The cavitation number is $\sigma_c = (p - p_v)/(\tfrac{1}{2}\rho V^2)$; cavitati
 
 **How to remember the origin.** Inertia force scales as $\rho V^2 L^2$. Divide by viscous force $\mu V L$ to get Reynolds; by gravity force $\rho g L^3$ to get Froude (squared); by surface tension force $\sigma L$ to get Weber; by elastic force $K L^2$ to get Cauchy.
 
-### A4. Similitude and model testing
+### 🔹 A4. Similitude and model testing
 
 **Why models.** Testing a dam, ship or aircraft at full size is costly or impossible. A scaled model is tested, and results are transferred to the prototype using similarity laws.
 
@@ -111,7 +112,7 @@ Exam tip: the discharge exponent is $5/2$ and the power exponent is $7/2$.
 
 **Scale effects.** When two or more forces matter (for example a ship, with both viscous and gravity forces), exact similarity is impossible. The dominant force is matched and the effect of the other is corrected by calculation or a separate test.
 
-### A5. Compressible flow: the physical picture
+### 🔹 A5. Compressible flow: the physical picture
 
 **When compressibility matters.** In low-speed flow, pressure changes are small, so density is almost constant. At higher speeds the pressure changes are large enough to change density significantly. The key parameter is the Mach number:
 
@@ -130,7 +131,7 @@ The speed of sound is the speed at which a small pressure disturbance travels. I
 
 **Mach cone.** A source moving faster than sound outruns its own waves. They form a cone with half-angle $\mu$ given by $\sin\mu = 1/M$. A listener inside the cone ("zone of action") hears the source; outside ("zone of silence") does not.
 
-### A6. Stagnation properties and isentropic relations
+### 🔹 A6. Stagnation properties and isentropic relations
 
 **Stagnation state.** The state the fluid would attain if brought to rest isentropically. For a perfect gas, applying the steady-flow energy equation $h + V^2/2 = h_0$ with $h = c_p T$ and $c_p = \gamma R/(\gamma - 1)$ gives:
 
@@ -148,7 +149,8 @@ $$\frac{p^*}{p_0} = 0.528, \qquad \frac{T^*}{T_0} = 0.833, \qquad \frac{\rho^*}{
 
 **Pitot tube in compressible flow.** The Pitot reading is the stagnation pressure. Above $M = 0.3$, the incompressible formula $p_0 - p = \tfrac{1}{2}\rho V^2$ underestimates $V$ and the isentropic relation must be used. For $M > 1$, a normal shock forms ahead of the probe and the Rayleigh Pitot formula applies.
 
-### A7. Area-velocity relation: nozzles and diffusers
+### 🔹 A7. Area-velocity relation: nozzles and diffusers
+![Diagram: Compressible flow nozzle regimes](../assets/10-fluid-mechanics/compressible-flow-nozzle-regimes.png)
 
 Starting from continuity ($\rho A V$ constant) and Euler's equation, one derives:
 
@@ -168,7 +170,7 @@ $$\dot{m}_{max} = A^*\,p_0\sqrt{\frac{\gamma}{R T_0}}\left(\frac{2}{\gamma + 1}\
 
 For a given stagnation state, $\dot{m}_{max}$ depends only on the throat area. This result also governs steam nozzles (see the steam chapter).
 
-### A8. Normal shock waves
+### 🔹 A8. Normal shock waves
 
 **What a shock is.** A very thin region (a few mean free paths thick) across which pressure, temperature, density and velocity change almost discontinuously. The process is adiabatic but irreversible.
 
@@ -200,7 +202,7 @@ These come from conservation of mass, momentum and energy (the Rankine-Hugoniot 
 
 **Shocks in a nozzle.** If the back pressure is between the design value and the first critical value, a normal shock sits inside the diverging part. The flow after the shock is subsonic, so the diverging section now acts as a diffuser.
 
-### A9. Fanno and Rayleigh flow
+### 🔹 A9. Fanno and Rayleigh flow
 
 Real ducts have friction (Fanno) or heat transfer (Rayleigh). Both are one-dimensional flows in a constant-area duct.
 
@@ -214,7 +216,7 @@ Real ducts have friction (Fanno) or heat transfer (Rayleigh). Both are one-dimen
 
 In both, the flow cannot cross $M = 1$ within the duct. Once the sonic point is reached at the exit, the flow is choked and a further increase in duct length (Fanno) or heat input (Rayleigh) reduces the mass flow. In Fanno flow, friction always drives the Mach number toward 1; in Rayleigh flow, heating drives it toward 1, and cooling moves it away from 1.
 
-### A10. What examiners test from this chapter
+### 🔹 A10. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -231,10 +233,10 @@ In both, the flow cannot cross $M = 1$ within the duct. Once the sonic point is 
 
 ---
 
-## Part B: Quick-reference notes, formulas, numericals and PYQs
+## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
-## 1. Dimensional analysis
+## 🧭 1. Dimensional analysis
 
 - **Fundamental dimensions:** mass $[M]$, length $[L]$, time $[T]$, temperature $[\Theta]$.
 - **Dimensional homogeneity:** every term of a physically correct equation has the same dimensions.
@@ -255,7 +257,7 @@ In both, the flow cannot cross $M = 1$ within the duct. Once the sonic point is 
 - **Rayleigh's method:** express the dependent variable as a product of the independent variables raised to unknown powers; solve by comparing the powers of $M$, $L$, $T$. Suitable for up to four variables.
 - **Buckingham $\pi$ theorem:** if a phenomenon involves $n$ variables and $m$ fundamental dimensions, it can be described by $(n - m)$ independent dimensionless $\pi$ groups. Choose $m$ **repeating variables** (which must include all dimensions between them, should not form a dimensionless group by themselves, and should not include the dependent variable); typical choice is $D$ (geometric), $V$ (kinematic), $\rho$ (dynamic).
 
-## 2. Dimensionless numbers
+## 🧭 2. Dimensionless numbers
 
 | Number | Expression | Ratio of forces | Use |
 |---|---|---|---|
@@ -270,13 +272,13 @@ In both, the flow cannot cross $M = 1$ within the duct. Once the sonic point is 
 
 - **Cavitation number** $\sigma_c = \dfrac{p - p_v}{\tfrac12\rho V^2}$.
 
-## 3. Similitude and model testing
+## 🧭 3. Similitude and model testing
 
 - **Geometric similarity:** all linear dimensions are in a constant ratio $L_r = \dfrac{L_p}{L_m}$.
 - **Kinematic similarity:** velocities at corresponding points are in a constant ratio.
 - **Dynamic similarity:** forces at corresponding points are in a constant ratio; this means all relevant dimensionless numbers are the same for model and prototype.
 
-### Model laws
+### 🔹 Model laws
 
 | Law | Condition | Use |
 |---|---|---|
@@ -291,7 +293,7 @@ In both, the flow cannot cross $M = 1$ within the duct. Once the sonic point is 
 - **Distorted models:** used for rivers and harbours, where the vertical scale is exaggerated relative to the horizontal scale to keep depth large enough.
 - **Unit and specific quantities (turbines/pumps)** are derived from dimensional analysis; they are in the Fluid Machinery chapter.
 
-## 4. Compressible flow
+## 🧭 4. Compressible flow
 
 - **Mach number** $M = \dfrac{V}{c}$, with sonic speed $c = \sqrt{\gamma R T}$ (ideal gas). 
 
@@ -323,7 +325,7 @@ $$\frac{dA}{A} = (M^2 - 1)\frac{dV}{V}$$
 - **Isentropic flow with variable area** applies to nozzles and diffusers (see steam nozzles).
 - **Mach cone and Mach angle:** a source moving supersonically produces a cone with $\sin\mu = \dfrac1M$.
 
-## 5. Worked numericals
+## 🧭 5. Worked numericals
 
 1. **Rayleigh.** Force $F$ depends on $\rho, V, D$ (drag on a sphere). Dimensional analysis gives $F = K\rho V^2D^2$ (neglecting viscosity).
 2. **Buckingham.** Pipe pressure drop depends on $D, V, \rho, \mu, L, \varepsilon$: $n = 7$, $m = 3$, so $4$ groups: $\dfrac{\Delta p}{\rho V^2}$, $\text{Re}$, $\dfrac{L}{D}$, $\dfrac{\varepsilon}{D}$.
@@ -332,20 +334,20 @@ $$\frac{dA}{A} = (M^2 - 1)\frac{dV}{V}$$
 5. **Speed of sound in air at $300$ K:** $\sqrt{1.4\times287\times300} = 347$ m/s.
 6. **Stagnation temperature.** $T = 250$ K, $M = 2$: $T_0 = 250(1 + 0.2\times4) = 450$ K.
 
-## 6. Common mistakes
+## 🧭 6. Common mistakes
 
 - Using the Reynolds law for free-surface flows (where gravity dominates, Froude's law is correct).
 - Choosing a repeating variable set that contains the dependent variable.
 - Forgetting that stagnation temperature is constant across a normal shock but stagnation pressure falls.
 - Treating a flow at $M = 0.5$ as incompressible without a check (the limit is about $M = 0.3$).
 
-## 7. Interconnections
+## 🧭 7. Interconnections
 
 - **Fluid machinery:** unit quantities and specific speed derive from dimensional analysis.
 - **Thermodynamics:** isentropic relations, stagnation enthalpy.
 - **Steam nozzles:** critical pressure ratio from compressible flow.
 
-## 8. PYQs
+## 🧭 8. PYQs
 
 | # | Question | Answer | Exam / Year | Verify |
 |---|---|---|---|---|
@@ -364,7 +366,7 @@ $$\frac{dA}{A} = (M^2 - 1)\frac{dV}{V}$$
 | 13 | Dimensions of power | $ML^2T^{-3}$ | SSC JE 2021 | [ ] |
 | 14 | Flow downstream of a normal shock | Subsonic | APPSC AEE 2016 | [ ] |
 
-## 9. Revision checklist
+## 🧭 9. Revision checklist
 
 - [ ] Dimensions of common quantities
 - [ ] Rayleigh and Buckingham methods

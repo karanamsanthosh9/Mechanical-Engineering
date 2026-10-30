@@ -80,11 +80,11 @@ module.exports = [
       draw: (L) => {
          let s = L.line(40, 330, 860, 330, { c: 'grey', dash: '4 3' }) + L.text(860, 346, 'Datum', { anchor: 'end', size: 11, c: 'grey' });
          s += L.polyline([[60, 270], [330, 270], [400, 295], [800, 295]], { c: 'ink', w: 4 }) + L.polyline([[60, 255], [330, 255], [400, 285], [800, 285]], { c: 'ink', w: 4 }) + L.line(60, 255, 60, 270, { c: 'ink', w: 3 });
-         s += L.polyline([[60, 120], [800, 190]], { c: 'red', w: 3 }) + L.polyline([[60, 165], [330, 190], [400, 130], [800, 215]], { c: 'blue', w: 3, dash: '7 4' });
-         s += L.text(420, 115, 'Energy grade line (EGL): p/\\rho g + V^{2}/2g + z', { size: 12, c: 'red', bold: true }) + L.text(520, 262, 'HGL: p/\\rho g + z', { size: 12, c: 'blue', bold: true, anchor: 'start', dy: -30 });
+         s += L.polyline([[60, 120], [330, 133], [400, 142], [800, 165]], { c: 'red', w: 3 }) + L.polyline([[60, 182], [330, 205], [400, 234], [800, 220]], { c: 'blue', w: 3, dash: '7 4' });
+         s += L.text(420, 108, 'EGL (solid): p/(\\rho g) + V^{2}/2g + z', { size: 12, c: 'red', bold: true }) + L.text(520, 258, 'HGL (dashed): p/(\\rho g) + z', { size: 12, c: 'blue', bold: true, anchor: 'start' });
          s += L.dim(360, 130, 360, 190, '', {}) + L.text(368, 168, 'V^{2}/2g', { size: 12 }) + L.dim(60, 270, 60, 330, 'z', { lo: -18 });
-         s += L.text(60, 100, 'Constant total head H in an ideal flow', { size: 12, c: 'grey' });
-         s += L.note(40, 360, ['Bernoulli: p/\\rho g + V^{2}/2g + z = constant along a streamline (steady, incompressible, inviscid, no work or heat transfer)', 'EGL falls only through losses (slope = friction head loss per length); HGL lies V^{2}/2g below the EGL', 'HGL rises where V falls (e.g. a diverging section)', 'A pipe above the HGL has pressure below atmospheric: siphon summit and cavitation risk'], { w: 820, size: 11 });
+         s += L.text(60, 100, 'EGL falls with head loss; EGL - HGL = velocity head', { size: 12, c: 'grey' });
+         s += L.note(40, 360, ['Bernoulli: p/(\\rho g) + V^{2}/2g + z = constant along a streamline (steady, incompressible, inviscid, no work or heat transfer)', 'EGL falls through head loss; HGL lies V^{2}/2g below the EGL', 'HGL rises where velocity falls (e.g. in a diverging section)', 'A pipe above the HGL has sub-atmospheric pressure: siphon summit and cavitation risk'], { w: 820, size: 11 });
          return s;
       }
    },

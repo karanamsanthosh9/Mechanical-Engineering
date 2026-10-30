@@ -1,14 +1,14 @@
-# 01. Mechanisms, Kinematics, Gears and Cams
+# ⚙️ 01. Mechanisms, Kinematics, Gears and Cams
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: VHY
 
 ---
 
-## Part A: Detailed Theory (read this first)
+## 📘 Part A: Detailed Theory (read this first)
 
 This part explains how machines are built from links, how motion is transmitted, and how gears and cams work. Part B (from section 1 onwards) is the compact reference.
 
-### A1. What Theory of Machines studies
+### 🔹 A1. What Theory of Machines studies
 
 A **machine** is a combination of resistant bodies that transmits motion and force and does useful work. A **mechanism** is a similar arrangement used only to transmit or transform motion (no useful work requirement). **Kinematics** studies motion without forces; **dynamics** (kinetics) adds forces.
 
@@ -21,7 +21,7 @@ A **machine** is a combination of resistant bodies that transmits motion and for
 - **Binary, ternary, quaternary link:** link with two, three, four joints.
 - **Constrained motion:** completely constrained (only one possible relative motion, e.g. a shaft in a bearing), incompletely constrained (the pair can move in more than one way, e.g. a shaft in a circular hole), successfully constrained (kept by external force, e.g. a cam and follower).
 
-### A2. Degrees of freedom (mobility)
+### 🔹 A2. Degrees of freedom (mobility)
 
 The **degrees of freedom (DOF)** of a mechanism is the number of independent inputs needed to fix the position of every link. A free body in a plane has 3 DOF (two translations and one rotation). Each joint removes some of them.
 
@@ -39,7 +39,8 @@ Reasoning: $n - 1$ moving links have $3(n-1)$ DOF; each lower pair removes 2, ea
 - **Kutzbach criterion** is the same equation. **Redundant DOF** occurs when a link can move without affecting the output (a roller in a cam follower adds one idle DOF).
 - For a kinematic chain with only turning pairs, with $l$ links, $p$ pairs and $j$ joints: $l = 2p - 4$ and $j = \dfrac{3l}{2} - 2$. A four-bar chain has $l = 4$, $p = 4$, $j = 4$.
 
-### A3. Four-bar chain and its inversions
+### 🔹 A3. Four-bar chain and its inversions
+![Diagram: Four bar chain and slider crank](../assets/03-theory-of-machines/four-bar-chain-and-slider-crank.png)
 
 The most important mechanism. Four links joined by four turning pairs. Let $s$ = shortest link, $l$ = longest, $p, q$ = the other two.
 
@@ -68,7 +69,7 @@ $$s + l \le p + q$$
 
 **Mechanical advantage and transmission angle.** The angle between the coupler and the follower link should be kept near $90^\circ$; below about $40^\circ$ the mechanism jams. **Toggle position:** the mechanical advantage becomes infinite at the dead-centre position (stone crushers).
 
-### A4. Velocity and acceleration analysis
+### 🔹 A4. Velocity and acceleration analysis
 
 Why analyse: the velocities and accelerations of points on links determine forces (through $F = ma$) and speeds of cutting tools.
 
@@ -84,7 +85,9 @@ Why analyse: the velocities and accelerations of points on links determine force
 
 **Klein's construction** gives the velocity and acceleration of a reciprocating engine quickly. The **piston acceleration** $= \omega^2 r\left(\cos\theta + \dfrac{\cos 2\theta}{n}\right)$ where $n = l/r$.
 
-### A5. Gears
+### 🔹 A5. Gears
+![Diagram: Gear terminology](../assets/03-theory-of-machines/gear-terminology.png)
+![Diagram: Epicyclic gear train](../assets/03-theory-of-machines/epicyclic-gear-train.png)
 
 **Why gears?** Belts and friction wheels slip. Gears transmit motion with a **constant velocity ratio** by positive engagement of teeth.
 
@@ -135,7 +138,8 @@ where $A_w$ is the addendum factor (1 for full-depth). For $\phi = 20^\circ$ the
   2. Give the arm $x$ turns and add $x$ to every gear (the whole train moves as one body).
   3. Put the known condition (for example, the fixed gear has zero net turns) and solve for $x$.
 
-### A6. Cams and followers
+### 🔹 A6. Cams and followers
+![Diagram: Cam follower displacement](../assets/03-theory-of-machines/cam-follower-displacement.png)
 
 A **cam** is a rotating or reciprocating element that gives a prescribed motion to another element, the **follower**, through direct contact (higher pair).
 
@@ -156,7 +160,7 @@ A **cam** is a rotating or reciprocating element that gives a prescribed motion 
 
 Inertia force $= $ mass $\times$ acceleration; large acceleration leads to vibration, noise, wear and follower jump. **Follower jump** is the loss of contact at high speed when the spring force is not enough.
 
-### A7. Exam relevance
+### 🔹 A7. Exam relevance
 
 - DOF equation, Grashof's law, number of ICs, inversions (all three exams).
 - Gear terminology, module, interference, minimum teeth, contact ratio (all exams).
@@ -165,17 +169,17 @@ Inertia force $= $ mass $\times$ acceleration; large acceleration leads to vibra
 
 ---
 
-## Part B: Quick-reference notes, formulas, numericals and PYQs
+## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
-## 1. Basic terminology
+## 🧭 1. Basic terminology
 
 - **Kinematic link:** a rigid body having relative motion with respect to others. **Kinematic pair:** two links in contact permitting relative motion. **Kinematic chain:** an assembly of pairs. **Mechanism:** a chain with one link fixed. **Machine:** a mechanism that transmits force or does work.
 - **Lower pair:** surface contact (revolute, prismatic, screw, cylindrical, spherical, planar). **Higher pair:** point or line contact (cam and follower, gear teeth).
 - **Closed pair:** held together by geometry or force. **Unclosed pair:** needs an external force (spring or gravity).
 - Link types: binary, ternary, quaternary.
 
-## 2. Degrees of freedom
+## 🧭 2. Degrees of freedom
 
 $$F = 3(n-1) - 2j - h \qquad \text{(Grubler, planar)}$$
 
@@ -185,7 +189,7 @@ Here $n$ is the number of links, $j$ the number of lower pairs and $h$ the numbe
 - Four-bar chain: $n = 4$, $j = 4$, so $F = 1$.
 - Condition for a kinematic chain with turning pairs only: $l = 2p - 4$ and $j = \dfrac{3n}{2} - 2$.
 
-## 3. Four-bar mechanism and inversions
+## 🧭 3. Four-bar mechanism and inversions
 
 **Grashof's law:** with $s$ the shortest link, $l$ the longest, and $p, q$ the other two,
 
@@ -201,7 +205,7 @@ If this holds, at least one link can rotate fully.
 
 - If $s + l > p + q$, every inversion is a double rocker (non-Grashof).
 
-### Slider-crank chain and its inversions
+### 🔹 Slider-crank chain and its inversions
 
 | Inversion | Fixed link | Applications |
 |---|---|---|
@@ -229,7 +233,7 @@ $$\frac{\omega_2}{\omega_1} = \frac{\cos\alpha}{1 - \cos^2\theta\,\sin^2\alpha}$
   Its maximum and minimum values are $\dfrac{1}{\cos\alpha}$ and $\cos\alpha$. A double Hooke's joint gives a constant velocity ratio.
 - Other devices: pantograph, Geneva mechanism (intermittent motion), ratchet and pawl.
 
-## 4. Velocity and acceleration analysis
+## 🧭 4. Velocity and acceleration analysis
 
 - **Instantaneous centre method:** the number of ICs is $N = \dfrac{n(n-1)}{2}$. **Kennedy's theorem:** three bodies in relative motion have three ICs that lie on a straight line.
 - **Coriolis acceleration:** $a_c = 2\omega v$, present when a slider moves on a rotating link. Its direction is the sliding velocity rotated through $90^\circ$ in the sense of $\omega$.
@@ -237,7 +241,7 @@ $$\frac{\omega_2}{\omega_1} = \frac{\cos\alpha}{1 - \cos^2\theta\,\sin^2\alpha}$
 
 $$v_s = \omega r\left(\sin\theta + \frac{\sin 2\theta}{2n}\right), \qquad a_s = \omega^2 r\left(\cos\theta + \frac{\cos 2\theta}{n}\right)$$
 
-## 5. Gears
+## 🧭 5. Gears
 
 - **Law of gearing:** the common normal at the point of contact passes through the pitch point, giving a constant velocity ratio.
 - **Terms:**
@@ -282,7 +286,7 @@ $$T_{ring} = T_{sun} + 2\,T_{planet}$$
   With the ring fixed and the sun driving, the arm speed is $N_{arm} = N_{sun}\,\dfrac{T_{sun}}{T_{sun} + T_{ring}}$.
 - **Differential gear:** allows unequal wheel speeds on turns; the average of the two rear wheel speeds equals the propeller shaft speed.
 
-## 6. Cams
+## 🧭 6. Cams
 
 - **Followers:** knife-edge, roller, flat-faced, spherical-faced; reciprocating or oscillating. **Cams:** plate (disc), cylindrical, wedge, globoidal.
 - **Terms:** base circle, prime circle, pitch curve, trace point, pressure angle, lift (stroke), dwell.
@@ -299,7 +303,7 @@ For lift $h$, cam angular speed $\omega$ and angle of rise $\varphi$:
 
 - Keep the pressure angle below $30^\circ$ (translating follower) or $45^\circ$ (oscillating follower). A larger base circle reduces the pressure angle. Undercutting occurs when the radius of curvature of the pitch curve is smaller than the roller radius.
 
-## 7. Worked numericals
+## 🧭 7. Worked numericals
 
 1. **DOF.** 6 links with 7 binary joints: $F = 3(6-1) - 2(7) = 1$.
 2. **Gears.** $T_1 = 20$, $T_2 = 60$, $m = 4$ mm: centre distance $= \dfrac{4(20+60)}{2} = 160$ mm; ratio $= 3$.
@@ -307,17 +311,17 @@ For lift $h$, cam angular speed $\omega$ and angle of rise $\varphi$:
 
 $$v_{max} = \frac{\pi \times 30 \times 31.4}{2 \times 1.047} = 1413\ \text{mm/s}$$
 
-## 8. Common mistakes
+## 🧭 8. Common mistakes
 
 - Miscounting a joint where three links meet (it counts as two pairs in Grubler's equation).
 - Using diameter instead of module when sizing gears.
 - Confusing slider-crank inversions: Whitworth fixes the crank; crank-and-slotted-lever fixes the connecting rod.
 
-## 9. Interconnections
+## 🧭 9. Interconnections
 
 - Slider-crank dynamics leads to IC engine balancing; gears lead to Machine Design (Lewis equation); cam follower motion links to vibration and jerk.
 
-## 10. PYQs
+## 🧭 10. PYQs
 
 | # | Question | Answer | Exam / Year | Verify |
 |---|---|---|---|---|
@@ -335,7 +339,7 @@ $$v_{max} = \frac{\pi \times 30 \times 31.4}{2 \times 1.047} = 1413\ \text{mm/s}
 | 12 | Coriolis component of acceleration | $2\omega v$ | RRB JE 2019 | [ ] |
 | 13 | Gear pair with the highest reduction ratio | Worm and wheel | RRB JE 2015 | [ ] |
 
-## 11. Revision checklist
+## 🧭 11. Revision checklist
 
 - [ ] Grubler's equation, Grashof's law, three four-bar inversions
 - [ ] Four slider-crank inversions and their applications

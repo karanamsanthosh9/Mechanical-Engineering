@@ -1,14 +1,14 @@
-# 02. Shafts, Bearings and Lubrication
+# 🛠️ 02. Shafts, Bearings and Lubrication
 
 **Exam relevance:** APPSC AEE: P | SSC JE: S | RRB JE: S | Category: AEE+ | Yield: MY to HY
 
 ---
 
-## Part A: Detailed Theory (read this first)
+## 📘 Part A: Detailed Theory (read this first)
 
 This part explains how shafts are sized, how bearings carry load and what lubrication does. Part B (from section 1 onwards) is the compact reference.
 
-### A1. Shafts: what they carry and how they fail
+### 🔹 A1. Shafts: what they carry and how they fail
 
 A **shaft** is a rotating member that transmits power; it carries gears, pulleys and flywheels. It is loaded in **torsion** (from the power transmitted) and **bending** (from the weights, belt pulls, gear forces on the mounted parts), and sometimes axial load.
 
@@ -39,7 +39,7 @@ The terms $T_e = \sqrt{M^2 + T^2}$ (equivalent torque) and $M_e = \tfrac{1}{2}(M
 
 **Critical speed.** A rotating shaft whirls if the speed matches its lateral natural frequency (see vibrations). Keep the operating speed at least $20\%$ away from the critical speed. Shafts running below the first critical speed are **stiff** (rigid); those above are **flexible**.
 
-### A2. Bearings: purpose and classification
+### 🔹 A2. Bearings: purpose and classification
 
 A **bearing** supports a rotating shaft, carries the load and allows motion with low friction and wear.
 
@@ -59,7 +59,8 @@ A **bearing** supports a rotating shaft, carries the load and allows motion with
 | Interchangeability | Custom | Standardised |
 | Cost | Low for large sizes | Higher |
 
-### A3. Sliding bearings and hydrodynamic lubrication
+### 🔹 A3. Sliding bearings and hydrodynamic lubrication
+![Diagram: Stribeck curve lubrication](../assets/04-machine-design/stribeck-curve-lubrication.png)
 
 **Regimes of lubrication.**
 
@@ -84,7 +85,8 @@ with $Z$ viscosity, $N$ speed (rps), $p$ projected-area pressure, $r$ journal ra
 
 **Design parameters.** Length-to-diameter ratio $l/d$ is typically $1$ to $2$ (a long bearing carries more load but is sensitive to misalignment); pressure $p = W/(ld)$.
 
-### A4. Rolling-contact bearings
+### 🔹 A4. Rolling-contact bearings
+![Diagram: Rolling bearing life](../assets/04-machine-design/rolling-bearing-life.png)
 
 **Construction.** Inner ring, outer ring, rolling elements (balls or rollers) and a cage (separator) that keeps them evenly spaced.
 
@@ -114,7 +116,7 @@ with $Z$ viscosity, $N$ speed (rps), $p$ projected-area pressure, $r$ journal ra
 
 **Mounting and lubrication.** Inner ring is a tight fit on the shaft if it rotates; outer ring fits in the housing with a loose or tight fit as required. Grease for moderate speed (sealed bearings), oil for high speed and heat removal.
 
-### A5. Lubrication and lubricants
+### 🔹 A5. Lubrication and lubricants
 
 **Purposes of lubrication:** reduce friction and wear, carry away heat, protect against corrosion, seal, remove debris, damp shocks.
 
@@ -128,7 +130,7 @@ with $Z$ viscosity, $N$ speed (rps), $p$ projected-area pressure, $r$ journal ra
 
 **Methods of supply.** Drop-feed, wick, splash, ring-oiled, forced (pressure) circulation, oil-bath, grease gun.
 
-### A6. Exam relevance
+### 🔹 A6. Exam relevance
 
 - Torque from power; shaft design equations for combined loading; equivalent torque (all exams).
 - Hollow versus solid shaft; critical speed (SSC JE, APPSC AEE).
@@ -138,15 +140,15 @@ with $Z$ viscosity, $N$ speed (rps), $p$ projected-area pressure, $r$ journal ra
 
 ---
 
-## Part B: Quick-reference notes, formulas, numericals and PYQs
+## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
-## 1. Shafts
+## 🧭 1. Shafts
 
 - **Shaft:** rotating member carrying power; **axle:** non-rotating (or rotating) member carrying no torque; **spindle:** short shaft on machine tools.
 - **Materials:** mild steel (C30, C40), alloy steels (Ni-Cr) for high loads, cold-drawn steel for small sizes.
 
-### Design on strength
+### 🔹 Design on strength
 
 | Loading | Design equation |
 |---|---|
@@ -170,9 +172,9 @@ $$\theta = \frac{TL}{GJ}$$
 - **Critical speed** (whirling) must be avoided: operate at least about $20\%$ away from $N_c$. See Theory of Machines, vibrations.
 - **Power and torque:** $T = \dfrac{60\,P}{2\pi N}$.
 
-## 2. Bearings
+## 🧭 2. Bearings
 
-### Classification
+### 🔹 Classification
 
 | Type | Features |
 |---|---|
@@ -182,7 +184,7 @@ $$\theta = \frac{TL}{GJ}$$
 - **Sliding bearings:** thick-film (hydrodynamic) lubrication, thin-film (boundary) lubrication, hydrostatic lubrication (externally pressurised).
 - **Bearing materials:** white metal (babbitt), bronze, brass, cast iron, sintered bronze, nylon and PTFE. Required properties: low friction, wear resistance, conformability, embeddability, thermal conductivity, fatigue strength.
 
-### Hydrodynamic journal bearing
+### 🔹 Hydrodynamic journal bearing
 
 - **Sommerfeld number:**
 
@@ -198,7 +200,7 @@ $$\mu = 2\pi^2\,\frac{ZN}{p}\cdot\frac{r}{c}$$
 - **Heat generated** $= \mu W v$; heat dissipated depends on the bearing area and temperature rise.
 - **Length to diameter ratio** $\dfrac{l}{d}$ is typically $1$ to $2$. Bearing pressure $p = \dfrac{W}{l\,d}$ (projected area).
 
-### Rolling-contact bearings
+### 🔹 Rolling-contact bearings
 
 - **Types:** deep-groove ball, angular-contact ball, self-aligning ball, cylindrical roller, tapered roller (carries combined radial and axial loads), spherical roller, needle roller, thrust ball.
 - **Static load capacity** $C_0$: load causing a permanent deformation of $0.0001$ of the rolling element diameter.
@@ -214,7 +216,7 @@ $$L_{10} = \left(\frac{C}{P}\right)^{k}\ \text{million revolutions}$$
 - **Rolling bearing advantages over sliding:** lower starting friction, smaller axial space, easier replacement, less lubrication needs. **Disadvantages:** higher noise, poor shock tolerance, larger radial size.
 - **Lubrication of rolling bearings:** grease for low to moderate speed, oil for high speed. Brinelling and fretting are common failure modes.
 
-## 3. Lubrication
+## 🧭 3. Lubrication
 
 - **Viscosity:** absolute viscosity $Z$ in Pa-s (SI) or poise (CGS); $1\ \text{Pa-s} = 10$ poise. Kinematic viscosity $\nu = \dfrac{Z}{\rho}$; stokes in CGS.
 - **Viscosity index (VI):** measure of how little viscosity changes with temperature; higher VI is better.
@@ -222,7 +224,7 @@ $$L_{10} = \left(\frac{C}{P}\right)^{k}\ \text{million revolutions}$$
 - **Types of lubricants:** liquid (mineral oils, synthetic), semi-solid (grease), solid (graphite, MoS$_2$), gaseous (air bearings).
 - **Types of lubrication:** hydrodynamic, hydrostatic, elastohydrodynamic (rolling contact and gears), boundary, solid film.
 
-## 4. Worked numericals
+## 🧭 4. Worked numericals
 
 1. **Shaft.** $T = 1000$ N-m, $M = 500$ N-m, $\tau_{allow} = 40$ MPa:
 
@@ -231,18 +233,18 @@ $$d^3 = \frac{16\sqrt{500^2 + 1000^2}\times10^3}{\pi\times40} = \frac{16\times11
 2. **Bearing life.** $C = 30$ kN, $P = 5$ kN, ball bearing: $L_{10} = \left(\dfrac{30}{5}\right)^3 = 216$ million revolutions.
 3. **Torque.** $P = 50$ kW at $500$ rpm: $T = \dfrac{60\times50000}{2\pi\times500} = 955$ N-m.
 
-## 5. Common mistakes
+## 🧭 5. Common mistakes
 
 - Using only bending or only torsion in a shaft carrying both.
 - Using $k = 3$ for roller bearings (use $\dfrac{10}{3}$).
 - Using $\mu = $ constant for hydrodynamic bearings (it varies with $\dfrac{ZN}{p}$).
 
-## 6. Interconnections
+## 🧭 6. Interconnections
 
 - Shaft design combines SOM (bending, torsion), TOM (torque, critical speed) and materials.
 - Bearing life links to reliability engineering.
 
-## 7. PYQs
+## 🧭 7. PYQs
 
 | # | Question | Answer | Exam / Year | Verify |
 |---|---|---|---|---|
@@ -257,7 +259,7 @@ $$d^3 = \frac{16\sqrt{500^2 + 1000^2}\times10^3}{\pi\times40} = \frac{16\times11
 | 9 | A shaft is subjected to combined bending and torsion; equivalent torque | $\sqrt{M^2 + T^2}$ | SSC JE 2016 | [ ] |
 | 10 | A thin-film lubrication is also called | Boundary lubrication | RRB JE 2015 | [ ] |
 
-## 8. Revision checklist
+## 🧭 8. Revision checklist
 
 - [ ] Combined bending and torsion formulas
 - [ ] Sommerfeld number and Petroff's law

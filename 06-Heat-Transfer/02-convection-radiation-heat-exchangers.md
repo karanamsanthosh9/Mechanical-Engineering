@@ -1,27 +1,28 @@
-# 02. Convection, Radiation and Heat Exchangers
+# 🔥 02. Convection, Radiation and Heat Exchangers
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C/S | Category: ALL | Yield: HY
 
 ---
 
-## Part A: Detailed Theory (read this first)
+## 📘 Part A: Detailed Theory (read this first)
 
 Convection and radiation complete the picture of heat transfer, and heat exchangers are where all three modes are put to use. The difficulty in convection is that the heat transfer coefficient $h$ is not a material property; it depends on the fluid, the flow and the geometry. The whole chapter is about finding $h$ (through dimensionless numbers), and then using it.
 
-### A1. What convection really is
+### 🔹 A1. What convection really is
 
 - Convection is **conduction into a moving fluid plus bulk transport of energy by that fluid**. At the wall surface the fluid velocity is zero (**no-slip condition**), so heat leaves the wall by pure conduction into the stationary fluid layer: $q = -k_f A\left.\dfrac{\partial T}{\partial y}\right|_{y=0}$. Equating this with Newton's law, $q = hA(T_s - T_\infty)$, gives $h = \dfrac{-k_f\,(\partial T/\partial y)_0}{T_s - T_\infty}$. **A steeper temperature gradient at the wall means a larger $h$.** Anything that thins the boundary layer (higher velocity, turbulence, a finer surface) raises $h$.
 - **Forced convection:** an external agent (fan, pump, wind) moves the fluid. **Natural (free) convection:** the fluid moves because heating changes its density, and buoyancy drives the flow. **Mixed convection** has both.
 - $h$ is **not** a property of the fluid alone. It depends on velocity, geometry, fluid properties ($\mu$, $k$, $\rho$, $c_p$), surface condition and whether the flow is laminar or turbulent.
 
-### A2. Boundary layer concept
+### 🔹 A2. Boundary layer concept
+![Diagram: Boundary layers and nusselt](../assets/06-heat-transfer/boundary-layers-and-nusselt.png)
 
 - **Hydrodynamic (velocity) boundary layer.** When a fluid flows over a plate, the layer touching the plate sticks to it. A region grows where velocity increases from $0$ at the wall to $99\%$ of the free-stream velocity $U_\infty$. Its thickness $\delta$ increases along the plate.
 - **Laminar to turbulent transition.** Near the leading edge, the layers slide smoothly (laminar). At about $Re_x = 5\times10^5$ for a flat plate, disturbances grow and the flow becomes turbulent. Turbulent mixing thickens the layer but steepens the wall gradient, so **$h$ is larger in turbulent flow**. A tiny **viscous sublayer** remains next to the wall.
 - **Thermal boundary layer.** Region where temperature changes from $T_s$ to $T_\infty$. Its thickness $\delta_t$ relates to $\delta$ through the Prandtl number: $\delta/\delta_t \approx Pr^{1/3}$ for laminar flow. For oils ($Pr \gg 1$) the thermal layer is much thinner than the velocity layer; for liquid metals ($Pr \ll 1$) it is thicker.
 - **Local and average coefficient.** $h_x$ falls along the plate in the laminar region (thickening layer), jumps up at transition and then falls slowly. The average over length $L$ is $\bar h = \dfrac{1}{L}\int_0^L h_x\,dx$. For laminar flow, $\bar h = 2h_{x=L}$ because $h_x \propto x^{-1/2}$.
 
-### A3. Dimensionless numbers: meaning and use
+### 🔹 A3. Dimensionless numbers: meaning and use
 
 Dimensional analysis shows that the convective problem is governed by a few groups. Each is a ratio of two physical effects, so it tells you which effect dominates.
 
@@ -39,7 +40,7 @@ Dimensional analysis shows that the convective problem is governed by a few grou
 - **Nusselt versus Biot** looks identical in form but $Nu$ uses the conductivity of the fluid and $Bi$ that of the solid.
 - A correlation has the form $Nu = f(Re, Pr)$ for forced convection and $Nu = f(Gr, Pr)$ for natural convection. Properties are evaluated at the **film temperature** $T_f = \dfrac{T_s + T_\infty}{2}$.
 
-### A4. Forced convection correlations
+### 🔹 A4. Forced convection correlations
 
 - **Laminar flow over a flat plate**, from the exact Blasius solution: $Nu_x = 0.332 Re_x^{1/2} Pr^{1/3}$ (local); averaging over length gives $\overline{Nu}_L = 0.664 Re_L^{1/2} Pr^{1/3}$.
 - **Turbulent flat plate:** $\overline{Nu}_L = 0.037 Re_L^{4/5} Pr^{1/3}$ (valid when transition occurs very near the leading edge).
@@ -51,7 +52,7 @@ Dimensional analysis shows that the convective problem is governed by a few grou
 - **Reynolds-Colburn analogy.** Heat and momentum transfer are both due to molecular and turbulent diffusion, so friction and heat transfer are linked: $St\,Pr^{2/3} = C_f/2$. If you know the skin friction coefficient, you know the heat transfer.
 - **Why do roughness and turbulence promoters help?** They raise turbulence near the wall and thin the viscous sublayer.
 
-### A5. Natural convection
+### 🔹 A5. Natural convection
 
 - A heated surface warms the neighbouring fluid, which becomes lighter and rises; cooler fluid replaces it. The velocity is produced by the buoyancy itself, so there is no free-stream velocity.
 - **Volumetric expansion coefficient** $\beta = -\dfrac{1}{\rho}\left(\dfrac{\partial\rho}{\partial T}\right)_P$. For an ideal gas, $\beta = 1/T$ with absolute temperature.
@@ -59,14 +60,14 @@ Dimensional analysis shows that the convective problem is governed by a few grou
 - **Correlation:** $Nu = C(Gr\,Pr)^n$ with $n = 1/4$ for laminar, $1/3$ for turbulent. In the turbulent regime the heat transfer coefficient becomes independent of the size of the surface, as $L^3$ in $Gr$ cancels the $L$ in $Nu$.
 - **Practical cases.** Radiator, heated room walls, pipes in still air, electronic components. Typical $h$ in air is only $5$ to $25$ W/m$^2$K, so radiation is often comparable and must be added.
 
-### A6. Boiling and condensation
+### 🔹 A6. Boiling and condensation
 
 - **Pool boiling curve** (heat flux versus excess temperature $\Delta T_e = T_s - T_{sat}$) has four regimes: natural convection boiling; **nucleate boiling** (bubbles form, grow and detach; very high $h$); **transition boiling** (unstable vapour film); and **film boiling** (stable vapour blanket; low $h$, radiation important).
 - **Critical heat flux (burnout)** is the maximum of the curve, at the end of nucleate boiling. In a **heat-flux-controlled** system (electrical heater, nuclear fuel), exceeding it makes the surface temperature jump to the film-boiling branch, often melting the heater. In practice, designs keep operation in the nucleate regime, below CHF. The **Leidenfrost point** is the minimum heat flux at the start of stable film boiling.
 - **Condensation.** In **film condensation** the liquid wets the surface and forms a continuous film whose thickness adds a thermal resistance. In **dropwise condensation** the vapour touches the bare surface between droplets, so $h$ can be $5$ to $10$ times higher. Dropwise is hard to maintain, so industrial condensers are designed for filmwise. Non-condensable gases (air) greatly reduce $h$.
 - For laminar film condensation on a vertical plate, $h \propto \left[\dfrac{\rho_l(\rho_l - \rho_v)\,g\,h_{fg}\,k_l^3}{\mu_l(T_{sat} - T_w)L}\right]^{1/4}$ (Nusselt theory). Horizontal tubes give higher $h$ than vertical ones, because the film is thinner.
 
-### A7. Thermal radiation: physical picture
+### 🔹 A7. Thermal radiation: physical picture
 
 - Every body above $0$ K emits electromagnetic radiation because of its thermal energy. Thermal radiation covers wavelengths of about $0.1$ to $100\ \mu$m (UV, visible, infrared). Unlike conduction and convection, it needs **no medium** and passes through vacuum. Radiation dominates at high temperature (furnaces, boilers, sun) and in vacuum (space).
 - **Blackbody.** The idealised perfect absorber and emitter. It absorbs all incident radiation at every wavelength and direction and emits the maximum possible at a given temperature. A small hole in a hollow cavity is a good approximation.
@@ -77,7 +78,8 @@ Dimensional analysis shows that the convective problem is governed by a few grou
 - **Grey body** has $\varepsilon$ independent of wavelength. **Selective surfaces** (solar collectors) have high absorptivity for solar radiation but low emissivity in the infrared, to retain heat.
 - **Diffuse surface and Lambert's cosine law.** For a diffuse emitter, the intensity $I$ is independent of direction and $E = \pi I$. The emission varies as $\cos\theta$ along a direction.
 
-### A8. Radiation exchange between surfaces
+### 🔹 A8. Radiation exchange between surfaces
+![Diagram: Radiation network and laws](../assets/06-heat-transfer/radiation-network-and-laws.png)
 
 - **View (shape) factor** $F_{12}$ is the fraction of radiation leaving surface 1 that strikes surface 2. It depends only on geometry. Its rules:
   - Reciprocity: $A_1F_{12} = A_2F_{21}$.
@@ -96,7 +98,8 @@ Dimensional analysis shows that the convective problem is governed by a few grou
 - **Radiation heat transfer coefficient:** $h_r = \varepsilon\sigma(T_s + T_\infty)(T_s^2 + T_\infty^2)$ lets radiation be added to convection: $q = (h_c + h_r)A\,\Delta T$.
 - **Gas radiation and solar radiation** (outline). Gases such as CO$_2$ and H$_2$O absorb and emit in specific bands. Solar constant $\approx 1367$ W/m$^2$.
 
-### A9. Heat exchangers: classification and design basics
+### 🔹 A9. Heat exchangers: classification and design basics
+![Diagram: Lmtd parallel counter flow](../assets/06-heat-transfer/lmtd-parallel-counter-flow.png)
 
 - A **heat exchanger** transfers heat between two fluids at different temperatures, usually separated by a wall (recuperator), sometimes by alternate storage (regenerator), or through direct mixing (open heater, cooling tower).
 - **Flow arrangement:**
@@ -112,7 +115,7 @@ Dimensional analysis shows that the convective problem is governed by a few grou
 - **Why is $C_{min}$ the limit?** The fluid with the smaller capacity rate has the larger temperature change, and the maximum possible change equals the maximum inlet temperature difference.
 - **Pressure drop and pumping power** are part of the design as well as the heat duty. A higher velocity gives a larger $h$ but increases pressure drop (proportional to roughly $V^2$), so there is an economic optimum.
 
-### A10. What examiners test from this chapter
+### 🔹 A10. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -125,17 +128,17 @@ Dimensional analysis shows that the convective problem is governed by a few grou
 
 ---
 
-## Part B: Quick-reference notes, formulas, numericals and PYQs
+## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
-## 1. Convection fundamentals
+## 🧭 1. Convection fundamentals
 
 - **Natural (free) convection:** fluid motion due to buoyancy from density differences. **Forced convection:** motion due to a pump, fan or wind.
 - **Newton's law of cooling:** $q = hA\,(T_s - T_\infty)$. Units of $h$: W/m$^2$K. Typical values: free convection in gases $2$ to $25$; free convection in liquids $50$ to $1000$; forced convection in gases $25$ to $250$; forced convection in liquids $50$ to $20000$; boiling and condensation $2500$ to $100000$.
 - **Hydrodynamic boundary layer:** region near the wall where velocity changes from $0$ to the free stream value. **Thermal boundary layer:** region where temperature changes from $T_s$ to $T_\infty$.
 - **Relative thickness:** $\dfrac{\delta}{\delta_t} = Pr^{1/3}$ for laminar flow. For $Pr > 1$ the thermal layer is thinner; for liquid metals ($Pr \ll 1$) it is thicker.
 
-## 2. Dimensionless numbers (very high yield)
+## 🧭 2. Dimensionless numbers (very high yield)
 
 | Number | Expression | Physical meaning |
 |---|---|---|
@@ -151,7 +154,7 @@ Dimensional analysis shows that the convective problem is governed by a few grou
 - For ideal gases, $\beta = \dfrac{1}{T}$ (absolute temperature).
 - **Nusselt vs Biot:** $Nu$ uses the fluid conductivity; $Bi$ uses the solid conductivity.
 
-## 3. Correlations
+## 🧭 3. Correlations
 
 | Case | Correlation |
 |---|---|
@@ -167,12 +170,12 @@ Dimensional analysis shows that the convective problem is governed by a few grou
 - **Reynolds analogy:** $St = \dfrac{C_f}{2}$ (for $Pr = 1$); **Colburn analogy:** $St\,Pr^{2/3} = \dfrac{C_f}{2}$.
 - **Natural convection** from vertical plate: $Nu = C\,(Gr\,Pr)^n$ with $n = \dfrac{1}{4}$ (laminar), $\dfrac{1}{3}$ (turbulent).
 
-## 4. Boiling and condensation
+## 🧭 4. Boiling and condensation
 
 - **Pool boiling regimes** (curve of heat flux versus excess temperature): natural convection, nucleate boiling, transition boiling, film boiling. **Critical heat flux (burnout point)** is the peak of nucleate boiling; exceeding it causes sudden jump to film boiling and possible equipment failure. **Leidenfrost point:** the minimum of the curve.
 - **Condensation:** filmwise (lower $h$) and dropwise (much higher $h$, often $5$ to $10$ times). Dropwise is hard to sustain; surfaces are treated to promote it.
 
-## 5. Radiation
+## 🧭 5. Radiation
 
 - **Stefan-Boltzmann law:** blackbody emissive power $E_b = \sigma T^4$ with $\sigma = 5.67\times10^{-8}$ W/m$^2$K$^4$. Real surface: $E = \varepsilon\sigma T^4$.
 - **Planck's law** gives spectral distribution. **Wien's displacement law:**
@@ -196,9 +199,9 @@ $$q = \frac{\sigma\,(T_1^4 - T_2^4)}{\dfrac{1}{\varepsilon_1} + \dfrac{1}{\varep
 - **Radiation shields:** a shield between two plates reduces heat transfer; with $n$ identical shields of the same emissivity, the transfer is reduced to $\dfrac{1}{n+1}$ of the original.
 - **Radiosity** $J$ and **irradiation** $G$ are used in the network method; **surface resistance** $\dfrac{1-\varepsilon}{\varepsilon A}$ and **space resistance** $\dfrac{1}{A_1F_{12}}$.
 
-## 6. Heat exchangers
+## 🧭 6. Heat exchangers
 
-### Classification
+### 🔹 Classification
 
 | Basis | Types |
 |---|---|
@@ -206,7 +209,7 @@ $$q = \frac{\sigma\,(T_1^4 - T_2^4)}{\dfrac{1}{\varepsilon_1} + \dfrac{1}{\varep
 | Construction | Shell and tube, double pipe, plate, compact |
 | Function | Condenser, evaporator, regenerator, recuperator |
 
-### LMTD method
+### 🔹 LMTD method
 
 $$q = U\,A\,\Delta T_{lm}, \qquad \Delta T_{lm} = \frac{\Delta T_1 - \Delta T_2}{\ln(\Delta T_1/\Delta T_2)}$$
 
@@ -217,7 +220,7 @@ $$q = U\,A\,\Delta T_{lm}, \qquad \Delta T_{lm} = \frac{\Delta T_1 - \Delta T_2}
 - **Heat balance:** $q = \dot{m}_h C_{ph}\,(T_{h,in} - T_{h,out}) = \dot{m}_c C_{pc}\,(T_{c,out} - T_{c,in})$.
 - **Overall coefficient:** $\dfrac{1}{U} = \dfrac{1}{h_i} + R_{wall} + \dfrac{1}{h_o} + R_{fouling}$. **Fouling factor** $R_f$ increases resistance.
 
-### Effectiveness-NTU method
+### 🔹 Effectiveness-NTU method
 
 $$\varepsilon = \frac{q_{actual}}{q_{max}} = \frac{C_h\,(T_{h,in} - T_{h,out})}{C_{min}\,(T_{h,in} - T_{c,in})}, \qquad NTU = \frac{UA}{C_{min}}, \qquad C_r = \frac{C_{min}}{C_{max}}$$
 
@@ -231,23 +234,23 @@ $$\varepsilon = \frac{q_{actual}}{q_{max}} = \frac{C_h\,(T_{h,in} - T_{h,out})}{
 - NTU method is preferred when outlet temperatures are unknown.
 - $C = \dot{m}\,C_p$ is the **heat capacity rate** (W/K).
 
-## 7. Worked numericals
+## 🧭 7. Worked numericals
 
 1. **Radiation.** Two large parallel plates at $500$ K and $300$ K, $\varepsilon_1 = \varepsilon_2 = 0.8$: denominator $= \dfrac{1}{0.8} + \dfrac{1}{0.8} - 1 = 1.5$, so $q = \dfrac{5.67\times10^{-8}\,(500^4 - 300^4)}{1.5} = \dfrac{5.67\times10^{-8}\times5.44\times10^{10}}{1.5} = 2056$ W/m$^2$.
 2. **LMTD.** Counter flow, $\Delta T_1 = 60$ K, $\Delta T_2 = 20$ K: $\Delta T_{lm} = \dfrac{40}{\ln 3} = 36.4$ K.
 3. **Wien's law.** At $T = 1000$ K, $\lambda_{max} = \dfrac{2898}{1000} = 2.9\ \mu$m.
 
-## 8. Common mistakes
+## 🧭 8. Common mistakes
 
 - Using Celsius in radiation formulas (must use Kelvin).
 - Using $\Delta T_{lm}$ of a counter flow in parallel flow.
 - Confusing Nusselt with Biot (fluid vs solid conductivity).
 
-## 9. Interconnections
+## 🧭 9. Interconnections
 
 - Heat exchangers link to boilers, condensers, intercoolers, refrigeration condensers and evaporators, IC engine radiators.
 
-## 10. PYQs
+## 🧭 10. PYQs
 
 | # | Question | Answer | Exam / Year | Verify |
 |---|---|---|---|---|
@@ -263,7 +266,7 @@ $$\varepsilon = \frac{q_{actual}}{q_{max}} = \frac{C_h\,(T_{h,in} - T_{h,out})}{
 | 10 | Dropwise condensation compared with filmwise | Higher $h$ | RRB JE 2015 | [ ] |
 | 11 | $Nu$ for fully developed laminar flow in a tube (constant wall temperature) | $3.66$ | APPSC AEE 2012 | [ ] |
 
-## 11. Revision checklist
+## 🧭 11. Revision checklist
 
 - [ ] All dimensionless numbers with meanings
 - [ ] Flat plate and tube correlations

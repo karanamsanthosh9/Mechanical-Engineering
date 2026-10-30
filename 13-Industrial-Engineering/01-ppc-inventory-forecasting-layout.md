@@ -1,14 +1,14 @@
-# 01. Production Planning, Inventory, Forecasting and Plant Layout
+# 📊 01. Production Planning, Inventory, Forecasting and Plant Layout
 
 **Exam relevance:** APPSC AEE: C | SSC JE: B | RRB JE: B | Category: ALL | Yield: HY
 
 ---
 
-## Part A: Detailed Theory (read this first)
+## 📘 Part A: Detailed Theory (read this first)
 
 Industrial engineering asks one question: how do we get the required output with the least waste of people, material, machines, time and money? This chapter covers the planning side of that question. Production planning and control decides what to make and when. Forecasting estimates how much will be needed. Inventory control decides how much to hold and when to reorder. Break-even analysis tells whether the volume is worth producing. Plant location and layout decide where and how the work physically flows. Each topic is a trade-off between two opposing costs, and the formulas are simply the point where the opposing costs balance.
 
-### A1. Production systems and productivity
+### 🔹 A1. Production systems and productivity
 
 | System | Volume and variety | Equipment and layout |
 |---|---|---|
@@ -20,7 +20,7 @@ Industrial engineering asks one question: how do we get the required output with
 
 **Productivity** is output divided by input. Partial productivity uses one input (output per labour hour), multifactor productivity uses several, and total productivity uses all inputs. Productivity rises when output increases for the same input or the same output is made with less input.
 
-### A2. Production planning and control (PPC)
+### 🔹 A2. Production planning and control (PPC)
 
 PPC ensures that the right material, in the right quantity, reaches the right machine at the right time.
 
@@ -44,7 +44,7 @@ PPC ensures that the right material, in the right quantity, reaches the right ma
 
 **Planning hierarchy.** Aggregate planning (monthly or quarterly families), the master production schedule (MPS, specific end items), then material requirement planning (MRP). MRP takes as inputs the MPS, the bill of materials (BOM) and the inventory status, and produces planned order releases for components. MRP II extends this to capacity, finance and shop floor; ERP integrates the whole enterprise.
 
-### A3. Lean, JIT and quality philosophies
+### 🔹 A3. Lean, JIT and quality philosophies
 
 - **Just-in-Time (JIT):** a pull system in which production is triggered by actual demand, so inventory is minimal. **Kanban** cards signal when to produce or move more material.
 - **Lean manufacturing:** removes waste (*muda*). The seven wastes are overproduction, waiting, transport, over-processing, inventory, motion and defects.
@@ -53,7 +53,7 @@ PPC ensures that the right material, in the right quantity, reaches the right ma
 - **Poka-yoke:** error-proofing devices that prevent defects.
 - **Six Sigma:** 3.4 defects per million opportunities, improved through DMAIC (Define, Measure, Analyse, Improve, Control).
 
-### A4. Forecasting
+### 🔹 A4. Forecasting
 
 Forecasting estimates future demand from past data and judgement.
 
@@ -84,7 +84,7 @@ The new forecast is the old forecast corrected by a fraction $\alpha$ of the las
 
 $$b = \frac{n\sum xy - \sum x\sum y}{n\sum x^2 - \left(\sum x\right)^2}, \qquad a = \bar{y} - b\bar{x}$$
 
-### A5. Inventory control: the logic
+### 🔹 A5. Inventory control: the logic
 
 **Why hold inventory.** To decouple stages of production, to cover demand and lead-time variability, to buy in economical lots and to buffer against shortages.
 
@@ -97,7 +97,8 @@ $$b = \frac{n\sum xy - \sum x\sum y}{n\sum x^2 - \left(\sum x\right)^2}, \qquad 
 
 Ordering large lots means few orders but high average stock. Ordering small lots means low stock but many orders. Total cost has a minimum in between.
 
-### A6. Economic order quantity (EOQ)
+### 🔹 A6. Economic order quantity (EOQ)
+![Diagram: Eoq cost curves](../assets/13-industrial-engineering/eoq-cost-curves.png)
 
 **Assumptions.** Constant known demand, instantaneous replenishment, fixed lead time, no shortages and constant unit price.
 
@@ -130,7 +131,7 @@ $$Q^* = \sqrt{\frac{2DC_o}{C_h}\cdot\frac{C_h + C_s}{C_s}}$$
 
 **Safety stock.** A buffer for variability in demand and lead time, $SS = z\sigma_{LT}$, where $z$ comes from the required service level.
 
-### A7. Inventory classification and systems
+### 🔹 A7. Inventory classification and systems
 
 - **ABC analysis (Pareto):** by annual consumption value. A items are about 10 to 20 percent of the items but 70 to 80 percent of the value and need tight control. C items are about 50 percent of the items but about 5 percent of the value and need loose control. B items are in between.
 - **VED:** vital, essential, desirable (by criticality). **FSN:** fast, slow, non-moving (by consumption rate). **HML:** high, medium, low (by unit price). **SDE:** scarce, difficult, easy (by availability).
@@ -138,7 +139,8 @@ $$Q^* = \sqrt{\frac{2DC_o}{C_h}\cdot\frac{C_h + C_s}{C_s}}$$
 - **P-system (periodic review):** review at fixed intervals and order up to a maximum level.
 - **Two-bin system** and **min-max system** are simple versions of these.
 
-### A8. Break-even analysis
+### 🔹 A8. Break-even analysis
+![Diagram: Break even chart](../assets/13-industrial-engineering/break-even-chart.png)
 
 Costs are split into fixed costs $F$ (independent of volume) and variable costs $v$ per unit; the selling price is $p$.
 
@@ -151,7 +153,8 @@ $$BEP_{units} = \frac{F}{p - v}, \qquad BEP_{value} = \frac{F}{1 - v/p} = \frac{
 
 **Assumptions.** Costs and revenue are linear in volume, price is constant, a single product (or constant mix) is made and production equals sales.
 
-### A9. Plant location and layout
+### 🔹 A9. Plant location and layout
+![Diagram: Queuing and plant layout](../assets/13-industrial-engineering/queuing-and-plant-layout.png)
 
 **Location factors.** Raw material, market, labour, power, transport, water, climate, government policy and taxes. Quantitative tools: factor rating, centre of gravity (centroid) method, break-even analysis and the transportation model.
 
@@ -176,7 +179,7 @@ $$BEP_{units} = \frac{F}{p - v}, \qquad BEP_{value} = \frac{F}{1 - v/p} = \frac{
 
 Heuristics: largest candidate rule, ranked positional weight (Helgeson-Birnie) and Kilbridge-Wester. Systematic layout planning (SLP) uses the relationship chart (REL) and from-to chart.
 
-### A10. What examiners test from this chapter
+### 🔹 A10. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -194,16 +197,16 @@ Heuristics: largest candidate rule, ranked positional weight (Helgeson-Birnie) a
 
 ---
 
-## Part B: Quick-reference notes, formulas, numericals and PYQs
+## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
-## 1. Foundations
+## 🧭 1. Foundations
 
 - **Industrial engineering (IE):** design, improvement and installation of integrated systems of people, materials, information, equipment and energy.
 - **Production systems:** **job** (one-off, flexible, general-purpose machines), **batch** (moderate volume), **mass/flow** (high volume, special-purpose machines, line layout), **continuous process** (refineries, chemicals), **project** (construction).
 - **Productivity** $= \dfrac{\text{output}}{\text{input}}$. Partial, multifactor and total productivity measures exist.
 
-## 2. Production Planning and Control (PPC)
+## 🧭 2. Production Planning and Control (PPC)
 
 - **Functions:** planning, **routing** (path of work), **scheduling** (time of each operation), **dispatching** (issuing orders), **follow-up** (expediting), and **inspection**. 
 - **Loading** assigns work to machines.
@@ -212,7 +215,7 @@ Heuristics: largest candidate rule, ranked positional weight (Helgeson-Birnie) a
 - **Aggregate planning**, **Master Production Schedule (MPS)**, **Material Requirement Planning (MRP)**: inputs are the MPS, the bill of materials (BOM) and the inventory records. **MRP II**, **ERP**.
 - **Just-in-Time (JIT)** and **Kanban:** pull system, minimal inventory, elimination of waste (*muda*). **Lean** manufacturing: seven wastes (overproduction, waiting, transport, over-processing, inventory, motion, defects). **5S:** Sort, Set in order, Shine, Standardise, Sustain. **Kaizen:** continuous improvement. **Poka-yoke:** error-proofing. **Six Sigma:** $3.4$ defects per million opportunities; DMAIC.
 
-## 3. Forecasting
+## 🧭 3. Forecasting
 
 - **Qualitative:** Delphi method, market research, expert opinion. **Quantitative:** time series and causal (regression).
 - **Moving average (n periods):** $F_{t+1} = \dfrac{1}{n}\sum_{i=0}^{n-1}D_{t-i}$.
@@ -226,7 +229,7 @@ $$F_{t+1} = \alpha\,D_t + (1-\alpha)\,F_t,\qquad 0 \le \alpha \le 1$$
 - **Linear regression (trend):** $y = a + b x$ with $b = \dfrac{n\sum xy - \sum x\sum y}{n\sum x^2 - (\sum x)^2}$.
 - **Time series components:** trend, seasonal, cyclic, random (irregular).
 
-## 4. Inventory control
+## 🧭 4. Inventory control
 
 - **Types:** raw material, work-in-process, finished goods, MRO items. **Costs:** ordering (setup) cost $C_o$, holding (carrying) cost $C_h$ per unit per year (storage, insurance, capital), shortage (stockout) cost, purchase cost.
 - **Economic Order Quantity (EOQ)** (Wilson/Harris model; instantaneous replenishment, constant demand, no shortages):
@@ -248,7 +251,7 @@ $$Q^* = \sqrt{\frac{2\,D\,C_o}{C_h\left(1 - \dfrac{d}{p}\right)}}$$
 - **Systems:** **Q-system (fixed order quantity, continuous review)**, **P-system (periodic review, fixed interval)**, **two-bin system**, **Min-Max**.
 - **Safety stock** buffers variability in demand and lead time: $SS = z\,\sigma_{LT}$.
 
-## 5. Break-even analysis
+## 🧭 5. Break-even analysis
 
 - **Fixed costs** $F$ (do not vary with output), **variable costs** $v$ per unit, selling price $p$ per unit.
 
@@ -258,7 +261,7 @@ $$\text{BEP (units)} = \frac{F}{p - v},\qquad \text{BEP (sales value)} = \frac{F
   - **Profit** $= (p - v)\,x - F$.
 - **Assumptions:** linear costs and revenue, constant price, single product (or fixed mix), and production equals sales.
 
-## 6. Plant location and layout
+## 🧭 6. Plant location and layout
 
 - **Location factors:** raw material, market, labour, power, transport, water, climate, government policy. Quantitative methods: **factor rating**, **centre of gravity (centroid) method**, **break-even analysis**, **transportation model**.
 - **Layout types:**
@@ -275,7 +278,7 @@ $$\text{BEP (units)} = \frac{F}{p - v},\qquad \text{BEP (sales value)} = \frac{F
 - **Line balancing (assembly line):** **cycle time** $C = \dfrac{\text{available time}}{\text{required output}}$; **minimum number of workstations** $= \left\lceil\dfrac{\sum t_i}{C}\right\rceil$; **line efficiency** $= \dfrac{\sum t_i}{N\,C}\times100\%$; **balance delay** $= 100\% - $ line efficiency. Methods: largest candidate rule, ranked positional weight (Helgeson-Birnie), Kilbridge-Wester.
 - **Systematic Layout Planning (SLP):** relationship chart (REL), from-to chart.
 
-## 7. Worked numericals
+## 🧭 7. Worked numericals
 
 1. **EOQ.** $D = 2400$ units/year, $C_o = \text{Rs } 100$, $C_h = \text{Rs } 6$/unit/year: $Q^* = \sqrt{\dfrac{2\times2400\times100}{6}} = 283$ units. Orders per year $= 8.5$.
 2. **Exponential smoothing.** $F_t = 100$, $D_t = 120$, $\alpha = 0.2$: $F_{t+1} = 0.2\times120 + 0.8\times100 = 104$.
@@ -283,7 +286,7 @@ $$\text{BEP (units)} = \frac{F}{p - v},\qquad \text{BEP (sales value)} = \frac{F
 4. **Line balancing.** Total task time $= 18$ min, cycle time $= 4$ min: minimum stations $= \lceil 4.5\rceil = 5$; efficiency $= \dfrac{18}{5\times4} = 90\%$.
 5. **EPQ.** $D = 12000$ per year over $250$ working days gives $d = 48$/day. With $C_o = 200$, $C_h = 2$ and $p = 120$/day, $1 - \dfrac{d}{p} = 0.6$, so $Q^* = \sqrt{\dfrac{2\times12000\times200}{2\times0.6}} = 2000$ units.
 
-## 8. Common mistakes
+## 🧭 8. Common mistakes
 
 - Using a different time unit for $D$ and $C_h$ in the EOQ formula (both must refer to a year).
 - Including the purchase cost in the optimisation of EOQ (it does not affect the EOQ without discounts).
@@ -291,13 +294,13 @@ $$\text{BEP (units)} = \frac{F}{p - v},\qquad \text{BEP (sales value)} = \frac{F
 - In exponential smoothing, believing that a high $\alpha$ gives a smoother forecast; it does the opposite.
 - Forgetting that the break-even point in value is $\dfrac{F}{\text{P/V ratio}}$.
 
-## 9. Interconnections
+## 🧭 9. Interconnections
 
 - **Manufacturing:** line balancing, layout, tooling economics.
 - **Operations research:** transportation, LP and CPM/PERT (next chapter).
 - **Economics:** costs and depreciation.
 
-## 10. PYQs
+## 🧭 10. PYQs
 
 | # | Question | Answer | Exam / Year | Verify |
 |---|---|---|---|---|
@@ -317,7 +320,7 @@ $$\text{BEP (units)} = \frac{F}{p - v},\qquad \text{BEP (sales value)} = \frac{F
 | 14 | Kanban means | Card signal in a pull system | APPSC AEE 2016 | [ ] |
 | 15 | Safety stock is held to | Protect against demand and lead time variability | RRB JE 2017 | [ ] |
 
-## 11. Revision checklist
+## 🧭 11. Revision checklist
 
 - [ ] PPC functions and sequencing rules
 - [ ] Forecasting formulas and errors

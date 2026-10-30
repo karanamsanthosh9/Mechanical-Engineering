@@ -1,14 +1,14 @@
-# 01. Impulse and Reaction Hydraulic Turbines
+# 🌊 01. Impulse and Reaction Hydraulic Turbines
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: VHY
 
 ---
 
-## Part A: Detailed Theory (read this first)
+## 📘 Part A: Detailed Theory (read this first)
 
 A hydraulic turbine is a machine that extracts energy from flowing water and delivers it as shaft work, usually to turn an alternator. Everything in this chapter follows from one principle: the angular momentum of the water changes as it passes through the runner, and the torque on the runner equals that change per second. The three main turbines (Pelton, Francis, Kaplan) differ in how the available head is converted: all of it to velocity in a nozzle (Pelton), or partly to velocity and partly kept as pressure inside the runner (Francis, Kaplan).
 
-### A1. Energy available and head terms
+### 🔹 A1. Energy available and head terms
 
 **Source of energy.** Water stored at height has potential energy. Flowing down the penstock it gains speed and loses some energy to friction.
 
@@ -27,7 +27,7 @@ A hydraulic turbine is a machine that extracts energy from flowing water and del
 
 **Why head decides the machine.** A high head with small discharge needs a small wheel running slowly relative to the jet speed, which suits an open jet on buckets. A low head with large discharge needs a large flow area and a high rotational speed, which suits an axial propeller. Medium conditions are best served by the mixed-flow Francis runner.
 
-### A2. Euler's turbine equation
+### 🔹 A2. Euler's turbine equation
 
 **Derivation idea.** Angular momentum per second entering the runner at radius $r_1$ is $\dot{m} V_{w1} r_1$; leaving at radius $r_2$ it is $\dot{m} V_{w2} r_2$. Torque equals the rate of change of angular momentum:
 
@@ -47,7 +47,7 @@ $$H_E = \frac{1}{g}\left(V_{w1}U_1 - V_{w2}U_2\right)$$
 
 **Best outlet condition.** If the water leaves with no whirl ($V_{w2} = 0$), the exit kinetic energy is the least for a given axial flow, and the work extracted is $V_{w1}U_1/g$ per unit weight. Francis and Kaplan are designed near this condition at full load.
 
-### A3. Efficiencies
+### 🔹 A3. Efficiencies
 
 | Efficiency | Meaning |
 |---|---|
@@ -58,7 +58,8 @@ $$H_E = \frac{1}{g}\left(V_{w1}U_1 - V_{w2}U_2\right)$$
 
 $$\eta_o = \eta_h\,\eta_m\,\eta_v$$
 
-### A4. Pelton wheel (impulse turbine)
+### 🔹 A4. Pelton wheel (impulse turbine)
+![Diagram: Pelton wheel](../assets/11-fluid-machinery/pelton-wheel.png)
 
 **How it works.** The whole net head is converted to kinetic energy in a nozzle, forming a high-speed jet at atmospheric pressure. The jet strikes double-cup buckets on the rim of a wheel. A central splitter ridge divides the jet into two halves that are turned back through nearly $180^\circ$. Because the wheel runs in air at atmospheric pressure, no draft tube is needed, and the pressure is the same at inlet and outlet.
 
@@ -100,7 +101,8 @@ If the jet were turned back through $180^\circ$ with no friction ($\phi = 0$, $k
 
 **Part-load behaviour.** Efficiency stays nearly constant over a wide load range, because the spear valve changes the discharge while jet velocity stays fixed.
 
-### A5. Francis turbine (mixed flow reaction turbine)
+### 🔹 A5. Francis turbine (mixed flow reaction turbine)
+![Diagram: Francis kaplan turbines](../assets/11-fluid-machinery/francis-kaplan-turbines.png)
 
 **How it works.** Water enters a spiral (scroll) casing, which distributes it uniformly around the runner. It passes through fixed stay vanes (structural, resist the casing pressure load) and then through adjustable guide (wicket gate) vanes, which control flow and set the entry angle. It enters the runner radially inward, turns, and leaves axially into the draft tube. The runner is fully submerged and is full of water under pressure, so part of the head is converted in the runner itself.
 
@@ -134,7 +136,7 @@ $$\eta_d = \frac{\dfrac{V_2^2 - V_3^2}{2g} - h_f}{\dfrac{V_2^2}{2g}}$$
 
 A Pelton wheel needs no draft tube, because its runner operates in air.
 
-### A6. Kaplan and propeller turbines (axial flow)
+### 🔹 A6. Kaplan and propeller turbines (axial flow)
 
 **Features.** Water flows axially through the runner after being guided by vanes. The inlet and outlet flow velocities are equal and the blade speed is the same ($V_{f1} = V_{f2}$, $U_1 = U_2$), because the radius does not change.
 
@@ -148,7 +150,7 @@ A Pelton wheel needs no draft tube, because its runner operates in air.
 
 **Why blades twist.** Blade speed rises with radius, so blade angle must change from hub to tip to keep the inlet triangle matched to the flow. This is why axial blades are twisted.
 
-### A7. Specific speed and unit quantities
+### 🔹 A7. Specific speed and unit quantities
 
 **Unit quantities.** Values for a turbine of the same geometry working under 1 m head:
 
@@ -171,13 +173,13 @@ $$N_s = \frac{N\sqrt{P}}{H^{5/4}}$$
 
 Low $N_s$ means high head and low discharge; high $N_s$ means low head and high discharge.
 
-### A8. Governing and surge protection
+### 🔹 A8. Governing and surge protection
 
 **Governing.** The turbine drives an alternator that must run at constant speed to hold frequency. When load falls, the speed rises. A governor senses the speed change and, through an oil-pressure servomotor, changes the discharge: spear valve and deflector in a Pelton wheel; guide vanes (plus runner blades in Kaplan) in reaction turbines.
 
 **Water hammer protection.** Rapid closure of a long penstock produces a pressure surge. A Pelton avoids this by diverting the jet rather than closing the nozzle fast. For reaction turbines, a surge tank placed near the end of a long penstock absorbs the surge and supplies water during a load increase, and relief valves can open when the guide vanes close suddenly.
 
-### A9. Cavitation in turbines
+### 🔹 A9. Cavitation in turbines
 
 **Mechanism.** When the local absolute pressure falls to the vapour pressure of water at that temperature, vapour bubbles form. They are swept to higher-pressure regions and collapse violently, generating shock pressures that pit the metal surface. Effects: noise, vibration, pitting and loss of efficiency.
 
@@ -191,7 +193,8 @@ $H_s$ is the height of the runner outlet above tail water (suction head), $H_{at
 
 **Remedies.** Lower runner setting, polished surfaces, stainless steel runners, avoiding operation far from design load, and injecting air in the draft tube.
 
-### A10. Comparison and selection
+### 🔹 A10. Comparison and selection
+![Diagram: Turbine selection and efficiency](../assets/11-fluid-machinery/turbine-selection-and-efficiency.png)
 
 | Feature | Pelton | Francis | Kaplan |
 |---|---|---|---|
@@ -204,7 +207,7 @@ $H_s$ is the height of the runner outlet above tail water (suction head), $H_{at
 | Regulation | spear, deflector | guide vanes | guide vanes and runner blades |
 | Part-load efficiency | nearly constant | falls | high (double regulation) |
 
-### A11. What examiners test from this chapter
+### 🔹 A11. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -221,10 +224,10 @@ $H_s$ is the height of the runner outlet above tail water (suction head), $H_{at
 
 ---
 
-## Part B: Quick-reference notes, formulas, numericals and PYQs
+## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
-## 1. Foundations
+## 🧭 1. Foundations
 
 - A **hydraulic turbine** converts the energy of flowing water (potential and kinetic) into mechanical energy at the shaft.
 - **Gross head $H_g$:** difference between the headwater and tailwater levels. **Net (effective) head $H$:** gross head minus the head loss in the penstock, $H = H_g - h_f$.
@@ -237,7 +240,7 @@ $H_s$ is the height of the runner outlet above tail water (suction head), $H_{at
 | Flow direction | Tangential (Pelton), radial (old Francis), mixed (modern Francis), axial (Kaplan, propeller) |
 | Specific speed | Low (Pelton), medium (Francis), high (Kaplan) |
 
-## 2. Euler's turbine equation
+## 🧭 2. Euler's turbine equation
 
 For a turbine the work done per unit weight of water (head extracted by the runner):
 
@@ -250,7 +253,7 @@ $$P = \rho\,Q\left(V_{w1}U_1 - V_{w2}U_2\right)$$
 - $V_{w}$ is the whirl component of the absolute velocity and $U$ the blade (peripheral) speed. Subscript 1 is the inlet, 2 the outlet.
 - For a Pelton wheel, $U_1 = U_2 = U$; for radial machines, $U = \dfrac{\pi D N}{60}$ and $U_1 \ne U_2$.
 
-## 3. Efficiencies
+## 🧭 3. Efficiencies
 
 | Efficiency | Definition |
 |---|---|
@@ -259,7 +262,7 @@ $$P = \rho\,Q\left(V_{w1}U_1 - V_{w2}U_2\right)$$
 | Volumetric | $\eta_v = \dfrac{\text{water through runner}}{\text{water supplied}}$ (leakage loss) |
 | Overall | $\eta_o = \dfrac{\text{shaft power}}{\rho g Q H} = \eta_h\,\eta_m\,\eta_v$ |
 
-## 4. Pelton wheel (impulse turbine)
+## 🧭 4. Pelton wheel (impulse turbine)
 
 - **Components:** penstock, **nozzle** with a spear (needle) valve to regulate the flow, **buckets** (double hemispherical cups with a splitter ridge in the middle), casing, and a **brake nozzle** (stops the wheel quickly).
 - A single jet is used in small units; 2 to 6 jets in large ones. The jet strikes the bucket tangentially, and the entire head is converted to kinetic energy in the nozzle.
@@ -283,7 +286,7 @@ $$\eta_h = \frac{2\,(V_1 - U)(1 + k\cos\phi)\,U}{V_1^2}$$
 - **Governing:** spear valve controls the flow; a **deflector** diverts the jet to avoid sudden closure and water hammer (the nozzle closes slowly, and the deflector moves quickly).
 - **Pelton efficiency** is almost constant over a wide load range because of the nozzle-spear arrangement.
 
-## 5. Francis turbine (mixed flow reaction turbine)
+## 🧭 5. Francis turbine (mixed flow reaction turbine)
 
 - **Components:** spiral (scroll) casing, **stay vanes**, **guide (wicket) vanes** (adjustable, regulate the flow and give the correct entry angle), **runner**, and **draft tube**.
 - The runner is completely submerged and works under pressure; the pressure at the inlet is greater than at the outlet.
@@ -308,7 +311,7 @@ $$\eta_d = \frac{\dfrac{V_2^2 - V_3^2}{2g} - h_f}{\dfrac{V_2^2}{2g}}$$
 
   - The draft tube is never required for a Pelton wheel; the wheel runs in air at atmospheric pressure.
 
-## 6. Kaplan and propeller turbines (axial flow reaction)
+## 🧭 6. Kaplan and propeller turbines (axial flow reaction)
 
 - **Propeller turbine:** fixed blades. **Kaplan turbine:** runner blades are adjustable (pitch can change) with the load, and the guide vanes are also adjustable (double regulation); thus high efficiency across a wide load range.
 - Used for low heads (below 30 m, up to about 70 m) and large discharges. The runner has 3 to 8 blades on a large-diameter **hub (boss)**.
@@ -317,7 +320,7 @@ $$\eta_d = \frac{\dfrac{V_2^2 - V_3^2}{2g} - h_f}{\dfrac{V_2^2}{2g}}$$
 - **Specific speed** $N_s = 300$ to $1000$ (high).
 - The **Deriaz** turbine is a mixed-flow adjustable-blade variant; the **bulb** turbine is for very low heads with a horizontal axis.
 
-## 7. Specific speed and unit quantities
+## 🧭 7. Specific speed and unit quantities
 
 - **Unit quantities** (for a turbine working under 1 m head):
 
@@ -339,12 +342,12 @@ $$N_s = \frac{N\sqrt{P}}{H^{5/4}}$$
 - Specific speed identifies the **type** of turbine for given head, flow and speed; low $N_s$ means high head and low discharge. It is the basis for selecting a turbine.
 - **Model laws for turbines:** for dynamic similarity, $\dfrac{N D}{\sqrt{H}} = $ const, $\dfrac{Q}{N D^3} = $ const, $\dfrac{P}{\rho N^3 D^5} = $ const; $\dfrac{gH}{N^2D^2} = $ const (head coefficient).
 
-## 8. Governing of turbines
+## 🧭 8. Governing of turbines
 
 - Governing maintains a constant speed under a varying load (so that the alternator frequency stays constant). A **governor** senses speed changes and acts on the regulating device: spear valve and deflector for a Pelton wheel; guide vanes (and the runner blades in Kaplan) for reaction turbines. The oil-pressure **servo mechanism** (actuator) supplies the force. A relief valve or a surge tank avoids water hammer.
 - **Surge tank:** a reservoir near the end of a long penstock that absorbs pressure surges and supplies water at the load change.
 
-## 9. Cavitation in turbines
+## 🧭 9. Cavitation in turbines
 
 - Occurs when the local absolute pressure falls to the vapour pressure of water; bubbles then collapse on metal surfaces, causing pitting, noise, vibration and a drop in efficiency.
 - In reaction turbines, it is most likely at the **runner outlet or the draft tube inlet** (lowest pressure).
@@ -355,7 +358,7 @@ $$\sigma = \frac{H_{atm} - H_v - H_s}{H}$$
   where $H_s$ is the suction head (height of the runner outlet above the tailwater), $H_{atm}$ the atmospheric head and $H_v$ the vapour pressure head. The turbine is free from cavitation if $\sigma$ exceeds the critical value $\sigma_c$.
 - **Preventive measures:** keep the setting of the runner low, polished surfaces, and use cavitation-resistant materials (stainless steel) for the runner; avoid operating at off-design loads.
 
-## 10. Comparison table
+## 🧭 10. Comparison table
 
 | Feature | Pelton | Francis | Kaplan |
 |---|---|---|---|
@@ -368,7 +371,7 @@ $$\sigma = \frac{H_{atm} - H_v - H_s}{H}$$
 | Regulation | Spear, deflector | Guide vanes | Guide vanes and runner blades |
 | Efficiency at part load | Nearly constant | Falls | High (double regulation) |
 
-## 11. Worked numericals
+## 🧭 11. Worked numericals
 
 1. **Pelton.** $H = 400$ m, $C_v = 0.98$: $V_1 = 0.98\sqrt{2\times 9.81\times400} = 86.8$ m/s. Optimum $U = 43.4$ m/s.
 2. **Hydraulic efficiency.** $k = 0.95$, $\phi = 15^\circ$: $\eta_{h,max} = \dfrac{1 + 0.95\times 0.966}{2} = 95.9\%$.
@@ -377,7 +380,7 @@ $$\sigma = \frac{H_{atm} - H_v - H_s}{H}$$
 5. **Unit speed.** $N = 400$ rpm at $H = 25$ m: $N_u = 80$ rpm. At $H = 100$ m, the speed is $80\times 10 = 800$ rpm.
 6. **Francis degree of reaction.** Runner inlet head change $= 36$ m, total $H_E = 60$ m: $R = 0.6$.
 
-## 12. Common mistakes
+## 🧭 12. Common mistakes
 
 - Taking the maximum efficiency condition $U = V_1/2$ as the practical value; it is about $0.45\sqrt{2gH}$ because of the nozzle velocity coefficient.
 - Using the Pelton formula for a reaction turbine.
@@ -385,13 +388,13 @@ $$\sigma = \frac{H_{atm} - H_v - H_s}{H}$$
 - Using $P$ in watts in the specific speed formula (it must be kW).
 - Forgetting that the degree of reaction is exactly $0$ for a Pelton wheel and lies between $0$ and $1$ (typically $0.4$ to $0.6$) for reaction turbines.
 
-## 13. Interconnections
+## 🧭 13. Interconnections
 
 - **Power plants:** the hydroelectric plant uses these turbines.
 - **Fluid mechanics:** momentum equation, Bernoulli, dimensional analysis for the unit quantities.
 - **Pumps:** a pump is a reversed turbine (Francis type pump-turbines are used in pumped storage).
 
-## 14. PYQs
+## 🧭 14. PYQs
 
 | # | Question | Answer | Exam / Year | Verify |
 |---|---|---|---|---|
@@ -412,7 +415,7 @@ $$\sigma = \frac{H_{atm} - H_v - H_s}{H}$$
 | 15 | Which turbine has a runner with adjustable blades | Kaplan | RRB JE 2017 | [ ] |
 | 16 | Function of the draft tube | Convert exit kinetic energy to pressure and allow setting above tailwater | SSC JE 2022 | [ ] |
 
-## 15. Revision checklist
+## 🧭 15. Revision checklist
 
 - [ ] Euler's turbine equation, efficiencies
 - [ ] Pelton: velocity diagram, efficiency, optimum speed

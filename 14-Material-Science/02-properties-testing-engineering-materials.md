@@ -1,14 +1,14 @@
-# 02. Mechanical Properties, Testing, Engineering Materials and Corrosion
+# 🧪 02. Mechanical Properties, Testing, Engineering Materials and Corrosion
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: HY
 
 ---
 
-## Part A: Detailed Theory (read this first)
+## 📘 Part A: Detailed Theory (read this first)
 
 The previous chapter explained structure; this chapter explains behaviour and selection. A material is chosen for its properties, and properties are measured by standard tests whose results mean something only if we understand what each test measures. The chapter therefore moves in four steps: define the mechanical properties, show how tests (tensile, hardness, impact, fatigue, creep) measure them, survey the engineering materials (ferrous, non-ferrous, non-metallic) with the reason for each one's use, and finish with corrosion, the main way in which materials fail in service without any mechanical overload.
 
-### A1. Mechanical properties
+### 🔹 A1. Mechanical properties
 
 | Property | Meaning |
 |---|---|
@@ -29,7 +29,7 @@ The previous chapter explained structure; this chapter explains behaviour and se
 
 **Mohs scale of scratch hardness.** Talc 1, gypsum 2, calcite 3, fluorite 4, apatite 5, orthoclase 6, quartz 7, topaz 8, corundum 9, diamond 10.
 
-### A2. Tensile test and the stress-strain curve
+### 🔹 A2. Tensile test and the stress-strain curve
 
 A standard specimen is pulled in a universal testing machine (UTM). For a proportional specimen the gauge length is $L_0 = 5.65\sqrt{A_0}$.
 
@@ -47,7 +47,7 @@ A standard specimen is pulled in a universal testing machine (UTM). For a propor
 - **Ductile fracture** is cup-and-cone with necking; **brittle fracture** is flat and by cleavage, with no necking.
 - **Ductile-brittle transition:** BCC metals such as steel become brittle at low temperature; FCC metals (Al, Cu, austenitic stainless steel) do not. The Charpy test reveals the transition.
 
-### A3. Hardness tests
+### 🔹 A3. Hardness tests
 
 Hardness is resistance to plastic indentation. Each test presses an indenter into the surface and measures either the size of the impression or its depth.
 
@@ -65,7 +65,7 @@ For steel, UTS in MPa is roughly $3.45\times HB$.
 
 **Rockwell scales.** B scale: 1/16 inch ball, 100 kgf, for soft steel and brass. C scale: diamond cone, 150 kgf, for hard steel. A scale: diamond cone, 60 kgf, for carbides and thin hard sheet. Microhardness tests use Vickers or Knoop at light loads.
 
-### A4. Impact, fatigue and creep
+### 🔹 A4. Impact, fatigue and creep
 
 **Impact test.** Measures the energy absorbed when a notched specimen is broken by a swinging pendulum.
 
@@ -88,7 +88,7 @@ For steel, UTS in MPa is roughly $3.45\times HB$.
 - Griffith's criterion for brittle fracture: $\sigma_f = \sqrt{2E\gamma_s/(\pi a)}$.
 - Stress intensity factor $K = Y\sigma\sqrt{\pi a}$. Fracture occurs when $K \ge K_{Ic}$, the plane-strain fracture toughness.
 
-### A5. Ferrous materials
+### 🔹 A5. Ferrous materials
 
 | Material | Composition and properties | Use |
 |---|---|---|
@@ -125,7 +125,7 @@ For steel, UTS in MPa is roughly $3.45\times HB$.
 
 **IS designation.** C45 is a plain carbon steel with 0.45 percent C. In 40Ni14Cr1 the first number is carbon in hundredths and the others give alloy elements. Fe 410 is a plain steel with a minimum tensile strength of 410 MPa.
 
-### A6. Non-ferrous materials
+### 🔹 A6. Non-ferrous materials
 
 | Material | Composition and properties | Use |
 |---|---|---|
@@ -142,7 +142,7 @@ For steel, UTS in MPa is roughly $3.45\times HB$.
 | Zinc | die-casting alloys; galvanising | coating |
 | Tungsten | highest melting point of metals, $3422^\circ$C | filaments |
 
-### A7. Non-metallic materials
+### 🔹 A7. Non-metallic materials
 
 **Polymers.** Long-chain molecules of repeating monomer units.
 
@@ -161,7 +161,7 @@ Unidirectional composites are anisotropic: strong along the fibres and weak acro
 
 **Other classes.** Smart materials (shape memory alloys such as Nitinol, piezoelectric materials), nanomaterials, biomaterials and superconductors. **Semiconductors:** silicon and germanium; n-type is doped with a pentavalent element such as phosphorus, p-type with a trivalent element such as boron. **Magnetic materials:** soft (low hysteresis loss, silicon steel for transformer cores) and hard (permanent magnets: alnico, ferrites, rare earths).
 
-### A8. Corrosion and its prevention
+### 🔹 A8. Corrosion and its prevention
 
 **Mechanism.** Corrosion is an electrochemical attack. It needs an anode (where the metal oxidises and dissolves), a cathode (where reduction occurs), an electrolyte and a conducting path between anode and cathode.
 
@@ -179,7 +179,7 @@ Unidirectional composites are anisotropic: strong along the fibres and weak acro
 
 **High-temperature oxidation.** The Pilling-Bedworth ratio (volume of oxide to volume of metal consumed) indicates whether the oxide film is protective: a ratio just above 1 gives a continuous, protective film, while a ratio below 1 or well above 2 gives a cracked, non-protective one.
 
-### A9. What examiners test from this chapter
+### 🔹 A9. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -199,10 +199,10 @@ Unidirectional composites are anisotropic: strong along the fibres and weak acro
 
 ---
 
-## Part B: Quick-reference notes, formulas, numericals and PYQs
+## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
-## 1. Mechanical properties
+## 🧭 1. Mechanical properties
 
 | Property | Meaning |
 |---|---|
@@ -221,7 +221,7 @@ Unidirectional composites are anisotropic: strong along the fibres and weak acro
 | **Malleability/ductility ordering** | Gold, silver and copper are highly ductile and malleable; the highest ductility is gold or platinum |
 | **Hardness order (scratch)** | Mohs scale: talc 1, gypsum 2, calcite 3, fluorite 4, apatite 5, orthoclase 6, quartz 7, topaz 8, corundum 9, diamond 10 |
 
-## 2. Tensile test and stress-strain curve
+## 🧭 2. Tensile test and stress-strain curve
 
 - A standard specimen is pulled in a **universal testing machine (UTM)**. Gauge length $L_0 = 5.65\sqrt{A_0}$ (proportional specimen).
 - **Engineering stress** $\sigma = \dfrac{P}{A_0}$, strain $\varepsilon = \dfrac{\Delta L}{L_0}$. **True stress** $\sigma_T = \sigma(1 + \varepsilon)$, **true strain** $\varepsilon_T = \ln(1 + \varepsilon)$ (valid up to necking).
@@ -233,7 +233,7 @@ Unidirectional composites are anisotropic: strong along the fibres and weak acro
 - **Ductile fracture:** cup-and-cone; **brittle fracture:** flat, with cleavage.
 - **Ductile-brittle transition temperature (DBTT):** BCC metals (steel) become brittle at low temperature; FCC metals (Al, Cu, austenitic stainless steel) do not. The Charpy test shows this.
 
-## 3. Hardness tests
+## 🧭 3. Hardness tests
 
 | Test | Indenter | Load | Formula / notes |
 |---|---|---|---|
@@ -247,14 +247,14 @@ Unidirectional composites are anisotropic: strong along the fibres and weak acro
 - **Rockwell scales:** **B** (red scale; $\frac{1}{16}$" ball, $100$ kgf; soft steel, brass), **C** (black scale; diamond cone, $150$ kgf; hard steel), **A** (diamond cone, $60$ kgf; carbides and thin hard sheets). 
 - **Microhardness:** Vickers and Knoop at light loads.
 
-## 4. Impact, fatigue and creep tests
+## 🧭 4. Impact, fatigue and creep tests
 
 - **Impact test:** measures the energy absorbed in fracture of a notched specimen. **Charpy** (simply supported beam, V-notch, $10\times10\times55$ mm; the notch faces away from the striker) and **Izod** (cantilever, notch faces the striker). Notch sensitivity; the impact value is not the same as toughness measured by tension.
 - **Fatigue:** failure under repeated or fluctuating stress, below the static yield strength. Stages: crack initiation, propagation (beach marks), final fracture. **S-N curve:** stress amplitude vs the number of cycles. **Endurance limit** (ferrous metals, about $10^6$ to $10^7$ cycles; roughly $0.5\,\sigma_u$): the stress below which the material survives indefinitely. Non-ferrous metals (aluminium) have no sharp endurance limit; a fatigue strength at $10^8$ cycles is quoted. **Factors reducing fatigue life:** stress concentrators, rough surface, corrosion, size, and tensile residual stress. **Improvements:** shot peening, surface rolling, nitriding (compressive residual stress), polishing.
 - **Creep:** at temperatures above about $0.4\,T_m$, a material strains continuously under a constant stress. **Three stages:** primary (decreasing rate), secondary (steady-state; minimum creep rate), tertiary (accelerating rate, leading to rupture). Creep resistance is raised by large grain size, solid-solution alloying, and precipitation (e.g. nickel superalloys, turbine blades). **Larson-Miller parameter**: $P = T\,(C + \log t_r)$. **Stress relaxation** is related.
 - **Fracture mechanics:** stress concentration factor $K_t = \dfrac{\sigma_{max}}{\sigma_{nom}}$; **Griffith's criterion** $\sigma_f = \sqrt{\dfrac{2E\gamma_s}{\pi a}}$; **stress intensity factor** $K = Y\,\sigma\sqrt{\pi a}$; fracture occurs when $K \ge K_{Ic}$ (**plane-strain fracture toughness**).
 
-## 5. Ferrous materials
+## 🧭 5. Ferrous materials
 
 | Material | Composition / properties | Use |
 |---|---|---|
@@ -276,7 +276,7 @@ Unidirectional composites are anisotropic: strong along the fibres and weak acro
 - **Steel making:** blast furnace (iron ore, coke, limestone) gives pig iron; **Bessemer**, **open hearth** (obsolete), **LD (BOF, basic oxygen)**, **electric arc** (scrap, alloy steels), **induction furnace**. **Killed steel** (fully deoxidised with Si/Al; sound), **semi-killed**, **rimmed** (not deoxidised).
 - **IS designation:** **C45** (plain carbon steel with $0.45\%$ C), **40Cr1** or **40Ni14Cr1**: first number is carbon in hundredths; element symbols with numbers ($\times$ the factor) give percentages. **Fe 410:** plain steel with a minimum UTS of $410$ MPa.
 
-## 6. Non-ferrous materials
+## 🧭 6. Non-ferrous materials
 
 | Material | Composition and properties | Use |
 |---|---|---|
@@ -294,7 +294,7 @@ Unidirectional composites are anisotropic: strong along the fibres and weak acro
 | **Zinc** | Die casting alloys; galvanising | Coating |
 | **Tungsten** | Highest melting point of metals ($3422^\circ$C) | Filaments |
 
-## 7. Non-metallic materials
+## 🧭 7. Non-metallic materials
 
 - **Polymers:** long-chain molecules (monomer repeat units). **Thermoplastics** soften on heating and can be re-moulded (PE, PP, PVC, polystyrene, nylon, acrylic/PMMA, PTFE/Teflon, ABS). **Thermosets** harden permanently (Bakelite, epoxy, polyester, melamine, urea-formaldehyde). **Elastomers** (natural rubber, neoprene, silicone, vulcanised with sulphur). **Glass transition temperature $T_g$:** the temperature at which a polymer changes from glassy to rubbery.
 - **Ceramics:** compounds of metals and non-metals (oxides, carbides, nitrides): hard, brittle, high melting point, good insulators, strong in compression (alumina, silicon carbide, zirconia, porcelain, glass). **Refractories**, **abrasives**, **cermets**.
@@ -303,7 +303,7 @@ Unidirectional composites are anisotropic: strong along the fibres and weak acro
 - **Semiconductors:** silicon, germanium; intrinsic and extrinsic (n-type: doped with a pentavalent element such as P; p-type: doped with a trivalent element such as B).
 - **Magnetic materials:** soft (low hysteresis loss, transformer cores: silicon steel) and hard (permanent magnets: alnico, ferrites, rare earth).
 
-## 8. Corrosion and its prevention
+## 🧭 8. Corrosion and its prevention
 
 - **Corrosion:** an electrochemical degradation of a metal by the environment. An **anode** (oxidation), **cathode** (reduction), an electrolyte and a conductor are required.
 - **Galvanic series:** when two dissimilar metals are in contact in an electrolyte, the more active (anodic) metal corrodes. A **small anode with a large cathode** gives rapid corrosion.
@@ -311,7 +311,7 @@ Unidirectional composites are anisotropic: strong along the fibres and weak acro
 - **Prevention:** coatings (paint, galvanising, tinning, electroplating, anodising of aluminium), **cathodic protection** (sacrificial anodes such as zinc and magnesium, or impressed current), inhibitors, design (avoid crevices and dissimilar metal couples), and the choice of material (stainless steel).
 - **Oxidation at high temperature** and **scaling**. **Pilling-Bedworth ratio** indicates whether an oxide film is protective.
 
-## 9. Worked numericals
+## 🧭 9. Worked numericals
 
 1. **Elongation.** $L_0 = 50$ mm, $L_f = 62$ mm: $24\%$.
 2. **Modulus of resilience.** $\sigma_y = 250$ MPa, $E = 200$ GPa: $\dfrac{250^2}{2\times200000} = 0.156$ MJ/m$^3$.
@@ -319,7 +319,7 @@ Unidirectional composites are anisotropic: strong along the fibres and weak acro
 4. **Rule of mixtures.** $V_f = 0.4$, $E_f = 300$ GPa, $E_m = 3$ GPa: $E_c = 0.4\times300 + 0.6\times3 = 121.8$ GPa (longitudinal).
 5. **Stress intensity.** $\sigma = 200$ MPa, $a = 5$ mm, $Y = 1.12$: $K = 1.12\times200\times\sqrt{\pi\times0.005} = 28.1$ MPa$\sqrt{\text{m}}$.
 
-## 10. Common mistakes
+## 🧭 10. Common mistakes
 
 - Confusing toughness (energy to fracture) with strength or hardness.
 - Using the Charpy specimen position in the Izod test and vice versa.
@@ -328,13 +328,13 @@ Unidirectional composites are anisotropic: strong along the fibres and weak acro
 - Calling brass a Cu-Sn alloy (that is bronze).
 - Mixing up thermoplastics and thermosets.
 
-## 11. Interconnections
+## 🧭 11. Interconnections
 
 - **Strength of materials:** stress-strain, elastic constants, fatigue and creep.
 - **Machine design:** endurance limit, material selection.
 - **Manufacturing:** formability, machinability, weldability.
 
-## 12. PYQs
+## 🧭 12. PYQs
 
 | # | Question | Answer | Exam / Year | Verify |
 |---|---|---|---|---|
@@ -356,7 +356,7 @@ Unidirectional composites are anisotropic: strong along the fibres and weak acro
 | 16 | Best cathodic protection anode | Zinc / magnesium (sacrificial) | SSC JE 2022 | [ ] |
 | 17 | Hall-Petch relation | Yield strength increases as grain size decreases | RRB JE 2013 | [ ] |
 
-## 13. Revision checklist
+## 🧭 13. Revision checklist
 
 - [ ] Property definitions, stress-strain features
 - [ ] Hardness tests and indenters
