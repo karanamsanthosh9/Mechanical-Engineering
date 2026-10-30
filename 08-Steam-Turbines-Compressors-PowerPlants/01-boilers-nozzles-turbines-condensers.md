@@ -1,14 +1,22 @@
-# 🏭 01. Boilers, Nozzles, Steam Turbines and Condensers
+# 01. Boilers, Nozzles, Steam Turbines and Condensers
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: VHY
 
 ---
 
-## 📘 Part A: Detailed Theory (read this first)
+## Part A: Detailed Theory (read this first)
 
 This chapter follows the path of the working fluid in a steam power plant: the boiler makes steam, nozzles turn its pressure energy into a fast jet, the turbine extracts work from that jet, and the condenser returns the exhaust to liquid so the cycle can repeat. Each device is an application of the steady-flow energy equation, so keep $q - w = \Delta h + \Delta KE$ in mind throughout.
 
-### 🔹 A1. Boilers: purpose and heat flow
+### A1. Boilers: purpose and heat flow
+```text
++--------+   steam   +---------+   exhaust   +-----------+
+| boiler | --------> | turbine | ----------> | condenser |
++--------+           +---------+              +-----------+
+  ^                                             |
+  +---------------- feed pump <-----------------+
+```
+
 ![Diagram: Boiler types fire water tube](../assets/08-steam-compressors-power/boiler-types-fire-water-tube.png)
 
 - A **boiler (steam generator)** is a closed vessel in which water is heated and converted to steam at constant pressure by the heat from burning fuel. Heat travels from the hot flue gas to water by radiation (furnace), then convection (tube banks), then conduction through the tube wall.
@@ -19,7 +27,7 @@ This chapter follows the path of the working fluid in a steam power plant: the b
 - **Safety valves** release steam if the pressure exceeds a set value. A **fusible plug** melts if the water level falls too low and the crown is exposed, giving a warning. The **blow-off cock** removes sludge and scale from the lowest point.
 - **Superheater** raises steam above saturation temperature, increasing the cycle efficiency and reducing moisture in the turbine. **Economiser** preheats feedwater using flue gas. **Air preheater** heats combustion air with flue gas.
 
-### 🔹 A2. Draught
+### A2. Draught
 ![Diagram: Condenser and draught](../assets/08-steam-compressors-power/condenser-and-draught.png)
 
 - Combustion needs a continuous flow of air through the fuel bed and removal of flue gas. The pressure difference to drive it is **draught**.
@@ -29,7 +37,7 @@ This chapter follows the path of the working fluid in a steam power plant: the b
 - **Boiler performance measures:** equivalent evaporation (steam output normalised to "from and at $100^\circ$C" so that boilers can be compared), factor of evaporation, boiler efficiency (heat absorbed by water and steam divided by heat supplied by fuel; $75$ to $90\%$), and boiler power.
 - **Heat balance** of a boiler: part of the fuel energy goes to steam; the rest is lost in dry flue gas (largest), moisture in fuel, incomplete combustion and radiation.
 
-### 🔹 A3. Nozzles: energy conversion from first principles
+### A3. Nozzles: energy conversion from first principles
 ![Diagram: Convergent divergent nozzle](../assets/08-steam-compressors-power/convergent-divergent-nozzle.png)
 
 - A **nozzle** is a duct that increases fluid velocity at the expense of pressure. A **diffuser** does the opposite.
@@ -47,7 +55,7 @@ $$\frac{dA}{A} = \frac{dV}{V}(M^2 - 1)$$
 - **Supersaturation.** Steam expands so quickly that condensation lags behind; steam persists as a vapour below the saturation line (metastable). This is stable until the **Wilson line** (about $3.5\%$ moisture), where it suddenly condenses. Consequences: the exit velocity is slightly lower, and the flow rate is about $2$ to $5\%$ larger than the equilibrium value.
 - **Off-design operation.** With the back pressure above the design value the nozzle is over-expanded (shock waves in the divergent part); below it, under-expanded (expansion occurs outside).
 
-### 🔹 A4. Steam turbines: why they work this way
+### A4. Steam turbines: why they work this way
 
 - A turbine converts the thermal energy of steam to rotational mechanical energy in two steps: (i) expand steam in a **nozzle** (or fixed blades) to a high-velocity jet; (ii) direct the jet onto **moving blades**, which deflect it and absorb its momentum change as torque.
 - **Impulse principle.** The pressure of steam is constant over the moving blades; the force on them arises only from the change in the direction of the velocity of the jet. The velocity relative to the blade is nearly constant in magnitude ($V_{r2} = kV_{r1}$ with $k \le 1$) but changes in direction. All the pressure drop occurs in the nozzles, which makes the turbine compact. Examples: De Laval, Curtis, Rateau.
@@ -55,7 +63,7 @@ $$\frac{dA}{A} = \frac{dV}{V}(M^2 - 1)$$
 - **Degree of reaction** $R = \dfrac{\text{enthalpy drop in moving blades}}{\text{enthalpy drop in the stage}}$. It is $0$ for an impulse, $0.5$ for a Parsons turbine.
 - **Comparison.** A single impulse stage can handle a large pressure drop, but the jet speed is very high so the rotor must spin at an excessive speed; reaction turbines deal with small pressure drops per stage, so they need many stages, but they have higher stage efficiency and a smoother flow.
 
-### 🔹 A5. Velocity triangles and work done: the derivation
+### A5. Velocity triangles and work done: the derivation
 ![Diagram: Impulse reaction velocity triangles](../assets/08-steam-compressors-power/impulse-reaction-velocity-triangles.png)
 
 - At blade inlet, the absolute velocity of the steam is $V_1$ at the nozzle angle $\alpha$ to the plane of rotation. The blade moves at $U$. The velocity of steam relative to the blade is the vector difference $V_{r1} = V_1 - U$. Resolve it into the whirl (tangential) and flow (axial) components.
@@ -66,7 +74,7 @@ $$\frac{dA}{A} = \frac{dV}{V}(M^2 - 1)$$
 - **Optimum blade speed for a single-stage impulse turbine.** Work is zero when the blade is stationary ($U = 0$) and again when it runs so fast that the steam cannot catch it; so there is a maximum in between. For symmetrical blades without friction, $\eta_{b,max} = \cos^2\alpha$ at $U/V_1 = \dfrac{\cos\alpha}{2}$. A small nozzle angle (typically $15^\circ$ to $20^\circ$) gives a high $\cos^2\alpha$.
 - **Leaving loss.** The absolute velocity $V_2$ at exit carries kinetic energy $V_2^2/2$ out of the stage. At the optimum speed this is minimum.
 
-### 🔹 A6. Compounding of impulse turbines: why and how
+### A6. Compounding of impulse turbines: why and how
 ![Diagram: Steam turbine compounding](../assets/08-steam-compressors-power/steam-turbine-compounding.png)
 
 - If the entire pressure drop from boiler to condenser is used in one nozzle, the jet velocity would be about $1000$ to $1400$ m/s, and the optimum blade speed would be roughly half of that, around $600$ m/s or more: too high for the bearings and blade stresses. A single-stage De Laval turbine spins at up to $30{,}000$ rpm and needs a reduction gear.
@@ -75,7 +83,7 @@ $$\frac{dA}{A} = \frac{dV}{V}(M^2 - 1)$$
   - **Pressure compounding (Rateau).** The pressure drop is divided among several stages, each with a nozzle and a row of moving blades. The velocity from each nozzle is moderate, so the blade speed is manageable and the efficiency is higher.
   - **Pressure-velocity compounding** combines both: a Curtis first stage, then Rateau stages.
 
-### 🔹 A7. Reaction turbine (Parsons)
+### A7. Reaction turbine (Parsons)
 
 - Identical fixed and moving blades (mirror images), so the velocity triangles at inlet and outlet are symmetrical: $V_1 = V_{r2}$, $V_2 = V_{r1}$, $\alpha = \beta_2$. The enthalpy drop is shared equally between fixed and moving rows ($R = 0.5$).
 - **Work per kg:** $w = U(V_{w1} + V_{w2})$. **Blade efficiency** depends on the speed ratio $\rho = U/V_1$ and is maximum at $\rho = \cos\alpha$, with $\eta_{b,max} = \dfrac{2\cos^2\alpha}{1 + \cos^2\alpha}$. Note that this peak is flatter and higher than that of the impulse stage.
@@ -83,14 +91,14 @@ $$\frac{dA}{A} = \frac{dV}{V}(M^2 - 1)$$
 - **Practical features.** Full (all-round) admission, leakage across the tips of the moving blades matters because the pressure difference exists across them (use shrouds and labyrinth seals), blade heights increase toward the low-pressure end because the specific volume of steam rises.
 - **Reheat factor.** On an $h$-$s$ diagram constant-pressure lines diverge toward higher entropy. Friction in each stage reheats the steam and makes the next stage's isentropic enthalpy drop larger. The sum of isentropic drops over all stages is thus larger than the isentropic drop across the whole turbine; the ratio is the reheat factor, $1.02$ to $1.06$. It is not a real loss; it is a result of the geometry of the chart. It explains why the internal efficiency of the whole turbine is higher than the stage efficiency.
 
-### 🔹 A8. Losses, efficiencies, governing
+### A8. Losses, efficiencies, governing
 
 - **Losses in a turbine:** nozzle friction, blade friction, leaving (carry-over) loss, leakage, disc friction and windage (especially in partial admission), moisture, and mechanical friction in bearings.
 - **Efficiency chain:** nozzle efficiency, blade efficiency, stage efficiency (product), internal efficiency (actual enthalpy drop over isentropic drop for the whole machine), mechanical efficiency, and overall efficiency.
 - **Governing** matches steam supply to load to hold the speed constant. **Throttle governing** reduces the inlet pressure with a valve (simple but loses availability at part load). **Nozzle control governing** opens or closes groups of nozzles (efficient at part load but only for impulse stages with partial admission). **Bypass governing** admits steam to later stages in overload.
 - **Types of turbine by use:** condensing (exhausts below atmospheric pressure, for power), back-pressure (exhausts above atmospheric pressure to process heat), pass-out or extraction (steam bled for process or feed heating).
 
-### 🔹 A9. Condensers
+### A9. Condensers
 
 - A **condenser** converts turbine exhaust steam to water at a low pressure (high vacuum). A lower back pressure increases the enthalpy drop (more work) and therefore improves the Rankine efficiency. It also recovers the pure condensate for use as boiler feed.
 - **Jet condensers** mix cooling water and steam directly. They are cheap, compact and need little maintenance but the condensate is lost, mixed with cooling water. **Surface condensers** keep them separate; cooling water in tubes, steam condensing outside. Used in all large power plants, because the condensate is clean.
@@ -98,7 +106,7 @@ $$\frac{dA}{A} = \frac{dV}{V}(M^2 - 1)$$
 - **Vacuum efficiency** and **condenser efficiency** are measures of performance. The lowest possible condenser temperature is the temperature of the cooling water plus a terminal temperature difference; the pressure cannot be lower than the saturation pressure at the exhaust steam temperature.
 - **Cooling tower** rejects the heat in the warmed cooling water to the atmosphere, mainly by evaporation of a small portion of the water. The **range** is the temperature drop of the water; the **approach** is the closeness of the outlet water to the ambient wet-bulb temperature (it cannot be below it). A smaller approach means a better, larger tower.
 
-### 🔹 A10. What examiners test from this chapter
+### A10. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -111,7 +119,7 @@ $$\frac{dA}{A} = \frac{dV}{V}(M^2 - 1)$$
 
 ---
 
-## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
+## Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
 ## 🧭 1. Steam generators (boilers)

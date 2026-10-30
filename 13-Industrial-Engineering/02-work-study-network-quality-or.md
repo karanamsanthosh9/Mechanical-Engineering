@@ -1,14 +1,14 @@
-# 📊 02. Work Study, Network Analysis, Quality Control and Operations Research
+# 02. Work Study, Network Analysis, Quality Control and Operations Research
 
 **Exam relevance:** APPSC AEE: C | SSC JE: B | RRB JE: B | Category: ALL | Yield: HY
 
 ---
 
-## 📘 Part A: Detailed Theory (read this first)
+## Part A: Detailed Theory (read this first)
 
 This chapter collects the analytical tools of industrial engineering. Work study finds the best method of doing a job and the time it should take. Network analysis (CPM and PERT) plans and controls projects made of many dependent activities. Quality control keeps a process stable and its output within specification, using statistics. Operations research (OR) supplies mathematical models for allocating limited resources: linear programming, transportation, assignment, queues and games. The common thread is that each tool turns a vague managerial question into a quantity that can be calculated.
 
-### 🔹 A1. Work study: method study
+### A1. Work study: method study
 ![Diagram: Work study and learning curve](../assets/13-industrial-engineering/work-study-and-learning-curve.png)
 
 **Work study** has two parts. **Method study** finds the best way of doing the work; **work measurement** finds how long the best method should take. Together they raise productivity without more capital.
@@ -30,7 +30,7 @@ This chapter collects the analytical tools of industrial engineering. Work study
 
 **Principles of motion economy.** Use both hands together and symmetrically, keep movements short and smooth, keep tools and materials in a fixed, easily reached place, and use the lowest body class that can do the work.
 
-### 🔹 A2. Work measurement and time study
+### A2. Work measurement and time study
 
 **Stopwatch time study.** Observe a representative worker at work, time each element and correct for the worker's pace and for allowances.
 
@@ -52,7 +52,13 @@ If the allowance is expressed as a fraction of the total time instead, then Stan
 
 **Related topics.** Job evaluation (ranking, grading, point rating, factor comparison), merit rating and wage incentive plans (Halsey, Rowan, Taylor's differential piece rate, Emerson, Gantt).
 
-### 🔹 A3. Network analysis: CPM and PERT
+### A3. Network analysis: CPM and PERT
+```text
+          +--> B --+
+START --> A        +--> FINISH
+          +--> C --+
+```
+
 ![Diagram: Cpm pert network](../assets/13-industrial-engineering/cpm-pert-network.png)
 
 **Network.** A project is drawn as a diagram of activities and events. In AOA (activity on arrow) the activity is an arrow; in AON (activity on node) it is a node. Dummy activities have zero duration and show precedence only.
@@ -85,7 +91,7 @@ $$\text{cost slope} = \frac{\text{crash cost} - \text{normal cost}}{\text{normal
 
 Crash the critical activity with the lowest cost slope first, and re-check whether the critical path has changed.
 
-### 🔹 A4. Statistical quality control: control charts
+### A4. Statistical quality control: control charts
 ![Diagram: Control chart sqc](../assets/13-industrial-engineering/control-chart-sqc.png)
 
 **Quality** means fitness for use (Juran) or conformance to requirements (Crosby). Quality control detects defects; quality assurance prevents them; TQM involves the whole company. ISO 9000 is the quality management standard; Taguchi methods use a loss function and robust design.
@@ -120,7 +126,7 @@ $C_p$ ignores centring, $C_{pk}$ includes it. A capable process has $C_p \ge 1.3
 
 **Seven QC tools.** Pareto chart (vital few), cause-and-effect (Ishikawa or fishbone) diagram, histogram, scatter diagram, check sheet, control chart and flowchart.
 
-### 🔹 A5. Acceptance sampling
+### A5. Acceptance sampling
 
 Instead of inspecting every item, a sample of size $n$ is drawn from a lot of size $N$ and the lot is accepted if the number of defectives is at most the acceptance number $c$. Plans may be single, double or multiple.
 
@@ -131,7 +137,7 @@ Instead of inspecting every item, a sample of size $n$ is drawn from a lot of si
 - **OC curve:** probability of acceptance against lot fraction defective. An ideal curve is a step; a larger sample makes the curve steeper.
 - **AOQ and AOQL:** average outgoing quality under rectifying inspection; AOQL is its maximum.
 
-### 🔹 A6. Reliability and maintenance
+### A6. Reliability and maintenance
 
 **Reliability.** The probability that an item performs its function for a stated time. For a constant failure rate $\lambda$, $R(t) = e^{-\lambda t}$ and $MTBF = 1/\lambda$.
 
@@ -144,7 +150,7 @@ Instead of inspecting every item, a sample of size $n$ is drawn from a lot of si
 
 **Maintenance.** Breakdown, preventive, predictive (condition monitoring), corrective, TPM (total productive maintenance) and RCM (reliability-centred maintenance). Availability $= MTBF/(MTBF + MTTR)$. Overall equipment effectiveness: $OEE = \text{availability}\times\text{performance}\times\text{quality}$.
 
-### 🔹 A7. Linear programming
+### A7. Linear programming
 ![Diagram: Linear programming feasible region](../assets/13-industrial-engineering/linear-programming-feasible-region.png)
 
 An LP maximises or minimises a linear objective function subject to linear constraints and non-negativity of the variables.
@@ -154,7 +160,7 @@ An LP maximises or minimises a linear objective function subject to linear const
 - **Special cases:** infeasible (empty region), unbounded (objective improves indefinitely), alternate optima (objective parallel to a binding constraint), degeneracy (a basic variable is zero) and redundant constraints.
 - **Duality:** every LP has a dual with the same optimal objective value. The **shadow price** is the value of one more unit of a resource.
 
-### 🔹 A8. Transportation and assignment
+### A8. Transportation and assignment
 
 **Transportation problem.** Ship from $m$ sources to $n$ destinations at least cost. It is balanced when total supply equals total demand (otherwise add a dummy source or destination). A basic feasible solution has $m + n - 1$ allocations.
 
@@ -164,7 +170,7 @@ An LP maximises or minimises a linear objective function subject to linear const
 
 **Assignment problem.** Assign $n$ jobs to $n$ workers at minimum total cost (a transportation problem with unit supply and demand). **Hungarian method:** subtract row minima, subtract column minima, cover all zeros with the minimum number of lines; if the number of lines is $n$ an optimal assignment exists, otherwise revise the matrix. For maximisation, subtract every element from the largest element first.
 
-### 🔹 A9. Queuing, games and decisions
+### A9. Queuing, games and decisions
 ![Diagram: Queuing and plant layout](../assets/13-industrial-engineering/queuing-and-plant-layout.png)
 
 **M/M/1 queue.** Poisson arrivals at rate $\lambda$, exponential service at rate $\mu$, one server and utilisation $\rho = \lambda/\mu < 1$.
@@ -177,7 +183,7 @@ $$L_s = \frac{\lambda}{\mu - \lambda}, \quad L_q = \frac{\lambda^2}{\mu(\mu - \l
 
 **Decision theory.** Maximin (pessimistic), maximax (optimistic), Hurwicz (weighted), Laplace (equal probability), minimax regret (Savage) and expected value. **Other OR tools:** simulation (Monte Carlo), dynamic programming and replacement analysis.
 
-### 🔹 A10. What examiners test from this chapter
+### A10. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -197,7 +203,7 @@ $$L_s = \frac{\lambda}{\mu - \lambda}, \quad L_q = \frac{\lambda^2}{\mu(\mu - \l
 
 ---
 
-## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
+## Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
 ## 🧭 SECTION I: WORK STUDY

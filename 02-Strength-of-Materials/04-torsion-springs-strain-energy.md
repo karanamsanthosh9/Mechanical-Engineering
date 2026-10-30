@@ -1,14 +1,21 @@
-# 📐 04. Torsion, Springs and Strain Energy
+# 04. Torsion, Springs and Strain Energy
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: VHY
 
 ---
 
-## 📘 Part A: Detailed Theory (read this first)
+## Part A: Detailed Theory (read this first)
 
 This part explains twisting of shafts, spring behaviour and energy methods from first principles. Part B (from section 1 onwards) is the compact reference.
 
-### 🔹 A1. What torsion is
+### A1. What torsion is
+```text
+Fixed end                       Applied torque T
+  |                                   (twist)
+  +======================================+
+  |            circular shaft           |
+```
+
 
 **Torsion** is twisting of a member by a torque (twisting moment) about its axis. Shafts transmit power through torque: $P = T\omega$. A shaft may fail by shear (maximum shear stress too large) or by being too flexible (twist angle too large for accuracy or vibration).
 
@@ -19,7 +26,7 @@ This part explains twisting of shafts, spring behaviour and energy methods from 
 3. **Plane transverse sections remain plane** and circular, and radii remain straight, so a section simply rotates as a rigid disc. This holds only for circular sections. Non-circular sections warp.
 4. The twist is uniform along the length; the torque acts at the ends.
 
-### 🔹 A2. Derivation of the torsion equation
+### A2. Derivation of the torsion equation
 ![Diagram: Torsion shear stress distribution](../assets/02-strength-of-materials/torsion-shear-stress-distribution.png)
 
 Consider a shaft of length $L$ and radius $R$ twisted by angle $\theta$ at one end. A longitudinal line on the surface rotates to a helix and moves by an angle $\gamma$ (shear strain) where $\gamma L = R\theta$. At any radius $r$, $\gamma_r = \dfrac{r\theta}{L}$. Shear strain is proportional to the distance from the axis. By Hooke's law in shear:
@@ -56,7 +63,7 @@ $$T_e = \sqrt{M^2 + T^2}, \qquad M_e = \tfrac{1}{2}\left(M + \sqrt{M^2 + T^2}\ri
 
 $T_e$ is used with the maximum shear stress theory; $M_e$ with the maximum principal stress theory.
 
-### 🔹 A3. Springs
+### A3. Springs
 
 A spring stores energy through elastic deformation and returns it when released. Used for shock absorption, force control and energy storage.
 
@@ -76,7 +83,7 @@ $$\delta = \frac{8 W D^3 n}{G d^4}, \qquad k = \frac{W}{\delta} = \frac{G d^4}{8
 
 **Close-coiled vs open-coiled.** In a close-coiled spring the helix angle is small and the wire is subject mainly to torsion. In an open-coiled spring the helix angle is large, so the wire also carries bending and axial effects.
 
-### 🔹 A4. Strain energy: the energy view
+### A4. Strain energy: the energy view
 
 When a body is deformed, work done by the load is stored as **strain energy** $U$ (recoverable in the elastic range). Energy methods are often easier than force methods for deflection, impact and indeterminate problems.
 
@@ -97,11 +104,11 @@ For a point where no load exists, add a **dummy load** $P_0$, differentiate, the
 
 **Maxwell's reciprocal theorem.** The deflection at A due to a unit load at B equals the deflection at B due to a unit load at A. Basis of influence lines and flexibility methods.
 
-### 🔹 A5. Why the three topics belong together
+### A5. Why the three topics belong together
 
 Torsion, springs and energy methods all use shear stress and strain energy. A helical spring is a long twisted wire. Castigliano is the quickest route to spring deflection. Together they give the machine designer a way to find twist, stiffness and energy storage for shafts and springs.
 
-### 🔹 A6. Exam relevance
+### A6. Exam relevance
 
 - Torsion equation, hollow versus solid shaft, power transmission (all exams).
 - Spring deflection and stiffness, series and parallel (all exams).
@@ -109,14 +116,14 @@ Torsion, springs and energy methods all use shear stress and strain energy. A he
 
 ---
 
-## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
+## Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
 ## 🧭 1. Torsion of circular shafts
 
 - **Assumptions:** homogeneous, isotropic, linear elastic material; circular section stays circular; plane sections stay plane; radii stay straight; uniform twist along the length; stresses within the elastic limit.
 
-### 🔹 Torsion equation
+### Torsion equation
 
 $$\frac{T}{J} = \frac{\tau}{r} = \frac{G\theta}{L}$$
 
@@ -147,7 +154,7 @@ $$T_e = \sqrt{M^2 + T^2}, \qquad M_e = \frac{1}{2}\left(M + \sqrt{M^2 + T^2}\rig
 
 ## 🧭 2. Springs
 
-### 🔹 Closed-coiled helical springs (mean diameter $D$, wire diameter $d$, $n$ active coils)
+### Closed-coiled helical springs (mean diameter $D$, wire diameter $d$, $n$ active coils)
 
 $$\tau = K_w\frac{8WD}{\pi d^3}, \qquad K_w = \frac{4C-1}{4C-4} + \frac{0.615}{C}, \qquad C = \frac{D}{d}$$
 

@@ -1,14 +1,22 @@
-# 💧 02. Fluid Dynamics, Flow Measurement and Pipe Flow
+# 02. Fluid Dynamics, Flow Measurement and Pipe Flow
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: VHY
 
 ---
 
-## 📘 Part A: Detailed Theory (read this first)
+## Part A: Detailed Theory (read this first)
 
 This chapter moves fluids from rest to motion. The central idea is that a moving fluid obeys the same conservation laws as any other body: mass, momentum and energy. Bernoulli's equation is energy conservation along a streamline; the momentum equation gives forces on bends, jets and vanes; flow meters convert a pressure difference into a flow rate; pipe flow adds friction, which turns mechanical energy into heat; open channel flow replaces pressure with a free surface; and the boundary layer explains drag. Every formula here is an application of these three conservation laws plus one empirical input: friction.
 
-### 🔹 A1. Euler's equation and Bernoulli's equation
+### A1. Euler's equation and Bernoulli's equation
+```text
+wide pipe                narrow pipe
+==========\              /==========
+       \____________/
+     high pressure       low pressure
+     low velocity        high velocity
+```
+
 ![Diagram: Bernoulli hgl egl](../assets/10-fluid-mechanics/bernoulli-hgl-egl.png)
 
 **Physical picture.** Take a small fluid element moving along a streamline. Its acceleration along the streamline is produced by the net pressure force and the component of gravity. Newton's second law for the element gives Euler's equation:
@@ -39,7 +47,7 @@ Each term has the dimension of length (head): pressure head, velocity (kinetic) 
 
 **Three lines to remember.** Bernoulli is energy conservation; a pump raises the TEL; friction lowers it.
 
-### 🔹 A2. Momentum equation and force on bends
+### A2. Momentum equation and force on bends
 
 **Why it is needed.** Bernoulli tells you pressures and speeds but not the force the fluid exerts on a solid. Force requires momentum. For a control volume with steady flow, Newton's second law becomes:
 
@@ -57,7 +65,7 @@ The force on the bend is the reaction of these components. Bends and reducers ne
 
 **Common error.** Forgetting the pressure-area terms. For a free jet, pressure is atmospheric on both faces, so gauge pressure terms vanish and only the momentum change remains.
 
-### 🔹 A3. Impact of a jet on plates and vanes
+### A3. Impact of a jet on plates and vanes
 
 **Physical picture.** A jet of water leaving a nozzle has momentum flux $\rho a V^2$. When it strikes a surface, that momentum is deflected or destroyed, and the change appears as force on the surface.
 
@@ -75,7 +83,7 @@ The force on the bend is the reaction of these components. Bends and reducers ne
 
 **Efficiency expression.** For a series of flat plates, $\eta = 2u(V-u)/V^2$, which peaks at 50 percent at $u = V/2$.
 
-### 🔹 A4. Flow measurement: how a pressure difference gives a flow rate
+### A4. Flow measurement: how a pressure difference gives a flow rate
 ![Diagram: Venturi orifice pitot](../assets/10-fluid-mechanics/venturi-orifice-pitot.png)
 
 **Common principle.** Every obstruction meter makes the fluid speed up. By Bernoulli, speed increase means pressure decrease. Measuring the pressure drop gives the speed, and speed times area gives the discharge.
@@ -123,7 +131,7 @@ where $h$ is the head of the flowing fluid. For a gas flowing, convert the manom
 - Velocity of approach correction replaces $H$ by $H + h_a$ with $h_a = V_a^2/2g$.
 - End contractions reduce the effective length: $L_{eff} = L - 0.1 n H$.
 
-### 🔹 A5. Viscous flow in pipes: laminar and turbulent
+### A5. Viscous flow in pipes: laminar and turbulent
 ![Diagram: Laminar turbulent profiles](../assets/10-fluid-mechanics/laminar-turbulent-profiles.png)
 
 **Reynolds number.** The ratio of inertial to viscous forces:
@@ -179,7 +187,7 @@ For gradual closure (closure time greater than $2L/c$), the pressure rise is low
 
 **Siphon.** Flow through a pipe above the supply level is possible because atmospheric pressure pushes the water to the summit. The summit pressure must remain above the vapour pressure; typically a maximum height of about 7.6 m of water at sea level.
 
-### 🔹 A6. Open channel flow
+### A6. Open channel flow
 ![Diagram: Open channel and hydraulic jump](../assets/10-fluid-mechanics/open-channel-and-hydraulic-jump.png)
 
 **Physical picture.** In an open channel the driving force is gravity along the bed slope, not a pressure gradient, and the pressure at the surface is atmospheric. Steady uniform flow occurs when the gravity component along the slope balances the wall friction.
@@ -216,7 +224,7 @@ $$\frac{y_2}{y_1} = \tfrac{1}{2}\left(\sqrt{1 + 8Fr_1^2} - 1\right)$$
 
 Energy loss $= \dfrac{(y_2 - y_1)^3}{4 y_1 y_2}$. Jumps are used downstream of spillways to dissipate energy. Momentum is conserved across the jump, not energy.
 
-### 🔹 A7. Boundary layer and drag
+### A7. Boundary layer and drag
 ![Diagram: Boundary layer separation drag](../assets/10-fluid-mechanics/boundary-layer-separation-drag.png)
 
 **Concept.** When a real fluid flows over a surface, the fluid layer at the wall sticks (no-slip condition), and a thin region near the wall carries all the velocity variation. This region is the boundary layer. Outside it, the flow is effectively inviscid and Bernoulli applies.
@@ -245,7 +253,7 @@ $$V_t = \frac{g D^2 (\rho_s - \rho_f)}{18\mu}$$
 
 **Lift.** $F_L = C_L\,\tfrac{1}{2}\rho V^2 A$. A rotating cylinder in a stream experiences lift from circulation (Magnus effect), explaining the curve of a spinning ball. The Kutta-Joukowski theorem gives lift per unit span $= \rho V \Gamma$.
 
-### 🔹 A8. What examiners test from this chapter
+### A8. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -263,7 +271,7 @@ $$V_t = \frac{g D^2 (\rho_s - \rho_f)}{18\mu}$$
 
 ---
 
-## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
+## Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
 ## 🧭 1. Euler's equation and Bernoulli's equation
@@ -314,7 +322,7 @@ $$h = x\left(\frac{S_m}{S} - 1\right)$$
 
 - Venturimeter in inclined position gives the same discharge (the manometer reading accounts for the datum).
 
-### 🔹 Orifices, mouthpieces and jets
+### Orifices, mouthpieces and jets
 
 - **Torricelli's theorem:** theoretical velocity $V = \sqrt{2gH}$.
 - **Coefficients:**
@@ -328,7 +336,7 @@ For a sharp-edged orifice: $C_c \approx 0.62$, $C_v \approx 0.97$ to $0.98$, $C_
 - **Jet trajectory:** $y = \dfrac{g x^2}{2V^2}$; the horizontal range for a jet from a height $h_0$ above the ground: $x = 2\sqrt{H\,y}$ ($H$ is head, $y$ the vertical fall).
 - **External cylindrical mouthpiece:** running full, $C_d = 0.855$. **Internal (Borda) mouthpiece:** running free, $C_c = C_d = 0.5$; running full, $C_d = 0.707$.
 
-### 🔹 Notches and weirs
+### Notches and weirs
 
 - **Rectangular notch/weir:** $Q = \dfrac23 C_d\,L\sqrt{2g}\,H^{3/2}$. **With end contractions (Francis):** $L_{eff} = L - 0.1\,n\,H$. **Velocity of approach** adds a head $h_a = \dfrac{V_a^2}{2g}$.
 - **Triangular (V) notch:** $Q = \dfrac{8}{15} C_d\sqrt{2g}\,\tan\dfrac\theta2\,H^{5/2}$; best for small discharges as the head measured is large relative to the flow.
@@ -342,7 +350,7 @@ For a sharp-edged orifice: $C_c \approx 0.62$, $C_v \approx 0.97$ to $0.98$, $C_
   - **Flat plate boundary layer:** the transition at $\text{Re}_x \approx 5\times10^5$.
 - **Entrance length:** laminar $\approx 0.05\,\text{Re}\,D$; turbulent $\approx 10D$ to $60D$.
 
-### 🔹 Laminar flow in a circular pipe (Hagen-Poiseuille)
+### Laminar flow in a circular pipe (Hagen-Poiseuille)
 
 - **Velocity profile** is parabolic:
 
@@ -356,7 +364,7 @@ $$\Delta p = \frac{32\,\mu\,V L}{D^2},\qquad Q = \frac{\pi\,\Delta p\,D^4}{128\,
 - **Laminar flow between parallel plates:** $u_{max} = \dfrac32 V_{avg}$; $Q$ per unit width $= \dfrac{h^3\,\Delta p}{12\mu L}$.
 - **Couette flow** (between a fixed and a moving plate): linear velocity profile.
 
-### 🔹 Head loss
+### Head loss
 
 - **Darcy-Weisbach equation (major loss):**
 

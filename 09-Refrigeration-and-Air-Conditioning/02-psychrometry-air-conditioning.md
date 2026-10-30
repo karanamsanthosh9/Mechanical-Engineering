@@ -1,21 +1,21 @@
-# ❄️ 02. Psychrometry and Air Conditioning
+# 02. Psychrometry and Air Conditioning
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: VHY
 
 ---
 
-## 📘 Part A: Detailed Theory (read this first)
+## Part A: Detailed Theory (read this first)
 
 Atmospheric air always contains some water vapour. Psychrometry is the study of this air-vapour mixture, and air conditioning is its practical use: controlling temperature, humidity, cleanliness and air motion in a space. Almost every question reduces to three ideas: (i) the mixture is treated as two ideal gases, (ii) a process on the psychrometric chart is an energy and mass balance, and (iii) the cooling coil is the main equipment.
 
-### 🔹 A1. Moist air as a mixture of ideal gases
+### A1. Moist air as a mixture of ideal gases
 
 - Moist air at ambient pressure and temperature is a mixture of **dry air** (a fixed composition: $78\%$ N$_2$, $21\%$ O$_2$ by volume) and **water vapour**. The vapour is at a very low partial pressure, far below saturation at room conditions, so it can be treated as an ideal gas.
 - **Dalton's law.** Total pressure is the sum of partial pressures: $p = p_a + p_v$. Each component fills the whole volume at the mixture temperature and has its own gas constant: $R_a = 0.287$ and $R_v = 0.4615$ kJ/kg-K.
 - **Why the 0.622?** The ratio of molar masses of water to dry air is $18/28.96 = 0.622$. From the ideal gas law, $\dfrac{m_v}{m_a} = \dfrac{p_vV/(R_vT)}{p_aV/(R_aT)} = \dfrac{R_a}{R_v}\cdot\dfrac{p_v}{p_a} = 0.622\,\dfrac{p_v}{p - p_v}$.
 - **Basis of calculation.** All specific properties are expressed per kg of **dry air**, because the mass of dry air stays constant through heating, cooling, humidification and dehumidification, while the vapour mass changes.
 
-### 🔹 A2. Psychrometric properties: physical meaning
+### A2. Psychrometric properties: physical meaning
 
 - **Dry bulb temperature (DBT).** What an ordinary thermometer reads. It measures the sensible state.
 - **Wet bulb temperature (WBT).** A thermometer bulb covered with a wet wick, in a moving air stream. Water evaporates from the wick, taking latent heat from the bulb, until the heat gained from the air by convection equals the heat carried away by evaporation. The drier the air, the faster the evaporation, and the lower the WBT. So WBT is always below DBT unless the air is saturated. A **sling psychrometer** or aspirated psychrometer measures DBT and WBT, from which all other properties can be read from the chart.
@@ -27,7 +27,7 @@ Atmospheric air always contains some water vapour. Psychrometry is the study of 
 - **Ordering.** For unsaturated air: DBT $>$ WBT $>$ DPT. For saturated air: all three are equal and $\phi = 100\%$.
 - **Enthalpy of moist air** (per kg dry air) is the sum of dry air and the vapour: $h = 1.005t + \omega(2500 + 1.88t)$ kJ/kg. The term $2500$ is the latent heat of vaporisation at $0^\circ$C, so the vapour enthalpy is measured from liquid water at $0^\circ$C.
 
-### 🔹 A3. The psychrometric chart and how to read it
+### A3. The psychrometric chart and how to read it
 ![Diagram: Psychrometric chart processes](../assets/09-refrigeration-ac/psychrometric-chart-processes.png)
 
 - The chart plots **specific humidity** (vertical axis, right) against **DBT** (horizontal axis), at a fixed pressure (normally $1.013$ bar). Any state needs two independent properties.
@@ -39,7 +39,7 @@ Atmospheric air always contains some water vapour. Psychrometry is the study of 
   - A **protractor** on the chart has the sensible heat factor (SHF) and the room ratio lines.
 - **Direction rules.** Heating moves a state horizontally to the right; cooling to the left; adding moisture moves up; removing moisture, down. Remember these and every process can be sketched without calculation.
 
-### 🔹 A4. Basic psychrometric processes: balances
+### A4. Basic psychrometric processes: balances
 
 For all processes, apply mass balance of dry air, mass balance of water, and energy balance.
 
@@ -53,7 +53,14 @@ For all processes, apply mass balance of dry air, mass balance of water, and ene
 $$\omega_m = \frac{\dot m_1\omega_1 + \dot m_2\omega_2}{\dot m_1 + \dot m_2},\qquad h_m = \frac{\dot m_1h_1 + \dot m_2h_2}{\dot m_1 + \dot m_2}$$
   The mixture state lies on the straight line joining the two states, dividing it inversely in the ratio of the dry air masses (a lever rule). DBT of the mixture is approximately the mass-weighted mean.
 
-### 🔹 A5. Cooling coil: ADP, bypass factor, sensible heat factor
+### A5. Cooling coil: ADP, bypass factor, sensible heat factor
+```text
+warm, moist air ---> [ cooling coil ] ---> cool, drier air
+             |
+             v
+           condensate
+```
+
 ![Diagram: Cooling coil adp bypass](../assets/09-refrigeration-ac/cooling-coil-adp-bypass.png)
 
 - In a real cooling coil, not every particle of air touches the cold surface. A portion passes through without contact, the **bypass factor (BPF)**, and the rest is brought to the coil surface temperature, the **apparatus dew point (ADP)**. The exit state is the mixture of the two, so it lies on a straight line from the inlet state to the ADP on the saturation curve:
@@ -64,14 +71,14 @@ $$\text{BPF} = \frac{t_{out} - t_{ADP}}{t_{in} - t_{ADP}}, \qquad \text{contact 
   - **ESHF** (effective SHF) and **GSHF** (grand SHF) include the effect of the fresh air and bypassed air.
 - **Load equations (practical).** For airflow $\dot V$ (m$^3$/s): sensible $Q_s \approx 1.23\dot V\Delta t$ kW; latent $Q_L \approx 3000\dot V\Delta\omega$ kW.
 
-### 🔹 A6. Human comfort
+### A6. Human comfort
 
 - Humans generate heat by metabolism ($\approx 100$ W at rest, more with activity) and must reject it to maintain a body temperature of about $37^\circ$C. Comfort is when this rejection happens without effort. The body loses heat by convection, radiation and evaporation (skin moisture and breath). Hot, humid air blocks evaporation, so humidity matters as much as temperature.
 - **Factors:** air temperature, humidity, air velocity, mean radiant temperature of the surroundings, clothing, and activity level.
 - **Effective temperature (ET)** is the index that combines DBT, humidity and air velocity into a single number: the temperature of still saturated air that would give the same feeling of warmth. The **comfort zone** for summer is about $22$ to $27^\circ$C DBT, $40$ to $60\%$ RH. Air velocity of $0.1$ to $0.25$ m/s is comfortable.
 - **Indoor air quality.** Supply of fresh (ventilation) air to dilute CO$_2$ and odours (about $0.25$ to $0.5$ m$^3$/min per person), filtration, and avoiding draughts.
 
-### 🔹 A7. Cooling load estimation
+### A7. Cooling load estimation
 
 - The cooling load is the rate at which heat must be removed from the space to hold the design conditions. Sources:
   - **External:** conduction through walls and roof (driven by the **sol-air temperature**, which includes the solar absorption on the outer surface), solar radiation through glass (often the largest part), infiltration and ventilation air (sensible plus latent).
@@ -79,7 +86,7 @@ $$\text{BPF} = \frac{t_{out} - t_{ADP}}{t_{in} - t_{ADP}}, \qquad \text{contact 
 - **Time lag and decrement factor.** Heat through massive walls reaches the inside several hours later and is reduced in magnitude, so the peak load is not at the peak outside temperature.
 - **Sensible versus latent.** Sensible loads change DBT; latent loads add moisture (people, infiltration, cooking). The total load sets the plant capacity in TR.
 
-### 🔹 A8. Air conditioning systems and distribution
+### A8. Air conditioning systems and distribution
 
 - **By operating season:** summer (cooling and dehumidification), winter (heating and humidification), year-round (both).
 - **By equipment:**
@@ -92,7 +99,7 @@ $$\text{BPF} = \frac{t_{out} - t_{ADP}}{t_{in} - t_{ADP}}, \qquad \text{contact 
 - **Fans.** Centrifugal types (forward-curved for low pressure and quiet service, backward-curved for high efficiency) and axial. **Fan laws** at constant diameter: flow $\propto N$, pressure $\propto N^2$, power $\propto N^3$. A small speed reduction gives a large power saving, which is why variable-speed drives are used.
 - **Heat pump mode** in reversible units provides winter heating with a COP greater than one.
 
-### 🔹 A9. What examiners test from this chapter
+### A9. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -104,7 +111,7 @@ $$\text{BPF} = \frac{t_{out} - t_{ADP}}{t_{in} - t_{ADP}}, \qquad \text{contact 
 
 ---
 
-## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
+## Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
 ## 🧭 1. Foundations

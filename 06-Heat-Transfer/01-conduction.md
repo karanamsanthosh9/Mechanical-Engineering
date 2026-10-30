@@ -1,14 +1,20 @@
-# 🔥 01. Conduction
+# 01. Conduction
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: VHY
 
 ---
 
-## 📘 Part A: Detailed Theory (read this first)
+## Part A: Detailed Theory (read this first)
 
 Thermodynamics tells us how much heat moves between two states; **heat transfer** tells us how fast it moves and what temperature distribution results. It is the basis for the design of boilers, condensers, radiators, furnaces, cooling of electronics and insulation of buildings. This chapter covers conduction, the transport of heat through a stationary medium by molecular activity.
 
-### 🔹 A1. Driving force, three modes and the resistance idea
+### A1. Driving force, three modes and the resistance idea
+```text
+hot face       solid wall        cold face
+  Th     |====================|    Tc
+                 heat ---->
+```
+
 
 - Heat flows whenever there is a temperature difference, always from high to low temperature (second law). The rate is proportional to the temperature difference and inversely proportional to a **resistance**:
 $$q = \frac{\Delta T}{R_{th}}$$
@@ -17,7 +23,7 @@ $$q = \frac{\Delta T}{R_{th}}$$
 - **Convection:** conduction combined with the bulk motion of fluid. **Radiation:** electromagnetic waves emitted by all bodies above absolute zero; no medium needed.
 - **Heat flux** $q'' = q/A$ in W/m$^2$.
 
-### 🔹 A2. Fourier's law and thermal conductivity
+### A2. Fourier's law and thermal conductivity
 
 - **Fourier's law** is an experimental observation: the heat flow in a direction is proportional to the area normal to it and to the temperature gradient in that direction:
 $$q_x = -kA\frac{dT}{dx}$$
@@ -37,7 +43,7 @@ $$q_x = -kA\frac{dT}{dx}$$
 - **Assumptions of Fourier's law:** steady-state, one-dimensional, homogeneous isotropic material, constant $k$ (unless stated), no internal generation.
 - **Thermal diffusivity** $\alpha = \dfrac{k}{\rho c_p}$ measures how fast a temperature disturbance spreads (compared with how much energy is stored). Large $\alpha$ means the body reaches a uniform temperature quickly.
 
-### 🔹 A3. The general heat conduction equation: derivation logic
+### A3. The general heat conduction equation: derivation logic
 
 - Consider a small control volume $dx\,dy\,dz$ inside a solid. By an energy balance: net heat conducted in $+$ heat generated $=$ rate of energy storage.
 - Net conduction in the $x$-direction is $-\dfrac{\partial}{\partial x}\left(-k\dfrac{\partial T}{\partial x}\right)dx\,dy\,dz$. Adding the three directions, generation $\dot q_g\,dx\,dy\,dz$, and storage $\rho c_p\dfrac{\partial T}{\partial t}\,dx\,dy\,dz$ gives (for constant $k$):
@@ -53,7 +59,7 @@ $$\nabla^2 T + \frac{\dot q_g}{k} = \frac{1}{\alpha}\frac{\partial T}{\partial t
 - **Boundary conditions** are needed to obtain a unique solution: (i) specified surface temperature (Dirichlet), (ii) specified heat flux (Neumann) with the insulated case $dT/dx = 0$, (iii) convection at the surface $-k\dfrac{dT}{dx} = h(T_s - T_\infty)$ (Robin), and (iv) radiation at the surface.
 - **Initial condition** is needed for transient problems.
 
-### 🔹 A4. Steady one-dimensional conduction and thermal resistance
+### A4. Steady one-dimensional conduction and thermal resistance
 ![Diagram: Composite wall resistance](../assets/06-heat-transfer/composite-wall-resistance.png)
 
 - **Plane wall.** Integrating Fourier's law with constant $k$ gives a linear temperature profile and $q = \dfrac{kA(T_1 - T_2)}{L}$. The resistance is $R = \dfrac{L}{kA}$. The profile is linear only if $k$ is constant; if $k$ increases with temperature, the profile bows.
@@ -64,7 +70,7 @@ $$\nabla^2 T + \frac{\dot q_g}{k} = \frac{1}{\alpha}\frac{\partial T}{\partial t
 - **Sphere.** $A = 4\pi r^2$; integration gives a profile in $1/r$.
 - **Overall heat-transfer coefficient.** $UA = 1/R_{total}$. It combines convection and conduction resistances into one number used in heat exchanger design.
 
-### 🔹 A5. Critical radius of insulation: the physical reasoning
+### A5. Critical radius of insulation: the physical reasoning
 ![Diagram: Cylinder critical radius](../assets/06-heat-transfer/cylinder-critical-radius.png)
 
 - For a flat wall, insulation always reduces heat loss. For a **cylinder or sphere**, adding insulation does two opposing things: the conduction resistance increases (good), and the outer surface area for convection increases (bad: the convective resistance $1/(h\,2\pi r L)$ decreases).
@@ -72,14 +78,14 @@ $$\nabla^2 T + \frac{\dot q_g}{k} = \frac{1}{\alpha}\frac{\partial T}{\partial t
 - **Consequence:** if the bare radius is **less** than $r_c$, insulation first raises heat loss until $r = r_c$, and only after the outer radius exceeds a value $r > r_c$ (at which the loss returns to the bare value) does the insulation help. If the bare radius is **greater** than $r_c$, any insulation reduces the loss.
 - **Where it matters.** Thin electric wires (insulation helps cool them), small-diameter steam pipes. For large pipes $r_1 > r_c$ and the effect disappears. Using a low-$k$ insulation reduces $r_c$, which is why good insulation for steam lines is always safe.
 
-### 🔹 A6. Conduction with internal heat generation
+### A6. Conduction with internal heat generation
 
 - Heat is generated within a body by electric current (I$^2$R heating), nuclear fission, chemical reaction or friction. At steady state, all generated heat must leave through the surface.
 - Solving the Poisson equation gives a **parabolic** profile for a plane wall and a profile in $r^2$ for a cylinder and sphere. The **maximum temperature is at the centre**, with the symmetric condition $dT/dr = 0$ there.
 - For a slab of thickness $2L_h$ with both surfaces at $T_w$: $T_{max} - T_w = \dfrac{\dot q_g L_h^2}{2k}$. Equivalently, with total thickness $L = 2L_h$, $\dfrac{\dot q_g L^2}{8k}$. For a solid cylinder, $\dfrac{\dot q_g R^2}{4k}$; for a sphere, $\dfrac{\dot q_g R^2}{6k}$.
 - Heat leaving the surface equals total generation: $q = \dot q_g \times V$. This is used to find the surface temperature when the convection condition is given: $T_w = T_\infty + \dfrac{\dot q_g V}{h A_s}$.
 
-### 🔹 A7. Extended surfaces (fins)
+### A7. Extended surfaces (fins)
 ![Diagram: Fin temperature profile](../assets/06-heat-transfer/fin-temperature-profile.png)
 
 - **Why fins.** The convection rate $q = hA(T_s - T_\infty)$ can be raised by increasing $h$, increasing $\Delta T$, or increasing the area $A$. Often only $A$ can be changed economically, so fins are added: especially on the gas side of a heat exchanger, where $h$ is small. Examples: engine cylinder, motorcycle engine fins, radiators, heat sinks, condenser tubes.
@@ -93,7 +99,7 @@ $$\frac{d^2\theta}{dx^2} - m^2\theta = 0, \qquad m = \sqrt{\frac{hP}{kA_c}}$$
 - **Relationship:** $\varepsilon_f = \eta_f\dfrac{A_{fin}}{A_{c}}$.
 - **Fin measurement:** a rod, heated at one end and fitted with thermocouples, can be used to measure the fin temperature profile and $k$ in the laboratory.
 
-### 🔹 A8. Transient conduction
+### A8. Transient conduction
 ![Diagram: Transient lumped biot](../assets/06-heat-transfer/transient-lumped-biot.png)
 
 - When the boundary condition or heat generation changes suddenly, temperature varies with both position and time.
@@ -105,13 +111,13 @@ $$\frac{T - T_\infty}{T_i - T_\infty} = e^{-t/\tau}, \qquad \tau = \frac{\rho V 
 - **Fourier number** $Fo = \dfrac{\alpha t}{L^2}$ is a dimensionless time. The lumped result is $e^{-Bi\,Fo}$.
 - **When $Bi > 0.1$:** the temperature varies within the body. Use **Heisler charts** (which give centre temperature as a function of $Bi$ and $Fo$), or analytic series solutions. For very short times, treat the body as a **semi-infinite solid**, for which the penetration depth grows like $\sqrt{\alpha t}$.
 
-### 🔹 A9. Two-dimensional and numerical conduction (outline)
+### A9. Two-dimensional and numerical conduction (outline)
 
 - For complex geometries with 2-D steady conduction, a **shape factor** $S$ simplifies the problem: $q = S\,k\,\Delta T$. Known shapes such as a buried pipe have tabulated $S$.
 - **Numerical methods (finite difference):** the region is divided into nodes. For an interior node in steady 2-D conduction with equal spacing and no generation, the temperature is the average of its four neighbours: $T_{i,j} = \dfrac{1}{4}(T_{i+1,j} + T_{i-1,j} + T_{i,j+1} + T_{i,j-1})$.
 - For explicit transient schemes, stability requires $Fo \le 1/2$ for 1-D and $\le 1/4$ for 2-D.
 
-### 🔹 A10. What examiners test from this chapter
+### A10. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -123,7 +129,7 @@ $$\frac{T - T_\infty}{T_i - T_\infty} = e^{-t/\tau}, \qquad \tau = \frac{\rho V 
 
 ---
 
-## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
+## Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
 ## 🧭 1. Modes of heat transfer
@@ -152,13 +158,13 @@ $$\frac{\partial^2T}{\partial x^2} + \frac{\partial^2T}{\partial y^2} + \frac{\p
 
 ## 🧭 3. One-dimensional steady conduction
 
-### 🔹 Plane wall (thickness $L$)
+### Plane wall (thickness $L$)
 
 $$q = \frac{kA\,(T_1 - T_2)}{L}, \qquad R = \frac{L}{kA}$$
 
 The temperature profile is linear.
 
-### 🔹 Composite wall (layers in series)
+### Composite wall (layers in series)
 
 $$q = \frac{T_1 - T_n}{\sum R}, \qquad R_{total} = \frac{1}{h_1A} + \sum\frac{L_i}{k_iA} + \frac{1}{h_2A}$$
 
@@ -166,13 +172,13 @@ $$q = \frac{T_1 - T_n}{\sum R}, \qquad R_{total} = \frac{1}{h_1A} + \sum\frac{L_
 - **Overall heat transfer coefficient:** $U = \dfrac{1}{A\,R_{total}}$, with $q = U A\,\Delta T$.
 - **Contact resistance** arises at an imperfect interface and lowers heat flow.
 
-### 🔹 Cylinder (inner radius $r_1$, outer $r_2$, length $L$)
+### Cylinder (inner radius $r_1$, outer $r_2$, length $L$)
 
 $$q = \frac{2\pi kL\,(T_1 - T_2)}{\ln(r_2/r_1)}, \qquad R = \frac{\ln(r_2/r_1)}{2\pi kL}$$
 
 The temperature profile is logarithmic.
 
-### 🔹 Sphere
+### Sphere
 
 $$q = \frac{4\pi k\,(T_1 - T_2)}{\dfrac{1}{r_1} - \dfrac{1}{r_2}}, \qquad R = \frac{r_2 - r_1}{4\pi k\,r_1 r_2}$$
 

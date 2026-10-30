@@ -1,19 +1,30 @@
-# 🌡️ 03. Pure Substances, Steam Properties and Psychrometric Basics
+# 03. Pure Substances, Steam Properties and Psychrometric Basics
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C/S | Category: ALL | Yield: HY
 
 ---
 
-## 📘 Part A: Detailed Theory (read this first)
+## Part A: Detailed Theory (read this first)
 
 Steam and other vapours are the working fluids of power plants and refrigerators, and their properties cannot be found from the ideal-gas law. This part explains what happens when a liquid is heated until it boils, why tables and charts are used instead of equations, and how every number in a steam table is built.
 
-### 🔹 A1. Pure substance
+### A1. Pure substance
+```text
+     T
+     ^          critical point
+     |             *
+     |           /   \
+     |          / wet \
+     |         / region\
+     +--------------------> s
+       sat. liquid  sat. vapour
+```
+
 
 - A **pure substance** has a fixed chemical composition throughout. Water, nitrogen and refrigerant R-134a are pure substances. A mixture of liquid water and steam is still pure because both phases have the same composition. A mixture of liquid air and gaseous air is not, because the phases have different compositions.
 - A pure substance can exist in three **phases**: solid, liquid, vapour. A phase is a physically distinct, homogeneous part with its own properties.
 
-### 🔹 A2. Constant-pressure heating of water: what happens step by step
+### A2. Constant-pressure heating of water: what happens step by step
 
 Heat $1$ kg of ice-cold water in a piston-cylinder with a weight on the piston, so the pressure stays constant (for example $1$ atm).
 
@@ -29,7 +40,7 @@ Heat $1$ kg of ice-cold water in a piston-cylinder with a weight on the piston, 
 - **Triple point.** Solid, liquid and vapour coexist at one temperature and pressure ($273.16$ K and $0.6113$ kPa for water). Below triple-point pressure, ice goes straight to vapour (sublimation), which is the principle of freeze-drying.
 - **Why ice floats / negative slope of the fusion curve.** Water expands on freezing, so the solid-liquid line on the $P$-$T$ diagram has a negative slope, which is unusual among substances.
 
-### 🔹 A3. Property diagrams
+### A3. Property diagrams
 ![Diagram: Mollier hs diagram](../assets/05-thermodynamics/mollier-hs-diagram.png)
 ![Diagram: Steam property diagrams](../assets/05-thermodynamics/steam-property-diagrams.png)
 
@@ -39,7 +50,7 @@ Heat $1$ kg of ice-cold water in a piston-cylinder with a weight on the piston, 
 - **$h$-$s$ (Mollier) chart.** Uses enthalpy against entropy. Turbine work is the vertical distance (enthalpy drop) for an isentropic expansion, so it is the working chart for steam turbines. In the wet region, constant-pressure lines are straight with slope $T_{sat}$ because $dh = T\,ds$ at constant $P$.
 - **$P$-$h$ chart** is used for refrigerants, where the compressor, condenser, throttle and evaporator appear as simple lines.
 
-### 🔹 A4. Quality and the property of a wet mixture
+### A4. Quality and the property of a wet mixture
 
 - Dryness fraction $x = m_{vapour}/m_{total}$. It applies only inside the dome.
 - A mixture of $m_f$ of liquid and $m_g$ of vapour has an extensive property $X = m_f X_f + m_g X_g$. Dividing by the total mass gives the specific value:
@@ -49,7 +60,7 @@ $$X = (1-x)\,X_f + x\,X_g = X_f + x\,X_{fg}$$
 - **Superheated steam:** $h = h_g + c_p(T - T_{sat})$ roughly. Properties are in the superheat table, indexed by $P$ and $T$. **Compressed liquid** is usually taken as $h \approx h_f$ at the same temperature, as liquids are nearly incompressible.
 - **Internal energy** from $u = h - Pv$. For a wet mixture $u = u_f + x u_{fg}$.
 
-### 🔹 A5. How steam tables are organised
+### A5. How steam tables are organised
 
 - **Table 1 (temperature table):** for a chosen $T_{sat}$ gives $P_{sat}$, $v_f$, $v_g$, $h_f$, $h_{fg}$, $h_g$, $s_f$, $s_{fg}$, $s_g$.
 - **Table 2 (pressure table):** same data indexed by pressure.
@@ -57,7 +68,7 @@ $$X = (1-x)\,X_f + x\,X_g = X_f + x\,X_{fg}$$
 - **Table 4 (compressed liquid):** used only at high pressure; otherwise use saturated liquid data.
 - **Procedure to find the state.** Compare the given property with saturated values: if $v_f < v < v_g$ (or $h_f < h < h_g$), it is a wet mixture; if above $v_g$, it is superheated; if below $v_f$, it is compressed liquid.
 
-### 🔹 A6. Measuring dryness fraction: calorimeters
+### A6. Measuring dryness fraction: calorimeters
 
 - Dryness fraction cannot be read directly. It is measured by sampling steam.
 - **Throttling calorimeter.** Wet steam is throttled through a small orifice to a pressure low enough to make it superheated; then $h_1 = h_2$ so $x_1 = \dfrac{h_2 - h_{f1}}{h_{fg1}}$. It works only when the steam is nearly dry, because the throttled steam must become superheated; for very wet steam, the throttled steam stays wet and gives no unique temperature.
@@ -65,7 +76,7 @@ $$X = (1-x)\,X_f + x\,X_g = X_f + x\,X_{fg}$$
 - **Combined calorimeter.** Separating in series with throttling for the whole range.
 - **Barrel calorimeter.** Steam is condensed in a known mass of cold water; an energy balance gives $x$. The result has errors due to heat losses.
 
-### 🔹 A7. Real gases, generalised charts and thermodynamic relations
+### A7. Real gases, generalised charts and thermodynamic relations
 
 - Ideal gas fails near the critical point or at high pressure. The **van der Waals equation** corrects for molecular size ($b$) and attractive forces ($a$). Using the condition that the critical isotherm has an inflection point ($\partial P/\partial v = 0$ and $\partial^2 P/\partial v^2 = 0$) gives $v_c = 3b$, $P_c = \dfrac{a}{27b^2}$, $T_c = \dfrac{8a}{27Rb}$ and $Z_c = 3/8$.
 - **Principle of corresponding states.** If gases are compared at the same reduced pressure and temperature, they have nearly the same compressibility factor $Z$. This gives a **generalised compressibility chart**, applicable to any gas.
@@ -73,7 +84,7 @@ $$X = (1-x)\,X_f + x\,X_g = X_f + x\,X_{fg}$$
 - **Maxwell relations** come from the exactness of $dU$, $dH$, $dF$, $dG$. For example, $\left(\dfrac{\partial T}{\partial v}\right)_s = -\left(\dfrac{\partial P}{\partial s}\right)_v$. They convert quantities that are hard to measure (entropy) into quantities that are easy to measure ($P$, $v$, $T$).
 - **Gibbs function** $G = H - TS$: phases in equilibrium have equal $g$. **Helmholtz function** $F = U - TS$: its decrease is the maximum work at constant temperature.
 
-### 🔹 A8. What examiners test from this chapter
+### A8. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -85,7 +96,7 @@ $$X = (1-x)\,X_f + x\,X_g = X_f + x\,X_{fg}$$
 
 ---
 
-## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
+## Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
 ## 🧭 1. Pure substance and phase change

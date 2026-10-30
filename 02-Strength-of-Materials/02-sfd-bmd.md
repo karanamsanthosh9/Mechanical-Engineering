@@ -1,14 +1,23 @@
-# 📐 02. Shear Force and Bending Moment Diagrams
+# 02. Shear Force and Bending Moment Diagrams
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: VHY
 
 ---
 
-## 📘 Part A: Detailed Theory (read this first)
+## Part A: Detailed Theory (read this first)
 
 This part teaches how to find shear force and bending moment in beams and draw their diagrams without memorising. Part B (from section 1 onwards) is the compact reference.
 
-### 🔹 A1. What a beam is and how it is loaded
+### A1. What a beam is and how it is loaded
+```text
+		 P
+		 v
+	 +-----+-----+
+	^             ^
+	A             B
+	 simply supported beam
+```
+
 
 A **beam** is a member whose length is much larger than its cross-section, loaded **transverse** (perpendicular) to its axis. Beams are classified by support:
 
@@ -23,7 +32,7 @@ A **beam** is a member whose length is much larger than its cross-section, loade
 
 **Loads:** concentrated (point) load, uniformly distributed load (UDL, $w$ per unit length), uniformly varying load (UVL, triangular), and applied couple (moment).
 
-### 🔹 A2. Shear force and bending moment: the meaning
+### A2. Shear force and bending moment: the meaning
 
 Imagine cutting the beam at a section $x$. The part you keep is no longer in equilibrium unless the cut face supplies **internal forces** that replace the removed part:
 
@@ -37,7 +46,7 @@ Imagine cutting the beam at a section $x$. The part you keep is no longer in equ
 
 A cantilever with a downward load always hogs. A simply supported beam with downward loads always sags.
 
-### 🔹 A3. The step-by-step method
+### A3. The step-by-step method
 
 1. Draw the FBD of the whole beam, replace supports with reactions.
 2. Find reactions from $\sum F_y = 0$, $\sum M = 0$.
@@ -45,7 +54,7 @@ A cantilever with a downward load always hogs. A simply supported beam with down
 4. In each segment, write $V(x)$ and $M(x)$ using forces on the left (or right, whichever has fewer terms).
 5. Calculate values at the segment boundaries and plot. Check that SF returns to zero at the free end, and BM is zero at a free end and at a simple support.
 
-### 🔹 A4. Relations between load, SF and BM (the shortcut)
+### A4. Relations between load, SF and BM (the shortcut)
 
 Take a small element of length $dx$ with distributed load $w$ (downward positive). Vertical equilibrium and moment equilibrium give
 
@@ -62,7 +71,7 @@ Consequences:
 - An **applied couple** causes a jump in BM equal to the couple and no change in SF.
 - At a **point of contraflexure**, the BM passes through zero and changes sign. The beam curvature reverses there.
 
-### 🔹 A5. The standard cases, derived
+### A5. The standard cases, derived
 ![Diagram: Sfd bmd cantilever point load](../assets/02-strength-of-materials/sfd-bmd-cantilever-point-load.png)
 ![Diagram: Sfd bmd cantilever udl](../assets/02-strength-of-materials/sfd-bmd-cantilever-udl.png)
 ![Diagram: Sfd bmd overhang end loads](../assets/02-strength-of-materials/sfd-bmd-overhang-end-loads.png)
@@ -85,7 +94,7 @@ Consequences:
 
 **Beam with a couple $M_0$.** The reactions form a couple that balances $M_0$. The SF diagram is a constant horizontal line; the BM diagram jumps by $M_0$ at the point of application.
 
-### 🔹 A6. Shape of the diagrams: a visual check
+### A6. Shape of the diagrams: a visual check
 
 | Load | SF shape | BM shape |
 |---|---|---|
@@ -97,11 +106,11 @@ Consequences:
 
 If your drawn diagrams do not follow these shapes, you have an error.
 
-### 🔹 A7. Why we care
+### A7. Why we care
 
 The maximum BM governs the section size (bending stress $= M y / I$). The maximum SF governs shear and connections. The diagrams show where to place the stiffest section. In the next chapter, BM becomes stress and curvature.
 
-### 🔹 A8. Exam relevance
+### A8. Exam relevance
 
 - Standard case maxima: $\dfrac{WL}{4}$, $\dfrac{wL^2}{8}$, $WL$, $\dfrac{wL^2}{2}$ (all three exams).
 - Relation between load, SF, BM; point of contraflexure; shape of diagram (SSC JE, RRB JE, APPSC AEE).
@@ -109,7 +118,7 @@ The maximum BM governs the section size (bending stress $= M y / I$). The maximu
 
 ---
 
-## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
+## Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
 ## 🧭 1. Foundations

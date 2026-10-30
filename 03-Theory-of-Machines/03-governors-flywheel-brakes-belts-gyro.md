@@ -1,14 +1,24 @@
-# ⚙️ 03. Governors, Flywheel, Brakes, Clutches, Belts and Gyroscope
+# 03. Governors, Flywheel, Brakes, Clutches, Belts and Gyroscope
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C/S | Category: ALL | Yield: HY
 
 ---
 
-## 📘 Part A: Detailed Theory (read this first)
+## Part A: Detailed Theory (read this first)
 
 This part explains how engines are kept at steady speed (governor, flywheel), how friction devices transmit and absorb torque (clutch, brake, belt), and how a spinning rotor reacts when turned (gyroscope). Part B (from section 1 onwards) is the compact reference.
 
-### 🔹 A1. Speed control: two different problems
+### A1. Speed control: two different problems
+```text
+      o       o   rotating balls
+      \     /
+       \   /
+        \ /
+       [sleeve]
+         |
+       spindle
+```
+
 
 An engine's speed changes for two different reasons, which need two different devices.
 
@@ -20,7 +30,7 @@ An engine's speed changes for two different reasons, which need two different de
 - A **flywheel** is a heavy rotating disc or rim. It stores kinetic energy when the engine torque exceeds the load torque (speed rises slightly) and gives it back when the torque is less (speed falls slightly). It does not change the mean speed, and it does not supply energy; it only smooths the cycle.
 - A **governor** senses the mean speed and adjusts the fuel or steam supply to bring the speed back. If the load drops, the engine speeds up; the governor reduces the supply. If the load rises, it increases the supply.
 
-### 🔹 A2. Centrifugal governors
+### A2. Centrifugal governors
 ![Diagram: Governor porter hartnell](../assets/03-theory-of-machines/governor-porter-hartnell.png)
 
 Two balls rotate on arms about a vertical spindle. As the speed rises, the balls fly outward (radius increases) and, through links, **lift a sleeve**. The sleeve is connected to the throttle valve. Equilibrium at a given radius requires the balls' centrifugal force to balance the weight (and spring force or sleeve load).
@@ -33,7 +43,7 @@ Two balls rotate on arms about a vertical spindle. As the speed rises, the balls
 
 **Inertia governor.** The balls respond to angular acceleration (inertia force) instead of speed, so it reacts much faster to a change.
 
-### 🔹 A3. Governor performance terms (understand each one)
+### A3. Governor performance terms (understand each one)
 
 - **Sensitiveness:** how much the speed has to change for the sleeve to move through its full lift. $\dfrac{N_2 - N_1}{N}$, where $N_1$ and $N_2$ are the minimum and maximum equilibrium speeds. A highly sensitive governor responds to a small speed change.
 - **Stability:** a governor is stable if there is only **one equilibrium speed** for each radius of the ball path, and the balls return to that radius after a small disturbance. On the $F_c$ against $r$ graph this holds when $\dfrac{dF_c}{dr} > \dfrac{F_c}{r}$, that is, the curve is steeper than the straight line from the origin to the point. A straight line with a positive intercept on the $F_c$ axis meets this condition.
@@ -43,7 +53,7 @@ Two balls rotate on arms about a vertical spindle. As the speed rises, the balls
 - **Effort:** the average force exerted at the sleeve for a given percentage change of speed. **Power:** effort multiplied by the sleeve lift. A governor with high power can overcome friction and move the valve.
 - **Friction effect:** friction at the sleeve adds an insensitivity range. Both the minimum and maximum speeds are altered, so the speed must change by a certain amount before the sleeve moves.
 
-### 🔹 A4. Flywheel in detail
+### A4. Flywheel in detail
 ![Diagram: Flywheel turning moment](../assets/03-theory-of-machines/flywheel-turning-moment.png)
 
 **Turning moment diagram.** Plot the engine's crank-effort (torque) $T$ against crank angle. The mean torque line is $T_{mean}$ such that the area under the curve for one cycle equals the work per cycle.
@@ -62,7 +72,7 @@ where $\omega$ is the mean speed. From it, $I = \dfrac{\Delta E}{\omega^2 C_s}$.
 
 **Engine type.** A two-stroke engine has a power stroke every revolution; a four-stroke engine has one every two revolutions, so it has larger fluctuations and needs a heavier flywheel. A multi-cylinder engine has overlapping power strokes and needs a smaller flywheel.
 
-### 🔹 A5. Friction devices: the common principle
+### A5. Friction devices: the common principle
 
 Friction transmits torque between a driving and a driven surface. For a normal force $W$ pressing the surfaces, the friction force is $\mu W$, and the torque is $\mu W r_{mean}$. The only complication is how the pressure is distributed over the surface, which gives two design assumptions.
 
@@ -83,7 +93,7 @@ Friction transmits torque between a driving and a driven surface. For a normal f
 
 **Dynamometers** measure the power of an engine. **Absorption:** all power is dissipated as heat (Prony brake, rope brake, hydraulic). **Transmission:** power passes through the instrument to the load (belt transmission, epicyclic train, torsion).
 
-### 🔹 A6. Belt, rope and chain drives
+### A6. Belt, rope and chain drives
 
 Belts transmit power between shafts that are some distance apart. They are cheap, quiet and flexible, and absorb shocks. Drawbacks: slip and creep, so the velocity ratio is not exact.
 
@@ -103,7 +113,7 @@ where $\theta$ is the angle of lap on the **smaller pulley** (contact angle). Fo
 
 **Chain drive:** a positive drive, no slip, constant velocity ratio $= T_2/T_1$ (ratio of sprocket teeth), works at low speed and high torque, but noisy, with polygonal action causing speed variation.
 
-### 🔹 A7. Gyroscope
+### A7. Gyroscope
 
 A spinning rotor has **angular momentum** $H = I\omega$ along its spin axis. A torque is needed to change the direction of this vector (just as a force changes the direction of ordinary momentum). If the spin axis is turned (precessed) at rate $\omega_p$ about a perpendicular axis, a **gyroscopic couple** is needed:
 
@@ -120,7 +130,7 @@ and it acts about the third axis, perpendicular to both. The reaction on the sup
 - **Vehicle on a curve:** the gyroscopic effect of rotating wheels and engine parts, and the centrifugal force, both tend to push the outer wheels down and lift the inner wheels (for a four-wheeler). A **two-wheeler leans** into the curve to balance the overturning effect.
 - **Stabilisers:** gyroscopes used to reduce the roll of ships, in gyrocompasses, and in missile guidance.
 
-### 🔹 A8. Exam relevance
+### A8. Exam relevance
 
 - Governor terms (sensitiveness, hunting, isochronous), flywheel $I = \Delta E/(\omega^2 C_s)$ (all exams).
 - Clutch torque, uniform wear against uniform pressure, band brake tension ratio (SSC JE, APPSC AEE).
@@ -129,7 +139,7 @@ and it acts about the third axis, perpendicular to both. The reaction on the sup
 
 ---
 
-## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
+## Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
 ## 🧭 1. Governors
@@ -148,7 +158,7 @@ $$N^2 = \frac{m + \dfrac{M(1+q)}{2}}{m}\times\frac{895}{h}$$
 - **Proell governor:** a Porter governor with the balls on extensions of the links; it runs at higher speed than a Porter for the same height.
 - **Hartnell governor:** spring-loaded; the sleeve load comes from the spring force.
 
-### 🔹 Governor terms
+### Governor terms
 
 | Term | Meaning |
 |---|---|
@@ -180,7 +190,7 @@ $$\Delta E = I\omega^2 C_s = mk^2\omega^2 C_s \quad\Rightarrow\quad I = \frac{\D
 
 ## 🧭 3. Friction, clutches and brakes
 
-### 🔹 Pivot and collar friction
+### Pivot and collar friction
 
 | Case | Uniform pressure | Uniform wear |
 |---|---|---|
@@ -189,7 +199,7 @@ $$\Delta E = I\omega^2 C_s = mk^2\omega^2 C_s \quad\Rightarrow\quad I = \frac{\D
 
 For a conical pivot, divide by $\sin\alpha$ ($\alpha$ is the semi-cone angle).
 
-### 🔹 Clutches
+### Clutches
 
 - A single-plate clutch with both faces active has $n = 2$ friction surfaces. For a multi-plate clutch, $n = n_1 + n_2 - 1$.
 - Torque for uniform wear (the usual design assumption after the initial run-in):
@@ -200,7 +210,7 @@ $$T = n\,\mu\, W\,R_{mean}, \qquad R_{mean} = \frac{R_1 + R_2}{2}$$
 - **Cone clutch:** a small cone angle (about $12.5^\circ$) gives a large normal force for a given axial force, so more torque than a plate clutch; it must be disengaged against wedging.
 - **Centrifugal clutch:** engages at a speed set by the spring.
 
-### 🔹 Brakes
+### Brakes
 
 - Brakes absorb kinetic or potential energy and dissipate it as heat. Types: block (shoe), band, band-and-block, internal expanding shoe, disc.
 - **Band brake:**

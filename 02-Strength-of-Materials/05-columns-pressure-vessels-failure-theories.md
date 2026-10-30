@@ -1,14 +1,24 @@
-# 📐 05. Columns, Pressure Vessels and Failure Theories
+# 05. Columns, Pressure Vessels and Failure Theories
 
 **Exam relevance:** APPSC AEE: P | SSC JE: C | RRB JE: S | Category: AEE+/ALL | Yield: HY
 
 ---
 
-## 📘 Part A: Detailed Theory (read this first)
+## Part A: Detailed Theory (read this first)
 
 This part explains buckling, pressure vessels and failure theories from first principles. Part B (from section 1 onwards) is the compact reference.
 
-### 🔹 A1. Columns: failure by instability
+### A1. Columns: failure by instability
+```text
+     P                         P
+     v                         v
+     |                         )
+     |       load rises       )
+     |        ----->          )
+     ^                         ^
+   straight column          buckled column
+```
+
 ![Diagram: Column end conditions](../assets/02-strength-of-materials/column-end-conditions.png)
 
 A **column** (or strut) is a long, slender member loaded in axial compression. A short stubby block fails by crushing when the stress reaches the yield or crushing strength. A **long** column fails much earlier, by **buckling**: it suddenly bows sideways. Buckling is a failure of **stability**, not of material strength.
@@ -61,7 +71,7 @@ For very long columns $P_R \to P_E$; for very short ones $P_R \to \sigma_c A$.
 
 **Design response.** To raise $P_{cr}$: use a hollow or box section (larger $I$ for the same area), reduce length, fix the ends, add intermediate braces.
 
-### 🔹 A2. Thin cylinders and spheres
+### A2. Thin cylinders and spheres
 ![Diagram: Thin cylinder stresses](../assets/02-strength-of-materials/thin-cylinder-stresses.png)
 
 A **thin** cylinder has wall thickness $t < d/20$ (about), so stress is taken as uniform across the thickness. It resists internal pressure $p$ with two stresses:
@@ -84,7 +94,7 @@ $$\sigma_l = \frac{p d}{4 t} = \tfrac{1}{2}\sigma_c$$
 
 **Thin sphere.** By symmetry the stress is the same in all directions: $\sigma = \dfrac{pd}{4t}$ (half the hoop stress of a cylinder of the same diameter and thickness). Volumetric strain $e_v = \dfrac{3pd}{4tE}(1 - \nu)$. This is why spheres are the most efficient pressure vessel shape.
 
-### 🔹 A3. Thick cylinders: Lame's theory
+### A3. Thick cylinders: Lame's theory
 
 When the wall is thick, stress varies across the thickness (higher at the inner surface) and the radial stress cannot be ignored. Lame solved the equilibrium of a ring element, giving at radius $r$
 
@@ -100,7 +110,7 @@ $$\sigma_\theta(r) = \frac{p_i r_i^2}{r_o^2 - r_i^2}\left(1 + \frac{r_o^2}{r^2}\
 - **Barlow, Clavarino and Birnie** give different thickness formulas for ductile materials depending on the theory and whether ends are closed.
 - **Compound cylinders and shrink fitting:** an outer cylinder is shrunk on an inner one, so the inner is initially in compression and the outer in tension. When pressure is applied the stress distribution becomes more uniform and the pressure capacity rises. **Autofrettage** (permanently stretching the bore by overpressure) does the same.
 
-### 🔹 A4. Rotating rings and discs
+### A4. Rotating rings and discs
 
 When a ring rotates at angular speed $\omega$ every element experiences centrifugal force. For a thin rotating ring of mean radius $r$ and density $\rho$:
 
@@ -108,7 +118,7 @@ $$\sigma_\theta = \rho \omega^2 r^2 = \rho v^2 \quad (v = \omega r)$$
 
 The hoop stress depends only on **peripheral speed** and density, not on the ring size. This is the reason for the limit on rim speed of flywheels, grinding wheels and turbine discs. For a solid disc, the maximum stress at the centre is $\dfrac{(3 + \nu)}{8}\rho\omega^2 R^2$.
 
-### 🔹 A5. Theories of failure: how to judge a combined stress state
+### A5. Theories of failure: how to judge a combined stress state
 
 A tension test tells us the yield stress $\sigma_y$ for **uniaxial** stress. But machine parts experience biaxial or triaxial states. A **failure theory** converts the complex state into an equivalent one-dimensional check against $\sigma_y$.
 
@@ -128,7 +138,7 @@ Let $\sigma_1 \ge \sigma_2 \ge \sigma_3$ be the principal stresses.
 
 **Using the theories for shafts.** With bending $M$ and torque $T$ on a solid shaft: Tresca gives $\sigma_y/FOS \ge \dfrac{32}{\pi d^3}\sqrt{M^2 + T^2}$; von Mises: $\dfrac{32}{\pi d^3}\sqrt{M^2 + 0.75T^2}$.
 
-### 🔹 A6. Exam relevance map
+### A6. Exam relevance map
 
 | Idea | Typical question |
 |---|---|
@@ -140,7 +150,7 @@ Let $\sigma_1 \ge \sigma_2 \ge \sigma_3$ be the principal stresses.
 
 ---
 
-## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
+## Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
 ## 🧭 1. Columns and struts
@@ -148,7 +158,7 @@ Let $\sigma_1 \ge \sigma_2 \ge \sigma_3$ be the principal stresses.
 - **Column:** compression member (vertical). **Strut:** compression member in any orientation.
 - **Slenderness ratio:** $\lambda = \dfrac{L_e}{k}$, with $k = \sqrt{\dfrac{I_{min}}{A}}$. Short columns crush; long columns buckle.
 
-### 🔹 Euler's formula
+### Euler's formula
 
 $$P_{cr} = \frac{\pi^2 EI}{L_e^2}, \qquad \sigma_{cr} = \frac{\pi^2 E}{\lambda^2}$$
 

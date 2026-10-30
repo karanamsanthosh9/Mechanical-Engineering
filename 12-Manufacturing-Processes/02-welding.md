@@ -1,14 +1,22 @@
-# 🏭 02. Welding, Brazing and Soldering
+# 02. Welding, Brazing and Soldering
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: VHY
 
 ---
 
-## 📘 Part A: Detailed Theory (read this first)
+## Part A: Detailed Theory (read this first)
 
 Welding joins pieces permanently by bringing the joint region to a state where atoms of the two parts bond, by melting (fusion), by plastic deformation under pressure (solid state) or by melting only a filler (brazing and soldering). The chapter can be understood through three questions: where does the heat come from (flame, arc, resistance, friction, beam, chemical reaction), how is the molten metal protected from the air (flux, slag, inert gas, vacuum), and what happens metallurgically in the heat-affected zone as the joint cools. The processes differ in the answers to these three questions.
 
-### 🔹 A1. Classification and weld anatomy
+### A1. Classification and weld anatomy
+```text
+     electrode
+       |
+      ( )  arc
+       v
+--------- weld pool --------- workpiece
+```
+
 ![Diagram: Welding joints and arc](../assets/12-manufacturing/welding-joints-and-arc.png)
 
 | Group | Processes |
@@ -27,7 +35,7 @@ Welding joins pieces permanently by bringing the joint region to a state where a
 
 The HAZ is often the weakest region, because of grain coarsening and, in steels, hard brittle phases.
 
-### 🔹 A2. Gas welding
+### A2. Gas welding
 ![Diagram: Gas welding flame types](../assets/12-manufacturing/gas-welding-flame-types.png)
 
 **Principle.** A fuel gas burns in oxygen in a torch. The flame melts the edges of the joint, and a filler rod is added. Oxy-acetylene gives the hottest flame, about $3200^\circ$C. Acetylene is stored dissolved in acetone in cylinders packed with porous material, because free acetylene under pressure can explode.
@@ -48,7 +56,7 @@ The neutral flame has a sharp bright inner cone and an outer envelope. A carburi
 
 **Oxy-fuel cutting.** The steel is preheated to its ignition temperature (about $870^\circ$C), then a jet of pure oxygen burns the iron to iron oxide, which is blown out. It works for plain steel because the oxide melts at a lower temperature than the metal. It does not work for stainless steel, cast iron or non-ferrous metals, because their oxides melt at higher temperatures than the base metal and form a protective layer.
 
-### 🔹 A3. Arc welding principles
+### A3. Arc welding principles
 
 **The arc.** An electric arc is a sustained discharge through ionised gas between an electrode and the work. Typical values: arc voltage 20 to 40 V, current 50 to 500 A, core temperature 6000 to $7000^\circ$C. In a DC arc about two-thirds of the heat is released at the anode, because electrons arriving there give up their kinetic energy and work function.
 
@@ -72,7 +80,7 @@ with arc efficiency $\eta$ of about 0.7 to 0.9, arc voltage $V$, current $I$ and
 
 **Duty cycle.** The percentage of a 10-minute period for which the machine can supply rated current without overheating.
 
-### 🔹 A4. Arc welding processes
+### A4. Arc welding processes
 
 | Process | Key features |
 |---|---|
@@ -91,7 +99,7 @@ with arc efficiency $\eta$ of about 0.7 to 0.9, arc voltage $V$, current $I$ and
 
 **Hydrogen.** Hydrogen dissolved in the weld causes cold cracking in the HAZ. Low-hydrogen electrodes are baked and stored dry.
 
-### 🔹 A5. Resistance welding
+### A5. Resistance welding
 
 **Principle.** Joule heating at the interface of the two parts, with pressure applied. No filler or flux is needed:
 
@@ -107,7 +115,7 @@ The heat depends on the square of the current, on the contact resistance (highes
 - **Butt and flash welding:** rods, rails, chains.
 - **Percussion welding:** capacitor discharge.
 
-### 🔹 A6. Other welding processes
+### A6. Other welding processes
 
 - **Thermit welding:** an exothermic reaction of aluminium powder with iron oxide, $\text{Fe}_2\text{O}_3 + 2\text{Al} \rightarrow 2\text{Fe} + \text{Al}_2\text{O}_3$, reaches about $3000^\circ$C. Used for rail joints and repairs.
 - **Friction welding:** relative rotation of one part against another under pressure heats the interface to plasticity; for rods and shafts.
@@ -118,7 +126,7 @@ The heat depends on the square of the current, on the contact resistance (highes
 - **Laser beam welding (LBW):** focused laser, no vacuum, high speed.
 - **Forge welding:** heating and hammering; the oldest process.
 
-### 🔹 A7. Brazing and soldering
+### A7. Brazing and soldering
 
 | Feature | Soldering | Brazing | Welding |
 |---|---|---|---|
@@ -130,7 +138,7 @@ The heat depends on the square of the current, on the contact resistance (highes
 
 Soldering is used in electronics and plumbing. The eutectic tin-lead solder is 63 Sn - 37 Pb, melting at $183^\circ$C. Flux removes oxides from the surfaces so that the molten filler wets them and capillary action draws it into the narrow gap.
 
-### 🔹 A8. Weld metallurgy, defects and inspection
+### A8. Weld metallurgy, defects and inspection
 
 **HAZ in steel.** Near the fusion line, the metal is heated above the critical temperature and cools rapidly. Austenite grains coarsen, and in carbon steel fast cooling forms martensite, which is hard and brittle and prone to cracking, especially with hydrogen present. Remedies: preheating (slows cooling) and post-weld heat treatment (tempers martensite and relieves residual stress).
 
@@ -146,7 +154,7 @@ Weldability worsens as CE rises; steels above about 0.45 normally need preheatin
 
 **Inspection (NDT).** Visual; dye penetrant (surface cracks); magnetic particle (surface and near-surface cracks in ferromagnetic material); radiography (X-ray or gamma, internal defects); ultrasonic (internal defects); eddy current. **Destructive tests:** tensile, bend, hardness, impact.
 
-### 🔹 A9. What examiners test from this chapter
+### A9. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -164,7 +172,7 @@ Weldability worsens as CE rises; steels above about 0.45 normally need preheatin
 
 ---
 
-## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
+## Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
 ## 🧭 1. Foundations
@@ -216,7 +224,7 @@ $$H = \eta\,\frac{V\,I}{v}\ \text{J/mm}$$
 - **Arc blow:** deflection of the arc by magnetic forces in DC welding; reduced with AC or by changing the earth connection.
 - **Duty cycle** $= \dfrac{\text{arc time}}{\text{total time (10 min basis)}}$.
 
-### 🔹 Arc welding processes
+### Arc welding processes
 
 | Process | Description |
 |---|---|

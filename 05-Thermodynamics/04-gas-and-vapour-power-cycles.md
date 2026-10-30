@@ -1,21 +1,31 @@
-# 🌡️ 04. Gas Power Cycles and Vapour Power Cycles
+# 04. Gas Power Cycles and Vapour Power Cycles
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: VHY
 
 ---
 
-## 📘 Part A: Detailed Theory (read this first)
+## Part A: Detailed Theory (read this first)
 
 A power cycle is a series of processes that returns the working fluid to its starting state while delivering net work. Real engines are too complicated to analyse directly, so we study idealised cycles that keep the essential physics and let us compare designs. This part explains how each cycle is built, why its efficiency has the form it has, and what limits it in practice.
 
-### 🔹 A1. How to analyse any cycle
+### A1. How to analyse any cycle
+```text
+     P
+     ^       3 <----- 2
+     |       |         /
+     |       v        /
+     |       4 -----> 1
+     +--------------------> V
+       closed cycle (P-v)
+```
+
 
 - **Efficiency** $\eta = \dfrac{W_{net}}{Q_{in}} = 1 - \dfrac{Q_{out}}{Q_{in}}$. Net work equals the area enclosed on the $P$-$V$ diagram, and also equals $Q_{in} - Q_{out}$ on the $T$-$s$ diagram.
 - **Method.** (1) Identify the four processes. (2) Find the temperatures at each state using isentropic and ideal-gas relations. (3) Find $Q_{in}$ and $Q_{out}$ from $c_v\Delta T$ or $c_p\Delta T$. (4) Form $\eta$.
 - **Carnot efficiency is the upper bound** for any cycle operating between the same maximum and minimum temperatures. Practical cycles fall short because heat is not added or rejected isothermally.
 - **Mean effective pressure** (mep) is the constant pressure that, acting through the swept volume, would give the same net work: $\text{mep} = W_{net}/(V_{max} - V_{min})$. It is used to compare engines of different sizes; a higher mep means more work from a given size of engine.
 
-### 🔹 A2. Air-standard assumptions
+### A2. Air-standard assumptions
 
 Real engines burn fuel inside the cylinder and exchange gas. To make the problem tractable, the **air-standard cycle** assumes:
 
@@ -27,7 +37,7 @@ Real engines burn fuel inside the cylinder and exchange gas. To make the problem
 
 These make the results qualitative guides. Actual efficiencies are lower by $\approx 30$ to $40\%$ because real $\gamma$ is lower at high temperature, and because of friction, heat loss and incomplete combustion.
 
-### 🔹 A3. Otto cycle: the spark-ignition engine
+### A3. Otto cycle: the spark-ignition engine
 ![Diagram: Otto cycle pv ts](../assets/05-thermodynamics/otto-cycle-pv-ts.png)
 
 - **Sequence.** Isentropic compression (1-2), constant-volume heat addition (2-3, the spark ignites the charge so fast the piston barely moves), isentropic expansion (3-4, power stroke), constant-volume heat rejection (4-1, exhaust valve opens).
@@ -40,7 +50,7 @@ $$\eta_{Otto} = 1 - \frac{1}{r^{\gamma-1}}$$
 - **Limit on $r$.** A fuel-air mixture is compressed. At high $r$ the end-gas auto-ignites before the flame reaches it, which causes **knock**. Hence $r \approx 6$ to $10$ for petrol engines. Higher octane fuel resists knock.
 - **Effect of $\gamma$.** A larger $\gamma$ (monatomic gas like argon) increases efficiency for the same $r$.
 
-### 🔹 A4. Diesel cycle: the compression-ignition engine
+### A4. Diesel cycle: the compression-ignition engine
 ![Diagram: Diesel dual cycles pv](../assets/05-thermodynamics/diesel-dual-cycles-pv.png)
 
 - **Sequence.** Only air is compressed. Because no fuel is present during compression, there is no knock, so $r$ can be very high (14 to 22). Fuel is injected near the top and burns as it enters, adding heat at roughly constant pressure while the piston moves down (2-3). Then isentropic expansion (3-4) and constant-volume rejection (4-1).
@@ -49,7 +59,7 @@ $$\eta_{Diesel} = 1 - \frac{1}{r^{\gamma - 1}}\left[\frac{\rho^\gamma - 1}{\gamm
 - The bracket is greater than $1$ for $\rho > 1$ and tends to $1$ as $\rho \to 1$. So at the **same compression ratio**, Diesel is less efficient than Otto, and a **later cut-off (higher load)** lowers the efficiency. Diesel engines are, in practice, more efficient because $r$ is much higher.
 - **Cut-off ratio** is a measure of the duration of fuel injection and increases with load.
 
-### 🔹 A5. Comparing Otto and Diesel: why the basis matters
+### A5. Comparing Otto and Diesel: why the basis matters
 
 | Basis | Result |
 |---|---|
@@ -60,13 +70,13 @@ $$\eta_{Diesel} = 1 - \frac{1}{r^{\gamma - 1}}\left[\frac{\rho^\gamma - 1}{\gamm
 - **Reasoning for equal peak pressure.** For the same peak pressure, Otto must have a lower compression ratio, because its heat addition raises the pressure at constant volume. With a lower $r$, its efficiency falls below that of Diesel.
 - Mechanical design is set by the maximum pressure the structure can bear, so the same-peak-pressure comparison is the relevant one for real engines.
 
-### 🔹 A6. Dual cycle
+### A6. Dual cycle
 
 - Real diesel engines add part of the heat quickly at constant volume (premixed burning of the injected fuel) and the rest at constant pressure (diffusion burning). The **dual (limited-pressure) cycle** models this:
 $$\eta_{Dual} = 1 - \frac{1}{r^{\gamma-1}}\left[\frac{\alpha\rho^\gamma - 1}{(\alpha - 1) + \gamma\alpha(\rho - 1)}\right]$$
 - It reduces to Otto if $\rho = 1$ (no constant-pressure part) and to Diesel if $\alpha = 1$ (no constant-volume part). It is the best match with the real indicator diagram of a high-speed diesel.
 
-### 🔹 A7. Brayton cycle: the gas turbine
+### A7. Brayton cycle: the gas turbine
 ![Diagram: Brayton cycle pv ts](../assets/05-thermodynamics/brayton-cycle-pv-ts.png)
 
 - **Components.** Compressor, combustion chamber, turbine. In the ideal **closed** cycle, a heat exchanger replaces the combustor. In the open cycle, air is taken in and exhaust gas is released.
@@ -81,14 +91,14 @@ $$\eta_{Brayton} = 1 - \frac{T_1}{T_2} = 1 - \frac{1}{r_p^{(\gamma-1)/\gamma}}$$
   - **Regeneration** uses hot turbine exhaust to preheat compressed air. This saves fuel. It only makes sense when $T_4 > T_2$, which means a low pressure ratio. At a high pressure ratio, the exhaust is cooler than the compressed air and regeneration cannot help.
   - Together, multistage compression with intercooling, multistage expansion with reheating, and regeneration approach the **Ericsson cycle**, which has Carnot efficiency.
 
-### 🔹 A8. Stirling, Ericsson, and other cycles
+### A8. Stirling, Ericsson, and other cycles
 
 - **Stirling:** two isothermal and two constant-volume processes with perfect regeneration. **Ericsson:** two isothermal and two constant-pressure processes with perfect regeneration. With perfect regeneration, both reach Carnot efficiency, since all external heat exchange is isothermal.
 - **Atkinson cycle:** expansion ratio is larger than compression ratio, so exhaust pressure is nearly atmospheric. Used in hybrid-vehicle engines.
 - **Lenoir cycle:** no compression stage; heat addition at constant volume. Poor efficiency.
 - **Reversed Brayton (Bell-Coleman)** is the air refrigeration cycle used in aircraft cabin cooling.
 
-### 🔹 A9. Rankine cycle: the steam power plant
+### A9. Rankine cycle: the steam power plant
 ![Diagram: Rankine cycle layout ts](../assets/05-thermodynamics/rankine-cycle-layout-ts.png)
 ![Diagram: Rankine reheat regeneration ts](../assets/05-thermodynamics/rankine-reheat-regeneration-ts.png)
 
@@ -114,12 +124,12 @@ $$w_{pump} = v_f (P_2 - P_1), \qquad w_{turb} = h_3 - h_4, \qquad q_{in} = h_3 -
 - **Combined and cogeneration cycles.** A **binary cycle** couples two fluids (mercury at the top, steam at the bottom). A **combined gas-steam cycle** uses the Brayton exhaust to raise steam in a heat recovery boiler, giving $55$ to $60\%$ efficiency. **Cogeneration** extracts steam for process heat, achieving a high overall energy utilisation factor.
 - **Performance measures:** specific steam consumption (kg/kWh), heat rate (kJ/kWh), and back work ratio (nearly $1$ minus a small value for Rankine, because pump work is tiny).
 
-### 🔹 A10. Actual versus ideal cycles
+### A10. Actual versus ideal cycles
 
 - Real turbines and compressors are not isentropic (isentropic efficiency $85$ to $92\%$). Pumps and boilers have pressure drops. Piping loses heat. The actual cycle therefore falls short of the ideal.
 - On the $T$-$s$ diagram, the actual expansion line tilts to the right (entropy increases), giving a higher exit enthalpy and a smaller work output.
 
-### 🔹 A11. What examiners test from this chapter
+### A11. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -131,7 +141,7 @@ $$w_{pump} = v_f (P_2 - P_1), \qquad w_{turb} = h_3 - h_4, \qquad q_{in} = h_3 -
 
 ---
 
-## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
+## Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
 ## 🧭 1. Air-standard assumptions

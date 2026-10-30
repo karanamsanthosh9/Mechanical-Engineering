@@ -1,14 +1,20 @@
-# 🛠️ 03. Gears, Springs, Belts and Brakes (Design)
+# 03. Gears, Springs, Belts and Brakes (Design)
 
 **Exam relevance:** APPSC AEE: P | SSC JE: S | RRB JE: S | Category: AEE+ | Yield: MY
 
 ---
 
-## 📘 Part A: Detailed Theory (read this first)
+## Part A: Detailed Theory (read this first)
 
 This part explains how gear teeth are loaded and sized, how springs are designed, and how belts, chains, clutches and brakes are designed from the loads they transmit. Part B (from section 1 onwards) is the compact reference.
 
-### 🔹 A1. Gear tooth loading: where the forces come from
+### A1. Gear tooth loading: where the forces come from
+```text
+       driver       driven
+         (O)><(O)
+       input       output
+```
+
 ![Diagram: Gear tooth forces](../assets/04-machine-design/gear-tooth-forces.png)
 
 Torque $T$ on a gear of pitch diameter $d$ is transmitted through contact at the pitch point. The force between mating teeth acts along the **line of action**, tilted at the pressure angle $\phi$ to the tangent. It resolves into:
@@ -19,7 +25,7 @@ Torque $T$ on a gear of pitch diameter $d$ is transmitted through contact at the
 
 For **helical gears** with helix angle $\psi$, there is also an **axial (thrust) component** $F_a = F_t\tan\psi$ and the radial component becomes $F_t\tan\phi_n/\cos\psi$ (for a normal pressure angle $\phi_n$). **Herringbone** gears have two opposite helices so the thrust cancels. **Bevel gears** also produce axial and radial components that depend on the pitch cone angle; **worm gears** have large axial thrust on the worm.
 
-### 🔹 A2. Why gear teeth fail and the two design checks
+### A2. Why gear teeth fail and the two design checks
 
 A gear tooth must resist two separate failure modes, so two checks are made.
 
@@ -57,7 +63,7 @@ where the ratio factor $Q$ increases with the gear ratio and $K$ is the load-str
 - **Bevel gear**: pitch cone angle $\tan\gamma = T_p/T_g$ (for $90^\circ$ shaft angle). Formative number of teeth $T_e = T/\cos\gamma$.
 - **Worm gear**: the worm is like a screw, the wheel like a nut. Velocity ratio $= \dfrac{T_{wheel}}{\text{number of starts}}$. Efficiency of the worm drive is $\eta = \dfrac{\tan\lambda\,(1 - \mu\tan\lambda)}{\tan\lambda + \mu}$ for a driving worm (with $\phi_n$ small), which increases with the lead angle; the drive is self-locking if $\tan\lambda \le \mu$. Worm gears give large reduction (up to 100:1) in a compact size and quiet operation, but efficiency is low and heat is a limiting factor.
 
-### 🔹 A3. Spring design
+### A3. Spring design
 ![Diagram: Spring and clutch basics](../assets/04-machine-design/spring-and-clutch-basics.png)
 
 The analysis of a helical spring was done in Strength of Materials. Here are the design points.
@@ -72,7 +78,7 @@ The analysis of a helical spring was done in Strength of Materials. Here are the
 - **Stiffness and energy:** $k = \dfrac{G d^4}{8 D^3 n}$, energy $\tfrac{1}{2}W\delta = \tfrac{1}{2}k\delta^2$.
 - **Surge** in springs: resonance of the spring coils at high-frequency loading (valve springs) - avoid by making the natural frequency of the spring much greater than the forcing frequency, or use dual springs.
 
-### 🔹 A4. Belt, rope and chain drive design
+### A4. Belt, rope and chain drive design
 ![Diagram: Belt drive tensions](../assets/04-machine-design/belt-drive-tensions.png)
 
 **Flat belt design steps:** (1) compute the design power with a service factor; (2) choose pulley diameters and centre distance; (3) find the arc of contact on the small pulley and the tension ratio; (4) take the allowable stress of the belt and a centrifugal tension correction, so the maximum tension $T_{max} = \sigma \times$ cross-section; (5) from $P = (T_1 - T_2)v$ find the belt width.
@@ -91,7 +97,7 @@ The analysis of a helical spring was done in Strength of Materials. Here are the
 
 **Rope drive.** Several grooved ropes on large pulleys for transmitting power over long distances (cotton, manila, wire rope).
 
-### 🔹 A5. Clutch and brake design
+### A5. Clutch and brake design
 
 **Clutch design.** The principle is covered in Theory of Machines. In design, use **uniform wear** for the torque: $T = \mu\,W\,n\,R_{mean}$, $W = 2\pi\,p_{max}\,r_i\,(r_o - r_i)$ where the maximum pressure occurs at the inner radius, with $p\,r = $ constant. The ratio $r_i/r_o$ that maximises the torque for a given pressure and outer radius is $\dfrac{1}{\sqrt{3}} \approx 0.577$; in practice about $0.6$ to $0.7$ is used. Lining materials need a stable friction coefficient (asbestos-free organic, sintered metal, cork).
 
@@ -103,7 +109,7 @@ The analysis of a helical spring was done in Strength of Materials. Here are the
 - **Self-energising** and **self-locking**: if the moment of the friction force about the shoe pivot helps the applied force, the brake is self-energising (leading shoe of a drum brake). If the friction moment is larger than the moment of the normal force, the brake locks itself and cannot be released without reversing the force.
 - **Types:** shoe (block), band, internal-expanding, disc (caliper), cone, and electromagnetic or hydraulic. Automobiles use hydraulic actuation with discs at the front and drums at the rear.
 
-### 🔹 A6. Exam relevance
+### A6. Exam relevance
 
 - Gear tooth force components; Lewis equation and form factor; pinion is weaker (all exams).
 - Failure modes of gears (pitting, scoring); helical and worm gear features (SSC JE, APPSC AEE).
@@ -113,7 +119,7 @@ The analysis of a helical spring was done in Strength of Materials. Here are the
 
 ---
 
-## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
+## Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
 ## 🧭 1. Spur gear design

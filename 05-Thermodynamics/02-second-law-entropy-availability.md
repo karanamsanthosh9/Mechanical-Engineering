@@ -1,33 +1,43 @@
-# 🌡️ 02. Second Law, Entropy and Availability
+# 02. Second Law, Entropy and Availability
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: VHY
 
 ---
 
-## 📘 Part A: Detailed Theory (read this first)
+## Part A: Detailed Theory (read this first)
 
 The first law says energy is conserved, but it allows processes that never happen: a hot cup does not cool by pushing heat into the hotter room, and a ship cannot run by cooling the ocean. The **second law** gives direction to natural processes and sets the upper limit on how well heat can be turned into work. **Entropy** is the property that quantifies it, and **availability** (exergy) measures how much useful work is really available.
 
-### 🔹 A1. Why a second law is needed
+### A1. Why a second law is needed
+```text
+ Hot reservoir                 Work output
+      |                            ^
+     QH                            |
+      v                            |
+  +---------+     rejected QL   +--------+
+  |  ENGINE | ----------------> | sink   |
+  +---------+                    +--------+
+```
+
 
 - Energy conversion is **asymmetric**. Work converts to heat completely (friction, electric heating, paddle stirring). Heat converts to work only partly, and only while a part is rejected to a colder sink.
 - A thermodynamic process must satisfy the first law **and** the second law. A process can obey the first law and still be impossible.
 - Examples of one-way processes: heat flows from hot to cold, a gas expands into a vacuum, a gas mixes with another, a current heats a resistor. The reverse never occurs spontaneously.
 
-### 🔹 A2. Thermal reservoirs, heat engines and the efficiency definition
+### A2. Thermal reservoirs, heat engines and the efficiency definition
 
 - A **thermal energy reservoir (TER)** is a body so large that it can supply or absorb any amount of heat without a change in its temperature. The **source** is the high-temperature reservoir at $T_H$; the **sink** is the low-temperature reservoir at $T_L$.
 - A **heat engine** (i) receives heat from a high-temperature source, (ii) converts part of it into work, (iii) rejects the remainder to a low-temperature sink, and (iv) operates in a cycle.
 - Thermal efficiency is the desired output over the cost paid: $\eta = W_{net}/Q_H$. **Why not 100%?** Because the second law forbids it; some heat $Q_L$ must always be rejected.
 - A **refrigerator** removes $Q_L$ from a cold space by consuming work. A **heat pump** delivers $Q_H$ to a warm space by consuming work. They are the same machine; they differ in what you want. COP can exceed unity because the device moves heat rather than creating it.
 
-### 🔹 A3. Kelvin-Planck and Clausius statements
+### A3. Kelvin-Planck and Clausius statements
 
 - **Kelvin-Planck.** It is impossible to build a device that operates in a cycle, exchanges heat with a single reservoir and produces net work. A device that violates this is a **PMM2** (perpetual motion machine of the second kind). It would obey the first law but extract work from the ocean's heat.
 - **Clausius.** It is impossible to build a device that operates in a cycle and does nothing except transfer heat from a cold body to a hotter body. A refrigerator needs a work input.
 - **Equivalence (proof idea).** Suppose a Kelvin-Planck violator existed. Use its work to drive a refrigerator; the pair would move heat from cold to hot with no net work, violating Clausius. The reverse argument works too. Hence both statements are two faces of the same law.
 
-### 🔹 A4. Reversibility, Carnot cycle and Carnot theorems
+### A4. Reversibility, Carnot cycle and Carnot theorems
 ![Diagram: Carnot cycle pv ts](../assets/05-thermodynamics/carnot-cycle-pv-ts.png)
 
 - **Internally reversible process:** no irreversibility inside the system. **Externally reversible:** no irreversibility outside the boundary. A **totally reversible** process is both.
@@ -43,7 +53,7 @@ The first law says energy is conserved, but it allows processes that never happe
 - **The absolute temperature scale.** Because the efficiency of a reversible engine depends only on the reservoir temperatures, we can *define* temperature by $\dfrac{Q_H}{Q_L} = \dfrac{T_H}{T_L}$. This is the Kelvin scale, independent of any substance.
 - **Practical limits.** A Carnot engine is impractical: isothermal heat transfer is slow, and the work ratio is small. It is a **benchmark**. To raise efficiency, raise $T_H$ (limited by materials) or reduce $T_L$ (limited by the environment, about $300$ K).
 
-### 🔹 A5. Clausius inequality and the definition of entropy
+### A5. Clausius inequality and the definition of entropy
 
 - For a reversible engine, $\dfrac{Q_H}{T_H} - \dfrac{Q_L}{T_L} = 0$. For an irreversible engine, $\eta$ is lower, so $\dfrac{Q_H}{T_H} - \dfrac{Q_L}{T_L} < 0$. Generalising to any cycle:
 $$\oint \frac{\delta Q}{T} \le 0$$
@@ -51,7 +61,7 @@ $$\oint \frac{\delta Q}{T} \le 0$$
 - **Entropy is a property**, so $\Delta S$ between two states is the same for any path, reversible or not. To compute it for an irreversible process, invent a reversible path between the same end states.
 - **Interpretation.** Entropy measures the degree of molecular disorder (statistical view: $S = k\ln W$) and the quality of energy. High entropy means the energy is spread out and less useful.
 
-### 🔹 A6. The principle of increase of entropy
+### A6. The principle of increase of entropy
 
 - For a closed system, $dS \ge \dfrac{\delta Q}{T}$, with equality for a reversible process. So $dS = \dfrac{\delta Q}{T} + \delta S_{gen}$, with $S_{gen} \ge 0$.
 - For an isolated system, $\delta Q = 0$, so $\Delta S_{isolated} \ge 0$. Applied to system plus surroundings, $\Delta S_{universe} \ge 0$. This is the formal statement of the second law.
@@ -63,7 +73,7 @@ $$\oint \frac{\delta Q}{T} \le 0$$
 - **Liquids and solids** (incompressible): $\Delta s = c\ln\dfrac{T_2}{T_1}$.
 - **Phase change:** at constant $T$ and $P$, $s_{fg} = \dfrac{h_{fg}}{T_{sat}}$.
 
-### 🔹 A7. Isentropic efficiencies of steady-flow devices
+### A7. Isentropic efficiencies of steady-flow devices
 
 - Real turbines, compressors, pumps and nozzles lose performance through friction and turbulence, so the actual process has $\Delta s > 0$ even when adiabatic.
 - The ideal reference is the **isentropic** process between the same inlet state and the same exit pressure. Hence:
@@ -72,7 +82,7 @@ $$\oint \frac{\delta Q}{T} \le 0$$
   - Nozzle: $\eta_N = \dfrac{\text{actual KE gain}}{\text{isentropic KE gain}} = \dfrac{h_1 - h_2}{h_1 - h_{2s}}$
 - These are not reversibility measures against the Carnot limit; they compare with the isentropic process.
 
-### 🔹 A8. Availability (exergy) and irreversibility
+### A8. Availability (exergy) and irreversibility
 
 - **Idea.** Not all energy is equally useful. Heat at a high temperature can generate more work than the same quantity at a low temperature. Energy at the dead state (environment, $T_0$, $P_0$) can produce no work.
 - **Dead state.** The state in which the system is in thermal and mechanical equilibrium with the surroundings. Available work is zero.
@@ -83,11 +93,11 @@ $$\oint \frac{\delta Q}{T} \le 0$$
 - **Second-law efficiency:** $\eta_{II} = \dfrac{\text{actual useful work}}{\text{reversible (maximum) work}}$. A resistance heater is $100\%$ efficient by the first law but has a poor second-law efficiency, because it converts high-grade work into low-grade heat.
 - **Why this matters in design.** It tells where the biggest losses are located (boiler combustion, throttling, condenser), not just how much energy leaves. Rankine cycle analysis shows that the largest exergy destruction is in the boiler, even though the largest energy loss is in the condenser.
 
-### 🔹 A9. Third law and absolute entropy
+### A9. Third law and absolute entropy
 
 - The **third law** states that the entropy of a pure crystalline substance at absolute zero is zero. This gives a starting point for *absolute* entropy values in tables. It also implies that absolute zero cannot be reached by a finite number of processes.
 
-### 🔹 A10. What examiners test from this chapter
+### A10. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -99,7 +109,7 @@ $$\oint \frac{\delta Q}{T} \le 0$$
 
 ---
 
-## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
+## Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
 ## 🧭 1. Second law statements
@@ -150,7 +160,7 @@ $$dS = \left(\frac{\delta Q}{T}\right)_{rev}$$
 - **Principle of increase of entropy:** for an isolated system (or system plus surroundings), $\Delta S \ge 0$. Entropy generation $S_{gen} \ge 0$: zero for reversible, positive for irreversible, negative (impossible).
 - **$T$-$s$ diagram:** area under the curve is the heat transfer in a reversible process.
 
-### 🔹 Entropy change formulas for an ideal gas
+### Entropy change formulas for an ideal gas
 
 $$s_2 - s_1 = C_v\ln\frac{T_2}{T_1} + R\ln\frac{v_2}{v_1} = C_p\ln\frac{T_2}{T_1} - R\ln\frac{P_2}{P_1}$$
 

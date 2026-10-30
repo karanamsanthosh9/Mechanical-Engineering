@@ -1,14 +1,14 @@
-# 🏭 05. Metrology, CNC, Unconventional Machining, Powder Metallurgy and Fixtures
+# 05. Metrology, CNC, Unconventional Machining, Powder Metallurgy and Fixtures
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: HY
 
 ---
 
-## 📘 Part A: Detailed Theory (read this first)
+## Part A: Detailed Theory (read this first)
 
 This chapter groups four themes that are all about control and precision in manufacturing. Metrology and limits-fits answer how we measure a dimension and how much variation a part may have and still assemble correctly. CNC and automation answer how a machine follows a programme with no operator guidance. Unconventional machining answers how to cut materials that conventional tools cannot touch, using electrical, chemical or mechanical energy instead of a cutting edge. Powder metallurgy and jigs and fixtures complete the picture with a net-shape process and the tooling that makes repeatable production possible.
 
-### 🔹 A1. Fundamentals of measurement
+### A1. Fundamentals of measurement
 
 **Metrology** is the science of measurement. A measurement is useful only when we know how good it is.
 
@@ -23,7 +23,7 @@ This chapter groups four themes that are all about control and precision in manu
 
 **Slip (gauge) blocks.** Hardened steel, carbide or ceramic blocks with flat, parallel faces that can be wrung together by molecular attraction. Grades 00, 0, I and II (calibration, inspection, workshop). To build a size with the fewest blocks, eliminate the last decimal place first.
 
-### 🔹 A2. Linear and angular measuring instruments
+### A2. Linear and angular measuring instruments
 
 | Instrument | Typical least count |
 |---|---|
@@ -49,7 +49,7 @@ $$LC_{vernier} = 1\,MSD - 1\,VSD = \frac{\text{smallest main scale division}}{\t
 
 **Surface finish.** The arithmetic mean roughness $R_a$ is the most common parameter; others are $R_z$ and $R_{max}$. Measured with a stylus profilometer such as Talysurf. Typical $R_a$: turning 1.6 to 6.3 $\mu$m, grinding 0.2 to 1.6 $\mu$m, lapping 0.025 to 0.4 $\mu$m. Surface texture consists of roughness, waviness and lay.
 
-### 🔹 A3. Limits, fits and tolerances
+### A3. Limits, fits and tolerances
 ![Diagram: Limits fits tolerance](../assets/12-manufacturing/limits-fits-tolerance.png)
 
 **Definitions.**
@@ -90,7 +90,11 @@ $$LC_{vernier} = 1\,MSD - 1\,VSD = \frac{\text{smallest main scale division}}{\t
 
 **Threads and gears.** Screw thread major, minor and pitch diameters; the three-wire method gives the effective diameter. Gear tooth vernier (chordal thickness), base tangent method and rolling gear tester measure gears.
 
-### 🔹 A4. NC, CNC and DNC
+### A4. NC, CNC and DNC
+```text
+part drawing -> part program -> controller -> machine -> finished part
+```
+
 ![Diagram: Cnc axes and edm](../assets/12-manufacturing/cnc-axes-and-edm.png)
 
 - **NC:** control by coded instructions, originally on punched tape.
@@ -109,7 +113,7 @@ $$LC_{vernier} = 1\,MSD - 1\,VSD = \frac{\text{smallest main scale division}}{\t
 
 **Merits and demerits.** Accuracy, repeatability, flexibility, shorter setup time and the ability to make complex shapes, against high cost, skilled programming and maintenance.
 
-### 🔹 A5. Part programming
+### A5. Part programming
 
 | Code | Function |
 |---|---|
@@ -135,13 +139,13 @@ $$LC_{vernier} = 1\,MSD - 1\,VSD = \frac{\text{smallest main scale division}}{\t
 
 **Format.** A block contains words with address letters: N (sequence number), G, X Y Z, F (feed), S (speed), T (tool) and M. A modal code stays active until changed; a non-modal code acts only in its block.
 
-### 🔹 A6. Robotics and automation
+### A6. Robotics and automation
 
 A robot is a programmable multifunction manipulator. Its degrees of freedom decide its mobility. Common configurations: Cartesian, cylindrical, spherical (polar), SCARA and articulated.
 
 **Related ideas.** Flexible manufacturing system (FMS), computer integrated manufacturing (CIM), CAD/CAM, automated guided vehicles (AGV). **Additive manufacturing** builds parts layer by layer: FDM, SLA, SLS and DMLS. **Group technology** and cellular manufacturing group similar parts; **transfer lines** suit mass production.
 
-### 🔹 A7. Unconventional machining processes
+### A7. Unconventional machining processes
 
 These are used for hard or brittle materials, complex shapes and micro-features, where a cutting edge is impractical.
 
@@ -169,7 +173,7 @@ where $E = A/z$ is the chemical equivalent (atomic mass over valency) and $F = 9
 
 **Process choice.** Hard conductive materials: EDM or ECM. Hard non-conductive materials: USM or laser. Thin soft sheets: water jet.
 
-### 🔹 A8. Powder metallurgy
+### A8. Powder metallurgy
 
 **Process.** Metal powders are blended, compacted in a die (typically 100 to 900 MPa) and sintered below the melting point (about 0.7 to 0.9 $T_m$) in a controlled atmosphere, where particles bond by atomic diffusion.
 
@@ -181,7 +185,7 @@ where $E = A/z$ is the chemical equivalent (atomic mass over valency) and $F = 9
 
 **Powder properties.** Particle size and shape, flow rate, apparent density and compressibility.
 
-### 🔹 A9. Jigs and fixtures
+### A9. Jigs and fixtures
 
 - **Jig:** holds the work and guides the tool (drill bushes). Used in drilling, reaming and tapping.
 - **Fixture:** holds and positions the work but does not guide the tool; the tool is set relative to the work with set blocks or feeler gauges. Used in milling, turning, grinding and welding.
@@ -192,7 +196,7 @@ where $E = A/z$ is the chemical equivalent (atomic mass over valency) and $F = 9
 
 **Benefits.** Interchangeability, accuracy, higher productivity and lower skill requirements.
 
-### 🔹 A10. What examiners test from this chapter
+### A10. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -211,7 +215,7 @@ where $E = A/z$ is the chemical equivalent (atomic mass over valency) and $F = 9
 
 ---
 
-## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
+## Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
 ## 🧭 SECTION I: METROLOGY AND LIMITS, FITS

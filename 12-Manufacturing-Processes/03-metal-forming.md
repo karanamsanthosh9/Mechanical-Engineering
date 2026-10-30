@@ -1,14 +1,14 @@
-# 🏭 03. Metal Forming (Bulk and Sheet)
+# 03. Metal Forming (Bulk and Sheet)
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: HY
 
 ---
 
-## 📘 Part A: Detailed Theory (read this first)
+## Part A: Detailed Theory (read this first)
 
 Metal forming changes the shape of a solid metal by plastic deformation, without removing material. The metal is pushed beyond its yield point so that it flows, and the volume stays constant. Everything in this chapter rests on the physics of plastic flow: slip of dislocations, strain hardening, recrystallisation and the effect of friction at the tool interface. The processes (rolling, forging, extrusion, drawing, sheet-metal work) differ only in how the force is applied and which direction the metal is allowed to flow.
 
-### 🔹 A1. Plastic deformation and its mechanism
+### A1. Plastic deformation and its mechanism
 
 **Elastic versus plastic.** Elastic strain is recovered when the load is removed; plastic strain is permanent and starts at the yield point. At the atomic level, plastic deformation occurs by slip of crystal planes through the movement of dislocations, and in some metals by twinning.
 
@@ -26,7 +26,7 @@ Volume is constant during plastic flow, so the true strains in three directions 
 
 **Yield criteria.** Tresca (maximum shear stress) and von Mises (distortion energy), as in the Strength of Materials failure theories.
 
-### 🔹 A2. Hot working versus cold working
+### A2. Hot working versus cold working
 
 The dividing line is the recrystallisation temperature, roughly $0.4\,T_m$ (absolute melting temperature) for pure metals.
 
@@ -43,7 +43,13 @@ The dividing line is the recrystallisation temperature, roughly $0.4\,T_m$ (abso
 
 **Annealing sequence of a cold worked metal.** Recovery (internal stresses relieved, properties change slightly), then recrystallisation (new strain-free grains form, strength falls and ductility returns) and finally grain growth (grains coarsen at higher temperature or longer time). Recrystallisation temperature falls with greater prior deformation and with finer initial grain.
 
-### 🔹 A3. Rolling
+### A3. Rolling
+```text
+			 O  top roller
+thick stock --->||---> thin strip
+			 O  bottom roller
+```
+
 ![Diagram: Rolling forging extrusion drawing](../assets/12-manufacturing/rolling-forging-extrusion-drawing.png)
 
 **Process.** The metal passes between rotating rolls, which reduce its thickness and increase its length, with a small increase in width called spread.
@@ -58,7 +64,7 @@ The dividing line is the recrystallisation temperature, roughly $0.4\,T_m$ (abso
 
 **Products.** Plates, sheets, bars, rails, structural shapes and seamless tubes (Mannesmann piercing). **Defects.** Edge cracks, alligatoring (split along the centre plane), wavy edges and zipper cracks.
 
-### 🔹 A4. Forging
+### A4. Forging
 
 **Process.** Metal is shaped by compressive blows (hammer) or squeezing (press). Forging refines the grain and aligns the grain flow with the contour of the part, which gives better strength and toughness than a casting or a machined part.
 
@@ -80,7 +86,7 @@ The force rises as the part becomes thinner (smaller $h$) and as friction increa
 
 **Defects.** Laps, cold shuts, flash, scale pits, incomplete filling, mismatch.
 
-### 🔹 A5. Extrusion
+### A5. Extrusion
 
 **Process.** A billet in a container is forced by a ram through a die opening. The product has the shape of the die and is long and uniform in section.
 
@@ -92,7 +98,7 @@ The force rises as the part becomes thinner (smaller $h$) and as friction increa
 
 **Materials.** Aluminium, copper, brass and plastics. **Defects.** Surface cracking, pipe (tail pipe, a central funnel-shaped defect at the end of the billet) and internal cracks (chevron or centre burst).
 
-### 🔹 A6. Wire and rod drawing
+### A6. Wire and rod drawing
 
 **Process.** A rod or wire is pulled through a die with a reducing cross-section. The pull force is tensile at the exit, so the material must be strong enough to survive it.
 
@@ -103,7 +109,7 @@ The force rises as the part becomes thinner (smaller $h$) and as friction increa
 
 **Distinction.** Tube drawing (with plug or mandrel) is different from sheet deep drawing. **Defects:** centre-burst (chevron) cracks, seams and die marks.
 
-### 🔹 A7. Sheet-metal operations
+### A7. Sheet-metal operations
 ![Diagram: Sheet metal blanking drawing](../assets/12-manufacturing/sheet-metal-blanking-drawing.png)
 
 | Operation | Description |
@@ -119,7 +125,7 @@ The force rises as the part becomes thinner (smaller $h$) and as friction increa
 | Embossing, coining | impressions |
 | Ironing | thinning of cup walls |
 
-### 🔹 A8. Shearing and blanking in detail
+### A8. Shearing and blanking in detail
 
 **How the cut happens.** The punch presses into the sheet, causing plastic deformation, then cracks start at both cutting edges and meet, giving fracture. The cut edge has a burnished zone and a fractured zone.
 
@@ -137,7 +143,7 @@ with $L$ the cut perimeter, $t$ the thickness and $\tau_u$ the ultimate shear st
 
 **Tooling terms.** Strip layout (minimise scrap), pilot (locates the strip), stripper (strips the sheet from the punch) and knockout (ejects the part). **Die types:** simple, compound (blank and pierce in one stroke), combination, progressive (multiple stations) and transfer.
 
-### 🔹 A9. Bending and springback
+### A9. Bending and springback
 
 **Bend allowance** (length of the neutral axis in the bend):
 
@@ -151,7 +157,7 @@ with $\alpha$ in radians, $R$ the inner radius, $t$ the thickness and $k$ the ne
 
 **Bending force:** $F = K\sigma_u L t^2/W$ with $K = 1.33$ for V-bending and $0.33$ for wiping bend, and $W$ the die opening.
 
-### 🔹 A10. Deep drawing
+### A10. Deep drawing
 
 **Process.** A flat blank is drawn into a cup by a punch pushing it through a die, while a blank holder keeps the flange from wrinkling. The flange is compressed circumferentially and the wall is stretched.
 
@@ -163,11 +169,11 @@ with $\alpha$ in radians, $R$ the inner radius, $t$ the thickness and $k$ the ne
 
 **Formability.** The forming limit diagram (FLD) plots limit strains before necking. The anisotropy ratio $r$ (width strain to thickness strain) measures resistance to thinning, and a high average $r$ means better deep drawability.
 
-### 🔹 A11. Special forming
+### A11. Special forming
 
 Explosive forming, electro-hydraulic forming, electromagnetic forming, hydroforming, superplastic forming and incremental sheet forming. High-energy-rate methods form large or difficult parts with simple tooling.
 
-### 🔹 A12. What examiners test from this chapter
+### A12. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -185,7 +191,7 @@ Explosive forming, electro-hydraulic forming, electromagnetic forming, hydroform
 
 ---
 
-## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
+## Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
 ## 🧭 1. Foundations of plastic deformation
@@ -249,7 +255,7 @@ Explosive forming, electro-hydraulic forming, electromagnetic forming, hydroform
 | **Embossing, coining** | Impressions |
 | **Ironing** | Thinning of cup walls |
 
-### 🔹 Shearing and blanking
+### Shearing and blanking
 
 - **Clearance** between punch and die $c = 0.05\,t$ to $0.10\,t$ (about $5\%$ to $10\%$ of the thickness per side); excessive clearance causes burrs, and insufficient clearance requires a large force.
 - **Die size:** For **blanking**, the die size equals the blank size and the punch is smaller by the clearance. For **punching**, the punch size equals the hole size and the die is larger.
@@ -259,14 +265,14 @@ Explosive forming, electro-hydraulic forming, electromagnetic forming, hydroform
 - **Strip layout** minimises scrap; **pilot** locates the strip; **stripper** removes the strip from the punch; **knockout** ejects the part.
 - **Dies:** simple, compound (blank and pierce in one stroke), combination, progressive (multiple stations), transfer.
 
-### 🔹 Bending
+### Bending
 
 - **Bend allowance:** $B_A = \alpha\,(R + k\,t)$ ($\alpha$ in radians, $R$ inner bend radius, $t$ thickness, $k$ the neutral-axis factor of $0.33$ for $R < 2t$ and $0.5$ for $R > 2t$).
 - **Springback:** elastic recovery after the load is released; compensated by **overbending**, bottoming, or stretch-bending. Springback grows with yield strength and bend radius and decreases with modulus.
 - **Minimum bend radius** depends on ductility: a smaller radius risks cracking on the outer fibre.
 - **Bending force:** $F = \dfrac{K\,\sigma_u\,L\,t^2}{W}$ ($K = 1.33$ for V-bending, $0.33$ for wiping; $W$ is the die opening).
 
-### 🔹 Deep drawing
+### Deep drawing
 
 - **Drawing ratio** $\text{DR} = \dfrac{D_{blank}}{d_{punch}}$ (limiting value about $2.0$ to $2.2$ for the first draw). **Reduction** $= \dfrac{D - d}{D}$ (limit about $50\%$).
 - **Blank diameter** from the equal-area principle (cup of diameter $d$ and height $h$): $D = \sqrt{d^2 + 4dh}$.

@@ -1,14 +1,22 @@
-# ⚙️ 01. Mechanisms, Kinematics, Gears and Cams
+# 01. Mechanisms, Kinematics, Gears and Cams
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: VHY
 
 ---
 
-## 📘 Part A: Detailed Theory (read this first)
+## Part A: Detailed Theory (read this first)
 
 This part explains how machines are built from links, how motion is transmitted, and how gears and cams work. Part B (from section 1 onwards) is the compact reference.
 
-### 🔹 A1. What Theory of Machines studies
+### A1. What Theory of Machines studies
+```text
+A o---------o B
+  |         |
+  |         |
+D o---------o C
+  four-bar linkage
+```
+
 
 A **machine** is a combination of resistant bodies that transmits motion and force and does useful work. A **mechanism** is a similar arrangement used only to transmit or transform motion (no useful work requirement). **Kinematics** studies motion without forces; **dynamics** (kinetics) adds forces.
 
@@ -21,7 +29,7 @@ A **machine** is a combination of resistant bodies that transmits motion and for
 - **Binary, ternary, quaternary link:** link with two, three, four joints.
 - **Constrained motion:** completely constrained (only one possible relative motion, e.g. a shaft in a bearing), incompletely constrained (the pair can move in more than one way, e.g. a shaft in a circular hole), successfully constrained (kept by external force, e.g. a cam and follower).
 
-### 🔹 A2. Degrees of freedom (mobility)
+### A2. Degrees of freedom (mobility)
 
 The **degrees of freedom (DOF)** of a mechanism is the number of independent inputs needed to fix the position of every link. A free body in a plane has 3 DOF (two translations and one rotation). Each joint removes some of them.
 
@@ -39,7 +47,7 @@ Reasoning: $n - 1$ moving links have $3(n-1)$ DOF; each lower pair removes 2, ea
 - **Kutzbach criterion** is the same equation. **Redundant DOF** occurs when a link can move without affecting the output (a roller in a cam follower adds one idle DOF).
 - For a kinematic chain with only turning pairs, with $l$ links, $p$ pairs and $j$ joints: $l = 2p - 4$ and $j = \dfrac{3l}{2} - 2$. A four-bar chain has $l = 4$, $p = 4$, $j = 4$.
 
-### 🔹 A3. Four-bar chain and its inversions
+### A3. Four-bar chain and its inversions
 ![Diagram: Four bar chain and slider crank](../assets/03-theory-of-machines/four-bar-chain-and-slider-crank.png)
 
 The most important mechanism. Four links joined by four turning pairs. Let $s$ = shortest link, $l$ = longest, $p, q$ = the other two.
@@ -69,7 +77,7 @@ $$s + l \le p + q$$
 
 **Mechanical advantage and transmission angle.** The angle between the coupler and the follower link should be kept near $90^\circ$; below about $40^\circ$ the mechanism jams. **Toggle position:** the mechanical advantage becomes infinite at the dead-centre position (stone crushers).
 
-### 🔹 A4. Velocity and acceleration analysis
+### A4. Velocity and acceleration analysis
 
 Why analyse: the velocities and accelerations of points on links determine forces (through $F = ma$) and speeds of cutting tools.
 
@@ -85,7 +93,7 @@ Why analyse: the velocities and accelerations of points on links determine force
 
 **Klein's construction** gives the velocity and acceleration of a reciprocating engine quickly. The **piston acceleration** $= \omega^2 r\left(\cos\theta + \dfrac{\cos 2\theta}{n}\right)$ where $n = l/r$.
 
-### 🔹 A5. Gears
+### A5. Gears
 ![Diagram: Gear terminology](../assets/03-theory-of-machines/gear-terminology.png)
 ![Diagram: Epicyclic gear train](../assets/03-theory-of-machines/epicyclic-gear-train.png)
 
@@ -138,7 +146,7 @@ where $A_w$ is the addendum factor (1 for full-depth). For $\phi = 20^\circ$ the
   2. Give the arm $x$ turns and add $x$ to every gear (the whole train moves as one body).
   3. Put the known condition (for example, the fixed gear has zero net turns) and solve for $x$.
 
-### 🔹 A6. Cams and followers
+### A6. Cams and followers
 ![Diagram: Cam follower displacement](../assets/03-theory-of-machines/cam-follower-displacement.png)
 
 A **cam** is a rotating or reciprocating element that gives a prescribed motion to another element, the **follower**, through direct contact (higher pair).
@@ -160,7 +168,7 @@ A **cam** is a rotating or reciprocating element that gives a prescribed motion 
 
 Inertia force $= $ mass $\times$ acceleration; large acceleration leads to vibration, noise, wear and follower jump. **Follower jump** is the loss of contact at high speed when the spring force is not enough.
 
-### 🔹 A7. Exam relevance
+### A7. Exam relevance
 
 - DOF equation, Grashof's law, number of ICs, inversions (all three exams).
 - Gear terminology, module, interference, minimum teeth, contact ratio (all exams).
@@ -169,7 +177,7 @@ Inertia force $= $ mass $\times$ acceleration; large acceleration leads to vibra
 
 ---
 
-## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
+## Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
 ## 🧭 1. Basic terminology
@@ -205,7 +213,7 @@ If this holds, at least one link can rotate fully.
 
 - If $s + l > p + q$, every inversion is a double rocker (non-Grashof).
 
-### 🔹 Slider-crank chain and its inversions
+### Slider-crank chain and its inversions
 
 | Inversion | Fixed link | Applications |
 |---|---|---|

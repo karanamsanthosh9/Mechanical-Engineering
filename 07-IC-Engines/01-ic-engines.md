@@ -4,24 +4,30 @@
 
 ---
 
-## 📘 Part A: Detailed Theory (read this first)
+## Part A: Detailed Theory (read this first)
 
 An internal combustion (IC) engine is a heat engine in which the fuel burns inside the cylinder, so the products of combustion themselves push the piston. This chapter links thermodynamic cycles (Otto, Diesel) to real hardware: what physically happens in each stroke, how power and efficiency are measured, what goes wrong (knock) and how engines are cooled, lubricated and cleaned up.
 
-### 🔹 A1. Why IC engines and how they convert energy
+### A1. Why IC engines and how they convert energy
 
 - **Chemical energy to heat to work.** The fuel's chemical energy is released as heat by burning, which raises the pressure of the gas in the cylinder. The gas pushes the piston, and the connecting rod and crank convert the linear motion to rotation.
 - **Advantage over external combustion.** No boiler or heat exchanger is needed, so the engine is compact and light, and the working fluid reaches temperatures well above metal limits because the cylinder walls are cooled and the high temperature lasts only a fraction of the cycle. This gives a high power-to-weight ratio, which is why IC engines dominate transport.
 - **Basic components.** Cylinder block, cylinder head, piston with rings, gudgeon pin, connecting rod, crankshaft, flywheel (smooths torque fluctuations), camshaft, valves (inlet and exhaust), spark plug or injector, manifolds, sump.
 - **Piston rings** seal the combustion gases (compression rings) and scrape the oil (oil control ring). **Flywheel** stores energy during the power stroke and returns it during the other strokes.
 
-### 🔹 A2. Terminology and geometry
+### A2. Terminology and geometry
 
 - **TDC and BDC** are the extreme positions of the piston. **Stroke** $L$ is the distance between them; **bore** $D$ is the cylinder diameter. The ratio $L/D$ separates **under-square** ($L > D$, torque and economy) from **over-square** ($L < D$, high-speed engines with large valves and lower piston speed).
 - **Swept (displacement) volume** $V_s = \dfrac{\pi}{4}D^2L$. **Clearance volume** $V_c$ is the volume above the piston at TDC. **Compression ratio** $r = \dfrac{V_s + V_c}{V_c}$. This is a volume ratio, not a pressure ratio.
 - **Mean piston speed** $\bar S_p = 2LN/60$ limits the engine speed because inertia loads and friction grow with it. Typical limits are $15$ to $20$ m/s.
 
-### 🔹 A3. The four-stroke cycle: what actually happens
+### A3. The four-stroke cycle: what actually happens
+```text
+INTAKE -> COMPRESSION -> POWER -> EXHAUST
+  ^                              |
+  +------------------------------+
+```
+
 ![Diagram: Four stroke cycle](../assets/07-ic-engines/four-stroke-cycle.png)
 ![Diagram: Valve timing diagram](../assets/07-ic-engines/valve-timing-diagram.png)
 
@@ -34,7 +40,7 @@ An internal combustion (IC) engine is a heat engine in which the fuel burns insi
 - **Valve timing and overlap.** In real engines, the valves open early and close late, so the crank angle for each event overlaps. The brief period when both valves are open near TDC is **valve overlap**. It helps scavenge the clearance space.
 - **Multi-cylinder engines** are used for smoother torque, balance and more power. **Firing order** is selected to distribute power strokes evenly and to minimise crankshaft vibrations and uneven load on the main bearings. In a 4-cylinder in-line engine, the common order is $1\text{-}3\text{-}4\text{-}2$.
 
-### 🔹 A4. Two-stroke engine: principle
+### A4. Two-stroke engine: principle
 ![Diagram: Two stroke engine](../assets/07-ic-engines/two-stroke-engine.png)
 
 - All four events happen in **two strokes** (one revolution). While the piston goes up it compresses the charge in the cylinder and simultaneously draws fresh charge into the crankcase through a reed valve. On the downward power stroke, the piston uncovers the exhaust port first, which lets the burnt gas escape, and then the transfer port, through which the charge pressurised in the crankcase enters the cylinder and pushes out the remaining exhaust (**scavenging**).
@@ -43,7 +49,7 @@ An internal combustion (IC) engine is a heat engine in which the fuel burns insi
 - **Efficiencies.** Scavenging efficiency measures how much of the cylinder content after scavenging is fresh charge; **trapping efficiency** measures what fraction of the supplied charge stays. **Scavenge ratio** is delivered charge divided by swept (reference) volume.
 - **Power.** In theory twice that of a four-stroke engine of the same size; in practice $1.6$ to $1.8$ times because of imperfect scavenging, and the loss of stroke length to port opening.
 
-### 🔹 A5. SI versus CI: why the two types behave differently
+### A5. SI versus CI: why the two types behave differently
 ![Diagram: Si vs ci comparison](../assets/07-ic-engines/si-vs-ci-comparison.png)
 
 - **Mixture preparation.** In SI engines the fuel is mixed with the air before compression (carburettor or injection into the manifold), so compression is limited by knock. In CI engines, the fuel enters at the end of compression, so no knock limit exists in the compression stroke and a high compression ratio is possible.
@@ -51,7 +57,7 @@ An internal combustion (IC) engine is a heat engine in which the fuel burns insi
 - **Thermal efficiency.** Higher compression ratio and lean operation give CI engines greater efficiency ($30$ to $40\%$ brake thermal) than SI ($25$ to $30\%$).
 - **Emission character.** SI engines near stoichiometry emit CO, HC and NOx and are cleaned by a three-way catalyst. CI engines run lean so CO and HC are low, but NOx and particulates are high and need different after-treatment.
 
-### 🔹 A6. Performance parameters: how to think about them
+### A6. Performance parameters: how to think about them
 ![Diagram: Engine performance curves](../assets/07-ic-engines/engine-performance-curves.png)
 
 - **Indicated power** is the power developed in the cylinder, found from the indicator diagram: $IP = p_{im}LAnK$, where $n$ is the number of power strokes per second per cylinder.
@@ -66,7 +72,7 @@ An internal combustion (IC) engine is a heat engine in which the fuel burns insi
 - **Air-fuel ratio.** Stoichiometric for petrol is about $14.7:1$. The **equivalence ratio** $\phi$ is greater than $1$ for rich mixtures, less than $1$ for lean ones.
 - **Heat balance.** Fuel energy goes into brake work, coolant, exhaust and radiation. A heat balance sheet identifies where the opportunity for improvement lies (exhaust waste heat recovery, turbocharging).
 
-### 🔹 A7. Testing: how the measurements are made
+### A7. Testing: how the measurements are made
 ![Diagram: Actual pv and indicator diagram](../assets/07-ic-engines/actual-pv-and-indicator-diagram.png)
 
 - **Dynamometers** absorb engine power: rope brake and prony brake (mechanical friction), hydraulic (water brake), eddy-current (electromagnetic, easy to control), and transmission or swinging-field types (which measure the torque transmitted).
@@ -77,26 +83,26 @@ An internal combustion (IC) engine is a heat engine in which the fuel burns insi
   - **Motoring test.** The engine is driven by an electric motor with the fuel turned off; the motor power equals the friction power (though the temperature is different).
   - **Retardation test.** The engine is allowed to coast down after cutting off fuel, and the deceleration gives the friction torque.
 
-### 🔹 A8. Fuel supply in SI engines
+### A8. Fuel supply in SI engines
 
 - **Carburettor.** Based on Bernoulli's principle: the venturi throat accelerates the air, lowering the pressure below that in the float chamber, so fuel flows out of the jet and atomises. A simple carburettor becomes richer as air flow rises, because air is compressible, so the air flow increases less than the fuel flow. Correction devices: compensating jet, emulsion tube, back suction control, auxiliary air valve.
 - **Special demands.** Cold starting and idling need a rich mixture ($\approx 10:1$); cruising a lean one for economy; full power a rich one ($\approx 12$ to $13:1$) for maximum power. The **accelerating pump** supplies extra fuel when the throttle opens suddenly; the **economiser** enriches at full load.
 - **Fuel injection (MPFI, GDI).** Electronic control meters the fuel using sensors (air flow, oxygen sensor, temperature, throttle position). The oxygen (lambda) sensor allows closed-loop control to hold the mixture at stoichiometry, which the three-way catalyst needs.
 
-### 🔹 A9. Fuel injection in CI engines
+### A9. Fuel injection in CI engines
 
 - Requirements: **metering** (correct quantity), **timing**, **atomisation** (fine droplets for fast evaporation), **penetration** (reach all the air) and **distribution**, with a sharp start and end of injection (no dribbling).
 - **Pump-line-nozzle** systems use a jerk pump (plunger driven by a cam) to produce high pressure; the plunger helix controls the quantity. **Common rail** keeps constant high pressure (up to $2000$ bar) in a rail, and electronic injectors determine timing, quantity and multiple injections per cycle, giving low noise and emission.
 - **Injector nozzles:** pintle, single-hole, multi-hole, pintaux. A needle valve lifts when fuel pressure exceeds a spring force, called the nozzle opening pressure.
 - **Governor** controls the fuel quantity to hold the speed under changing load.
 
-### 🔹 A10. Ignition systems and spark timing
+### A10. Ignition systems and spark timing
 
 - **Battery ignition.** The primary circuit of an induction coil (battery, contact breaker or transistor) is suddenly interrupted; the collapsing magnetic field induces about $10$ to $25$ kV in the secondary, delivered to the plug by the distributor. The capacitor across the breaker reduces arcing and speeds up the collapse of flux.
 - **Magneto** generates its own current; used in two-wheelers and small engines. **CDI** discharges a capacitor through the coil; fast and reliable.
 - **Spark advance.** Combustion takes finite time ($\approx$ constant in milliseconds, nearly independent of speed), so at higher speed the spark must occur earlier in crank-angle terms. Best timing is the **minimum advance for best torque (MBT)**; too early causes knock and negative work; too late wastes energy.
 
-### 🔹 A11. Combustion in SI engines and knock
+### A11. Combustion in SI engines and knock
 
 - **Normal combustion.** After the spark, there is a delay (ignition lag), then a flame front spreads out from the plug through the charge by turbulent flame propagation, and the unburnt gas ahead is compressed and heated by the burnt gas. Combustion should end soon after TDC for the best work.
 - **Knock (detonation).** The end gas, heated and compressed by the advancing flame, may reach its auto-ignition conditions before the flame arrives. It then burns almost instantaneously, producing shock waves in the cylinder; the ringing sound is knock. It damages piston crowns, rings and head gaskets and reduces efficiency by increasing heat loss.
@@ -104,26 +110,26 @@ An internal combustion (IC) engine is a heat engine in which the fuel burns insi
 - **Octane number.** Measures the antiknock quality. Iso-octane is defined as $100$ (resists knock) and n-heptane as $0$. The knock rating of a fuel equals that of the blend. **Higher octane means fuel resists knock better**, allowing a higher compression ratio.
 - **Pre-ignition** (ignition before the spark by a hot spot) differs from knock; it can cause knock but is a separate phenomenon.
 
-### 🔹 A12. Combustion in CI engines and diesel knock
+### A12. Combustion in CI engines and diesel knock
 
 - **Four stages:** (1) **ignition delay** (physical delay of atomisation and heating, then chemical delay); (2) **rapid or premixed combustion**, when the fuel accumulated during the delay burns at once; (3) **controlled or diffusion combustion**, limited by the injection and mixing rate; (4) **after-burning**.
 - **Diesel knock** is caused by a long ignition delay: a large amount of fuel accumulates, then burns suddenly, giving a high rate of pressure rise. It is the **opposite cause** of SI knock (which occurs at the end of combustion, while diesel knock occurs at the start). Therefore, factors that lower SI knock (such as low compression ratio, low temperature) increase diesel knock. To reduce diesel knock: use a high cetane number fuel, high compression ratio, high intake air temperature and pressure, and a small initial injection quantity.
 - **Cetane number.** The measure of ignition quality: the percentage of cetane in a mixture with alpha-methyl-naphthalene (or HMN) that matches the fuel's ignition delay. A higher number means a shorter delay.
 - **Combustion chambers:** Direct injection (DI) chambers have the best efficiency and fuel economy but need high injection pressure and give higher noise. Indirect injection (IDI) types (swirl, pre-chamber) mix air and fuel better at lower pressure and run quietly but lose more heat and need a glow plug for cold start.
 
-### 🔹 A13. Supercharging, cooling, lubrication
+### A13. Supercharging, cooling, lubrication
 
 - **Supercharging** increases the density of the incoming air so more fuel can be burnt in the same volume. A **turbocharger** extracts energy from the exhaust gas that would otherwise be wasted; a **supercharger** takes power from the crankshaft. An **intercooler** cools the compressed air, increasing density further and reducing knock tendency. A supercharged SI engine must be run at a lower compression ratio or with a richer mixture to avoid knock; CI engines respond better.
 - **Cooling.** About one third of fuel energy goes to coolant. Metal temperatures must be limited to protect lubricating oil (it breaks down above about $150^\circ$C) and materials. Water cooling uses a pump, radiator, thermostat (opens at about $80$ to $90^\circ$C) and fan. Air-cooled engines use fins, and have a lower weight and no leakage risk but give less uniform cooling.
 - **Lubrication.** Functions: reduce friction, carry away heat, seal the piston rings, clean (carry away particles) and protect from corrosion. Systems: petroil (mixed with fuel in two-stroke), splash, pressure feed, wet sump, dry sump. **Viscosity index** shows how slowly viscosity changes with temperature.
 
-### 🔹 A14. Emissions and fuels
+### A14. Emissions and fuels
 
 - **Pollutants:** CO (incomplete combustion from a rich mixture), unburnt HC (wall quenching, misfire), NOx (high temperature plus oxygen; peaks slightly lean), particulates and smoke (rich diffusion zones in diesel), and SO$_2$ (fuel sulphur). CO$_2$ is a greenhouse gas that cannot be removed by catalysts, only reduced by higher efficiency or a low-carbon fuel.
 - **Controls:** three-way catalytic converter (needs stoichiometric mixture and lead-free fuel), EGR (lowers combustion temperature to cut NOx), diesel particulate filter, SCR with urea, PCV for crankcase vapours, evaporative control.
 - **Alternative fuels:** CNG (high octane, low emissions), LPG, alcohols (high octane, high latent heat), biodiesel, hydrogen (wide flammability, fast flame, no carbon) and electric drives.
 
-### 🔹 A15. What examiners test from this chapter
+### A15. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -136,7 +142,7 @@ An internal combustion (IC) engine is a heat engine in which the fuel burns insi
 
 ---
 
-## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
+## Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
 ## 🧭 1. Foundations

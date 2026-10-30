@@ -1,14 +1,22 @@
-# ⚙️ 02. Balancing and Mechanical Vibrations
+# 02. Balancing and Mechanical Vibrations
 
 **Exam relevance:** APPSC AEE: P | SSC JE: C | RRB JE: S | Category: AEE+/ALL | Yield: HY
 
 ---
 
-## 📘 Part A: Detailed Theory (read this first)
+## Part A: Detailed Theory (read this first)
 
 This part explains why rotating and reciprocating machines shake, how to balance them, and how vibrations are modelled and controlled. Part B (from section 1 onwards) is the compact reference.
 
-### 🔹 A1. Why balancing matters
+### A1. Why balancing matters
+```text
+     o  rotating mass m
+    /
+   / r
+  O----------> rotation
+  shaft axis
+```
+
 
 Any mass that rotates about an axis not through its centre of mass exerts a **centrifugal force** on the bearings: $F = m\omega^2 r$. This force rotates with the shaft, so the bearing reaction changes direction every revolution. The result is vibration, noise, bearing wear and fatigue failure. The force grows with the **square of speed**, so a rotor that runs smoothly at low speed may shake violently at high speed.
 
@@ -17,7 +25,7 @@ Any mass that rotates about an axis not through its centre of mass exerts a **ce
 - **Static balance:** the centre of mass lies on the axis; the rotor stays at rest in any angular position when placed on knife edges. Condition: $\sum m r = 0$ (vector sum). Enough for a thin disc (narrow wheel).
 - **Dynamic balance:** the centrifugal forces form a zero resultant **and** their moments (couples) about any plane also sum to zero. Needed for a long rotor (crankshaft, turbine rotor), because masses in different planes create a couple even if forces cancel. Dynamic balance includes static balance; a statically balanced long rotor may still be dynamically unbalanced.
 
-### 🔹 A2. Balancing rotating masses
+### A2. Balancing rotating masses
 
 **Case 1: one mass in a plane.** Add an equal $mr$ opposite to it (in the same plane): $m_b r_b = m r$.
 
@@ -36,7 +44,7 @@ Two balancing masses in two planes always suffice for a rotor with any number of
 - Tabulate: mass $m$, radius $r$, $mr$, plane position $l$ from RP, angle $\theta$, couple $mrl$.
 - Choose the RP at a plane where an unknown mass lies to remove one unknown from the couple polygon.
 
-### 🔹 A3. Balancing reciprocating masses
+### A3. Balancing reciprocating masses
 
 In a piston-crank engine, the piston, whose mass $m$ moves along the line of stroke, has acceleration $\ddot{x} = \omega^2 r\left(\cos\theta + \dfrac{\cos 2\theta}{n}\right)$. Inertia force:
 
@@ -59,7 +67,7 @@ Unlike the rotating case, this force is always along the line of stroke and chan
 
 A **single cylinder** cannot be fully balanced. A **4-cylinder in-line** engine with cranks $0^\circ$, $180^\circ$, $180^\circ$, $0^\circ$ is balanced in primary forces and couples but has an unbalanced secondary force. A **6-cylinder in-line** engine (cranks at $120^\circ$ pairs) is balanced in both. A **V-engine** or a **radial engine** can be analysed with the **direct and reverse crank method**: replace the reciprocating mass with two equal rotating masses (half each), one rotating forward at $\omega$, the other backward.
 
-### 🔹 A4. Basics of vibration
+### A4. Basics of vibration
 
 **Vibration** is repetitive motion about an equilibrium position. It occurs when a system has both mass (inertia) and elasticity (restoring force). Energy swaps between kinetic and potential.
 
@@ -75,7 +83,7 @@ A **single cylinder** cannot be fully balanced. A **4-cylinder in-line** engine 
 
 **Simple harmonic motion.** A body is in SHM when its acceleration is proportional to displacement and opposite in direction: $\ddot{x} = -\omega^2 x$. Solution $x = X\sin(\omega t + \varphi)$. Maximum velocity $X\omega$, maximum acceleration $X\omega^2$.
 
-### 🔹 A5. Undamped free vibration: the foundation
+### A5. Undamped free vibration: the foundation
 
 A mass $m$ on a spring of stiffness $k$. Newton's law: $m\ddot{x} = -kx$, so
 
@@ -88,7 +96,7 @@ $$\ddot{x} + \omega_n^2 x = 0, \qquad \omega_n = \sqrt{\frac{k}{m}}$$
 - **Torsional vibration:** the same equation with angular displacement; inertia $I$ and shaft stiffness $k_t = GJ/L$ give $\omega_n = \sqrt{k_t/I}$. A two-rotor system has a **node** (a section of zero twist) between them; the shaft is imagined as two shafts, each fixed at the node.
 - **Whirling of shafts (critical speed).** A rotating shaft with a disc bows outward at a certain speed because the centre of mass is not on the axis. The shaft whirls when its speed equals its transverse natural frequency; this is the **critical speed** $N_c = \dfrac{60}{2\pi}\sqrt{\dfrac{g}{\delta}}$ with $\delta$ the static deflection under the load. Operating well above or below $N_c$ is safe. For several loads, **Dunkerley's method** estimates the fundamental frequency.
 
-### 🔹 A6. Damped free vibration
+### A6. Damped free vibration
 
 Real systems lose energy. For viscous damping (force proportional to velocity, $c\dot{x}$):
 
@@ -105,7 +113,7 @@ Define the **critical damping coefficient** $c_c = 2\sqrt{km}$, the smallest dam
 
 **Logarithmic decrement** $\delta = \ln(x_1/x_2)$ for successive peaks measures damping from a recorded decay: $\delta = \dfrac{2\pi\zeta}{\sqrt{1-\zeta^2}}$. Damping reduces the damped natural frequency slightly, but for small $\zeta$ the change is negligible.
 
-### 🔹 A7. Forced vibration, resonance and isolation
+### A7. Forced vibration, resonance and isolation
 ![Diagram: Vibration response and transmissibility](../assets/03-theory-of-machines/vibration-response-and-transmissibility.png)
 
 When a force $F_0\sin\omega t$ acts, the steady-state amplitude depends on the **frequency ratio** $r = \omega/\omega_n$.
@@ -124,7 +132,7 @@ is less than 1 only when $r > \sqrt{2}$. So isolators must be soft enough that t
 
 **Vibration measuring instruments.** If the instrument's natural frequency is much lower than the vibration frequency ($r \gg 1$), it measures displacement (**vibrometer**, seismometer). If the natural frequency is much higher ($r \ll 1$), it measures acceleration (**accelerometer**).
 
-### 🔹 A8. Exam relevance
+### A8. Exam relevance
 
 - Static and dynamic balance conditions; hammer blow; swaying couple (APPSC AEE focus).
 - $\omega_n = \sqrt{k/m}$, equivalent springs, critical speed (all exams).
@@ -133,7 +141,7 @@ is less than 1 only when $r > \sqrt{2}$. So isolators must be soft enough that t
 
 ---
 
-## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
+## Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
 ## 🧭 1. Balancing
@@ -146,7 +154,7 @@ is less than 1 only when $r > \sqrt{2}$. So isolators must be soft enough that t
 - **Masses in different planes:** both the force polygon ($mr$) and the couple polygon ($mrl$) must close. A mass can be moved to a reference plane by adding an equal parallel force and a couple.
 - Complete balance of a rotor with masses in several planes needs balancing masses in two planes.
 
-### 🔹 Reciprocating masses
+### Reciprocating masses
 
 $$F_{primary} = m\omega^2 r\cos\theta, \qquad F_{secondary} = m\omega^2 r\,\frac{\cos 2\theta}{n}, \qquad n = \frac{l}{r}$$
 

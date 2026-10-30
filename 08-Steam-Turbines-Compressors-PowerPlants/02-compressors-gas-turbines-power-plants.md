@@ -1,21 +1,27 @@
-# 🏭 02. Compressors, Gas Turbines and Power Plants
+# 02. Compressors, Gas Turbines and Power Plants
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: HY
 
 ---
 
-## 📘 Part A: Detailed Theory (read this first)
+## Part A: Detailed Theory (read this first)
 
 This chapter covers three machine families that all revolve around raising or exploiting the pressure of a gas: compressors (which supply it), gas turbines (which release it), and power plants (the complete systems that convert primary energy to electricity). The theory of compressors is the mirror image of turbines, so read the Brayton cycle material in the Thermodynamics chapter alongside it.
 
-### 🔹 A1. Why compress a gas and how compressors are classified
+### A1. Why compress a gas and how compressors are classified
+```text
+air ---> [compressor] ---> [combustor] ---> [turbine] ---> exhaust
+             ^                                  |
+             +----------- shaft power ----------+
+```
+
 
 - Compressed air and gases drive pneumatic tools, supply combustion air (gas turbines, IC engines), refrigerant circuits, and process plants. A compressor adds energy to the gas through shaft work, raising its pressure (and temperature).
 - **Positive displacement** machines trap a fixed volume of gas and reduce it mechanically (piston, vane, screw, lobe). They deliver a nearly constant volume per revolution irrespective of the pressure ratio, and are used for high pressure and small flow.
 - **Dynamic** machines first raise the gas velocity with a rotating impeller or blades and then convert the kinetic energy to pressure in a diffuser. They give a continuous flow, are compact for large volumes, and are used for large flows and moderate pressure ratios.
 - **Rough ranking by pressure ratio:** fan (up to $1.1$), blower ($1.1$ to $4$), compressor (above $4$).
 
-### 🔹 A2. Reciprocating compressor: how the cycle works
+### A2. Reciprocating compressor: how the cycle works
 ![Diagram: Reciprocating compressor pv](../assets/08-steam-compressors-power/reciprocating-compressor-pv.png)
 
 - The piston moves down; the suction valve opens and gas enters at $p_1$ (suction, line 4-1 on the $p$-$V$ diagram). Both valves close and the piston compresses the gas to $p_2$ (1-2). The delivery valve opens and the gas is pushed out at constant pressure (2-3). A small clearance volume must remain at the end of the stroke; the trapped gas re-expands as the piston returns (3-4) until the suction valve can open.
@@ -26,14 +32,14 @@ $$W = \frac{n}{n-1}\,p_1V_1\left[\left(\frac{p_2}{p_1}\right)^{\frac{n-1}{n}} - 
 - **Efficiencies.** **Isothermal efficiency** (isothermal work over actual indicated work) is the usual measure for water-cooled machines; **adiabatic or isentropic efficiency** is used for uncooled or high-speed machines. **Mechanical efficiency** for a compressor is the ratio of indicated power to the shaft power input.
 - **Free air delivery (FAD).** Compressors are rated by the volume of air delivered, converted to standard atmospheric conditions so that machines in different locations can be compared.
 
-### 🔹 A3. Clearance and volumetric efficiency
+### A3. Clearance and volumetric efficiency
 
 - **Clearance volume** is needed to avoid piston-head collision and to accommodate valves. Its penalty: the gas trapped in it expands on the return stroke, occupying part of the swept volume before suction can begin, so the volume of fresh gas drawn in is less than the swept volume.
 - **Volumetric efficiency.** $\eta_v = \dfrac{V_1}{V_s} = 1 + c - c\left(\dfrac{p_2}{p_1}\right)^{1/n}$. It decreases when the pressure ratio increases or the clearance ratio $c$ increases. At the limiting pressure ratio, $\eta_v = 0$: the compressed gas in the clearance fills the whole stroke and no fresh gas is admitted.
 - **Clearance and work.** The extra work spent compressing the clearance gas is recovered when it expands, so the work **per kg of gas delivered** is unchanged by clearance. Clearance reduces the capacity (mass per stroke), not the specific work, so a bigger cylinder is needed for a given output.
 - **Other causes of low volumetric efficiency:** valve resistance and pressure drop, leakage past the piston and valves, heating of the incoming charge by hot cylinder walls.
 
-### 🔹 A4. Multistage compression and intercooling
+### A4. Multistage compression and intercooling
 ![Diagram: Multistage intercooling pv](../assets/08-steam-compressors-power/multistage-intercooling-pv.png)
 
 - **Why stage?** A single stage at a high pressure ratio gives (i) a very high delivery temperature (oil breakdown, fire hazard), (ii) low volumetric efficiency, (iii) large work, and (iv) a heavy, large cylinder. Multistage compression divides the work and cools the gas between stages (**intercooling**) to bring it back toward the inlet temperature.
@@ -41,7 +47,7 @@ $$W = \frac{n}{n-1}\,p_1V_1\left[\left(\frac{p_2}{p_1}\right)^{\frac{n-1}{n}} - 
 - The saving relative to single-stage compression increases as the pressure ratio and number of stages increase, but each extra stage adds cost and pressure losses in the intercooler; so $2$ to $4$ stages are used.
 - **Aftercooler** cools the final delivered air to condense moisture before the receiver.
 
-### 🔹 A5. Rotary and dynamic compressors
+### A5. Rotary and dynamic compressors
 
 - **Roots blower.** Two figure-eight lobes rotate in opposite directions; they carry the gas around the casing without internal compression. Pressure rises when the trapped gas is exposed to the delivery pressure (backflow compression), so efficiency is low. Good for low-pressure, high-flow duty.
 - **Vane and screw types.** The compressing volume decreases inside the casing, giving internal compression. Screw compressors are widely used for industrial air supply, with smooth flow and few moving parts.
@@ -50,7 +56,7 @@ $$W = \frac{n}{n-1}\,p_1V_1\left[\left(\frac{p_2}{p_1}\right)^{\frac{n-1}{n}} - 
 - **Axial compressor.** Alternate rows of rotating (rotor) and stationary (stator) blades diffuse the flow in a series of small stages. The pressure ratio per stage is small ($\approx 1.2$) because the flow must decelerate against an adverse pressure gradient without separating (the **de Haller criterion** limits the deceleration, $V_{r2}/V_{r1} \ge 0.72$). Many stages are needed, but the efficiency and flow capacity are high, so they are used in jet engines and large gas turbines. A common design uses $50\%$ reaction.
 - **Comparison.** Centrifugal machines are rugged, cheap, and have a wide stable range; axial machines are more efficient at high flow with a smaller frontal area, but are delicate and expensive.
 
-### 🔹 A6. Gas turbine plant
+### A6. Gas turbine plant
 ![Diagram: Gas turbine and jet layouts](../assets/08-steam-compressors-power/gas-turbine-and-jet-layouts.png)
 
 - **Layout.** Air is compressed, fuel is burnt at nearly constant pressure in a combustion chamber, and the hot gas expands through a turbine. Part of the turbine work drives the compressor (a large fraction: the **back work ratio**), and the remainder is the net output (shaft power or jet thrust).
@@ -58,7 +64,7 @@ $$W = \frac{n}{n-1}\,p_1V_1\left[\left(\frac{p_2}{p_1}\right)^{\frac{n-1}{n}} - 
 - **Improvements** (see Thermodynamics): regeneration, intercooling, reheating. A **combined cycle** uses the hot exhaust (about $500$ to $600^\circ$C) in a heat-recovery steam generator to run a Rankine bottoming cycle, giving $55$ to $60\%$ overall efficiency, the highest of any thermal plant.
 - **Compared with IC engines:** continuous combustion gives smooth running, little vibration, high power-to-weight ratio, and the ability to burn many fuels; but small units have lower efficiency, and materials must withstand high temperature and rotational speed.
 
-### 🔹 A7. Jet propulsion
+### A7. Jet propulsion
 
 - **Principle.** Thrust is the reaction to the momentum given to the working fluid: $F = \dot m_a[(1+f)V_j - V_a] + (p_j - p_a)A_j$, where $f$ is the fuel-air ratio, $V_j$ the jet velocity and $V_a$ the flight speed.
 - **Efficiencies.** The **propulsive efficiency** is the fraction of the jet's kinetic energy that does useful propulsive work, $\eta_p = \dfrac{2V_a}{V_j + V_a}$. It approaches $1$ when the jet speed is close to the flight speed: therefore, it is better to accelerate a large mass of air by a small amount (turbofan, propeller) than a small mass by a large amount (pure turbojet) at subsonic speed. **Thermal efficiency** is the rate of kinetic energy gain of the jet over the energy rate from fuel. **Overall efficiency** is the product.
@@ -69,7 +75,7 @@ $$W = \frac{n}{n-1}\,p_1V_1\left[\left(\frac{p_2}{p_1}\right)^{\frac{n-1}{n}} - 
   - **Ramjet.** No compressor: the high flight speed itself compresses the air ("ram effect"). Cannot operate at standstill. Used at supersonic speeds.
   - **Rocket.** Carries both fuel and oxidiser, so it works in space. Specific impulse $I_{sp} = F/(\dot m_pg)$ measures effectiveness.
 
-### 🔹 A8. Steam power plant (thermal) as a system
+### A8. Steam power plant (thermal) as a system
 ![Diagram: Thermal power plant layout](../assets/08-steam-compressors-power/thermal-power-plant-layout.png)
 
 - **Four circuits:** coal and ash handling; air and flue gas; feedwater and steam (the Rankine cycle); cooling water. Together they convert chemical energy to electricity.
@@ -77,7 +83,7 @@ $$W = \frac{n}{n-1}\,p_1V_1\left[\left(\frac{p_2}{p_1}\right)^{\frac{n-1}{n}} - 
 - **Pulverised coal firing.** Coal is ground to a fine powder and blown into the furnace with primary air; the large surface area gives fast, efficient combustion. **Fluidised bed combustion** burns coal suspended in an upward air stream; the lower temperature ($\approx 850^\circ$C) reduces NOx and limestone in the bed captures SO$_2$.
 - **Environmental control:** electrostatic precipitators remove fly ash (efficiency up to $99\%$), flue gas desulphurisation removes SO$_2$, tall stacks disperse remaining gas.
 
-### 🔹 A9. Hydroelectric power plant
+### A9. Hydroelectric power plant
 ![Diagram: Hydro and nuclear layouts](../assets/08-steam-compressors-power/hydro-and-nuclear-layouts.png)
 
 - The potential energy of stored or flowing water is converted to electricity: $P = \rho g Q H\eta$. The power depends on **discharge** $Q$ and **head** $H$. A plant with a high head needs a small flow, and vice versa.
@@ -86,7 +92,7 @@ $$W = \frac{n}{n-1}\,p_1V_1\left[\left(\frac{p_2}{p_1}\right)^{\frac{n-1}{n}} - 
 - **Matching the turbine to the head:** Pelton for high head and low flow; Francis for medium head and medium flow; Kaplan for low head and large flow (see Fluid Machinery).
 - **Hydrological tools:** hydrograph (flow against time), flow duration curve (flow against the percentage of time exceeded; used to select the capacity), mass curve (cumulative inflow; used to determine reservoir storage).
 
-### 🔹 A10. Nuclear power plant
+### A10. Nuclear power plant
 
 - **Fission.** A slow (thermal) neutron absorbed by U-235 makes the nucleus split into two fragments, releasing about $200$ MeV of energy (mainly as kinetic energy of fragments, which becomes heat) and $2$ to $3$ more neutrons, which can sustain a chain reaction. Mass is converted to energy according to $E = \Delta m c^2$.
 - **Fuel.** Natural uranium contains $0.7\%$ fissile U-235; the rest is U-238, which is **fertile** (capturing a neutron it becomes Pu-239, which is fissile). Thorium-232 is likewise fertile and converts to U-233.
@@ -95,13 +101,13 @@ $$W = \frac{n}{n-1}\,p_1V_1\left[\left(\frac{p_2}{p_1}\right)^{\frac{n-1}{n}} - 
 - **Reactor types:** PWR and BWR (light-water reactors, enriched fuel); PHWR (CANDU: heavy water moderator, natural uranium; the basis of the Indian programme); FBR (fast breeder; no moderator; liquid sodium coolant; breeds more fissile fuel than it consumes); gas-cooled reactors.
 - **Safety:** multiple barriers (fuel cladding, coolant boundary, containment), emergency core cooling, and safe waste storage.
 
-### 🔹 A11. Renewable energy
+### A11. Renewable energy
 
 - **Solar.** Photovoltaic cells convert sunlight directly to electricity (semiconductor junction); solar thermal systems concentrate sunlight to heat a fluid (flat plate collector for low temperatures, parabolic trough and tower for power generation).
 - **Wind.** The kinetic energy flux through the rotor area is $\dfrac{1}{2}\rho AV^3$. Not all can be extracted, because the air must leave the rotor with some velocity; the maximum is the **Betz limit**, $16/27 \approx 0.593$. Output varies with the cube of wind speed, which makes site selection crucial.
 - **Other sources:** biomass and biogas, geothermal, tidal, wave and ocean thermal energy conversion.
 
-### 🔹 A12. Power plant economics
+### A12. Power plant economics
 ![Diagram: Load curve and load duration](../assets/08-steam-compressors-power/load-curve-and-load-duration.png)
 
 - **Load curve** shows the demand against time of day. **Load duration curve** re-orders the loads in descending order, useful for deciding which plants to run as base load and which as peak load.
@@ -109,7 +115,7 @@ $$W = \frac{n}{n-1}\,p_1V_1\left[\left(\frac{p_2}{p_1}\right)^{\frac{n-1}{n}} - 
 - **Base load vs peak load.** High-capital, low-running-cost plants (nuclear, large thermal) are run continuously as base load. Low-capital, high-running-cost plants (diesel, gas turbine) and quick-start hydro/pumped storage serve the peak.
 - **Cost of generation** has fixed charges (interest, depreciation), semi-fixed and running charges (fuel, maintenance). Depreciation methods: straight line, diminishing balance, sinking fund.
 
-### 🔹 A13. What examiners test from this chapter
+### A13. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -122,7 +128,7 @@ $$W = \frac{n}{n-1}\,p_1V_1\left[\left(\frac{p_2}{p_1}\right)^{\frac{n-1}{n}} - 
 
 ---
 
-## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
+## Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
 ## 🧭 SECTION I: COMPRESSORS AND GAS TURBINES

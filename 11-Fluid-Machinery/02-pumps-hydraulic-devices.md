@@ -4,11 +4,15 @@
 
 ---
 
-## 📘 Part A: Detailed Theory (read this first)
+## Part A: Detailed Theory (read this first)
 
 A pump is the reverse of a turbine: it adds energy to a liquid so that the liquid can be lifted, pushed through a pipe network or pressurised. Two completely different principles are used. Rotodynamic pumps (centrifugal, mixed, axial) give the liquid kinetic energy with a spinning impeller and then convert it to pressure. Positive displacement pumps (reciprocating, gear, vane, screw) trap a fixed volume and push it out mechanically. The first is governed by Euler's equation and affinity laws; the second by swept-volume geometry. Both are limited at the suction side by cavitation.
 
-### 🔹 A1. Classification and when each type is used
+### A1. Classification and when each type is used
+```text
+sump ---> suction pipe ---> [ PUMP ] ---> delivery pipe ---> tank
+```
+
 ![Diagram: Pump types comparison](../assets/11-fluid-machinery/pump-types-comparison.png)
 
 | Class | Types | Characteristic |
@@ -18,7 +22,7 @@ A pump is the reverse of a turbine: it adds energy to a liquid so that the liqui
 
 The choice follows from head and discharge: low head with very large flow suits axial pumps; moderate head and flow suits centrifugal pumps; very high head with small flow, or viscous liquids, suits positive displacement pumps.
 
-### 🔹 A2. Centrifugal pump: construction and working
+### A2. Centrifugal pump: construction and working
 ![Diagram: Centrifugal pump layout heads](../assets/11-fluid-machinery/centrifugal-pump-layout-heads.png)
 
 **Working principle.** Liquid enters the impeller eye axially, is thrown outward by the rotating vanes and leaves the impeller at high velocity. The casing then converts the kinetic energy to pressure energy by diffusion, because its flow area increases along the path. Low pressure at the eye draws in more liquid from the sump, so the flow is continuous.
@@ -31,7 +35,7 @@ The choice follows from head and discharge: low head with very large flow suits 
 
 **Priming.** A centrifugal pump cannot lift liquid when the casing is full of air because the low density of air produces too little pressure drop to draw liquid up (air binding). The casing and suction pipe must be filled with liquid before starting. A foot valve prevents the water from draining back.
 
-### 🔹 A3. Heads in a pumping system
+### A3. Heads in a pumping system
 
 - **Suction head $h_s$:** vertical height of the pump centreline above the sump.
 - **Delivery head $h_d$:** vertical height of the delivery outlet above the pump.
@@ -42,7 +46,7 @@ $$H_m = H_{st} + h_{fs} + h_{fd} + \frac{V_d^2}{2g}$$
 
 Equivalently, $H_m$ is the head imparted by the impeller less the losses inside the pump.
 
-### 🔹 A4. Euler's pump equation and vane shape
+### A4. Euler's pump equation and vane shape
 
 **Derivation.** As in a turbine, torque equals the rate of change of angular momentum. For a pump the liquid gains angular momentum:
 
@@ -66,7 +70,7 @@ where $\beta_2$ is the vane outlet angle measured from the tangent, opposite to 
 
 **Minimum starting speed.** Liquid in the impeller acts as a forced vortex, producing a centrifugal head $(U_2^2 - U_1^2)/2g$. The pump begins to deliver when this equals the manometric head.
 
-### 🔹 A5. Efficiencies and power
+### A5. Efficiencies and power
 
 | Efficiency | Definition |
 |---|---|
@@ -77,7 +81,7 @@ where $\beta_2$ is the vane outlet angle measured from the tangent, opposite to 
 
 Water (hydraulic) power $= \rho g Q H_m$. Shaft (brake) power $= \rho g Q H_m/\eta_o$.
 
-### 🔹 A6. Affinity laws, specific speed and characteristic curves
+### A6. Affinity laws, specific speed and characteristic curves
 ![Diagram: Pump characteristic curves npsh](../assets/11-fluid-machinery/pump-characteristic-curves-npsh.png)
 
 **Affinity laws for the same pump at different speeds** (geometry fixed): $Q \propto N$, $H \propto N^2$, $P \propto N^3$. These follow from velocity triangles scaling with $U$.
@@ -100,7 +104,7 @@ A higher $N_s$ means larger discharge, smaller head and an impeller that is more
 
 **Characteristic curves.** The head-discharge curve of a backward-curved pump falls with discharge. The efficiency curve peaks at the best efficiency point (BEP). The operating point is where the pump curve meets the system curve $H_{st} + K Q^2$. A centrifugal pump has minimum power at zero discharge, so it is started with the delivery valve closed. An axial pump has maximum power at zero discharge, so it is started with the valve open.
 
-### 🔹 A7. NPSH and cavitation in pumps
+### A7. NPSH and cavitation in pumps
 
 **Mechanism.** Pressure is lowest at the impeller inlet. If it falls to the vapour pressure of the liquid, bubbles form and collapse downstream, giving noise, vibration, pitting and loss of head and efficiency.
 
@@ -112,7 +116,7 @@ $$NPSH_A = \frac{p_{atm}}{\rho g} - h_s - h_{fs} - \frac{p_v}{\rho g}$$
 
 **Practical limit.** Maximum suction lift is about 6 to 7 m of water at sea level, less for hot water (higher $p_v$) and at altitude (lower $p_{atm}$). Remedies: lower the pump, shorten and enlarge the suction pipe, reduce speed, use a double-suction impeller.
 
-### 🔹 A8. Reciprocating pump
+### A8. Reciprocating pump
 ![Diagram: Reciprocating pump and air vessel](../assets/11-fluid-machinery/reciprocating-pump-and-air-vessel.png)
 
 **Working.** A piston moves in a cylinder. On the suction stroke the pressure falls, the suction valve opens and liquid enters. On the delivery stroke the delivery valve opens and liquid is pushed out. Valves are automatic and operate by pressure difference.
@@ -133,7 +137,7 @@ It is maximum at the start of a stroke. A short, wide pipe reduces it. If it is 
 
 **Indicator diagram.** A plot of cylinder pressure against stroke length. The ideal diagram is a rectangle; real diagrams show acceleration and friction effects and the area gives the work per cycle.
 
-### 🔹 A9. Comparison: centrifugal versus reciprocating
+### A9. Comparison: centrifugal versus reciprocating
 
 | Feature | Centrifugal | Reciprocating |
 |---|---|---|
@@ -148,7 +152,7 @@ It is maximum at the start of a stroke. A short, wide pipe reduces it. If it is 
 
 Rotary positive-displacement pumps (gear, vane, screw, lobe) give a nearly constant flow at high pressure and are used for lubricating oil and hydraulic power systems.
 
-### 🔹 A10. Other hydraulic devices
+### A10. Other hydraulic devices
 
 **Hydraulic ram.** Uses the energy of a large quantity of water falling through a small drive head to lift a small quantity to a larger height, without external power. The sudden closure of the waste valve creates a water hammer pressure which forces some water through the delivery valve. Let $H_s$ be supply head, $H_d$ delivery head, $Q$ total flow from source and $q$ delivered flow.
 
@@ -165,7 +169,7 @@ Rotary positive-displacement pumps (gear, vane, screw, lobe) give a nearly const
 
 **Air lift and jet pumps** raise water from wells using compressed air or a driving jet. **Hydraulic circuits** consist of pump, relief valve, directional control valve, actuator and filter; **pneumatic** systems use compressed air with a filter-regulator-lubricator (FRL) unit.
 
-### 🔹 A11. What examiners test from this chapter
+### A11. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -183,7 +187,7 @@ Rotary positive-displacement pumps (gear, vane, screw, lobe) give a nearly const
 
 ---
 
-## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
+## Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
 ## 🧭 1. Foundations
@@ -212,7 +216,7 @@ Rotary positive-displacement pumps (gear, vane, screw, lobe) give a nearly const
   - **Manometric head** $H_m$: the head against which the pump has to work, $H_m = H_s + h_{fs} + h_{fd} + \dfrac{V_d^2}{2g}$ (static head plus losses plus delivery velocity head). Also $H_m = \dfrac{\text{energy supplied by impeller per kg}}{g} - \text{losses inside the pump}$.
   - **Total head** $= H_m$ in effect.
 
-### 🔹 Euler's pump equation
+### Euler's pump equation
 
 $$H_{th} = \frac{1}{g}\left(U_2V_{w2} - U_1V_{w1}\right)$$
 
@@ -225,7 +229,7 @@ $$H_{th} = \frac{1}{g}\left(U_2V_{w2} - U_1V_{w1}\right)$$
 | $90^\circ$ | Radial | Moderate |
 | Greater than $90^\circ$ | Forward-curved | Unstable, low efficiency; not used in pumps |
 
-### 🔹 Efficiencies and power
+### Efficiencies and power
 
 | Efficiency | Definition |
 |---|---|
@@ -238,7 +242,7 @@ $$H_{th} = \frac{1}{g}\left(U_2V_{w2} - U_1V_{w1}\right)$$
 - **Slip:** the actual whirl velocity is less than the theoretical one because of the circulatory flow in the impeller passages. **Slip factor** $\sigma = \dfrac{V_{w2}'}{V_{w2}}$.
 - **Minimum starting speed** of a centrifugal pump: the speed at which the centrifugal head just exceeds the manometric head, $\dfrac{U_2^2 - U_1^2}{2g} = H_m$.
 
-### 🔹 Pump laws and specific speed
+### Pump laws and specific speed
 
 - **Similarity (affinity) laws:** with the same pump (diameter fixed) at different speeds, $Q \propto N$, $H \propto N^2$, $P \propto N^3$. With the same speed and different impeller diameter, $Q \propto D^3$, $H \propto D^2$, $P \propto D^5$ (for geometrically similar pumps), or $Q\propto D$, $H \propto D^2$, $P\propto D^3$ for trimming an impeller.
 - **Specific speed:** speed of a geometrically similar pump that delivers $1$ m$^3$/s against a head of $1$ m:
@@ -256,7 +260,7 @@ $$N_s = \frac{N\sqrt{Q}}{H_m^{3/4}}$$
 - **Characteristic curves:** head-discharge ($H$-$Q$), power-discharge and efficiency-discharge. The head falls with the discharge for a backward-curved vane. The efficiency curve peaks at the **best efficiency point (BEP)**. A centrifugal pump should be **started with the delivery valve closed** (the power is minimum at zero discharge), and a mixed or axial flow pump with the valve open.
 - **Operating point:** the intersection of the pump characteristic and the system curve ($H_s + K Q^2$).
 
-### 🔹 NPSH and cavitation
+### NPSH and cavitation
 
 - **Net Positive Suction Head (NPSH):** the head available at the pump suction above the vapour pressure head.
 

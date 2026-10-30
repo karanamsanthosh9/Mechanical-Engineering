@@ -1,14 +1,14 @@
-# ⚖️ 01. Statics, Friction and Trusses
+# 01. Statics, Friction and Trusses
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: HY
 
 ---
 
-## 📘 Part A: Detailed Theory (read this first)
+## Part A: Detailed Theory (read this first)
 
 This part rebuilds the subject from zero. Part B (from section 1 onwards) is the compact reference with formulas, numericals and PYQs. If a Part B line looks cryptic, find the idea here.
 
-### 🔹 A1. What mechanics is and why it comes first
+### A1. What mechanics is and why it comes first
 
 **Mechanics** is the science of forces and the motion (or rest) they cause. Every other mechanical subject, such as strength of materials, machine design and fluid mechanics, is built on it.
 
@@ -19,7 +19,7 @@ This part rebuilds the subject from zero. Part B (from section 1 onwards) is the
 
 **Units.** Base SI units: metre, kilogram, second. Force unit newton: $1\ \text{N} = 1\ \text{kg}\cdot\text{m/s}^2$. Weight is a force: $W = mg$, with $g = 9.81\ \text{m/s}^2$. Mass does not change with location; weight does.
 
-### 🔹 A2. Force and vectors
+### A2. Force and vectors
 ![Diagram: Force components](../assets/01-engineering-mechanics/force-components.png)
 
 A **force** is a push or pull. It is a **vector**: it has magnitude, direction and a point (line) of application. A scalar (mass, time, energy) has only magnitude.
@@ -38,7 +38,7 @@ This comes directly from adding components. Note that $\theta$ is the angle betw
 
 - **Triangle law and polygon law:** draw the forces head to tail; the closing side is the resultant. If the polygon closes, the resultant is zero and the forces are in equilibrium.
 
-### 🔹 A3. Moment and couple
+### A3. Moment and couple
 ![Diagram: Moment and couple](../assets/01-engineering-mechanics/moment-and-couple.png)
 
 - **Moment of a force** about a point $O$ measures its turning effect: $M_O = F \times d$, where $d$ is the perpendicular distance from $O$ to the line of action. Unit N-m. Counter-clockwise is usually positive.
@@ -54,7 +54,7 @@ This comes directly from adding components. Note that $\theta$ is the angle betw
 
 **Parallel forces.** For like parallel forces, the resultant equals their sum and acts between them, closer to the larger force. For unlike parallel forces, the resultant equals the difference, acts outside and on the side of the larger force.
 
-### 🔹 A4. Equilibrium: the central idea
+### A4. Equilibrium: the central idea
 
 A body is in equilibrium when it has no tendency to translate or rotate.
 
@@ -70,10 +70,21 @@ where each angle $\alpha$, $\beta$, $\gamma$ lies **opposite** to its force (the
 
 1. Choose the body or joint (the system).
 2. Draw the **free body diagram (FBD)**: remove all supports and replace them with their reaction forces. Show every external force (weights, loads, reactions).
+
+```text
+     W
+     v
+  +--------------+
+Ax -> |     beam     |
+  +--------------+
+    ^ Ay      ^ By
+    pin       roller
+```
+
 3. Choose axes and write the equilibrium equations.
 4. Solve. If an answer is negative, the force acts opposite to the assumed direction.
 
-### 🔹 A5. Supports and reactions
+### A5. Supports and reactions
 ![Diagram: Support reactions](../assets/01-engineering-mechanics/support-reactions.png)
 
 A support stops motion in some directions, so it supplies a reaction in those directions.
@@ -89,7 +100,17 @@ A support stops motion in some directions, so it supplies a reaction in those di
 
 **Types of loads.** Point load (concentrated), UDL (uniformly distributed, replace by $w \times L$ at the centre), UVL (uniformly varying, replace by the area of the triangle at one-third from the larger end), couple load.
 
-### 🔹 A6. Friction, step by step
+```text
+UDL (intensity w):             Equivalent point load:
+  v   v   v   v   v                         wL
+  |   |   |   |   |                          v
+  +-----------------+                 +-----------------+
+  |      beam       |                 |      beam       |
+  +-----------------+                 +-----------------+
+  <------- L ------->                 <------- L ------->
+```
+
+### A6. Friction, step by step
 ![Diagram: Friction on incline](../assets/01-engineering-mechanics/friction-on-incline.png)
 
 **Friction** is the resistance a surface offers to relative sliding of another. It acts parallel to the contact surface, opposite to the (tendency of) motion. It arises from microscopic surface roughness and adhesion.
@@ -130,7 +151,7 @@ This is the smallest angle (with the floor) at which the ladder stays at rest. R
 
 **Screw friction (preview).** A square thread unrolls to an inclined plane of angle equal to the lead angle. Raising a load is like pushing a block up an incline: $P = W\tan(\alpha + \phi)$. Efficiency $\eta = \dfrac{\tan\alpha}{\tan(\alpha + \phi)}$. A screw is **self-locking** when $\alpha < \phi$, and then efficiency is below 50 percent. Details are in the Machine Design and TOM chapters.
 
-### 🔹 A7. Trusses
+### A7. Trusses
 ![Diagram: Simple truss](../assets/01-engineering-mechanics/simple-truss.png)
 
 A **truss** is a rigid framework of straight members joined at their ends by pins (assumed frictionless). Used in bridges, roofs, towers.
@@ -162,11 +183,11 @@ Zero-force members are not useless; they give stability and carry load if the lo
 
 **Quick sign rule.** A member force pointing away from the joint on the FBD is tension; pointing toward the joint is compression.
 
-### 🔹 A8. Principle of virtual work (concept)
+### A8. Principle of virtual work (concept)
 
 If a system in equilibrium is given a small imaginary (virtual) displacement consistent with its constraints, the total virtual work of the active forces is zero. It is a shortcut for problems with ladders, linkages and jacks: ignore reactions at smooth supports and find the unknown force directly from geometry.
 
-### 🔹 A9. What examiners test from this chapter
+### A9. What examiners test from this chapter
 
 - Resultant and equilibrium of coplanar forces, Lami's theorem (SSC JE and RRB JE love one-step formulas).
 - Friction on inclined planes, angle of repose, ladder and wedge (very common).
@@ -175,7 +196,7 @@ If a system in equilibrium is given a small imaginary (virtual) displacement con
 
 ---
 
-## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
+## Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
 ## 🧭 1. Foundations
@@ -223,7 +244,7 @@ $$\frac{P}{\sin\alpha} = \frac{Q}{\sin\beta} = \frac{R}{\sin\gamma}$$
 - **Laws of dry (Coulomb) friction:** friction opposes motion; it is independent of contact area; it is proportional to the normal reaction; kinetic friction is less than limiting friction and independent of speed.
 - Limiting friction $F = \mu N$. **Angle of friction** $\phi = \tan^{-1}\mu$, so $\mu = \tan\phi$. **Angle of repose** equals the angle of friction. **Cone of friction** has semi-angle $\phi$.
 
-### 🔹 Inclined plane (weight $W$, inclination $\alpha$)
+### Inclined plane (weight $W$, inclination $\alpha$)
 
 | Case | Force $P$ parallel to the plane |
 |---|---|

@@ -1,14 +1,22 @@
-# 🏭 04. Machining, Cutting Tools and Machine Tools
+# 04. Machining, Cutting Tools and Machine Tools
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: VHY
 
 ---
 
-## 📘 Part A: Detailed Theory (read this first)
+## Part A: Detailed Theory (read this first)
 
 Machining removes unwanted material in the form of chips, using a tool that is harder than the work and a relative motion between them. The theory is the physics of one thin layer of metal being sheared off. From that single picture follow the chip types, the forces, the power, the heat, the tool wear and tool life, and finally the economics of choosing a cutting speed. Machine tools (lathe, drill, mill, shaper, grinder) are simply different ways of arranging the tool and work motions.
 
-### 🔹 A1. Mechanics of chip formation
+### A1. Mechanics of chip formation
+```text
+             chip
+              /
+             /  tool
+            /___|
+workpiece ====================> feed
+```
+
 ![Diagram: Merchant circle chip formation](../assets/12-manufacturing/merchant-circle-chip-formation.png)
 
 **Cutting motions.** The primary motion (cutting speed) removes material; the feed motion moves the cutting zone to new material; the depth of cut sets the layer thickness.
@@ -23,7 +31,7 @@ Machining removes unwanted material in the form of chips, using a tool that is h
 
 **Primary shear.** The work material ahead of the tool shears along a narrow zone called the shear plane, inclined at the shear angle $\phi$ to the cutting direction. The chip then slides up the tool face against friction (secondary deformation zone).
 
-### 🔹 A2. Tool geometry
+### A2. Tool geometry
 ![Diagram: Single point tool geometry](../assets/12-manufacturing/single-point-tool-geometry.png)
 
 **Tool signature (ASA system).** Back rake, side rake, end relief, side relief, end cutting edge angle, side cutting edge angle and nose radius, for example 8-14-6-6-6-15-1.
@@ -33,7 +41,7 @@ Machining removes unwanted material in the form of chips, using a tool that is h
 - **Side cutting edge (lead) angle:** affects chip thickness and tool life.
 - **Nose radius:** improves surface finish and edge strength; too large a radius causes chatter.
 
-### 🔹 A3. Chip types
+### A3. Chip types
 ![Diagram: Chip types tool life](../assets/12-manufacturing/chip-types-tool-life.png)
 
 | Chip | Conditions | Remarks |
@@ -45,7 +53,7 @@ Machining removes unwanted material in the form of chips, using a tool that is h
 
 A chip breaker (a step or groove) curls and breaks a long chip for safe handling.
 
-### 🔹 A4. Merchant's analysis of orthogonal cutting
+### A4. Merchant's analysis of orthogonal cutting
 
 Let $t_1$ be the uncut chip thickness, $t_2$ the chip thickness, $\alpha$ the rake angle and $\phi$ the shear angle.
 
@@ -83,7 +91,7 @@ Lee and Shaffer's slip-line solution gives $\phi = 45^\circ + \alpha - \beta$.
 
 **Heat.** Roughly 75 percent of the heat goes with the chip, about 20 percent into the work and about 5 percent into the tool. Temperature rises most with cutting speed, then feed and least with depth of cut.
 
-### 🔹 A5. Tool wear and tool life
+### A5. Tool wear and tool life
 
 **Wear types.**
 
@@ -109,7 +117,7 @@ where $T$ is the tool life in minutes, $V$ the cutting speed in m/min, $n$ an ex
 
 The extended form is $V T^n f^a d^b = C$. Because $n$ is small, a small increase in speed shortens life greatly: a 1 percent increase in $V$ lowers $T$ by about $1/n$ percent. For two conditions, $V_1 T_1^n = V_2 T_2^n$.
 
-### 🔹 A6. Machining economics and machinability
+### A6. Machining economics and machinability
 
 The cutting speed decides both production rate and cost. A high speed cuts quickly but wears the tool fast, so tool change time and tool cost rise.
 
@@ -124,7 +132,7 @@ with $t_c$ the tool-change time, $C_t$ the cost per tool edge and $C_m$ the mach
 
 **Machinability.** Ease of machining, judged by tool life, surface finish, power and chip form. Machinability index $= (V_{60}$ of the material$) / (V_{60}$ of free-cutting steel B1112$)\times 100$, where $V_{60}$ is the speed that gives 60 minutes of tool life. Sulphur, lead and phosphorus improve machinability.
 
-### 🔹 A7. Tool materials
+### A7. Tool materials
 
 | Material | Properties | Typical use |
 |---|---|---|
@@ -140,7 +148,7 @@ with $t_c$ the tool-change time, $C_t$ the cost per tool edge and $C_m$ the mach
 
 **Required properties:** hot hardness, toughness, wear resistance and chemical stability. **Cutting fluids** cool and lubricate, reduce friction and BUE, and flush chips. Carbides often cut dry or with a continuous heavy flow because intermittent coolant causes thermal shock.
 
-### 🔹 A8. Lathe
+### A8. Lathe
 ![Diagram: Lathe milling operations](../assets/12-manufacturing/lathe-milling-operations.png)
 
 **Parts.** Bed, headstock (spindle and gears), tailstock, carriage (saddle, cross slide, compound rest, apron), lead screw and feed rod.
@@ -159,14 +167,14 @@ $$\frac{N_{lead\,screw}}{N_{spindle}} = \frac{p_{thread}}{p_{lead\,screw}} = \fr
 
 **Types and size.** Engine (centre), bench, tool room, capstan and turret (production), automatic, CNC. Size is the swing over bed and the distance between centres. **Work holding:** 3-jaw self-centring chuck (round work), 4-jaw independent chuck (irregular), collet, face plate, mandrel between centres, steady and follower rests for long slender work.
 
-### 🔹 A9. Drilling, boring, reaming
+### A9. Drilling, boring, reaming
 
 A twist drill has a standard point angle of $118^\circ$, a helix angle of about $30^\circ$, lip relief and a chisel edge, and consists of web, flutes, margin and land. **Operations:** drilling, reaming (accurate size and finish, allowance about 0.4 mm), boring (enlarge a drilled hole using a single-point tool), counterboring, countersinking, spot facing, tapping.
 
 - Drilling time: $t = (L + 0.3D)/(fN)$ for a $118^\circ$ point (approach allowance).
 - Drilling MRR: $\dfrac{\pi D^2}{4} f N$.
 
-### 🔹 A10. Milling
+### A10. Milling
 
 A multi-tooth rotating cutter removes material from a feeding workpiece. **Types:** peripheral (slab), face, end, form, gang, straddle and T-slot milling.
 
@@ -189,13 +197,13 @@ A multi-tooth rotating cutter removes material from a feeding workpiece. **Types
 - $MRR = w\,d\,f_m$.
 - Simple indexing: the crank turns $40/N$ times for $N$ divisions.
 
-### 🔹 A11. Shaping, planing, slotting and broaching
+### A11. Shaping, planing, slotting and broaching
 
 **Shaper.** The tool reciprocates and the work feeds. A quick return mechanism (Whitworth, crank and slotted link) makes the idle return stroke faster. The cutting speed is $V = L N (1 + k)/1000$ with $k$ the ratio of return time to cutting time. **Planer:** the work reciprocates, for large work. **Slotter:** a vertical shaper for keyways and internal splines.
 
 **Broaching.** A multi-tooth tool is pushed or pulled through the work, and the rise per tooth removes the material in a single stroke; high productivity for keyways and splines, but the tool is costly.
 
-### 🔹 A12. Grinding and finishing
+### A12. Grinding and finishing
 
 **Grinding.** A bonded abrasive wheel acts as a multi-point tool for hard materials and fine finish.
 
@@ -208,7 +216,7 @@ A multi-tooth rotating cutter removes material from a feeding workpiece. **Types
 
 **Finishing processes.** Honing (abrasive sticks, cylinder bores, cross-hatch), lapping (loose abrasive, flats and optical surfaces), superfinishing, buffing, polishing and burnishing (plastic flow).
 
-### 🔹 A13. What examiners test from this chapter
+### A13. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -227,7 +235,7 @@ A multi-tooth rotating cutter removes material from a feeding workpiece. **Types
 
 ---
 
-## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
+## Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
 ## 🧭 1. Foundations of metal cutting
@@ -322,7 +330,7 @@ $$T_{opt} = \left(\frac{1}{n} - 1\right)\left(t_c + \frac{C_t}{C_m}\right)$$
 
 ## 🧭 5. Machine tools and operations
 
-### 🔹 Lathe
+### Lathe
 
 - **Parts:** bed, headstock (spindle, gears), tailstock, carriage (saddle, cross slide, compound rest, apron), lead screw and feed rod.
 - **Operations:** turning, facing, taper turning, thread cutting, drilling, boring, knurling, parting-off, grooving, forming.
@@ -336,14 +344,14 @@ $$\frac{N_{lead\,screw}}{N_{spindle}} = \frac{p_{thread}}{p_{lead\,screw}} = \fr
 - **Types of lathes:** engine (centre) lathe, bench, tool room, capstan and turret (production: multiple tool stations), automatic (screw machine), CNC lathe. **Size:** swing over bed (largest diameter) and distance between centres.
 - **Work holding:** chuck (3-jaw self-centring for round work, 4-jaw independent for irregular), collet, face plate, between centres with a mandrel, and steady and follower rests (to support long slender work).
 
-### 🔹 Drilling, boring, reaming
+### Drilling, boring, reaming
 
 - **Drill** (twist drill): point angle $118^\circ$ (standard); helix angle $\approx 30^\circ$ for general-purpose; lip relief; chisel edge. The drill has the **web**, **flutes**, **margin** and **land**.
 - **Operations:** drilling, reaming (accurate sizing and finish; the allowance is about $0.4$ mm), boring (enlarging a drilled hole; single-point), counterboring, countersinking, spot facing, tapping.
 - **Drilling time:** $t = \dfrac{L + 0.3\,D}{f\,N}$ (the approach allowance is about $0.3\,D$ for a $118^\circ$ point). For a blind hole, add the tip allowance.
 - **MRR (drilling)** $= \dfrac{\pi D^2}{4}\,f\,N$.
 
-### 🔹 Milling
+### Milling
 
 - A rotating multi-tooth cutter removes material from a feeding workpiece.
 - **Types:** **peripheral (slab) milling**, **face milling**, **end milling**, **form milling**, **gang**, **straddle**, and **T-slot**. Machines: horizontal, vertical, universal, planer type.
@@ -354,12 +362,12 @@ $$\frac{N_{lead\,screw}}{N_{spindle}} = \frac{p_{thread}}{p_{lead\,screw}} = \fr
 - **MRR** $= w\,d\,f_m$ (width $\times$ depth $\times$ feed rate).
 - **Indexing (dividing head):** simple indexing, with the index crank rotating $\dfrac{40}{N}$ turns for $N$ divisions (gear ratio $40:1$). Compound, differential and angular indexing are other methods.
 
-### 🔹 Shaping, planing, slotting
+### Shaping, planing, slotting
 
 - **Shaper:** the tool reciprocates and the work feeds; **quick return mechanism** (Whitworth, crank-and-slotted-link) gives the idle return stroke a higher speed. **Quick return ratio** $= \dfrac{\text{cutting stroke time}}{\text{return stroke time}}$ (typically $3:2$). **Planer:** the work reciprocates and the tool feeds; for large work. **Slotter:** a vertical shaper (keyways, internal splines).
 - **Shaper time:** $t = \dfrac{W}{f\,N}$, where $W$ is the width and the speed in strokes/min; the **cutting speed** $V = \dfrac{L\,N\,(1 + k)}{1000}$, with $k = \dfrac{\text{return time}}{\text{cutting time}}$ (m/min).
 
-### 🔹 Grinding
+### Grinding
 
 - A bonded abrasive wheel acts as a multi-point tool for finishing and for hard materials.
 - **Abrasives:** aluminium oxide (steel), silicon carbide (cast iron, non-ferrous, carbides), CBN, diamond. **Bond:** vitrified (most common), resinoid, rubber, shellac, metallic.
@@ -369,7 +377,7 @@ $$\frac{N_{lead\,screw}}{N_{spindle}} = \frac{p_{thread}}{p_{lead\,screw}} = \fr
 - **Types:** cylindrical (external, internal, centreless), surface (reciprocating, rotary), tool and cutter grinders. **Centreless grinding** has no centres; the work is supported on a blade between a regulating wheel and a grinding wheel; for high production of round parts.
 - **Finishing processes:** **honing** (abrasive sticks, cylinder bores, crosshatch pattern), **lapping** (loose abrasive in a vehicle; flat/optical), **superfinishing**, **buffing**, **polishing**, **burnishing** (plastic flow).
 
-### 🔹 Other
+### Other
 
 - **Broaching:** a multi-tooth tool pushed or pulled through; the rise per tooth removes material in a single stroke; used for keyways and splines; high productivity; the tool is expensive.
 - **Sawing, gear cutting (forming, generating: hobbing, shaping, shaving), thread cutting/rolling.**

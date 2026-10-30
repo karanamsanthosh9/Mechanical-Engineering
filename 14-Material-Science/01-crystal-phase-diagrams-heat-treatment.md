@@ -1,14 +1,14 @@
-# 🧪 01. Crystal Structure, Phase Diagrams and Heat Treatment
+# 01. Crystal Structure, Phase Diagrams and Heat Treatment
 
 **Exam relevance:** APPSC AEE: C | SSC JE: C | RRB JE: C | Category: ALL | Yield: VHY
 
 ---
 
-## 📘 Part A: Detailed Theory (read this first)
+## Part A: Detailed Theory (read this first)
 
 Material science explains why metals behave as they do by looking at how atoms are arranged and how that arrangement can be changed. The chain of ideas is: bonding decides the type of material; the arrangement of atoms in a crystal decides how it deforms; defects (especially dislocations) make real metals far weaker than ideal crystals and give us ways to strengthen them; phase diagrams tell us which structures are stable at which composition and temperature; and heat treatment uses temperature and cooling rate to steer a steel into a chosen structure. Every property in the next chapter (strength, hardness, toughness) is a result of the structures described here.
 
-### 🔹 A1. Atomic bonding and its effect on properties
+### A1. Atomic bonding and its effect on properties
 
 | Bond | How it forms | Typical properties | Example |
 |---|---|---|---|
@@ -19,7 +19,16 @@ Material science explains why metals behave as they do by looking at how atoms a
 
 Metals deform without fracture because the electron cloud lets atoms slide past each other without breaking directional bonds. Ceramics are brittle because ionic and covalent bonds are directional and break rather than slide.
 
-### 🔹 A2. Crystal structures
+### A2. Crystal structures
+```text
+    o-------o
+   /|      /|
+  o-------o |
+  |   o   | o   body-centred atom
+  |/      |/
+  o-------o
+```
+
 
 **Terms.** A crystal has atoms arranged in a regular repeating three-dimensional pattern. The unit cell is the smallest repeating unit. There are 7 crystal systems and 14 Bravais lattices.
 
@@ -53,7 +62,7 @@ For FCC: $4\times\frac{4}{3}\pi r^3 / (2\sqrt{2}r)^3 = 0.74$. For BCC the body d
 
 **Amorphous, polycrystalline and single crystals.** Amorphous materials (glass) lack long-range order. Polycrystalline materials consist of many grains separated by grain boundaries. Single crystals are anisotropic (properties depend on direction).
 
-### 🔹 A3. Crystal imperfections
+### A3. Crystal imperfections
 
 | Class | Defects |
 |---|---|
@@ -66,7 +75,7 @@ For FCC: $4\times\frac{4}{3}\pi r^3 / (2\sqrt{2}r)^3 = 0.74$. For BCC the body d
 
 **Slip and Schmid's law.** The critical resolved shear stress is $\tau_{CRSS} = \sigma\cos\phi\cos\lambda$, where $\phi$ is the angle between the load axis and the plane normal and $\lambda$ the angle between the load axis and the slip direction.
 
-### 🔹 A4. Strengthening mechanisms
+### A4. Strengthening mechanisms
 
 All methods strengthen a metal by making dislocation motion harder.
 
@@ -81,7 +90,7 @@ All methods strengthen a metal by making dislocation motion harder.
 
 **Diffusion.** Atomic transport through the solid. Fick's first law: $J = -D\,dC/dx$. Second law: $\partial C/\partial t = D\,\partial^2 C/\partial x^2$. The diffusivity rises exponentially with temperature, $D = D_0e^{-Q/RT}$. Interstitial diffusion (small atoms such as carbon) is much faster than vacancy diffusion of substitutional atoms. It underlies carburising, nitriding, doping and sintering.
 
-### 🔹 A5. Solidification and phase diagrams
+### A5. Solidification and phase diagrams
 
 **Solidification.** Nucleation (homogeneous in the pure melt, heterogeneous on impurities or mould walls) followed by growth, usually dendritic. Fast cooling gives many nuclei and a fine grain; slow cooling gives a coarse grain. Inoculants are added to refine the grain.
 
@@ -111,7 +120,7 @@ The fraction of a phase is the length of the tie-line segment on the opposite si
 | Peritectoid | $\alpha + \beta \rightarrow \gamma$ |
 | Monotectic | $L_1 \rightarrow L_2 + \alpha$ |
 
-### 🔹 A6. The iron-carbon (Fe-Fe$_3$C) diagram
+### A6. The iron-carbon (Fe-Fe$_3$C) diagram
 
 | Feature | Value |
 |---|---|
@@ -152,7 +161,7 @@ The fraction of a phase is the length of the tie-line segment on the opposite si
 
 **Lever rule on steel.** For 0.4 percent C steel just below $727^\circ$C, the proeutectoid ferrite fraction is $(0.77 - 0.4)/(0.77 - 0.02) = 49.3$ percent and pearlite is 50.7 percent. At room temperature the cementite fraction is $(0.4 - 0.02)/(6.67 - 0.02) = 5.7$ percent.
 
-### 🔹 A7. TTT and CCT diagrams
+### A7. TTT and CCT diagrams
 
 **TTT (isothermal transformation) diagram.** It shows how fast austenite transforms at a constant temperature below $A_1$. The curve is C-shaped, with a nose at about $550^\circ$C, where the transformation is fastest.
 
@@ -168,7 +177,7 @@ The fraction of a phase is the length of the tie-line segment on the opposite si
 
 **Isothermal treatments.** Austempering: quench to just above $M_s$ and hold to form bainite, giving toughness and little distortion. Martempering: quench to just above $M_s$, hold to equalise temperature, then cool through the martensite range slowly, which reduces distortion and cracking.
 
-### 🔹 A8. Heat treatment of steel
+### A8. Heat treatment of steel
 
 **Annealing.** Heat, hold and cool slowly in the furnace to soften the steel, relieve stress, refine grain and improve machinability.
 
@@ -198,7 +207,7 @@ The fraction of a phase is the length of the tie-line segment on the opposite si
 
 **Age (precipitation) hardening.** For Al-Cu alloys such as duralumin: solution treatment, quenching and then ageing (natural or artificial). Fine precipitates (GP zones) form and block dislocations; over-ageing coarsens them and strength falls. **Cryogenic treatment** converts retained austenite to martensite.
 
-### 🔹 A9. What examiners test from this chapter
+### A9. What examiners test from this chapter
 
 | Topic | APPSC AEE | SSC JE | RRB JE |
 |---|---|---|---|
@@ -218,7 +227,7 @@ The fraction of a phase is the length of the tie-line segment on the opposite si
 
 ---
 
-## ⚡ Part B: Quick-reference notes, formulas, numericals and PYQs
+## Part B: Quick-reference notes, formulas, numericals and PYQs
 
 
 ## 🧭 1. Atomic structure and bonding
